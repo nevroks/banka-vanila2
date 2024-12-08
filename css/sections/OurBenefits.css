@@ -4,19 +4,69 @@
 }
 
 .OurBenefits-title {
-    margin-bottom: 35px;
+    margin-bottom: 34px;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 77px;
     text-align: center;
+    color: #002ADB;
+    margin-top: 91px;
+
 }
 
 .OurBenefits-cards {
     display: flex;
     justify-content: center;
-    padding-left: 192px;
 }
 
+.OurBenefits-videos {
+    position: relative;
+}
+
+.cokkiesLeft {
+    position: absolute;
+    top: 152px;
+    left: -77px;
+    z-index: -1;
+}
+
+.cokkiesRight {
+    position: absolute;
+    top: 100px;
+    right: -134px;
+    z-index: -1;
+}
+
+.yellowStar, .redStar {
+    position: absolute;
+    z-index: -2; 
+}
+.animate{
+    animation: rotate 3s  linear;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.yellowStar {
+    left: -54px;
+    top: 102px;
+}
+
+.redStar {
+    top: 147px;
+    right: -104px;
+}
 .OurBenefits-cards * {
     color: rgb(0, 0, 0);
 }
+
 
 .OurBenefits-cards-card {
     position: relative;
