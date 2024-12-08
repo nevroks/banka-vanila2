@@ -45,46 +45,491 @@ section {
     width: 100%;
     position: fixed;
     z-index: 10;
-    top: 50px;
 }
 
 .header-navigation {
-    padding: 0 60px;
     display: flex;
     justify-content: space-between;
 }
 
-.header-navigation-button-resume {
+
+
+.header-navigation-button-jobs {
     position: relative;
-    padding: 10px 30px;
-    font-size: 23px;
-    font-weight: 400;
-    line-height: 130%;
-    letter-spacing: -0.5%;
-    color: rgb(61, 61, 61);
-    border: 1px solid rgb(0, 0, 0);
+    padding: 0 20px 0 43px; 
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 14.4px;
     border-radius: 9px;
-    background: rgb(255, 255, 255);
-    transition: all 0.5s;
+    border: 1px solid  rgb(0, 42, 219);
+    margin: 0px 0 0 15px;
+    letter-spacing: 3px;
+    height: 44px;
 }
 
-.header-navigation-button-resume:hover {
-    background: rgb(206, 206, 206);
+.header-navigation-button-jobs::before{
+    position: absolute;
+    left: 14px;
+    top: 13px;
+    content: url('../assets/header/Group\ 1000004742.svg');
+    margin: 0 15px 0 0;
 }
 
-.header-navigation-button-resume:active {
-    bottom: -2px;
-}
 
-.header-navigation-button-fortune {
-    padding: 15px 60px;
-    font-size: 23px;
-    font-weight: 400;
-    line-height: 130%;
-    letter-spacing: -0.5%;
+.header-navigation-button-join-us{
+    position: relative;
+    padding: 0 20px 0 43px; 
+    letter-spacing: 3px;
+    height: 44px;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 14.4px;
     border-radius: 9px;
-    background: rgb(0, 42, 219);
+    border: 1px solid  rgb(0, 42, 219);
+    margin: 0px 0 0 15px;
+
 }
+.header-navigation-button-hidden{
+    visibility:hidden;
+    letter-spacing: 3px;
+    height: 44px;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 14.4px;
+    border-radius: 9px;
+    border: 1px solid  rgb(0, 42, 219);
+    margin: 0px 0 0 15px;
+
+}
+
+.header-navigation-button-join-us::before{
+    content: url('../assets/header/+.svg');
+    margin: 0 15px 0 0;
+    position: absolute;
+    left: 14px;
+    top: 13px;
+}
+
+.header-navigation-button-plau{
+    position: relative;
+    padding: 0 20px 0 43px; 
+    letter-spacing: 3px;
+    height: 44px;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 14.4px;
+    border-radius: 9px;
+    border: 1px solid  rgb(0, 42, 219);
+    margin: 0px 0 0 15px;
+}
+
+.header-navigation-button-plau::before{
+    content: url('../assets/header/Polygon\ 1.svg');
+    margin: 0 15px 0 0;
+    position: absolute;
+    left: 14px;
+    top: 13px;
+}
+
+
+/* girland */
+.girland-box{
+    position: relative;
+}
+
+
+.girlandItem{
+    margin: 0 0 40px 0;
+}
+.girland1{
+    position: absolute;
+    top: 0;  
+    left: 0;
+}
+.girland2{
+  position: absolute;  
+  top: 2px;
+    left: 30px;
+}
+.girland3{
+  position: absolute; 
+  top: 2px;
+left: 30px; 
+}
+.girland4{
+  position: absolute;  
+  top: 8px;
+  left: 71px;
+}
+.girland5{
+  position: absolute; 
+  top: 14px;
+  left: 111px; 
+}
+.girland6{
+  position: absolute;  
+  top: 19px;
+  left: 149px;
+}
+.girland7{
+  position: absolute;  
+  top: 21px;
+  left: 185px;
+}
+.girland8{
+  position: absolute; 
+  top: 22px;
+  left: 221px;
+}
+.girland9{
+  position: absolute;  
+  top: 25px;
+  left: 257px;
+}
+.girland10{
+  position: absolute;  
+  top: 24px;
+  left: 296px;
+}
+.girland11{
+  position: absolute;
+  top: 23px;
+  left: 332px
+}
+.girland12{
+  position: absolute;  
+  top: 21px;
+  left: 370px;
+}
+.girland13{
+  position: absolute;
+  top: 15px;
+  left: 410px;
+  transform: rotate(-24deg); 
+}
+.girland14{
+  position: absolute;  
+  top: 11px;
+  left: 449px;
+  transform: rotate(-38deg)
+}
+.girland15{
+  position: absolute;
+  top: 11px;
+  left: 503px;
+  transform: rotate(13deg);
+}
+.girland16{
+  position: absolute;
+  top: 16px;
+  left: 543px;
+  transform: rotate(-5deg);
+}
+.girland17{
+  position: absolute;
+  top: 20px;
+  left: 580px;
+  transform: rotate(8deg);
+}
+.girland18{
+  position: absolute;
+  top: 23px;
+  left: 620px;
+  transform: rotate(-5deg);
+}
+.girland19{
+  position: absolute;  
+  top: 24px;
+  left: 657px;
+  transform: rotate(-5deg);
+}
+.girland20{
+  position: absolute;  
+  top: 25px;
+  left: 696px;
+  transform: rotate(-5deg);
+}
+.girland21{
+  position: absolute;
+  top: 24px;
+  left: 732px;
+  transform: rotate(-26deg)
+}
+.girland22{
+  position: absolute;  
+  top: 21px;
+  left: 768px;
+  transform: rotate(-21deg);
+}
+.girland23{
+  position: absolute;  
+  top: 19px;
+  left: 804px;
+  transform: rotate(-21deg);
+}
+.girland24{
+  position: absolute;  
+  top: 14px;
+  left: 841px;
+  transform: rotate(-21deg);
+}
+.girland25{
+  position: absolute;  
+  top: 11px;
+  left: 881px;
+  transform: rotate(-21deg);
+}
+.girland26{
+  position: absolute;  
+  top: 3px;
+  left: 922px;
+  transform: rotate(-21deg); 
+}
+.girland27{
+    position: absolute;  
+    top: 12px;
+    left: 974px;
+    transform: rotate(6deg) 
+}
+.girland28{
+    position: absolute;  
+    top: 19px;
+    left: 1015px;
+    transform: rotate(6deg); 
+}
+.girland29{
+  position: absolute;  
+  top: 25px;
+  left: 1055px;
+  transform: rotate(-9deg)
+}
+.girland30{
+    position: absolute;  
+    top: 29px;
+    left: 1095px;
+    transform: rotate(-5deg);
+}
+.girland31{
+    position: absolute;  
+    top: 29px;
+    left: 1133px;
+    transform: rotate(-5deg);
+}
+.girland32{
+    position: absolute;  
+    top: 30px;
+    left: 1173px;
+    transform: rotate(-5deg);
+}
+.girland33{
+  position: absolute;  
+  top: 29px;
+  left: 1210px;
+  transform: rotate(-27deg);
+}
+.girland34{
+  position: absolute;  
+  top: 26px;
+  left: 1247px;
+  transform: rotate(-17deg);
+}
+.girland35{
+  position: absolute;  
+  top: 23px;
+  left: 1286px;
+  transform: rotate(-17deg);  
+}
+.girland36{
+  position: absolute;  
+  top: 18px;
+  left: 1325px;
+  transform: rotate(-17deg); 
+}
+.girland37{
+    position: absolute;  
+    top: 13px;
+    left: 1366px;
+    transform: rotate(-17deg); 
+  }
+  .girland38{
+    position: absolute;  
+    top: 4px;
+    left: 1409px;
+    transform: rotate(-17deg); 
+  }
+
+
+  .girland {
+    opacity: 0; 
+    animation: glow 1s ease-in-out forwards;
+}
+
+@keyframes glow {
+    0% {
+        opacity: 0; 
+    }
+    50% {
+        opacity: 0.5; 
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.girland1 { animation-delay: 0s; }
+.girland2 { animation-delay: 0.2s; }
+.girland3 { animation-delay: 0.4s; }
+.girland4 { animation-delay: 0.6s; }
+.girland5 { animation-delay: 0.8s; }
+.girland6 { animation-delay: 1s; }
+.girland7 { animation-delay: 1.2s; }
+.girland8 { animation-delay: 1.4s; }
+.girland9 { animation-delay: 1.6s; }
+.girland10 { animation-delay: 1.8s; }
+
+.girland11 { animation-delay: 0s; }
+.girland12 { animation-delay: 0.2s; }
+.girland13 { animation-delay: 0.4s; }
+.girland14 { animation-delay: 0.6s; }
+.girland15 { animation-delay: 0.8s; }
+.girland16 { animation-delay: 1s; }
+.girland17 { animation-delay: 1.2s; }
+.girland18 { animation-delay: 1.4s; }
+.girland19 { animation-delay: 1.6s; }
+.girland20 { animation-delay: 1.8s; }
+
+.girland21 { animation-delay: 0s; }
+.girland22 { animation-delay: 0.2s; }
+.girland23 { animation-delay: 0.4s; }
+.girland24 { animation-delay: 0.6s; }
+.girland25 { animation-delay: 0.8s; }
+.girland26 { animation-delay: 1s; }
+.girland27 { animation-delay: 1.2s; }
+.girland28 { animation-delay: 1.4s; }
+.girland29 { animation-delay: 1.6s; }
+.girland30 { animation-delay: 1.8s; }
+
+.girland31 { animation-delay: 0s; }
+.girland32 { animation-delay: 0.2s; }
+.girland33 { animation-delay: 0.4s; }
+.girland34 { animation-delay: 0.6s; }
+.girland35 { animation-delay: 0.8s; }
+.girland36 { animation-delay: 1s; }
+.girland37 { animation-delay: 1.2s; }
+.girland38 { animation-delay: 1.4s; }
+.girland39 { animation-delay: 1.6s; }
+.girland40 { animation-delay: 1.8s; }
+
+.girland.active {
+    opacity: 1; 
+    animation: glow 1s ease-in-out forwards;
+}
+
+
+.hidden{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .popUps {
     position: absolute;
@@ -173,5 +618,5 @@ input[type="checkbox"]:checked+label:after {
 
 .footer {
     position: fixed;
-    bottom: 0%;
+    bottom: -3%;
 }

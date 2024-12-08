@@ -2,40 +2,74 @@
     padding-top: 170px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
+    position: relative;
+    background-size: 100% 100%;
+background-position: 0px 0px,0px 0px,0px 0px;
+background-image: radial-gradient(75% 75% at 52% 97%, #3F5FF3FF 0%, #1F5FF61C 31%),radial-gradient(75% 75% at 52% 4%, #F878ADBF 0%, #00FFFF08 33%),radial-gradient(75% 75% at 50% 50%, #AED6F1 0%, #AED6F1 100%);
+}
+.GurtamMeans-tailDragons{
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .GurtamMeans-title {
-    text-align: center;
+    text-align: start;
+    color: #002ADB;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 38px;
+    margin: 90px 0 25px 0;
 }
 
 .GurtamMeans-text {
-    text-align: center;
+    color: #0A1E4C;
+    text-align: start;
     padding: 20px 0 30px;
     max-width: 930px;
-    font-size: 23px;
+    font-size: 22px;
     font-weight: 400;
-    line-height: 130%;
-    letter-spacing: -0.5%;
+    line-height: 27px;
+    max-width: 720px;
+    margin-bottom: 40px;
 }
 
 .GurtamMeans-stats {
-    padding: 0 61px;
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
+.GurtamMeans-button{
+    height: 60px;
+    color: #0A1E4C;
+    letter-spacing: 3px;
+    padding: 17px 70px;
+    font-size: 22px;
+    font-weight: 900;
+    line-height: 26px;
+    border-radius: 9px;
+    border: 1px solid  rgb(0, 42, 219);
+    margin-bottom: 55px;
+}
+
+.GurtamMeans-button::before{
+    content: url('../../assets/header/Polygon\ 1.svg');
+    margin: 0 30px 0 0;
+}
+
 .GurtamMeans-stats-card {
     position: relative;
     z-index: 10;
-    max-width: 279px;
+    max-width: 440px;
     flex-grow: 1;
     border-radius: 15px;
     background: rgb(174, 214, 241);
     padding: 20px;
-    height: 305px;
+    height: 176px;
     overflow: hidden;
+    right: -9%;
 }
 
 .GurtamMeans-stats-card * {
@@ -53,17 +87,15 @@
 
 .GurtamMeans-stats-card-count {
     margin-bottom: 13px;
-    font-size: 90px;
-    font-weight: 500;
-    line-height: 94%;
-    letter-spacing: -2%;
+    font-size: 68px;
+    font-weight: 900;
+    line-height: 64px;
 }
 
 .GurtamMeans-stats-card-text {
-    font-size: 35px;
-    font-weight: 500;
-    line-height: 120%;
-    letter-spacing: -1.2%;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 28px;
 }
 .GurtamMeans-stats-card-count.years,.GurtamMeans-stats-card-count.offices,.GurtamMeans-stats-card-count.countries{
     position: relative;
@@ -83,4 +115,45 @@
 .GurtamMeans-stats-card-count.countries::after{
     top: -47px;
     left: 18px;
+}
+
+
+.card-years{
+    background-color: #002ADB;
+    right: -15%;
+}
+.card-years-count{
+    color: #FFFFFF;
+}
+.card-years-text{
+    color: #FFFFFF;
+}
+.card-EMPLOYEES{
+    background-color: #FFD700;
+    right: -13%;
+}
+.card-EMPLOYEES-count{
+    color: #002ADB;
+}
+.card-EMPLOYEES-text{
+    color: #002ADB;
+}
+.card-COUNTRIES{
+    background-color: #FF69B4;
+    right: -11%;
+}
+.card-COUNTRIES-count{
+    color: #FFFFFF;
+}
+.card-COUNTRIES-text{
+    color: #FFFFFF;
+}
+.card-OFFICES{
+    background-color: #0A1E4C;
+}
+.card-OFFICES-count{
+    color: #FFFFFF;
+}
+.card-OFFICES-text{
+    color: #FFFFFF;
 }

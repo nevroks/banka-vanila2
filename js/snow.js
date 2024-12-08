@@ -17,7 +17,7 @@ function snow(canvas, { count, onFallDown }) {
     const snowflakes = [];
 
     const randmizeSnowflakeParams = (snowflake) => {
-        snowflake.size = random(0.5, 3.5);
+        snowflake.size = random(1.5, 5.5); // Увеличиваем размер снежинок
         snowflake.x = random(-1 * canvas.width, 2 * canvas.width);
         snowflake.y = random(-100, 0);
         snowflake.k = random(0.5, 1);
@@ -43,23 +43,22 @@ function snow(canvas, { count, onFallDown }) {
         const step = 0.001;
         wind.forceX += step * (targetWind.forceX - wind.forceX);
         wind.forceY += step * (targetWind.forceY - wind.forceY);
-
+    
         snowflakes.forEach(snowflake => {
             const mass = snowflake.size / 1.2;
-
-            snowflake.y += mass;
+    
+            snowflake.y += mass * 0.5; // Уменьшаем скорость падения снежинок
             snowflake.x += snowflake.k * Math.cos(0.0005 / snowflake.k * time);
-
+    
             snowflake.x += 10 * wind.forceX * mass;
             snowflake.y += 10 * wind.forceY * mass;
-
+    
             if (snowflake.y > canvas.height) {
                 onFallDown && onFallDown(snowflake.x, mass);
                 randmizeSnowflakeParams(snowflake);
             }
         });
     }
-
     const render = () => {
         if (!snowActive) return;
         ctx.clearRect(0, 0, canvas.width, canvas.height);

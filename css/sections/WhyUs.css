@@ -4,6 +4,9 @@
     height: 900px;
     overflow-y: auto;
     position: relative; 
+    background-size: 100% 100%;
+background-position: 0px 0px,0px 0px,0px 0px;
+background-image: radial-gradient(75% 75% at 52% 0%, #3F5FF3FF 0%, #1F5FF61C 31%),radial-gradient(75% 75% at 52% 95%, #F878ADBF 0%, #00FFFF08 33%),radial-gradient(75% 75% at 50% 50%, #AED6F1 0%, #AED6F1 100%);
 }
 .WhyUs-title{
     margin-bottom: 20px;
@@ -30,43 +33,92 @@
     height: 290px;
 } 
 
+
 .WhyUs-CoreValues-value::after {
     position: absolute;
     right: 0;
     top: 0;
 }
 .WhyUs-CoreValues-value.first {
-    background: rgb(174, 214, 241);
+    background:#002ADB;
 }
+
+.first-value{
+    color: #ffffff;
+}
+
+.first-text{
+    color: #000000;
+}
+
+.second-value{
+    color: #000000;
+}
+.second-title{
+    color: #000000;
+}
+.second-text{
+    color: #000000;
+}
+.third-index{
+    color: #000000;
+}
+.third-title{
+    color: #000000;
+}
+.third-text{
+    color: #000000;
+}
+.four-text{
+    color: #000000;
+}
+.five-index{
+    color: #000000;
+}
+.five-title{
+    color: #000000;
+}
+.five-text{
+    color: #000000;
+}
+
+
 .WhyUs-CoreValues-value.first::after {
-    content: url(./../../assets/coreValuesStars/firstCoreValueStar.svg);
+    content: url(./../../assets/WhyUs/card1.png);
 }
 .WhyUs-CoreValues-value.second {
     background: rgb(255, 168, 212);
 }
 .WhyUs-CoreValues-value.second::after {
-    content: url(./../../assets/coreValuesStars/secondCoreValueStar.svg);
+    content: url(./../../assets/WhyUs/card2.png);
 }
 .WhyUs-CoreValues-value.third {
     background: rgb(255, 232, 107);
 }
 .WhyUs-CoreValues-value.third::after {
-    content: url(./../../assets/coreValuesStars/thirdCoreValueStart.svg);
+    content: url(./../../assets/WhyUs/card3.png);
 }
-
-.WhyUs-CoreValues-value * {
-    color: rgb(0, 0, 0);
+.WhyUs-CoreValues-value.four {
+    background:#0A1E4C;
+}
+.WhyUs-CoreValues-value.four::after {
+    content: url(./../../assets/WhyUs/card4.png);
+}
+.WhyUs-CoreValues-value.five {
+    background:#FFE86B;
+}
+.WhyUs-CoreValues-value.five::after {
+    content: url(./../../assets/WhyUs/card5.png);
 }
 
 .WhyUs-CoreValues-value-index {
     font-size: 35px;
     font-weight: 500;
     line-height: 120%;
-    letter-spacing: -1.2%;
 }
 
 .WhyUs-CoreValues-value-info {
-    max-width: 516px;
+    max-width: 500px;
     display: flex;
     flex-direction: column;
     row-gap: 29px;
@@ -76,12 +128,11 @@
     font-size: 35px;
     font-weight: 500;
     line-height: 120%;
-    letter-spacing: -1.2%;
 }
 
 .WhyUs-CoreValues-value-info-text {
     font-size: 23px;
     font-weight: 400;
     line-height: 130%;
-    letter-spacing: -0.5%;
+    text-align: justify;
 }

@@ -3,25 +3,51 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-size: 100% 100%;
+background-position: 0px 0px,0px 0px,0px 0px;
+background-image: radial-gradient(75% 75% at 52% 99%, #FFD700A6 0%, #1F5FF61C 31%),radial-gradient(75% 75% at 52% 1%, #F878ADBF 0%, #00FFFF08 33%),radial-gradient(75% 75% at 50% 50%, #AED6F1 0%, #AED6F1 100%);
 }
 
 .JoinGurtam-title {
     text-align: center;
+    color: #002ADB;
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 78px;
+    margin: -123px 0 0 0;
 }
 
 .JoinGurtam-text {
     text-align: center;
     padding: 20px 0 30px;
-    max-width: 789px;
-    font-size: 23px;
-    font-weight: 400;
-    line-height: 130%;
-    letter-spacing: -0.5%;
-    margin: 25px 0 45px;
+    max-width:600px;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 38px;
+    margin: 4px 0 30px;
+    color: #0A1E4C;
 }
 .JoinGurtam-button-wrapper{
     position: relative;
 }
+
+.leftcookies{
+    position: absolute;
+    left: -88px;
+    top: -43px;
+}
+.rightcookies{
+    position: absolute;
+    top: -29px;
+    right: -121px;
+}
+.dragon{
+    position: absolute;
+    top: -5px;
+    left: 27px;
+}
+
+
 .JoinGurtam-button {
     position: relative;
     z-index: 10;

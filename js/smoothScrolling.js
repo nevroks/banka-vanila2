@@ -102,6 +102,7 @@
 
 
 
+
 function preventDefault(e) {
     e.preventDefault();
 }
@@ -150,11 +151,11 @@ $(function () {
 
         animateSections();
     });
-
     function animateSections() {
         var sections = $('.pagepiling section');
         var windowHeight = $(window).height();
         var whyUsVisible = false;
+
 
         sections.each(function () {
             var sectionTop = $(this).offset().top;
@@ -179,6 +180,7 @@ $(function () {
         }
     }
 
+
     function onWhyUsVisible() {
         console.log("Секция WhyUs теперь видима!");
     }
@@ -193,7 +195,6 @@ $(function () {
         animateSections();
     });
 });
-
 document.addEventListener('DOMContentLoaded', () => {
     const coreValues = document.querySelectorAll('.WhyUs-CoreValues-value');
     let currentIndex = 0;
@@ -208,36 +209,37 @@ document.addEventListener('DOMContentLoaded', () => {
     updateClasses();
 
     window.addEventListener('wheel', (event) => {
-        event.preventDefault();
+        const whyUsSection = document.querySelector('.WhyUs');
+        const isWhyUsVisible = whyUsSection.classList.contains('visible');
 
-        if (event.deltaY > 0) {
-            if (currentIndex < coreValues.length - 1) {
-                currentIndex++;
-                count = 0; 
-            } else {
-                count++;
-            }
-        } else {
-            if (currentIndex > 0) {
-                currentIndex--;
-                if (currentIndex === 0) {
+        if (isWhyUsVisible) {
+            if (event.deltaY > 0) {
+                if (currentIndex < coreValues.length - 1) {
+                    currentIndex++;
+                    count = 0; 
+                } else {
                     count++;
                 }
             } else {
-                count++;
+                if (currentIndex > 0) {
+                    currentIndex--;
+                    if (currentIndex === 0) {
+                        count++;
+                    }
+                } else {
+                    count++;
+                }
             }
-        }
 
-        if (count >= 3) {
-            enableScroll(); 
-            count=0
+            if (count >= 3) {
+                enableScroll(); 
+                count=0;
+            }
+            updateClasses();
         }
-        console.log(count); 
-        updateClasses();
     });
 
     function enableScroll() {
-        console.log(enableScroll);
         window.removeEventListener('wheel', preventDefault, { passive: false });
         window.removeEventListener('touchmove', preventDefault, { passive: false });
         window.removeEventListener('scroll', preventDefault, { passive: false });
