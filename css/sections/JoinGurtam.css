@@ -34,13 +34,26 @@ background-image: radial-gradient(75% 75% at 52% 99%, #FFD700A6 0%, #1F5FF61C 31
 .leftcookies{
     position: absolute;
     left: -88px;
-    top: -43px;
+    top: 12px;
 }
 .rightcookies{
     position: absolute;
     top: -29px;
     right: -121px;
 }
+.leftStarJoin{
+    position: absolute;
+    top: -28px;
+    left: -53px;
+    z-index: -2;
+}
+.righttStarJoin{
+    position: absolute;
+    top: 13px;
+    right: -92px;
+    z-index: -2;
+}
+
 .dragon{
     position: absolute;
     top: -5px;
