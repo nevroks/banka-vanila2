@@ -1,6 +1,5 @@
 $(document).ready(function () {
     let visibleSections = [];
-    console.log(visibleSections);
 
     const visibleCountMap = {
         'FutureAwaits': 0,
@@ -22,7 +21,6 @@ $(document).ready(function () {
             }
         });
         
-        console.log(visibleSections);
 
         showImagesBasedOnVisibleSections();
     }

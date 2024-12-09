@@ -52,6 +52,17 @@ section {
     justify-content: space-between;
 }
 
+.header-blur {
+  width: 100%;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+}
 
 
 .header-navigation-button-jobs {
@@ -135,6 +146,7 @@ section {
 /* girland */
 .girland-box{
     position: relative;
+    z-index: 20;
 }
 
 
@@ -376,50 +388,50 @@ left: 30px;
     }
 }
 
-
 .girland1 { animation-delay: 0s; }
-.girland2 { animation-delay: 0.2s; }
-.girland3 { animation-delay: 0.4s; }
-.girland4 { animation-delay: 0.6s; }
-.girland5 { animation-delay: 0.8s; }
-.girland6 { animation-delay: 1s; }
-.girland7 { animation-delay: 1.2s; }
-.girland8 { animation-delay: 1.4s; }
-.girland9 { animation-delay: 1.6s; }
-.girland10 { animation-delay: 1.8s; }
+.girland2 { animation-delay: 0s; }
+.girland3 { animation-delay: 0s; }
+.girland4 { animation-delay: 0s; }
+.girland5 { animation-delay: 0s; }
+.girland6 { animation-delay: 0s; }
+.girland7 { animation-delay: 0s; }
+.girland8 { animation-delay: 0s; }
+.girland9 { animation-delay: 0s; }
+.girland10 { animation-delay: 0s; }
 
 .girland11 { animation-delay: 0s; }
-.girland12 { animation-delay: 0.2s; }
-.girland13 { animation-delay: 0.4s; }
-.girland14 { animation-delay: 0.6s; }
-.girland15 { animation-delay: 0.8s; }
-.girland16 { animation-delay: 1s; }
-.girland17 { animation-delay: 1.2s; }
-.girland18 { animation-delay: 1.4s; }
-.girland19 { animation-delay: 1.6s; }
-.girland20 { animation-delay: 1.8s; }
+.girland12 { animation-delay: 0s; }
+.girland13 { animation-delay: 0s; }
+.girland14 { animation-delay: 0s; }
+.girland15 { animation-delay: 0s; }
+.girland16 { animation-delay: 0s; }
+.girland17 { animation-delay: 0s; }
+.girland18 { animation-delay: 0s; }
+.girland19 { animation-delay: 0s; }
+.girland20 { animation-delay: 0s; }
 
 .girland21 { animation-delay: 0s; }
-.girland22 { animation-delay: 0.2s; }
-.girland23 { animation-delay: 0.4s; }
-.girland24 { animation-delay: 0.6s; }
-.girland25 { animation-delay: 0.8s; }
-.girland26 { animation-delay: 1s; }
-.girland27 { animation-delay: 1.2s; }
-.girland28 { animation-delay: 1.4s; }
-.girland29 { animation-delay: 1.6s; }
-.girland30 { animation-delay: 1.8s; }
+.girland22 { animation-delay: 0s; }
+.girland23 { animation-delay: 0s; }
+.girland24 { animation-delay: 0s; }
+.girland25 { animation-delay: 0s; }
+.girland26 { animation-delay: 0s; }
+.girland27 { animation-delay: 0s; }
+.girland28 { animation-delay: 0s; }
+.girland29 { animation-delay: 0s; }
+.girland30 { animation-delay: 0s; }
 
 .girland31 { animation-delay: 0s; }
-.girland32 { animation-delay: 0.2s; }
-.girland33 { animation-delay: 0.4s; }
-.girland34 { animation-delay: 0.6s; }
-.girland35 { animation-delay: 0.8s; }
-.girland36 { animation-delay: 1s; }
-.girland37 { animation-delay: 1.2s; }
-.girland38 { animation-delay: 1.4s; }
-.girland39 { animation-delay: 1.6s; }
-.girland40 { animation-delay: 1.8s; }
+.girland32 { animation-delay: 0s; }
+.girland33 { animation-delay: 0s; }
+.girland34 { animation-delay: 0s; }
+.girland35 { animation-delay: 0s; }
+.girland36 { animation-delay: 0s; }
+.girland37 { animation-delay: 0s; }
+.girland38 { animation-delay: 0s; }
+.girland39 { animation-delay: 0s; }
+.girland40 { animation-delay: 0s; }
+
 
 .girland.active {
     opacity: 1; 
@@ -430,105 +442,6 @@ left: 30px;
 .hidden{
     display: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .popUps {

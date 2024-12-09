@@ -5,8 +5,6 @@
     padding-top: 150px;
     position: relative;
     background-size: 100% 100%;
-    background-position: 0px 0px;
-    background-image: radial-gradient(75% 75% at 50% 97%, #F665A2BF 7%, #AED6F1 37%);
 }
 
 .FutureAwaits-title {
@@ -55,7 +53,7 @@
     font-weight: 900;
     line-height: 27px;
     letter-spacing: 1px;
-    z-index: 3;
+    z-index: 7;
 }
 
 .FutureAwaits-button::before {
@@ -69,6 +67,29 @@
 
 .FutureAwaits-background-img {
     position: absolute;
-    bottom: 0;
-    right: 83px;
+    right: -206px;
+    top: 138px;
+    max-width: 1353px;
+}
+
+@keyframes riseAndFall {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.animated {
+    animation: riseAndFall 3s ease-in-out infinite;
+}
+
+
+.FutureAwaitsStar{
+    position: absolute;
+    z-index: -1;
 }
