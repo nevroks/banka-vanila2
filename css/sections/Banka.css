@@ -1,31 +1,151 @@
+:root {
+    /* -----banka values----- */
+    --banka-height: 421px;
+    --banka-width: 319px;
+    /* -----banka values----- */
+    /* -----banka jar values----- */
+    --banka-jar-height: 378px;
+    --banka-jar-width: 319px;
+    /* -----banka jar values----- */
+    /* -----banka lid values----- */
+    --banka-lid-height: 100px;
+    --banka-lid-width: 270px;
+    /* -----banka lid values----- */
+    /* -----banka cookies values----- */
+    --banka-cookie-bigPart-height: 488px;
+    --banka-cookie-bigPart-width: 439px;
+    --banka-cookie-smallPart-height: 422px;
+    --banka-cookie-smallPart-width: 325px;
+    /* -----banka cookies values----- */
+}
+
 .banka {
     position: relative;
     display: flex;
+    align-items: flex-end;
     justify-content: center;
 }
 
-.banka-banka-wrapper {
-    width: 462px;
-    position: relative;
-    bottom: 0px;
-    transform: scale(1);
+.banka-banka-specialCookie {
+    display: none;
+    height: 498px;
+    width: 498px;
+    position: absolute;
+    bottom: calc(100vh / 2 - 498px / 2 - 20vw);
+    right: calc(100vw / 2 - 498px / 2 - 1.5vw);
+    transform: scale(calc(246 / 498)) rotate(-45deg);
+}
+
+.banka-banka-specialCookie.step-3 {
+    display: block;
+    transition: all 0.6s;
+}
+
+.banka-banka-specialCookie.z-index {
+    z-index: 10;
+}
+
+.banka-banka-specialCookie.step-4 {
+    bottom: calc(100vh / 2 - 498px / 2 + 2vw);
+}
+
+.banka-banka-specialCookie.step-5 {
+    transition: all 1.1s;
+    right: calc(100vw / 2 - 498px / 2);
+    bottom: calc(100vh / 2 - 498px / 2);
+}
+
+.banka-banka-specialCookie.step-6 {
     transition: all 0.9s;
+    transform: scale(1) rotate(-45deg);
+}
+
+.banka-banka-specialCookie.step-7 .banka-banka-specialCookie-img.bigPart {
+    left: -10px;
+    top: -10px;
+}
+
+.banka-banka-specialCookie.step-7 .banka-banka-specialCookie-img.smallPart {
+    right: -18px;
+    bottom: -18px;
+}
+
+.banka-banka-specialCookie-img {
+    position: absolute;
+}
+
+.banka-banka-specialCookie-img.bigPart {
+    left: 0;
+    top: 0;
+    width: var(--banka-cookie-bigPart-width);
+    height: var(--banka-cookie-bigPart-height);
+    transition: all 0.9s;
+}
+
+.banka-banka-specialCookie-img.smallPart {
+    right: 0;
+    bottom: 0;
+    width: var(--banka-cookie-smallPart-width);
+    height: var(--banka-cookie-smallPart-height);
+    transition: all 0.9s;
+}
+
+.banka-banka-wrapper {
+    height: var(--banka-height);
+    width: var(--banka-width);
+    position: relative;
+    bottom: 160px;
+    left: 0px;
+    transform: scale(1);
+    transition: all 1.1s;
+    opacity: 1;
+}
+
+.banka-banka-wrapper.step-1 {
+    transform: scale(1.6);
+    bottom: -80px;
+    transition: all 1.1s;
+}
+
+.banka-banka-wrapper.step-5 {
+    opacity: 0;
+    bottom: -150px;
+    left: -50px;
 }
 
 .banka-banka-jar {
     position: absolute;
     bottom: 0;
     z-index: 10;
-    width: 462px;
-    height: 605px;
+    width: var(--banka-jar-width);
+    height: var(--banka-jar-height);
 }
 
 .banka-banka-lid {
     position: absolute;
-    bottom: calc(605px - 164px + 40px);
-    right: 0;
+    bottom: calc(var(--banka-height) - var(--banka-lid-height) + -6px);
+    right: calc((var(--banka-width) - var(--banka-lid-width)) / 2 + 0px);
     z-index: 11;
-    height: 164px;
+    width: var(--banka-lid-width);
+    height: var(--banka-lid-height);
     transform: rotate(0deg);
-    transition: all 0.5s;
+    transition: all 0.9s;
+}
+
+.banka-banka-lid.step-2 {
+    bottom: calc(var(--banka-height) - var(--banka-lid-height) + 20px);
+    right: calc((var(--banka-width) - var(--banka-lid-width)) / 2 + 6px);
+    transition: all 0.9s;
+}
+
+.banka-banka-lid.step-3 {
+    bottom: calc(var(--banka-height) - var(--banka-lid-height) + 50px);
+    right: calc((var(--banka-width) - var(--banka-lid-width)) / 2 + 165px);
+    transform: rotate(-37deg);
+    transition: all 0.9s;
+}
+
+.banka-banka-lid img {
+    width: var(--banka-lid-width);
+    height: var(--banka-lid-height);
 }
