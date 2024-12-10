@@ -5,8 +5,8 @@
     align-items: start;
     position: relative;
     background-size: 100% 100%;
-background-position: 0px 0px,0px 0px,0px 0px;
-background-image: radial-gradient(75% 75% at 52% 97%, #3F5FF3FF 0%, #1F5FF61C 31%),radial-gradient(75% 75% at 52% 4%, #F878ADBF 0%, #00FFFF08 33%),radial-gradient(75% 75% at 50% 50%, #AED6F1 0%, #AED6F1 100%);
+    background-position: 0px 0px;
+    background-image: radial-gradient(75% 75% at 50% 98%, #274BE6FF 0%, #073AFF1A 29%);
 }
 .GurtamMeans-tailDragons{
     position: absolute;
@@ -156,4 +156,12 @@ background-image: radial-gradient(75% 75% at 52% 97%, #3F5FF3FF 0%, #1F5FF61C 31
 }
 .card-OFFICES-text{
     color: #FFFFFF;
+}
+.GurtamMeansStar{
+    position: absolute;
+    bottom: -463px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 850px;
+    z-index: -1;
 }

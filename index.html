@@ -17,11 +17,22 @@
     <script src="./assets/libs/jquery.pagepiling.js"></script>
     <link rel="stylesheet" href="./assets/libs/jquery.pageliling.min.css">
     <!-- -----adding fullpage js library----- -->
+    <!-- -----adding gsap----- -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
+    <!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/EasePack.min.js"></script>
+    <!-- -----adding gsap----- -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
     <title>Document</title>
 </head>
 
 <body>
     <header class="header">
+        <div class="header-blur"></div>
         <div class="girland-box">
             <img class="girlandItem" src="./assets/girland/girland.svg" alt="girland">
 
@@ -133,10 +144,10 @@
                         </span>
                     </p>
                     <button class="FutureAwaits-button">DISVOVER YOUR FORTUNE!</button>
-                    <img src="./assets/FutureAwaits/IMG_5340 1.png" alt="futureAwaits-img" class="FutureAwaits-background-img">
+                    <img src="./assets/FutureAwaits/6c0a9e3a1510f941bb8ebca5a1117a78.png" alt="futureAwaits-img" class="FutureAwaits-background-img animated">
+                    <img src="./assets/star/pinkStar.png" alt="pinkStar" class="FutureAwaitsStar">
                 </section>
                 <section id="section" class="GurtamMeans">
-                    <img src="./assets/GurtamMeans/tailDragons.png" class="GurtamMeans-tailDragons" alt="tailDragons">
                     <h2 class="GurtamMeans-title">Stay curious with Gurtam!</h2>
                     <p class="GurtamMeans-text">
                         Gurtam exists to bring telematics technology closer to people and businesses. We are a software developer specializing in fleet management solutions utilizing telematics and IoT technology
@@ -160,6 +171,7 @@
                             <p class="GurtamMeans-stats-card-text card-OFFICES-text">OFFICES WORLDWIDE</p>
                         </div>
                     </div>
+
                 </section>
                 <section id="section" class="WhyUs">
                     <div class="WhyUs-CoreValues">
@@ -200,13 +212,19 @@
                     <h2 class="OurBenefits-title">Explore what`s next with Gurtam!</h2>
                     <div class="OurBenefits-cards">
                         <div class="OurBenefits-videos">
-                            <img src="./assets/OurBenefits/videoImg.png" alt="videoImg">
+                            <div class="boxVideo">
+                                <img src="./assets/OurBenefits/videoImg.png" alt="videoImg">
+                                <a data-fancybox href="https://www.youtube.com/watch?v=9atQVFsqsu4">
+                                    <img src="./assets/OurBenefits/play.png" alt="play" class="play">
+                                </a>
+                            </div>
                             <img src="./assets/OurBenefits/cokkiesLeft.png" alt="cokkiesLeft" class="cokkiesLeft">
                             <img src="./assets/OurBenefits/cokkiesRight.png" alt="cokkiesRight" class="cokkiesRight">
-                            <img src="./assets/OurBenefits/yellowStar.png" alt="cokkiesRight" class="yellowStar">
-                            <img src="./assets/OurBenefits/redStar.png" alt="cokkiesRight" class="redStar">
+                            <img src="./assets/OurBenefits/yellowStar.png" alt="cokkiesRight" class="yellowStar animate">
+                            <img src="./assets/OurBenefits/redStar.png" alt="cokkiesRight" class="redStar animate">
                         </div>
                     </div>
+                    <img src="./assets/star/Star 10 (1).png" alt="pinkStar" class="OurBenefitsStarBlue">
                 </section>
                 <section id="section" class="JoinGurtam">
                     <h2 class="JoinGurtam-title">Explore what`s next with Gurtam!</h2>
@@ -214,13 +232,14 @@
                         Make sure that the work becomes more enjoyable day by day
                     </p>
                     <div class="JoinGurtam-button-wrapper">
-                        <button class="FutureAwaits-button">DISVOVER YOUR FORTUNE!</button>
+                        <button class="FutureAwaits-button ">DISVOVER YOUR FORTUNE!</button>
                         <img src="/assets/OurBenefits/cokkiesLeft.png" alt="leftcookies" class="leftcookies">
                         <img src="./assets/OurBenefits/cokkiesRight.png" alt="rightcookies" class="rightcookies">
-                        <img src="./assets/OurBenefits/yellowStar.png" alt="cokkiesRight" class="leftStarJoin">
-                        <img src="./assets/OurBenefits/redStar.png" alt="cokkiesRight" class="righttStarJoin">
-                        <img class="dragon" src="./assets/JoinGurtam/dragon.png" alt="dragon">
+                        <img src="./assets/OurBenefits/yellowStar.png" alt="cokkiesRight" class="leftStarJoin animat">
+                        <img src="./assets/OurBenefits/redStar.png" alt="cokkiesRight" class="righttStarJoin animat">
+                        <img class="dragon dragAnimated" src="./assets/JoinGurtam/dragon.png" alt="dragon">
                     </div>
+                    <img src="./assets/star/Star 11.png" alt="pinkStar" class="JoinGurtamStar">
                 </section>
                 <section id="section" class="banka">
                     <div class="banka-banka-specialCookie">
@@ -236,6 +255,7 @@
                             <img src="./assets/banka/bankaJar.png" alt="">
                         </div>
                     </div>
+                    <img src="./assets/banka/dragon.png" alt="dragonbanka" class="dragonbanka">
                 </section>
             </div>
         </div>
@@ -303,7 +323,20 @@
             })
         })
     </script>
+    <script>
+        $(document).ready(function() {
+            Fancybox.bind("[data-fancybox]", {
+                iframe: {
+                    css: {
+                        width: '80%',
+                        height: '80%'
+                    }
+                }
+            });
+        });
+    </script>
     <script src="./js/sections/banka.js"></script>
+    <script src="./js/blockScrollSections.js"></script>
     <script src="./js/sections/OurBenefits.js"></script>
     <script src="./js/girland.js"></script>
     <script src="./js/handlerSnow.js"></script>

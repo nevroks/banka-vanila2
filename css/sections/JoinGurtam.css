@@ -1,11 +1,10 @@
 .JoinGurtam {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-size: 100% 100%;
-background-position: 0px 0px,0px 0px,0px 0px;
-background-image: radial-gradient(75% 75% at 52% 99%, #FFD700A6 0%, #1F5FF61C 31%),radial-gradient(75% 75% at 52% 1%, #F878ADBF 0%, #00FFFF08 33%),radial-gradient(75% 75% at 50% 50%, #AED6F1 0%, #AED6F1 100%);
 }
 
 .JoinGurtam-title {
@@ -20,41 +19,48 @@ background-image: radial-gradient(75% 75% at 52% 99%, #FFD700A6 0%, #1F5FF61C 31
 .JoinGurtam-text {
     text-align: center;
     padding: 20px 0 30px;
-    max-width:600px;
+    max-width: 600px;
     font-size: 32px;
     font-weight: 900;
     line-height: 38px;
     margin: 4px 0 30px;
     color: #0A1E4C;
 }
-.JoinGurtam-button-wrapper{
+
+.JoinGurtam-button-wrapper {
     position: relative;
 }
 
-.leftcookies{
+.leftcookies {
     position: absolute;
     left: -88px;
     top: 12px;
+    z-index: 6;
 }
-.rightcookies{
+
+.rightcookies {
     position: absolute;
     top: -29px;
     right: -121px;
+    z-index: 6;
 }
-.leftStarJoin{
+
+.leftStarJoin {
     position: absolute;
     top: -28px;
     left: -53px;
     z-index: -2;
+    z-index: 5;
 }
-.righttStarJoin{
+
+.righttStarJoin {
     position: absolute;
     top: 13px;
     right: -92px;
-    z-index: -2;
+    z-index: 5;
 }
 
-.dragon{
+.dragon {
     position: absolute;
     top: -5px;
     left: 27px;
@@ -74,6 +80,7 @@ background-image: radial-gradient(75% 75% at 52% 99%, #FFD700A6 0%, #1F5FF61C 31
     color: #000000;
     transition: all 0.5s;
 }
+
 .JoinGurtam-button-wrapper::before {
     content: url(./../../assets/bigBlueStar.svg);
     position: absolute;
@@ -81,6 +88,7 @@ background-image: radial-gradient(75% 75% at 52% 99%, #FFD700A6 0%, #1F5FF61C 31
     left: -73px;
     bottom: -80px;
 }
+
 .JoinGurtam-button-wrapper::after {
     content: url(./../../assets/bigYellowStar.svg);
     position: absolute;
@@ -88,9 +96,50 @@ background-image: radial-gradient(75% 75% at 52% 99%, #FFD700A6 0%, #1F5FF61C 31
     right: -73px;
     top: -80px;
 }
+
 .JoinGurtam-button:hover {
     background: rgb(214, 89, 152);
 }
+
 .JoinGurtam-button:active {
     bottom: -2px;
 }
+
+.animat {
+    animation: rotate 3s infinite linear;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.JoinGurtamStar{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    bottom: -800px;
+}
+
+@keyframes riseAndFall {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.dragAnimated {
+    animation: riseAndFall 3s ease-in-out infinite;
+}
+

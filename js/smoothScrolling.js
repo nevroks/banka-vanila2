@@ -1,107 +1,3 @@
-// $(function () {
-//     var scroll = new LocomotiveScroll({
-//         el: document.querySelector('.wrapper'),
-//         smooth: true
-//     });
-
-//     document.addEventListener('wheel', function (event) {
-//         event.preventDefault();
-
-//         var delta = event.deltaY;
-
-//         if (delta > 0) {
-//             scroll.scrollTo(scroll.scroll.instance.scroll.y + window.innerHeight);
-//         } else {
-//             scroll.scrollTo(scroll.scroll.instance.scroll.y - window.innerHeight);
-//         }
-//     }, { passive: false });
-
-//     function animateSections() {
-//         var sections = $('.pagepiling section');
-//         var windowHeight = $(window).height();
-
-//         sections.each(function() {
-//             var sectionTop = $(this).offset().top;
-
-//             if(sectionTop < scroll.scroll.instance.scroll.y + windowHeight - 100) {
-//                 $(this).addClass('visible'); 
-//             }
-//         });
-//     }
-
-//     animateSections();
-
-//     scroll.on('scroll', function() {
-//         animateSections();
-//     });
-
-//     $(window).on('resize', function () {
-//         animateSections();
-//     });
-// });
-
-// $(function () {
-//     var scroll = new LocomotiveScroll({
-//         el: document.querySelector('.wrapper'),
-//         smooth: true
-//     });
-
-//     var isScrolling = false;
-
-//     scroll.on('scroll', function (obj) {
-//         if (isScrolling) return;
-
-//         var delta = obj.direction;
-
-//         isScrolling = true;
-
-//         var duration = 1200; 
-
-//         if (delta === "down") {
-//             scroll.scrollTo(scroll.scroll.instance.scroll.y + window.innerHeight, {
-//                 duration: duration,
-//                 easing: [0.25, 0.25, 0.25, 0.25],
-//                 callback: function () {
-//                     isScrolling = false;
-//                 }
-//             });
-//         } else {
-//             scroll.scrollTo(scroll.scroll.instance.scroll.y - window.innerHeight, {
-//                 duration: duration,
-//                 easing: [0.25, 0.1, 0.25, 1],
-//                 callback: function () {
-//                     isScrolling = false;
-//                 }
-//             });
-//         }
-
-//         animateSections();
-//     });
-
-//     function animateSections() {
-//         var sections = $('.pagepiling section');
-//         var windowHeight = $(window).height();
-//         sections.each(function() {
-//             var sectionTop = $(this).offset().top;
-
-//             if (sectionTop < scroll.scroll.instance.scroll.y + windowHeight - 100) {
-//                 $(this).addClass('visible');
-//                 console.log( this.className); 
-//             } else {
-//                 $(this).removeClass('visible');
-//             }
-//         });
-//     }
-
-//     $(window).on('resize', function () {
-//         animateSections();
-//     });
-// });
-
-
-
-
-
 
 function preventDefault(e) {
     e.preventDefault();
@@ -142,7 +38,7 @@ $(function () {
         } else {
             scroll.scrollTo(scroll.scroll.instance.scroll.y - window.innerHeight, {
                 duration: duration,
-                easing: [0.25, 0.1, 0.25, 1],
+                easing: [0.25, 0.25, 0.25,0.25],
                 callback: function () {
                     isScrolling = false;
                 }
@@ -197,11 +93,15 @@ $(function () {
 });
 document.addEventListener('DOMContentLoaded', () => {
     const coreValues = document.querySelectorAll('.WhyUs-CoreValues-value');
+    const textValue = document.querySelectorAll('.WhyUs-CoreValues-value-info-text');
     let currentIndex = 0;
     let count = 0; 
 
     function updateClasses() {
         coreValues.forEach((value, index) => {
+            value.classList.toggle('openned', index === currentIndex);
+        });
+        textValue.forEach((value, index) => {
             value.classList.toggle('openned', index === currentIndex);
         });
     }

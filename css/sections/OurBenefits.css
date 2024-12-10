@@ -1,6 +1,9 @@
 .OurBenefits {
     padding-top: 170px;
-
+    position: relative;
+    background-size: 100% 100%;
+    background-position: 0px 0px;
+    background-image: radial-gradient(75% 75% at 51% 0%, #F6F0A6FF 2%, #F6F0A6FF 23%, #073AFF0A 100%);
 }
 
 .OurBenefits-title {
@@ -37,18 +40,21 @@
     z-index: -1;
 }
 
-.yellowStar, .redStar {
+.yellowStar,
+.redStar {
     position: absolute;
-    z-index: -2; 
+    z-index: -2;
 }
-.animate{
-    animation: rotate 3s  linear;
+
+.animate {
+    animation: rotate 3s infinite linear;
 }
 
 @keyframes rotate {
     from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(360deg);
     }
@@ -63,6 +69,7 @@
     top: 147px;
     right: -104px;
 }
+
 .OurBenefits-cards * {
     color: rgb(0, 0, 0);
 }
@@ -133,4 +140,31 @@
     font-weight: 400;
     line-height: 130%;
     letter-spacing: -0.5%;
+}
+
+.OurBenefitsStarPink{
+    position: absolute ;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    top: -807px;
+}
+
+.OurBenefitsStarBlue{
+    position: absolute ;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    bottom: -950px;    
+}
+
+.boxVideo{
+    position: relative;
+}
+.play{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
 }
