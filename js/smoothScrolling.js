@@ -20,17 +20,17 @@ $(function () {
         var whyUsSection = document.querySelector('.WhyUs');
 
         if (whyUsSection === currentSection) {
-            return; 
+            return;
         }
 
         isScrolling = true;
 
-        var duration = 1200; 
+        var duration = 1200;
 
         if (delta === "down") {
             scroll.scrollTo(scroll.scroll.instance.scroll.y + window.innerHeight, {
                 duration: duration,
-                easing: [0.25, 0.25, 0.25, 0.25], 
+                easing: [0.25, 0.25, 0.25, 0.25],
                 callback: function () {
                     isScrolling = false;
                 }
@@ -38,7 +38,7 @@ $(function () {
         } else {
             scroll.scrollTo(scroll.scroll.instance.scroll.y - window.innerHeight, {
                 duration: duration,
-                easing: [0.25, 0.25, 0.25,0.25],
+                easing: [0.25, 0.25, 0.25, 0.25],
                 callback: function () {
                     isScrolling = false;
                 }
@@ -59,18 +59,18 @@ $(function () {
             if (sectionTop < scroll.scroll.instance.scroll.y + windowHeight - 100) {
                 $(this).addClass('visible');
                 if ($(this).hasClass('WhyUs')) {
-                    whyUsVisible = true; 
+                    whyUsVisible = true;
                 }
             } else {
                 $(this).removeClass('visible');
                 if ($(this).hasClass('WhyUs')) {
-                    whyUsVisible = false; 
+                    whyUsVisible = false;
                 }
             }
         });
 
         if (whyUsVisible) {
-            onWhyUsVisible(); 
+            onWhyUsVisible();
             scroll.stop();
             disableScroll();
         }
@@ -95,18 +95,39 @@ document.addEventListener('DOMContentLoaded', () => {
     const coreValues = document.querySelectorAll('.WhyUs-CoreValues-value');
     const textValue = document.querySelectorAll('.WhyUs-CoreValues-value-info-text');
     let currentIndex = 0;
-    let count = 0; 
 
     function updateClasses() {
-        coreValues.forEach((value, index) => {
-            value.classList.toggle('openned', index === currentIndex);
+        coreValues.forEach(value => {
+            value.classList.remove('openned');
         });
-        textValue.forEach((value, index) => {
-            value.classList.toggle('openned', index === currentIndex);
+        textValue.forEach(value => {
+            value.classList.remove('openned');
         });
+
+        setTimeout(() => {
+            if (currentIndex < coreValues.length) {
+                coreValues[currentIndex].classList.add('openned');
+                textValue[currentIndex].classList.add('openned');
+            }
+        }, 500);
+    }
+
+    function nextValue() {
+        if (currentIndex < coreValues.length - 1) {
+            currentIndex++;
+        }
+        updateClasses();
     }
 
     updateClasses();
+
+
+    const nextButton = document.querySelector('.next-button');
+    if (nextButton) {
+        nextButton.addEventListener('click', nextValue);
+    }
+
+
 
     window.addEventListener('wheel', (event) => {
         const whyUsSection = document.querySelector('.WhyUs');
@@ -116,7 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (event.deltaY > 0) {
                 if (currentIndex < coreValues.length - 1) {
                     currentIndex++;
-                    count = 0; 
+                    count = 0;
                 } else {
                     count++;
                 }
@@ -132,8 +153,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             if (count >= 3) {
-                enableScroll(); 
-                count=0;
+                enableScroll();
+                count = 0;
             }
             updateClasses();
         }

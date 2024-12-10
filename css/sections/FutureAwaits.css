@@ -5,6 +5,9 @@
     padding-top: 150px;
     position: relative;
     background-size: 100% 100%;
+    background-size: 100% 100%;
+background-position: 0px 0px,0px 0px;
+background-image: radial-gradient(75% 75% at 55% 120%, #FF69B4 0%, #FF69B4 4%, #073AFF00 89%),radial-gradient(75% 75% at 50% 50%, #AED6F1 98%, #00FFFFFF 99%);
 }
 
 .FutureAwaits-title {

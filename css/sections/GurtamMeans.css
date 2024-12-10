@@ -5,8 +5,9 @@
     align-items: start;
     position: relative;
     background-size: 100% 100%;
-    background-position: 0px 0px;
-    background-image: radial-gradient(75% 75% at 50% 98%, #274BE6FF 0%, #073AFF1A 29%);
+    background-position: 0px 0px,0px 0px,0px 0px;
+    background-image: radial-gradient(75% 75% at 53% -9%, #FF69B4 0%, #FF69B4 4%, #073AFF00 89%),radial-gradient(75% 75% at 52% 129%, #002ADBFF 0%, #073AFF0F 100%),radial-gradient(75% 75% at 60% 184%, #AED6F1 99%, #00FFFF00 100%, #AED6F1 100%);
+    z-index: -1;
 }
 .GurtamMeans-tailDragons{
     position: absolute;
@@ -38,7 +39,7 @@
 .GurtamMeans-stats {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between
 }
 
 .GurtamMeans-button{
