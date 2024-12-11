@@ -30,7 +30,7 @@ $(function () {
         if (delta === "down") {
             scroll.scrollTo(scroll.scroll.instance.scroll.y + window.innerHeight, {
                 duration: duration,
-                easing: [0.25, 0.25, 0.25, 0.25],
+                easing: [0.45, 0.45, 0.45, 0.45],
                 callback: function () {
                     isScrolling = false;
                 }
@@ -38,7 +38,7 @@ $(function () {
         } else {
             scroll.scrollTo(scroll.scroll.instance.scroll.y - window.innerHeight, {
                 duration: duration,
-                easing: [0.25, 0.25, 0.25, 0.25],
+                easing: [0.45, 0.45, 0.45, 0.45],
                 callback: function () {
                     isScrolling = false;
                 }
