@@ -16,7 +16,7 @@ $(document).ready(function () {
                 }
             }
         });
-        console.log(visibleSections);
+
     }
 
     $(window).on('scroll', updateVisibleSections);

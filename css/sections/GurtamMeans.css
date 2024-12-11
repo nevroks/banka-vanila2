@@ -4,9 +4,6 @@
     flex-direction: column;
     align-items: start;
     position: relative;
-    background-size: 100% 100%;
-    background-position: 0px 0px;
-    background-image: radial-gradient(75% 75% at 50% 98%, #274BE6FF 0%, #073AFF1A 29%);
 }
 .GurtamMeans-tailDragons{
     position: absolute;
@@ -20,7 +17,7 @@
     font-size: 32px;
     font-weight: 900;
     line-height: 38px;
-    margin: 90px 0 25px 0;
+    margin: 20px 0 25px 0;
 }
 
 .GurtamMeans-text {
@@ -32,13 +29,12 @@
     font-weight: 400;
     line-height: 27px;
     max-width: 720px;
-    margin-bottom: 40px;
 }
 
 .GurtamMeans-stats {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between
 }
 
 .GurtamMeans-button{
@@ -51,7 +47,7 @@
     line-height: 26px;
     border-radius: 9px;
     border: 1px solid  rgb(0, 42, 219);
-    margin-bottom: 55px;
+    margin-bottom: 25px;
 }
 
 .GurtamMeans-button::before{

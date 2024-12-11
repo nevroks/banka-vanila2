@@ -1,9 +1,6 @@
 .OurBenefits {
     padding-top: 170px;
     position: relative;
-    background-size: 100% 100%;
-    background-position: 0px 0px;
-    background-image: radial-gradient(75% 75% at 51% 0%, #F6F0A6FF 2%, #F6F0A6FF 23%, #073AFF0A 100%);
 }
 
 .OurBenefits-title {
@@ -13,7 +10,7 @@
     line-height: 77px;
     text-align: center;
     color: #002ADB;
-    margin-top: 91px;
+    /* margin-top: 91px; */
 
 }
 
@@ -30,20 +27,20 @@
     position: absolute;
     top: 152px;
     left: -77px;
-    z-index: -1;
+    z-index: 2;
 }
 
 .cokkiesRight {
     position: absolute;
     top: 100px;
     right: -134px;
-    z-index: -1;
+    z-index: 2;
 }
 
 .yellowStar,
 .redStar {
     position: absolute;
-    z-index: -2;
+    z-index: 1;
 }
 
 .animate {
@@ -158,13 +155,24 @@
     bottom: -950px;    
 }
 
-.boxVideo{
+.boxVideo {
     position: relative;
+    z-index: 10;
+    width: 721px;
+    height: 358px;
 }
-.play{
+.play {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     cursor: pointer;
+}
+.video-container {
+    display: none; 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
