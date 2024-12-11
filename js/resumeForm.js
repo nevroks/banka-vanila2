@@ -1,36 +1,34 @@
 $(function() {
     const formData = new FormData();
-    const sendBtn = $(".sendResumePopUp-learnMore-btn")
+    const sendBtn = $(".banka-banka-form-step2-button")
 
     const isFieldsFilled = {
         stack: false,
         level: false,
         email: false,
-        resume: false,
-        agreement: false
     }
 
-    $("#sendResumePopUp-stack-input").on("input", function(e) {
-        formData.append("stack", e.target.value);
-        if (e.target.value) {
-            isFieldsFilled.stack = true;
+    $(".banka-banka-form-step2-select.stackSelect").change(function() {
+        if ($(".banka-banka-form-step2-select.stackSelect").val() === "none") {
+            isFieldsFilled.stack = false
         } else {
-            isFieldsFilled.stack = false;
+            formData.append("stack", $(".banka-banka-form-step2-select.stackSelect").val());
+            isFieldsFilled.stack = true
+            checkIsFieldsFilled();
         }
-        checkIsFieldsFilled();
-    });
+    })
 
-    $("#sendResumePopUp-level-input").on("input", function(e) {
-        formData.append("level", e.target.value);
-        if (e.target.value) {
-            isFieldsFilled.level = true;
+    $(".banka-banka-form-step2-select.levelSelect").change(function() {
+        if ($(".banka-banka-form-step2-select.levelSelect").val() === "none") {
+            isFieldsFilled.level = false
         } else {
-            isFieldsFilled.level = false;
+            formData.append("level", $(".banka-banka-form-step2-select.levelSelect").val());
+            isFieldsFilled.level = true
+            checkIsFieldsFilled();
         }
-        checkIsFieldsFilled();
-    });
+    })
 
-    $("#sendResumePopUp-email-input").on("input", function(e) {
+    $(".banka-banka-form-step2-input.emailInput").on("input", function(e) {
         formData.append("email", e.target.value);
         if (e.target.value) {
             isFieldsFilled.email = true;
@@ -40,32 +38,9 @@ $(function() {
         checkIsFieldsFilled();
     });
 
-    $("#sendResumePopUp-resume-input").on("input", function(e) {
-        formData.append("resume", e.target.files[0]);
-        if (e.target.files[0]) {
-            isFieldsFilled.resume = true;
-        } else {
-            isFieldsFilled.resume = false;
-        }
-        checkIsFieldsFilled();
-    });
-    $("#sendResumePopUp-agreement").on("change", function(e) {
-        formData.append("agreement", e.target.checked);
-        if (e.target.checked) {
-            isFieldsFilled.agreement = true;
-        } else {
-            isFieldsFilled.agreement = false;
-        }
-        checkIsFieldsFilled();
-    })
-
-
-    $(".sendResumePopUp-learnMore-btn").click(function() {
-        console.log("send resume clicked");
-    });
 
     const checkIsFieldsFilled = () => {
-        if (isFieldsFilled.stack && isFieldsFilled.level && isFieldsFilled.email && isFieldsFilled.resume && isFieldsFilled.agreement) {
+        if (isFieldsFilled.stack && isFieldsFilled.level && isFieldsFilled.email) {
             sendBtn.prop("disabled", false);
         } else {
             sendBtn.prop("disabled", true);

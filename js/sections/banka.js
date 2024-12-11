@@ -2,11 +2,7 @@ $(function() {
         const bankaWrapper = document.querySelector('.banka-banka-wrapper');
         const bankaLid = document.querySelector('.banka-banka-lid');
         const cookie = document.querySelector('.banka-banka-specialCookie');
-
-
-        let container = document.querySelector('.banka');
-        let jar = document.querySelector('.banka-banka-jar');
-
+        const form = document.querySelector('.banka-banka-form');
 
         bankaWrapper.addEventListener('click', startAnimation);
 
@@ -25,6 +21,8 @@ $(function() {
             const step5Duration = 1100;
             const step6Duration = 900;
             const step7Duration = 900;
+            const step8Duration = 900;
+
             // ----- 1 шаг -----
             bankaWrapper.classList.add('step-1');
 
@@ -58,8 +56,50 @@ $(function() {
                 // ----- 7 шаг -----
                 cookie.classList.add('step-7');
             }, step1Duration + step2Duration + step3Duration + step4Duration + step5Duration + step6Duration)
+            setTimeout(() => {
+                // ----- 8 шаг -----
+                cookie.classList.add('step-8');
+                form.classList.add('step-8');
+            }, step1Duration + step2Duration + step3Duration + step4Duration + step5Duration + step6Duration + step7Duration)
+            setTimeout(() => {
+                // ----- 9 шаг -----
+                form.classList.add('step-9');
+            }, step1Duration + step2Duration + step3Duration + step4Duration + step5Duration + step6Duration + step7Duration + step8Duration)
         }
 
+
+        const bankaFormStep1 = document.querySelector('.banka-banka-form-step1');
+        const bankaFormStep1ActionButton = document.querySelector(".banka-banka-form-step1-button")
+        const bankaFormStep2 = document.querySelector('.banka-banka-form-step2');
+        const bankaFormStep2ActionButton = document.querySelector('.banka-banka-form-step2-button');
+        const bankaFormStep3 = document.querySelector('.banka-banka-form-step3');
+        bankaFormStep1ActionButton.addEventListener('click', () => {
+            bankaFormStep1.classList.add('opacity')
+            setTimeout(() => {
+                bankaFormStep1.style.display = "none"
+                bankaFormStep2.style.display = "flex"
+                setTimeout(() => {
+                    bankaFormStep2.classList.remove('opacity')
+                }, 10)
+            }, 600)
+        })
+        bankaFormStep2ActionButton.addEventListener('click', () => {
+            bankaFormStep2.classList.add("opacity")
+            setTimeout(() => {
+                bankaFormStep2.style.display = "none"
+                bankaFormStep3.style.display = "flex"
+                form.classList.add("bottom")
+                setTimeout(() => {
+                    form.classList.add("height")
+                    setTimeout(() => {
+                        form.classList.add("left")
+                        setTimeout(() => {
+                            form.classList.add("width")
+                        }, 900)
+                    }, 900)
+                }, 900)
+            }, 600)
+        })
     })
     // Короче, шаги анимации:
     // 1. Приближается камера банка немного опускается вниз, перестраивается хедер | длительность: 1.1 с
@@ -69,3 +109,5 @@ $(function() {
     // 5. Банка уходит в opacity 0, печенье центруется | длительность: 1.1 с
     // 6. Печенье увеличивается | длительность: 0.9 с
     // 7. Печенье раскалывается | длительность: 0.9 с
+    // 8. Дольки печенья разьезжаются по сторонам, убирается display:none у формы | длительность: 0.9 с
+    // 9. Появляется белая форма

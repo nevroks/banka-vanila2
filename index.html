@@ -17,12 +17,6 @@
     <script src="./assets/libs/jquery.pagepiling.js"></script>
     <link rel="stylesheet" href="./assets/libs/jquery.pageliling.min.css">
     <!-- -----adding fullpage js library----- -->
-    <!-- -----adding gsap----- -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
-    <!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/EasePack.min.js"></script>
-    <!-- -----adding gsap----- -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
@@ -88,47 +82,11 @@
             </div>
         </nav>
     </header>
-    <div class="popUps">
-        <div class="popUp-wrapper sendResumePopUp">
-            <div class="popUp-content sendResumePopUp-content">
-                <p class="sendResumePopUp-title">Let us get to know
-                    <br> you better!
-                </p>
-                <div class="sendResumePopUp-field">
-                    <label for="sendResumePopUp-stack-input">Stack</label>
-                    <input id="sendResumePopUp-stack-input" type="text" placeholder="choose your stack">
-                </div>
-                <div class="sendResumePopUp-field">
-                    <label for="sendResumePopUp-level-input">Level</label>
-                    <input id="sendResumePopUp-level-input" type="text" placeholder="choose your level">
-                </div>
-                <div class="sendResumePopUp-field">
-                    <label for="sendResumePopUp-email-input">Email</label>
-                    <input id="sendResumePopUp-email-input" type="email" placeholder="ilovecoding@code.com">
-                </div>
-                <div class="sendResumePopUp-add-resume">
-                    <p>Your resume:</p>
-                    <input id="sendResumePopUp-resume-input" type="file">
-                </div>
-                <div>
-                    <input type="checkbox" id="sendResumePopUp-agreement">
-                    <label for="sendResumePopUp-agreement">
-                        I
-                        agree with terms and conditions
-                    </label>
-                </div>
-                <div class="sendResumePopUp-learnMore-btn-wrapper">
-                    <button disabled class="sendResumePopUp-learnMore-btn">Learn more</button>
-                </div>
-            </div>
-            <script src="./js/resumeForm.js"></script>
-        </div>
-    </div>
     <main>
         <div class="pagepilling ">
             <canvas class="snowflakes" id="snowflakes"></canvas>
             <div class="pagepiling wrapper">
-                <section id="section" class="FutureAwaits section">
+                <!-- <section id="section" class="FutureAwaits section">
                     <img src="./assets/futureAwaits.svg" alt="">
                     <h2 class="FutureAwaits-title">Future awaits!</h2>
                     <h2 class="FutureAwaits-subtitle">Discover you career fortune with Gurtam</h2>
@@ -240,11 +198,48 @@
                         <img class="dragon dragAnimated" src="./assets/JoinGurtam/dragon.png" alt="dragon">
                     </div>
                     <img src="./assets/star/Star 11.png" alt="pinkStar" class="JoinGurtamStar">
-                </section>
+                </section> -->
                 <section id="section" class="banka">
                     <div class="banka-banka-specialCookie">
                         <img class="banka-banka-specialCookie-img bigPart" src="./assets/banka/cookieBigPart.png" alt="">
                         <img class="banka-banka-specialCookie-img smallPart" src="./assets/banka/cookieSmallPart.png" alt="">
+                    </div>
+                    <div class="banka-banka-form">
+                        <div class="banka-banka-form-step1">
+                            <h3 class="banka-banka-form-step1-title banka-banka-form-title">INVEST IN YOURSELF.</h3>
+                            <p class="banka-banka-form-step1-semiTitle">Don't follow others' paths to gain long-term advantages…</p>
+                            <button class="banka-banka-form-step1-button"><img src="./assets/polygons/trianglePolygon.svg" alt="trianglePolygon">GET FULL PREDICTION</button>
+                            <p class="banka-banka-form-step1-text">FILL OUT THE FORM AND GET A CHANCE TO WIN A PRIZE!</p>
+
+                            <div class="banka-banka-form-step1-share">
+                                <p class="banka-banka-form-step1-share-text">OR SHARE THE RESULT NOW:</p>
+                                <div class="banka-banka-form-step1-share-links">
+                                    <a href=""><img src="./assets/social/li.svg" alt="LinkedIn"></a>
+                                    <a href=""><img src="./assets/social/fee.svg" alt="Facebook"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="banka-banka-form-step2 opacity">
+                            <h3 class="banka-banka-form-step2-title banka-banka-form-title">FULL PREDICTION</h3>
+                            <p class="banka-banka-form-text banka-banka-form-step2-text">Help us interpret your prediction more precisely. Fill the form, share your full prediction and have chance to win a prize coupon for <span>500 euros</span> to a hardware store in your city!</p>
+                            <p class="banka-banka-form-text banka-banka-form-step2-text">We’ll pick the winner using a random draw on 31 of december 2024 at 12:00 AM CET+3 IN OUR INSTAGRAM!</p>
+                            <select class="banka-banka-form-select banka-banka-form-step2-select stackSelect">
+                                <option value="none" disabled selected>YOUR STACK...</option>
+                                <option value="">нигерс</option>
+                                <option value="">фак нигерс</option>
+                            </select>
+                            <select class="banka-banka-form-select banka-banka-form-step2-select levelSelect">
+                                <option value="none" disabled selected>YOUR LEVEL...</option>
+                                <option value="some">нигерс</option>
+                                <option value="some2">фак нигерс</option>
+                            </select>
+                            <input class="banka-banka-form-step2-input emailInput" placeholder="YOUR E-MAIL..." type="text">
+                            <button disabled class="banka-banka-form-step2-button"><img src="./assets/polygons/trianglePolygon.svg" alt="play"> GET FULL PREDICTION</button>
+                        </div>
+                        <div class="banka-banka-form-step3 opacity">
+                            <h3 class="banka-banka-form-step3-title banka-banka-form-title">Текст</h3>
+
+                        </div>
                     </div>
                     <div class="banka-banka-wrapper">
                         <div class="banka-banka-lid">
@@ -335,7 +330,6 @@
             });
         });
     </script>
-    <script src="./js/sections/banka.js"></script>
     <script src="./js/blockScrollSections.js"></script>
     <script src="./js/sections/OurBenefits.js"></script>
     <script src="./js/girland.js"></script>
@@ -344,6 +338,8 @@
     <script src="./js/replaseAnimated.js"></script>
     <script src="./js/snow.js"></script>
     <script src="./js/script.js"></script>
+    <script async src="./js/sections/banka.js"></script>
+    <script src="./js/resumeForm.js"></script>
     <script async src="./js/sections/WhyUs.js"></script>
     <script async src="./js/sections/popUps.js"></script>
 </body>

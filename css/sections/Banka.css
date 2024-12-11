@@ -63,11 +63,25 @@
 .banka-banka-specialCookie.step-7 .banka-banka-specialCookie-img.bigPart {
     left: -10px;
     top: -10px;
+    transition: all 0.9s;
 }
 
 .banka-banka-specialCookie.step-7 .banka-banka-specialCookie-img.smallPart {
     right: -18px;
     bottom: -18px;
+    transition: all 0.9s;
+}
+
+.banka-banka-specialCookie.step-8 .banka-banka-specialCookie-img.bigPart {
+    left: -270px;
+    top: -270px;
+    transition: all 0.9s;
+}
+
+.banka-banka-specialCookie.step-8 .banka-banka-specialCookie-img.smallPart {
+    right: -225px;
+    bottom: -225px;
+    transition: all 0.9s;
 }
 
 .banka-banka-specialCookie-img {
