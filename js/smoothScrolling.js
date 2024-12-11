@@ -91,6 +91,7 @@ $(function () {
         animateSections();
     });
 });
+
 document.addEventListener('DOMContentLoaded', () => {
     const coreValues = document.querySelectorAll('.WhyUs-CoreValues-value');
     const textValue = document.querySelectorAll('.WhyUs-CoreValues-value-info-text');
@@ -138,6 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (currentIndex < coreValues.length - 1) {
                     currentIndex++;
                     count = 0;
+
                 } else {
                     count++;
                 }
@@ -149,6 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 } else {
                     count++;
+                    console.log(count)
                 }
             }
 

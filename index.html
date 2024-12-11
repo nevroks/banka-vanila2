@@ -1,307 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- -----adding Inter and Special Elite font families----- -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Special+Elite&display=swap" rel="stylesheet">
-    <!-- -----adding Inter and Special Elite font families----- -->
-    <link rel="stylesheet" href="./css/style.css">
-    <!-- -----adding Jquery----- -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- -----adding Jquery----- -->
-    <!-- -----adding fullpage js library----- -->
-    <script src="./assets/libs/jquery.pagepiling.js"></script>
-    <link rel="stylesheet" href="./assets/libs/jquery.pageliling.min.css">
-    <!-- -----adding fullpage js library----- -->
-    <!-- -----adding gsap----- -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
-    <!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/EasePack.min.js"></script>
-    <!-- -----adding gsap----- -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-
-    <title>Document</title>
-</head>
-
-<body>
-    <header class="header">
-        <div class="header-blur"></div>
-        <div class="girland-box">
-            <img class="girlandItem" src="./assets/girland/girland.svg" alt="girland">
-
-            <img src="./assets/girland/lights/red.svg" alt="" class="hidden girland  girland1">
-            <img src="./assets/girland/lights/yellow.svg" alt="" class="hidden girland  girland2">
-            <img src="./assets/girland/lights/blue.svg" alt="" class="hidden girland  girland3">
-            <img src="./assets/girland/lights/yellow.svg" alt="" class="hidden girland  girland4">
-            <img src="./assets/girland/lights/blue.svg" alt="" class="hidden girland  girland5">
-            <img src="./assets/girland/lights/red.svg" alt="" class="hidden girland  girland6">
-            <img src="./assets/girland/lights/red.svg" alt="" class="hidden girland  girland7">
-            <img src="./assets/girland/lights/yellow.svg" alt="" class="hidden girland  girland8">
-            <img src="./assets/girland/lights/red.svg" alt="" class="hidden girland  girland9">
-            <img src="./assets/girland/lights/yellow.svg" alt="" class="hidden girland  girland10">
-
-            <img src="./assets/girland/lights/blue.svg" alt="" class="hidden girland  girland11">
-            <img src="./assets/girland/lights/blue.svg" alt="" class="hidden girland  girland12">
-            <img src="./assets/girland/lights/yellow.svg" alt="" class="hidden girland  girland13">
-            <img src="./assets/girland/lights/red.svg" alt="" class="hidden girland  girland14">
-            <img src="./assets/girland/lights/blue.svg" alt="" class="hidden girland  girland15">
-            <img src="./assets/girland/lights/red.svg" alt="" class="hidden girland  girland16">
-            <img src="./assets/girland/lights/yellow.svg" alt="" class="hidden girland  girland17">
-            <img src="./assets/girland/lights/blue.svg" alt="" class="hidden girland  girland18">
-            <img src="./assets/girland/lights/yellow.svg" alt="" class="hidden girland  girland19">
-            <img src="./assets/girland/lights/red.svg" alt="" class="hidden girland  girland20">
-            <img src="./assets/girland/lights/red.svg" alt="" class="hidden girland  girland21">
-            <img src="./assets/girland/lights/yellow.svg" alt="" class="hidden girland  girland22">
-            <img src="./assets/girland/lights/blue.svg" alt="" class="hidden girland  girland23">
-            <img src="./assets/girland/lights/yellow.svg" alt="" class="hidden girland  girland24">
-            <img src="./assets/girland/lights/red.svg" alt="" class="hidden girland  girland25">
-            <img src="./assets/girland/lights/red.svg" alt="" class="hidden girland  girland26">
-            <img src="./assets/girland/lights/blue.svg" alt="" class="hidden girland  girland27">
-            <img src="./assets/girland/lights/yellow.svg" alt="" class="hidden girland  girland28">
-            <img src="./assets/girland/lights/red.svg" alt="" class="hidden girland  girland29">
-            <img src="./assets/girland/lights/red.svg" alt="" class="hidden girland  girland30">
-            <img src="./assets/girland/lights/yellow.svg" alt="" class="hidden girland  girland31">
-            <img src="./assets/girland/lights/blue.svg" alt="" class="hidden girland  girland32">
-            <img src="./assets/girland/lights/red.svg" alt="" class="hidden girland  girland33">
-            <img src="./assets/girland/lights/blue.svg" alt="" class="hidden girland  girland34">
-            <img src="./assets/girland/lights/yellow.svg" alt="" class="hidden girland  girland35">
-            <img src="./assets/girland/lights/blue.svg" alt="" class="hidden girland  girland36">
-            <img src="./assets/girland/lights/red.svg" alt="" class="hidden girland  girland37">
-            <img src="./assets/girland/lights/yellow.svg" alt="" class="hidden girland  girland38">
-        </div>
-        <nav class="header-navigation">
-            <div class="header-navigation-box">
-                <button class="header-navigation-button-jobs">ALL JOBS</button>
-                <button class="header-navigation-button-join-us">JOIN US!</button>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- -----adding Inter and Special Elite font families----- -->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Special+Elite&display=swap" rel="stylesheet">
+        <!-- -----adding Inter and Special Elite font families----- -->
+        <link rel="stylesheet" href="./css/style.css">
+        <!-- -----adding Jquery----- -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <!-- -----adding Jquery----- -->
+        <!-- -----adding fullpage js library----- -->
+        <script src="./assets/libs/jquery.pagepiling.js"></script>
+        <link rel="stylesheet" href="./assets/libs/jquery.pageliling.min.css">
+        <!-- -----adding fullpage js library----- -->
+        <!-- -----adding gsap----- -->
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
+        <!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/EasePack.min.js"></script>
+        <!-- -----adding gsap----- -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-blur"></div>
+            <div class="girland-box">
+                <img class="girlandItem" src="./assets/girland/girland.svg" alt="girland">
+                <img src="./assets/girland/lights/red.svg" alt="" class="hidden girland  girland1">
+                <img src="./assets/girland/lights/yellow.svg" alt="" class="hidden girland  girland2">
+                <img src="./assets/girland/lights/blue.svg" alt="" class="hidden girland  girland3">
+                <img src="./assets/girland/lights/yellow.svg" alt="" class="hidden girland  girland4">
+                <img src="./assets/girland/lights/blue.svg" alt="" class="hidden girland  girland5">
+                <img src="./assets/girland/lights/red.svg" alt="" class="hidden girland  girland6">
+                <img src="./assets/girland/lights/red.svg" alt="" class="hidden girland  girland7">
+                <img src="./assets/girland/lights/yellow.svg" alt="" class="hidden girland  girland8">
+                <img src="./assets/girland/lights/red.svg" alt="" class="hidden girland  girland9">
+                <img src="./assets/girland/lights/yellow.svg" alt="" class="hidden girland  girland10">
+                <img src="./assets/girland/lights/blue.svg" alt="" class="hidden girland  girland11">
+                <img src="./assets/girland/lights/blue.svg" alt="" class="hidden girland  girland12">
+                <img src="./assets/girland/lights/yellow.svg" alt="" class="hidden girland  girland13">
+                <img src="./assets/girland/lights/red.svg" alt="" class="hidden girland  girland14">
+                <img src="./assets/girland/lights/blue.svg" alt="" class="hidden girland  girland15">
+                <img src="./assets/girland/lights/red.svg" alt="" class="hidden girland  girland16">
+                <img src="./assets/girland/lights/yellow.svg" alt="" class="hidden girland  girland17">
+                <img src="./assets/girland/lights/blue.svg" alt="" class="hidden girland  girland18">
+                <img src="./assets/girland/lights/yellow.svg" alt="" class="hidden girland  girland19">
+                <img src="./assets/girland/lights/red.svg" alt="" class="hidden girland  girland20">
+                <img src="./assets/girland/lights/red.svg" alt="" class="hidden girland  girland21">
+                <img src="./assets/girland/lights/yellow.svg" alt="" class="hidden girland  girland22">
+                <img src="./assets/girland/lights/blue.svg" alt="" class="hidden girland  girland23">
+                <img src="./assets/girland/lights/yellow.svg" alt="" class="hidden girland  girland24">
+                <img src="./assets/girland/lights/red.svg" alt="" class="hidden girland  girland25">
+                <img src="./assets/girland/lights/red.svg" alt="" class="hidden girland  girland26">
+                <img src="./assets/girland/lights/blue.svg" alt="" class="hidden girland  girland27">
+                <img src="./assets/girland/lights/yellow.svg" alt="" class="hidden girland  girland28">
+                <img src="./assets/girland/lights/red.svg" alt="" class="hidden girland  girland29">
+                <img src="./assets/girland/lights/red.svg" alt="" class="hidden girland  girland30">
+                <img src="./assets/girland/lights/yellow.svg" alt="" class="hidden girland  girland31">
+                <img src="./assets/girland/lights/blue.svg" alt="" class="hidden girland  girland32">
+                <img src="./assets/girland/lights/red.svg" alt="" class="hidden girland  girland33">
+                <img src="./assets/girland/lights/blue.svg" alt="" class="hidden girland  girland34">
+                <img src="./assets/girland/lights/yellow.svg" alt="" class="hidden girland  girland35">
+                <img src="./assets/girland/lights/blue.svg" alt="" class="hidden girland  girland36">
+                <img src="./assets/girland/lights/red.svg" alt="" class="hidden girland  girland37">
+                <img src="./assets/girland/lights/yellow.svg" alt="" class="hidden girland  girland38">
             </div>
-            <img src="./assets/logos/gurtamLogo.svg" alt="gurtam-logo">
-            <div class="header-navigation-box">
-                <button class="header-navigation-button-hidden">PLAY!</button>
-                <button class="header-navigation-button-plau">PLAY!</button>
-            </div>
-        </nav>
-    </header>
-    <div class="popUps">
-        <div class="popUp-wrapper sendResumePopUp">
-            <div class="popUp-content sendResumePopUp-content">
-                <p class="sendResumePopUp-title">Let us get to know
-                    <br> you better!
-                </p>
-                <div class="sendResumePopUp-field">
-                    <label for="sendResumePopUp-stack-input">Stack</label>
-                    <input id="sendResumePopUp-stack-input" type="text" placeholder="choose your stack">
+            <nav class="header-navigation">
+                <div class="header-navigation-box">
+                    <button class="header-navigation-button-jobs">ALL JOBS</button>
+                    <button class="header-navigation-button-join-us">JOIN US!</button>
                 </div>
-                <div class="sendResumePopUp-field">
-                    <label for="sendResumePopUp-level-input">Level</label>
-                    <input id="sendResumePopUp-level-input" type="text" placeholder="choose your level">
+                <img src="./assets/logos/gurtamLogo.svg" alt="gurtam-logo">
+                <div class="header-navigation-box">
+                    <button class="header-navigation-button-hidden">PLAY!</button>
+                    <button class="header-navigation-button-plau">PLAY!</button>
                 </div>
-                <div class="sendResumePopUp-field">
-                    <label for="sendResumePopUp-email-input">Email</label>
-                    <input id="sendResumePopUp-email-input" type="email" placeholder="ilovecoding@code.com">
-                </div>
-                <div class="sendResumePopUp-add-resume">
-                    <p>Your resume:</p>
-                    <input id="sendResumePopUp-resume-input" type="file">
-                </div>
-                <div>
-                    <input type="checkbox" id="sendResumePopUp-agreement">
-                    <label for="sendResumePopUp-agreement">
-                        I
+            </nav>
+        </header>
+        <div class="popUps">
+            <div class="popUp-wrapper sendResumePopUp">
+                <div class="popUp-content sendResumePopUp-content">
+                    <p class="sendResumePopUp-title">
+                        Let us get to know
+                        <br>
+                        you better!
+                    </p>
+                    <div class="sendResumePopUp-field">
+                        <label for="sendResumePopUp-stack-input">Stack</label>
+                        <input id="sendResumePopUp-stack-input" type="text" placeholder="choose your stack">
+                    </div>
+                    <div class="sendResumePopUp-field">
+                        <label for="sendResumePopUp-level-input">Level</label>
+                        <input id="sendResumePopUp-level-input" type="text" placeholder="choose your level">
+                    </div>
+                    <div class="sendResumePopUp-field">
+                        <label for="sendResumePopUp-email-input">Email</label>
+                        <input id="sendResumePopUp-email-input" type="email" placeholder="ilovecoding@code.com">
+                    </div>
+                    <div class="sendResumePopUp-add-resume">
+                        <p>Your resume:</p>
+                        <input id="sendResumePopUp-resume-input" type="file">
+                    </div>
+                    <div>
+                        <input type="checkbox" id="sendResumePopUp-agreement">
+                        <label for="sendResumePopUp-agreement">
+                            I
                         agree with terms and conditions
-                    </label>
+                        </label>
+                    </div>
+                    <div class="sendResumePopUp-learnMore-btn-wrapper">
+                        <button disabled class="sendResumePopUp-learnMore-btn">Learn more</button>
+                    </div>
                 </div>
-                <div class="sendResumePopUp-learnMore-btn-wrapper">
-                    <button disabled class="sendResumePopUp-learnMore-btn">Learn more</button>
-                </div>
+                <script src="./js/resumeForm.js"></script>
             </div>
-            <script src="./js/resumeForm.js"></script>
         </div>
-    </div>
-    <main>
-        <div class="pagepilling ">
-            <canvas class="snowflakes" id="snowflakes"></canvas>
-            <div class="pagepiling wrapper">
-                <section id="section" class="FutureAwaits section">
-                    <img src="./assets/futureAwaits.svg" alt="">
-                    <h2 class="FutureAwaits-title">Future awaits!</h2>
-                    <h2 class="FutureAwaits-subtitle">Discover you career fortune with Gurtam</h2>
-                    <p class="FutureAwaits-text">
-                        <span class="FutureAwaits-text-span">Prepare for 2025!</span> Due to our experience in navigation and tracking we are here to guide you for what's to come. Crack open a fortune cookie to discover your career prediction for the
+        <main>
+            <div class="pagepilling ">
+                <canvas class="snowflakes" id="snowflakes"></canvas>
+                <div class="pagepiling wrapper">
+                    <section id="section" class="FutureAwaits section">
+                        <img src="./assets/futureAwaits.svg" alt="">
+                        <h2 class="FutureAwaits-title">Future awaits!</h2>
+                        <h2 class="FutureAwaits-subtitle">Discover you career fortune with Gurtam</h2>
+                        <p class="FutureAwaits-text">
+                            <span class="FutureAwaits-text-span">Prepare for 2025!</span>
+                            Due to our experience in navigation and tracking we are here to guide you for what's to come. Crack open a fortune cookie to discover your career prediction for the
                         upcoming year
-                    </p>
-                    <p class="FutureAwaits-text">
-                        Stay focused and catch your fortune to
-                        <span class="FutureAwaits-text-span"> win the prize —
-                            <br>coupon for
-                            <span class="FutureAwaits-text-span-bold">500 euros</span> to a hardware store in your city!
-                        </span>
-                    </p>
-                    <button class="FutureAwaits-button">DISVOVER YOUR FORTUNE!</button>
-                    <img src="./assets/FutureAwaits/6c0a9e3a1510f941bb8ebca5a1117a78.png" alt="futureAwaits-img" class="FutureAwaits-background-img animated">
-                    <!-- <img src="./assets/star/pinkStar.png" alt="pinkStar" class="FutureAwaitsStar"> -->
-                </section>
-                <section id="section" class="GurtamMeans">
-                    <h2 class="GurtamMeans-title">Stay curious with Gurtam!</h2>
-                    <p class="GurtamMeans-text">
-                        Gurtam exists to bring telematics technology closer to people and businesses. We are a software developer specializing in fleet management solutions utilizing telematics and IoT technology
-                    </p>
-                    <button class="GurtamMeans-button">JOIN US!</button>
-                    <div class="GurtamMeans-stats">
-                        <div class="GurtamMeans-stats-card card-years">
-                            <p class="GurtamMeans-stats-card-count card-years-count  years">20+</p>
-                            <p class="GurtamMeans-stats-card-text card-years-text">YEARS OLD</p>
+                        </p>
+                        <p class="FutureAwaits-text">
+                            Stay focused and catch your fortune to
+                            <span class="FutureAwaits-text-span">
+                                win the prize —
+                                <br>
+                                coupon for
+                                <span class="FutureAwaits-text-span-bold">500 euros</span>
+                                to a hardware store in your city!
+                            </span>
+                        </p>
+                        <button class="FutureAwaits-button">DISVOVER YOUR FORTUNE!</button>
+                        <img src="./assets/FutureAwaits/6c0a9e3a1510f941bb8ebca5a1117a78.webp" alt="futureAwaits-img" class="FutureAwaits-background-img animated">
+                        <img src="./assets/star/pinkStar.png" alt="pinkStar" class="FutureAwaitsStar">
+                    </section>
+                    <section id="section" class="GurtamMeans">
+                        <h2 class="GurtamMeans-title">Stay curious with Gurtam!</h2>
+                        <p class="GurtamMeans-text">
+                            Gurtam exists to bring telematics technology closer to people and businesses. We are a software developer specializing in fleet management solutions utilizing telematics and IoT technology
+                        </p>
+                        <button class="GurtamMeans-button">JOIN US!</button>
+                        <div class="GurtamMeans-stats">
+                            <div class="GurtamMeans-stats-card card-years">
+                                <p class="GurtamMeans-stats-card-count card-years-count  years">20+</p>
+                                <p class="GurtamMeans-stats-card-text card-years-text">YEARS OLD</p>
+                            </div>
+                            <div class="GurtamMeans-stats-card card-EMPLOYEES">
+                                <p class="GurtamMeans-stats-card-count card-EMPLOYEES-count">300+</p>
+                                <p class="GurtamMeans-stats-card-text card-EMPLOYEES-text">EMPLOYEES</p>
+                            </div>
+                            <div class="GurtamMeans-stats-card card-COUNTRIES">
+                                <p class="GurtamMeans-stats-card-count offices card-COUNTRIES-count">150</p>
+                                <p class="GurtamMeans-stats-card-text card-COUNTRIES-text">COUNTRIES</p>
+                            </div>
+                            <div class="GurtamMeans-stats-card card-OFFICES">
+                                <p class="GurtamMeans-stats-card-count card-OFFICES-count countries ">4</p>
+                                <p class="GurtamMeans-stats-card-text card-OFFICES-text">OFFICES WORLDWIDE</p>
+                            </div>
                         </div>
-                        <div class="GurtamMeans-stats-card card-EMPLOYEES">
-                            <p class="GurtamMeans-stats-card-count card-EMPLOYEES-count">300+</p>
-                            <p class="GurtamMeans-stats-card-text card-EMPLOYEES-text">EMPLOYEES</p>
-                        </div>
-                        <div class="GurtamMeans-stats-card card-COUNTRIES">
-                            <p class="GurtamMeans-stats-card-count offices card-COUNTRIES-count">150</p>
-                            <p class="GurtamMeans-stats-card-text card-COUNTRIES-text">COUNTRIES </p>
-                        </div>
-                        <div class="GurtamMeans-stats-card card-OFFICES">
-                            <p class="GurtamMeans-stats-card-count card-OFFICES-count countries ">4</p>
-                            <p class="GurtamMeans-stats-card-text card-OFFICES-text">OFFICES WORLDWIDE</p>
-                        </div>
-                    </div>
-
-                </section> 
-                <section id="section" class="WhyUs">
-                    <div class="WhyUs-CoreValues">
-                        <div id="1" class="WhyUs-CoreValues-value first openned">
-                            <div class="WhyUs-CoreValues-value-info">
-                                <p class="WhyUs-CoreValues-value-info-title">Our Journey</p>
-                                <p class="WhyUs-CoreValues-value-info-text first-text ">
-                                    Gurtam started as a small business in 2002. Now it has grown into<br /> a global leader in fleet management and IoT. Our software allows users<br /> to monitor vehicle location, speed, fuel levels, engine performance,
+                        <img src="./assets/star/Star 10 (1).png" alt="" class="FutureAwaitsStar">
+                    </section>
+                    <section id="section" class="WhyUs">
+                        <div class="WhyUs-CoreValues">
+                            <div id="1" class="WhyUs-CoreValues-value first openned">
+                                <div class="WhyUs-CoreValues-value-info">
+                                    <p class="WhyUs-CoreValues-value-info-title">Our Journey</p>
+                                    <p class="WhyUs-CoreValues-value-info-text first-text ">
+                                        Gurtam started as a small business in 2002. Now it has grown into
+                                        <br>
+                                        a global leader in fleet management and IoT. Our software allows users
+                                        <br>
+                                        to monitor vehicle location, speed, fuel levels, engine performance,
                                     and
-                                    <br /> more in real time. And even more, could we imagine that one day our <br />products will help to save turtles' lives? No way!
-                                </p>
+                                        <br>
+                                        more in real time. And even more, could we imagine that one day our
+                                        <br>
+                                        products will help to save turtles' lives? No way!
+                                    </p>
+                                </div>
+                                <img class="WhyUs-CoreValues-value-img1" src="./assets/WhyUs/card1img.webp" alt="card1img">
                             </div>
-                            <img class="WhyUs-CoreValues-value-img1" src="./../../assets/WhyUs/card1img.png" alt="card1img">
-                        </div>
-                        <div id="2" class="WhyUs-CoreValues-value second  ">
-                            <div class="WhyUs-CoreValues-value-info">
-                                <p class="WhyUs-CoreValues-value-info-title second-title">Driven by Curiosity and Collaboration
-                                </p>
-                                <p class="WhyUs-CoreValues-value-info-text second-text">
-                                    Curiosity fuels our drive, just like an engine runs<br /> on fuel. New learning and development opportunities?<br /> <span class="italic">Yes please!</span>
-                                </p>
+                            <div id="2" class="WhyUs-CoreValues-value second  ">
+                                <div class="WhyUs-CoreValues-value-info">
+                                    <p class="WhyUs-CoreValues-value-info-title second-title">
+                                        Driven by Curiosity and Collaboration
+                                    </p>
+                                    <p class="WhyUs-CoreValues-value-info-text second-text">
+                                        Curiosity fuels our drive, just like an engine runs
+                                        <br>
+                                        on fuel. New learning and development opportunities?
+                                        <br>
+                                        <span class="italic">Yes please!</span>
+                                    </p>
+                                </div>
+                                <img class="WhyUs-CoreValues-value-img2" src="./../../assets/WhyUs/card2img.webp" alt="card1img">
                             </div>
-                            <img class="WhyUs-CoreValues-value-img2" src="./../../assets/WhyUs/card2img.png" alt="card1img">
-                        </div>
-                        <div id="3" class="WhyUs-CoreValues-value third ">
-                            <div class="WhyUs-CoreValues-value-info">
-                                <p class="WhyUs-CoreValues-value-info-title third-title">Powered by People</p>
-                                <p class="WhyUs-CoreValues-value-info-text third-text">
-                                    Despite our big focus on tech, people always come first. Because even<br /> the smartest systems mean nothing if they don’t have a heart. 22 years<br /> of adventures, like countless kilometers run by @gurtam_people,<br
-                                    /> insightful conferences and meetups, and epic food comas during<br /> Georgian Week. Every day is a journey here and you can join this ride!
-                                </p>
+                            <div id="3" class="WhyUs-CoreValues-value third ">
+                                <div class="WhyUs-CoreValues-value-info">
+                                    <p class="WhyUs-CoreValues-value-info-title third-title">Powered by People</p>
+                                    <p class="WhyUs-CoreValues-value-info-text third-text">
+                                        Despite our big focus on tech, people always come first. Because even
+                                        <br>
+                                        the smartest systems mean nothing if they don’t have a heart. 22 years
+                                        <br>
+                                        of adventures, like countless kilometers run by @gurtam_people,
+                                        <br>
+                                        insightful conferences and meetups, and epic food comas during
+                                        <br>
+                                        Georgian Week. Every day is a journey here and you can join this ride!
+                                    </p>
+                                </div>
+                                <img class="WhyUs-CoreValues-value-img3" src="./../../assets/WhyUs/card3img.webp" alt="card1img">
                             </div>
-                            <img class="WhyUs-CoreValues-value-img3" src="./../../assets/WhyUs/card3img.png" alt="card1img">
                         </div>
-                    </div>
-                </section>
-              <section id="section" class="OurBenefits">
-                    <h2 class="OurBenefits-title">Explore what`s next with Gurtam!</h2>
-                    <div class="OurBenefits-cards">
-                        <div class="OurBenefits-videos">
-                            <div class="boxVideo">
-                                <img src="./assets/OurBenefits/videoImg.png" alt="videoImg">
-                                <a data-fancybox href="https://www.youtube.com/watch?v=9atQVFsqsu4">
-                                    <img src="./assets/OurBenefits/play.png" alt="play" class="play">
-                                </a>
+                    </section> 
+                    <section id="section" class="OurBenefits">
+                        <img src="./assets/star//pinkStar.png" alt="pinkStar" class="OurBenefitsStarPink">
+                        <h2 class="OurBenefits-title">Explore what`s next with Gurtam!</h2>
+                        <div class="OurBenefits-cards">
+                            <div class="OurBenefits-videos">
+                                <div class="boxVideo">
+                                    <img src="./assets/OurBenefits/videoImg.png" alt="videoImg">
+                                    <img src="./assets/OurBenefits/play.png" alt="play" class="play" data-video-url="https://www.youtube.com/watch?v=9atQVFsqsu4">
+                                    <div class="video-container"></div>
+                                </div>
+                                <img src="./assets/OurBenefits/cokkiesLeft.png" alt="cokkiesLeft" class="cokkiesLeft">
+                                <img src="./assets/OurBenefits/cokkiesRight.png" alt="cokkiesRight" class="cokkiesRight">
+                                <img src="./assets/OurBenefits/yellowStar.png" alt="cokkiesRight" class="yellowStar animate">
+                                <img src="./assets/OurBenefits/redStar.png" alt="cokkiesRight" class="redStar animate">
                             </div>
-                            <img src="./assets/OurBenefits/cokkiesLeft.png" alt="cokkiesLeft" class="cokkiesLeft">
-                            <img src="./assets/OurBenefits/cokkiesRight.png" alt="cokkiesRight" class="cokkiesRight">
-                            <img src="./assets/OurBenefits/yellowStar.png" alt="cokkiesRight" class="yellowStar animate">
-                            <img src="./assets/OurBenefits/redStar.png" alt="cokkiesRight" class="redStar animate">
                         </div>
-                    </div>
-                    <!-- <img src="./assets/star/Star 10 (1).png" alt="pinkStar" class="OurBenefitsStarBlue"> -->
-                </section>
-                <section id="section" class="JoinGurtam">
-                    <h2 class="JoinGurtam-title">Explore what`s next with Gurtam!</h2>
-                    <p class="JoinGurtam-text">
-                        Make sure that the work becomes more enjoyable day by day
-                    </p>
-                    <div class="JoinGurtam-button-wrapper">
-                        <button class="FutureAwaits-button ">DISVOVER YOUR FORTUNE!</button>
-                        <img src="/assets/OurBenefits/cokkiesLeft.png" alt="leftcookies" class="leftcookies">
-                        <img src="./assets/OurBenefits/cokkiesRight.png" alt="rightcookies" class="rightcookies">
-                        <img src="./assets/OurBenefits/yellowStar.png" alt="cokkiesRight" class="leftStarJoin animat">
-                        <img src="./assets/OurBenefits/redStar.png" alt="cokkiesRight" class="righttStarJoin animat">
-                        <img class="dragon dragAnimated" src="./assets/JoinGurtam/dragon.png" alt="dragon">
-                    </div>
-                    <!-- <img src="./assets/star/Star 11.png" alt="pinkStar" class="JoinGurtamStar"> -->
-                </section>
-                <section id="section" class="banka">
-                    <div class="banka-banka-specialCookie">
-                        <img class="banka-banka-specialCookie-img bigPart" src="./assets/banka/cookieBigPart.png" alt="">
-                        <img class="banka-banka-specialCookie-img smallPart" src="./assets/banka/cookieSmallPart.png" alt="">
-                    </div>
-                    <div class="banka-banka-wrapper">
-                        <div class="banka-banka-lid">
-                            <img src="./assets/banka/bankaLid.png" alt="">
+                        <img src="./assets/star/Star 10 (1).png" alt="pinkStar" class="OurBenefitsStarBlue">
+                    </section>
+                    <section id="section" class="JoinGurtam">
+                        <h2 class="JoinGurtam-title">Explore what`s next with Gurtam!</h2>
+                        <p class="JoinGurtam-text">
+                            Make sure that the work becomes more enjoyable day by day
+                        </p>
+                        <div class="JoinGurtam-button-wrapper">
+                            <button class="FutureAwaits-button ">DISVOVER YOUR FORTUNE!</button>
+                            <img src="/assets/OurBenefits/cokkiesLeft.png" alt="leftcookies" class="leftcookies">
+                            <img src="./assets/OurBenefits/cokkiesRight.png" alt="rightcookies" class="rightcookies">
+                            <img src="./assets/OurBenefits/yellowStar.png" alt="cokkiesRight" class="leftStarJoin animat">
+                            <img src="./assets/OurBenefits/redStar.png" alt="cokkiesRight" class="righttStarJoin animat">
+                            <img class="dragon dragAnimated" src="./assets/JoinGurtam/dragon.png" alt="dragon">
                         </div>
-
-                        <div class="banka-banka-jar">
-                            <img src="./assets/banka/bankaJar.png" alt="">
+                        <img src="./assets/star/Star 11.png" alt="pinkStar" class="JoinGurtamStar">
+                    </section>
+                    <section id="section" class="banka">
+                        <div class="banka-banka-specialCookie">
+                            <img class="banka-banka-specialCookie-img bigPart" src="./assets/banka/cookieBigPart.png" alt="">
+                            <img class="banka-banka-specialCookie-img smallPart" src="./assets/banka/cookieSmallPart.png" alt="">
                         </div>
-                    </div>
-                    <img src="./assets/banka/dragon.png" alt="dragonbanka" class="dragonbanka">
-                </section> 
-            </div>
-        </div>
-    </main>
-    <footer class="footer">
-        <nav>
-            <ul class="social">
-                <li class="social-item">
-                    <canvas class="snowdrift" id="snowdriftYoutube"></canvas>
-                    <a href="">
-                        <img src="./assets/social/yotube.svg" alt="youtube" class="social-link">
-                    </a>
-                </li>
-                <li class="social-item ">
-                    <a href="">
-                        <img src="./assets/social/li.svg" alt="LinkedIn" class="social-link">
-                    </a>
-                </li>
-                <li class="social-item">
-                    <a href="">
-                        <img src="./assets/social/inst.svg" alt="instagram" class="social-link">
-                    </a>
-                </li>
-                <li class="social-item">
-                    <a href="">
-                        <img src="./assets/social/fee.svg" alt="facebook" class="social-link">
-                    </a>
-                </li>
-                <li class="social-item">
-                    <a href="">
-                        <img src="./assets/social/hz.svg" alt="hz" class="social-link">
-                    </a>
-                </li>
-            </ul>
-            <div class="showButton social-item-show-Button" id="toggleSnow">
-                <div class="img img-hide">
-                    <img src="./assets/social/showToButtonShow.svg" alt="showToButtonShow" class="img-items img-hide">
-                </div>
-                <div>
-                    <img src="./assets/social/snow icon.svg" alt="showButton">
+                        <div class="banka-banka-wrapper">
+                            <div class="banka-banka-lid">
+                                <img src="./assets/banka/bankaLid.png" alt="">
+                            </div>
+                            <div class="banka-banka-jar">
+                                <img src="./assets/banka/bankaJar.png" alt="">
+                            </div>
+                        </div>
+                        <img src="./assets/banka/dragon.png" alt="dragonbanka" class="dragonbanka">
+                    </section> 
                 </div>
             </div>
-        </nav>
-    </footer>
-    <script src="./assets/libs/jquery.pagepiling.js"></script>
-    <script>
+        </main>
+        <footer class="footer">
+            <nav>
+                <ul class="social">
+                    <li class="social-item">
+                        <canvas class="snowdrift" id="snowdriftYoutube"></canvas>
+                        <a href="">
+                            <img src="./assets/social/yotube.svg" alt="youtube" class="social-link">
+                        </a>
+                    </li>
+                    <li class="social-item ">
+                        <a href="">
+                            <img src="./assets/social/li.svg" alt="LinkedIn" class="social-link">
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="">
+                            <img src="./assets/social/inst.svg" alt="instagram" class="social-link">
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="">
+                            <img src="./assets/social/fee.svg" alt="facebook" class="social-link">
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="">
+                            <img src="./assets/social/hz.svg" alt="hz" class="social-link">
+                        </a>
+                    </li>
+                </ul>
+                <div class="showButton social-item-show-Button" id="toggleSnow">
+                    <div class="img img-hide">
+                        <img src="./assets/social/showToButtonShow.svg" alt="showToButtonShow" class="img-items img-hide">
+                    </div>
+                    <div>
+                        <img src="./assets/social/snow icon.svg" alt="showButton">
+                    </div>
+                </div>
+            </nav>
+        </footer>
+        <script src="./assets/libs/jquery.pagepiling.js"></script>
+        <script>
         $(function() {
 
             var scroll = new LocomotiveScroll({
@@ -322,30 +346,18 @@
                 })
             })
         })
-    </script>
-    <script>
-        $(document).ready(function() {
-            Fancybox.bind("[data-fancybox]", {
-                iframe: {
-                    css: {
-                        width: '80%',
-                        height: '80%'
-                    }
-                }
-            });
-        });
-    </script>
-    <script src="./js/sections/banka.js"></script>
-    <script src="./js/blockScrollSections.js"></script>
-    <script src="./js/sections/OurBenefits.js"></script>
-    <script src="./js/girland.js"></script>
-    <script src="./js/handlerSnow.js"></script>
-    <script src="./js/smoothScrolling.js"></script>
-    <script src="./js/replaseAnimated.js"></script>
-    <script src="./js/snow.js"></script>
-    <script src="./js/script.js"></script>
-    <script async src="./js/sections/WhyUs.js"></script>
-    <script async src="./js/sections/popUps.js"></script>
-</body>
-
+        </script>
+        <script src="./js/sections/banka.js"></script>
+        <script src="./js/playVideo.js"></script>
+        <script src="./js/blockScrollSections.js"></script>
+        <script src="./js/sections/OurBenefits.js"></script>
+        <script src="./js/girland.js"></script>
+        <script src="./js/handlerSnow.js"></script>
+        <script src="./js/smoothScrolling.js"></script>
+        <script src="./js/replaseAnimated.js"></script>
+        <script src="./js/snow.js"></script>
+        <script src="./js/script.js"></script>
+        <script async src="./js/sections/WhyUs.js"></script>
+        <script async src="./js/sections/popUps.js"></script>
+    </body>
 </html>

@@ -5,8 +5,8 @@
     overflow-y: auto;
     position: relative;
     background-size: 100% 100%;
-    background-position: 0px 0px,0px 0px,0px 0px,0px 0px;
-    background-image: radial-gradient(75% 75% at 50% 125%, #FF69B4 0%, #FF69B4 4%, #073AFF00 89%),radial-gradient(75% 75% at 53% -42%, #002ADBFF 0%, #073AFF0F 100%),radial-gradient(75% 75% at 66% 188%, #AED6F1 99%, #00FFFF00 100%, #AED6F1 100%);
+background-position: 0px 0px,0px 0px,0px 0px;
+background-image: radial-gradient(43% 75% at 51% 126%, #FF69B4BF 0%, #073AFF00 100%),radial-gradient(45% 75% at 51% -35%, #002ADB 0%, #002ADB08 88%),radial-gradient(75% 75% at 50% 50%, #AED6F1 0%, #AED6F1 100%);
 }
 
 .WhyUs-title {
