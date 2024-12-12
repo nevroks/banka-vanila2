@@ -31,12 +31,13 @@
 .pagepiling section {
     height: 100vh;
     transition: opacity 0.5s ease;
-    opacity: 0;
+    opacity: 1;
+    scroll-behavior: smooth;
 }
 
-.pagepiling section.visible {
+/* .pagepiling section.visible {
     opacity: 1;
-}
+} */
 
 .snowflakes {
     width: 100%;
@@ -253,3 +254,5 @@
     bottom: -3%;
     right: 122px;
 }
+
+

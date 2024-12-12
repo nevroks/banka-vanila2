@@ -1,6 +1,8 @@
 .OurBenefits {
     padding-top: 170px;
     position: relative;
+    scroll-snap-align: center;
+    height: 100vh;
 }
 
 .OurBenefits-title {

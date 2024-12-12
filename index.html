@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./assets/libs/jquery.pageliling.min.css">
     <!-- -----adding fullpage js library----- -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 
     <title>Document</title>
@@ -177,14 +177,14 @@
                         </div>
                     </div>
                 </section>
-                <section id="section" class="OurBenefits">
+             <section id="section" class="OurBenefits">
                     <img src="./assets/star//pinkStar.png" alt="pinkStar" class="OurBenefitsStarPink">
                     <h2 class="OurBenefits-title">Explore what`s next with Gurtam!</h2>
                     <div class="OurBenefits-cards">
                         <div class="OurBenefits-videos">
                             <div class="boxVideo">
                                 <img src="./assets/OurBenefits/videoImg.png" alt="videoImg">
-                                <img src="./assets/OurBenefits/play.png" alt="play" class="play" data-video-url="https://www.youtube.com/watch?v=9atQVFsqsu4">
+                                <img src="./assets/OurBenefits/play.png" alt="play" class="play" data-video-url="https://www.youtube.com/watch?v=F-XcxvV-8m0">
                                 <div class="video-container"></div>
                             </div>
                             <img src="./assets/OurBenefits/cokkiesLeft.png" alt="cokkiesLeft" class="cokkiesLeft">
@@ -262,7 +262,7 @@
                         </div>
                     </div>
                     <img src="./assets/banka/dragon.png" alt="dragonbanka" class="dragonbanka">
-                </section>
+                </section> 
             </div>
         </div>
     </main>
@@ -306,32 +306,9 @@
             </div>
         </nav>
     </footer>
-    <script src="./assets/libs/jquery.pagepiling.js"></script>
-    <script>
-        $(function() {
-
-            var scroll = new LocomotiveScroll({
-                el: document.querySelector('#section'),
-                smooth: true,
-
-                scrollTo: {
-                    offset: 600,
-                    duration: 1000,
-                    sectionHeight: '100vh'
-                },
-            });
-            window.addEventListener('scroll', function(e) {
-                scroll.scrollTo({
-                    offset: 600,
-                    duration: 1000,
-                    sectionHeight: '100vh'
-                })
-            })
-        })
-    </script>
+    <!-- <script src="./assets/libs/jquery.pagepiling.js"></script> -->
     <script src="./js/playVideo.js"></script>
     <script src="./js/blockScrollSections.js"></script>
-    <script src="./js/sections/OurBenefits.js"></script>
     <script src="./js/girland.js"></script>
     <script src="./js/handlerSnow.js"></script>
     <script src="./js/smoothScrolling.js"></script>
