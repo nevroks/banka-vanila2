@@ -4,6 +4,15 @@
     align-items: self-start;
     padding-top: 150px;
     position: relative;
+    scroll-snap-align: center;
+    height: 100vh;
+    transform: translateY(20px);
+    transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+    opacity: 0;
+}
+.FutureAwaits.visible {
+    opacity: 1;
+    transform: translateY(0); 
 }
 
 .FutureAwaits-title {
@@ -43,7 +52,7 @@
 
 .FutureAwaits-button {
     position: relative;
-    padding: 17px 60px;
+    padding: 17px 60px 17px 70px;
     border-radius: 9px;
     color: #0A1E4C;
     background-color: #FFFFFF;
@@ -58,6 +67,10 @@
 .FutureAwaits-button::before {
     content: url('../../assets/header/Polygon\ 1.svg');
     margin: 0 25px 0 0;
+    position: absolute;
+    top: 16px;
+    left: 32px;
+    transform: scale(1.5);
 }
 
 .FutureAwaits-button:active {

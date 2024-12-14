@@ -1,13 +1,22 @@
 .WhyUs {
+    height: 100vh;
     text-align: center;
     padding-top: 170px;
-    height: 900px;
     overflow-y: auto;
     position: relative;
     background-size: 100% 100%;
-background-position: 0px 0px,0px 0px,0px 0px;
-background-image: radial-gradient(43% 75% at 51% 126%, #FF69B4BF 0%, #073AFF00 100%),radial-gradient(45% 75% at 51% -35%, #002ADB 0%, #002ADB08 88%),radial-gradient(75% 75% at 50% 50%, #AED6F1 0%, #AED6F1 100%);
+    background-position: 0px 0px,0px 0px,0px 0px;
+    background-image: radial-gradient(43% 75% at 51% 126%, #FF69B4BF 0%, #073AFF00 100%),radial-gradient(45% 75% at 51% -35%, #002ADB 0%, #002ADB08 88%),radial-gradient(75% 75% at 50% 50%, #AED6F1 0%, #AED6F1 100%);
+    transform: translateY(20px);
+    transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+    opacity: 0;
+    scroll-snap-align: center;
 }
+.WhyUs.visible {
+    opacity: 1;
+    transform: translateY(0); 
+}
+
 
 .WhyUs-title {
     margin-bottom: 20px;

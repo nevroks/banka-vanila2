@@ -20,10 +20,12 @@
 }
 
 .banka {
+    height: 100vh;
     position: relative;
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    scroll-snap-align: center;
 }
 
 .banka-banka-specialCookie {
@@ -169,4 +171,6 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    width: 56%;
+    z-index: -1;
 }
