@@ -37,34 +37,34 @@ $(function() {
                 cookie.classList.add('step-3');
             }, step1Duration + step2Duration)
             setTimeout(() => {
-                // ----- 4 шаг -----
-                cookie.classList.add('step-4');
-                setTimeout(() => {
-                    cookie.classList.add('z-index');
-                }, step4Duration / 1.7)
-            }, step1Duration + step2Duration + step3Duration)
-            setTimeout(() => {
-                // ----- 5 шаг -----
-                bankaWrapper.classList.add('step-5');
-                cookie.classList.add('step-5');
-            }, step1Duration + step2Duration + step3Duration + step4Duration)
-            setTimeout(() => {
-                // ----- 6 шаг -----
-                cookie.classList.add('step-6');
-            }, step1Duration + step2Duration + step3Duration + step4Duration + step5Duration)
-            setTimeout(() => {
-                // ----- 7 шаг -----
-                cookie.classList.add('step-7');
-            }, step1Duration + step2Duration + step3Duration + step4Duration + step5Duration + step6Duration)
-            setTimeout(() => {
-                // ----- 8 шаг -----
-                cookie.classList.add('step-8');
-                form.classList.add('step-8');
-            }, step1Duration + step2Duration + step3Duration + step4Duration + step5Duration + step6Duration + step7Duration)
-            setTimeout(() => {
-                // ----- 9 шаг -----
-                form.classList.add('step-9');
-            }, step1Duration + step2Duration + step3Duration + step4Duration + step5Duration + step6Duration + step7Duration + step8Duration)
+                    // ----- 4 шаг -----
+                    cookie.classList.add('step-4');
+                    setTimeout(() => {
+                        cookie.classList.add('z-index');
+                    }, step4Duration / 1.7)
+                }, step1Duration + step2Duration + step3Duration)
+                // setTimeout(() => {
+                //     // ----- 5 шаг -----
+                //     bankaWrapper.classList.add('step-5');
+                //     cookie.classList.add('step-5');
+                // }, step1Duration + step2Duration + step3Duration + step4Duration)
+                // setTimeout(() => {
+                //     // ----- 6 шаг -----
+                //     cookie.classList.add('step-6');
+                // }, step1Duration + step2Duration + step3Duration + step4Duration + step5Duration)
+                // setTimeout(() => {
+                //     // ----- 7 шаг -----
+                //     cookie.classList.add('step-7');
+                // }, step1Duration + step2Duration + step3Duration + step4Duration + step5Duration + step6Duration)
+                // setTimeout(() => {
+                //     // ----- 8 шаг -----
+                //     cookie.classList.add('step-8');
+                //     form.classList.add('step-8');
+                // }, step1Duration + step2Duration + step3Duration + step4Duration + step5Duration + step6Duration + step7Duration)
+                // setTimeout(() => {
+                //     // ----- 9 шаг -----
+                //     form.classList.add('step-9');
+                // }, step1Duration + step2Duration + step3Duration + step4Duration + step5Duration + step6Duration + step7Duration + step8Duration)
         }
 
 
@@ -88,15 +88,9 @@ $(function() {
             setTimeout(() => {
                 bankaFormStep2.style.display = "none"
                 bankaFormStep3.style.display = "flex"
-                form.classList.add("bottom")
+                form.classList.add("expanded")
                 setTimeout(() => {
-                    form.classList.add("height")
-                    setTimeout(() => {
-                        form.classList.add("left")
-                        setTimeout(() => {
-                            form.classList.add("width")
-                        }, 900)
-                    }, 900)
+                    bankaFormStep3.classList.remove('opacity')
                 }, 900)
             }, 600)
         })

@@ -13,20 +13,11 @@
     transition: all 0.9s;
 }
 
-.banka-banka-form.bottom {
+.banka-banka-form.expanded {
     bottom: 0;
-}
-
-.banka-banka-form.height {
     height: 100vh;
     border-radius: 0px;
-}
-
-.banka-banka-form.left {
     left: calc(100vw / 2 - 984px / 2);
-}
-
-.banka-banka-form.width {
     width: 984px;
 }
 
@@ -238,4 +229,64 @@
 
 .banka-banka-form-step3 {
     display: none;
+    flex-direction: column;
+    padding: 140px 32px 75px 57px;
+    transition: all 0.9s;
+    max-height: 100vh;
+    overflow: scroll;
+}
+
+.banka-banka-form-step3.opacity {
+    opacity: 0;
+}
+
+.banka-banka-form-step3-header {
+    margin-bottom: 12px;
+}
+
+.banka-banka-form-step3-semiTitle {
+    color: rgb(0, 42, 219);
+}
+
+.banka-banka-form-step3 .banka-banka-form-text {
+    margin-bottom: 25px;
+}
+
+.banka-banka-form-step3 .banka-banka-form-text:nth-of-type(5) {
+    margin-bottom: 40px;
+}
+
+.banka-banka-form-step3 .banka-banka-form-text:nth-of-type(6) {
+    margin-bottom: 35px;
+}
+
+.banka-banka-form-step3-button {
+    position: relative;
+    width: 340px;
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    padding: 21px 65px 19px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(0, 42, 219);
+    font-size: 22px;
+    font-weight: 900;
+    line-height: 26px;
+    transition: all 0.6s;
+    margin-bottom: 24px;
+    align-self: center;
+}
+
+.banka-banka-form-step3-button:hover {
+    background-color: rgb(0, 39, 194);
+    transform: scale(1.05);
+}
+
+.banka-banka-form-step3-button:active {
+    bottom: -2px;
+}
+
+.banka-banka-form-step3-vacancies-title {
+    margin-bottom: 18px;
 }

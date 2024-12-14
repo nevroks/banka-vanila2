@@ -13,9 +13,9 @@
     /* -----banka lid values----- */
     /* -----banka cookies values----- */
     --banka-cookie-bigPart-height: 488px;
-    --banka-cookie-bigPart-width: 439px;
+    --banka-cookie-bigPart-width: 477px;
     --banka-cookie-smallPart-height: 422px;
-    --banka-cookie-smallPart-width: 325px;
+    --banka-cookie-smallPart-width: 338px;
     /* -----banka cookies values----- */
 }
 
@@ -28,12 +28,12 @@
 
 .banka-banka-specialCookie {
     display: none;
-    height: 498px;
-    width: 498px;
+    height: 502px;
+    width: 497px;
     position: absolute;
-    bottom: calc(100vh / 2 - 498px / 2 - 20vw);
-    right: calc(100vw / 2 - 498px / 2 - 1.5vw);
-    transform: scale(calc(246 / 498)) rotate(-45deg);
+    bottom: calc(100vh / 2 - 502px / 2 - 20vw);
+    right: calc(100vw / 2 - 497px / 2 - 1.5vw);
+    /* transform: scale(calc(246 / 498)) rotate(-45deg); */
 }
 
 .banka-banka-specialCookie.step-3 {
@@ -46,13 +46,13 @@
 }
 
 .banka-banka-specialCookie.step-4 {
-    bottom: calc(100vh / 2 - 498px / 2 + 2vw);
+    bottom: calc(100vh / 2 - 502px / 2 + 2vw);
 }
 
 .banka-banka-specialCookie.step-5 {
     transition: all 1.1s;
     right: calc(100vw / 2 - 498px / 2);
-    bottom: calc(100vh / 2 - 498px / 2);
+    bottom: calc(100vh / 2 - 502px / 2);
 }
 
 .banka-banka-specialCookie.step-6 {
