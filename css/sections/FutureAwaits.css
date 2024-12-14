@@ -52,7 +52,7 @@
 
 .FutureAwaits-button {
     position: relative;
-    padding: 17px 60px;
+    padding: 17px 60px 17px 70px;
     border-radius: 9px;
     color: #0A1E4C;
     background-color: #FFFFFF;
@@ -67,6 +67,10 @@
 .FutureAwaits-button::before {
     content: url('../../assets/header/Polygon\ 1.svg');
     margin: 0 25px 0 0;
+    position: absolute;
+    top: 16px;
+    left: 32px;
+    transform: scale(1.5);
 }
 
 .FutureAwaits-button:active {

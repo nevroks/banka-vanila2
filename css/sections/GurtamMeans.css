@@ -42,8 +42,7 @@
 
 .GurtamMeans-stats {
     width: 100%;
-    display: flex;
-    justify-content: space-between
+position: relative;
 }
 
 .GurtamMeans-button{
@@ -65,16 +64,16 @@
 }
 
 .GurtamMeans-stats-card {
-    position: relative;
+    position: absolute;
     z-index: 10;
-    max-width: 440px;
+    width: 497px;
     flex-grow: 1;
     border-radius: 15px;
     background: rgb(174, 214, 241);
     padding: 20px;
     height: 176px;
     overflow: hidden;
-    right: -9%;
+    right: 0;
 }
 
 .GurtamMeans-stats-card * {
@@ -123,38 +122,26 @@
 }
 
 
-.card-years{
-    background-color: #002ADB;
-    right: -15%;
-}
+
 .card-years-count{
     color: #FFFFFF;
 }
 .card-years-text{
     color: #FFFFFF;
 }
-.card-EMPLOYEES{
-    background-color: #FFD700;
-    right: -13%;
-}
+
 .card-EMPLOYEES-count{
     color: #002ADB;
 }
 .card-EMPLOYEES-text{
     color: #002ADB;
 }
-.card-COUNTRIES{
-    background-color: #FF69B4;
-    right: -11%;
-}
+
 .card-COUNTRIES-count{
     color: #FFFFFF;
 }
 .card-COUNTRIES-text{
     color: #FFFFFF;
-}
-.card-OFFICES{
-    background-color: #0A1E4C;
 }
 .card-OFFICES-count{
     color: #FFFFFF;
@@ -170,3 +157,67 @@
     width: 850px;
     z-index: -1;
 }
+
+.card-years{
+    background-color: #002ADB;
+    position: absolute;
+    right: 0
+}
+.card-EMPLOYEES{
+    background-color: #FFD700;
+    position: absolute;
+    right: 0
+}
+.card-COUNTRIES{
+    background-color: #FF69B4;
+    position: absolute;
+    right: 0
+}
+.card-OFFICES{
+    background-color: #0A1E4C;
+    position: absolute;
+    right: 0;
+    
+}
+
+/* 
+
+.animated1 {
+    animation: moveLeft1 3s forwards; 
+}
+
+.animated2 {
+    animation: moveLeft2 3s forwards;
+}
+
+.animated3 {
+    animation: moveLeft3 3s forwards;
+}
+
+@keyframes moveLeft1 {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-940px); 
+    }
+}
+
+@keyframes moveLeft2 {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-650px); 
+    }
+}
+
+@keyframes moveLeft3 {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-350px); 
+    }
+}
+ 

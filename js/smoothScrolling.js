@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
             enableScroll();
         }
     }
-    
+   
 
     function preventDefault(e) {
         e.preventDefault();

@@ -12,6 +12,7 @@
     line-height: 77px;
     text-align: center;
     color: #002ADB;
+    letter-spacing: 1.5px;
     /* margin-top: 91px; */
 
 }
@@ -27,16 +28,18 @@
 
 .cokkiesLeft {
     position: absolute;
-    top: 152px;
-    left: -77px;
+    top: 121px;
+    left: -103px;
     z-index: 2;
+    width: 162px;
 }
 
 .cokkiesRight {
     position: absolute;
-    top: 100px;
-    right: -134px;
+    top: 64px;
+    right: -70px;
     z-index: 2;
+    width: 172px;
 }
 
 .yellowStar,

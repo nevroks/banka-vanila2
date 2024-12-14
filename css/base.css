@@ -540,3 +540,18 @@ input[type="checkbox"]:checked+label:after {
     bottom: -3%;
     z-index: 10;
 }
+
+.info{
+  position: fixed;
+  bottom: 42px;
+  left: 29%;
+  display: flex;
+}
+.info-item{
+  margin: 0 30px 0 0;
+  color: #000000;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+}
