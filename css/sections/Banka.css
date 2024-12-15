@@ -62,25 +62,47 @@
     transform: scale(calc(446 / 869)) rotate(-45deg);
 }
 
-.banka-banka-specialCookie.step-7 .banka-banka-specialCookie-img.bigPart {
+.banka-banka-specialCookie.step-7 {
+    animation: 0.6s horizontal-shaking;
+}
+
+@keyframes horizontal-shaking {
+    0% {
+        transform: translateX(0) scale(calc(446 / 869)) rotate(-45deg)
+    }
+    25% {
+        transform: translateX(5px) scale(calc(446 / 869)) rotate(-45deg)
+    }
+    50% {
+        transform: translateX(-5px) scale(calc(446 / 869)) rotate(-45deg)
+    }
+    75% {
+        transform: translateX(5px) scale(calc(446 / 869)) rotate(-45deg)
+    }
+    100% {
+        transform: translateX(0) scale(calc(446 / 869)) rotate(-45deg)
+    }
+}
+
+.banka-banka-specialCookie.step-8 .banka-banka-specialCookie-img.bigPart {
     left: -10px;
     top: -10px;
     transition: all 0.9s;
 }
 
-.banka-banka-specialCookie.step-7 .banka-banka-specialCookie-img.smallPart {
+.banka-banka-specialCookie.step-8 .banka-banka-specialCookie-img.smallPart {
     right: -18px;
     bottom: -18px;
     transition: all 0.9s;
 }
 
-.banka-banka-specialCookie.step-8 .banka-banka-specialCookie-img.bigPart {
+.banka-banka-specialCookie.step-9 .banka-banka-specialCookie-img.bigPart {
     left: -500px;
     top: -500px;
     transition: all 0.9s;
 }
 
-.banka-banka-specialCookie.step-8 .banka-banka-specialCookie-img.smallPart {
+.banka-banka-specialCookie.step-9 .banka-banka-specialCookie-img.smallPart {
     right: -345px;
     bottom: -345px;
     transition: all 0.9s;
@@ -117,6 +139,19 @@
     opacity: 1;
 }
 
+.banka-banka-wrapper.glow {
+    animation: 2s infinite glow alternate;
+}
+
+@keyframes glow {
+    from {
+        scale: 98%;
+    }
+    to {
+        scale: 102%;
+    }
+}
+
 .banka-banka-wrapper.step-1 {
     transform: scale(1.6);
     bottom: -80px;
@@ -125,8 +160,8 @@
 
 .banka-banka-wrapper.step-5 {
     opacity: 0;
-    bottom: -150px;
-    left: -50px;
+    bottom: -80vh;
+    left: -90px;
 }
 
 .banka-banka-jar {
