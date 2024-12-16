@@ -34,16 +34,17 @@
 
 .leftcookies {
     position: absolute;
-    left: -88px;
-    top: 12px;
+    left: -130px;
+    top: -31px;
     z-index: 6;
 }
 
 .rightcookies {
     position: absolute;
-    top: -29px;
-    right: -121px;
+    top: -52px;
+    right: -64px;
     z-index: 6;
+    width: 105px;
 }
 
 .leftStarJoin {
@@ -63,32 +64,12 @@
 
 .dragon {
     position: absolute;
-    top: -5px;
+    top: -65px;
     left: 27px;
 }
 
 
-.JoinGurtam-button {
-    position: relative;
-    z-index: 10;
-    border-radius: 15px;
-    background: rgb(255, 105, 180);
-    padding: 20px 50px;
-    font-size: 35px;
-    font-weight: 500;
-    line-height: 120%;
-    letter-spacing: -1.2%;
-    color: #000000;
-    transition: all 0.5s;
-}
 
-.JoinGurtam-button-wrapper::before {
-    content: url(./../../assets/bigBlueStar.svg);
-    position: absolute;
-    z-index: 9;
-    left: -73px;
-    bottom: -80px;
-}
 
 .JoinGurtam-button-wrapper::after {
     content: url(./../../assets/bigYellowStar.svg);
@@ -99,7 +80,7 @@
 }
 
 .JoinGurtam-button:hover {
-    background: rgb(214, 89, 152);
+    background: rgb(248, 248, 248);
 }
 
 .JoinGurtam-button:active {
@@ -142,5 +123,128 @@
 
 .dragAnimated {
     animation: riseAndFall 3s ease-in-out infinite;
+}
+
+#block1, #block2, #block3, #block4 {
+    transition: transform 0.5s ease; 
+}
+@media (max-width: 978px) {
+    .JoinGurtam-title {
+        font-size: 41px;
+    }
+    .JoinGurtam-text {
+        font-size: 26px;
+    }
+    .JoinGurtamStar {
+        position: absolute;
+        bottom: -500px;
+    }
+}
+@media (max-width: 688px) {
+    .JoinGurtam-title {
+        font-size: 26px;
+        line-height: 0;
+    }
+    .JoinGurtam-text {
+        font-size: 22px;
+    }
+    .JoinGurtamStar {
+        position: absolute;
+        bottom: -500px;
+    }
+    .FutureAwaits-button {
+        padding: 17px 40px 17px 70px !important;
+        font-size: 14px !important;
+    }
+    .leftcookies {
+        position: absolute;
+        left: -17px;
+        top: -83px;
+        z-index: 6;
+        width: 150px;
+    }
+    .leftStarJoin {
+        position: absolute;
+        top: -72px;
+        left: 48px;
+        z-index: -2;
+        width: 78px;
+        z-index: 5;
+    }
+    .rightcookies {
+        position: absolute;
+        top: 20px;
+        right: 50px;
+        z-index: 6;
+        width: 84px;
+    }
+    .righttStarJoin {
+        position: absolute;
+        top: 46px;
+        right: 40px;
+        z-index: 5;
+        width: 66px;
+    }
+    .dragon {
+        position: absolute;
+        top: 30px;
+        left: 27px;
+    }
+}
+
+
+@media (max-width: 406px) {
+    .JoinGurtam-title {
+        text-align: start;
+        padding: 0 45px;
+        line-height: 42px;
+    }
+    .JoinGurtam-text {
+        text-align: start;
+        padding: 42px 45px;
+        line-height: 24px;
+    }
+    .JoinGurtamStar {
+        position: absolute;
+        bottom: -250px;
+    }
+    .FutureAwaits-button {
+        padding: 17px 40px 17px 70px !important;
+        font-size: 14px !important;
+    }
+    .leftcookies {
+        position: absolute;
+        left: -17px;
+        top: -39px;
+        z-index: 6;
+        width: 150px;
+    }
+    .leftStarJoin {
+        position: absolute;
+        top: -32px;
+        left: 48px;
+        z-index: -2;
+        width: 78px;
+        z-index: 5;
+    }
+    .rightcookies {
+        position: absolute;
+        top: 67px;
+        right: 50px;
+        z-index: 6;
+        width: 84px;
+    }
+    .righttStarJoin {
+        position: absolute;
+        top: 99px;
+        right: 40px;
+        z-index: 5;
+        width: 66px;
+    }
+    .dragon {
+        position: absolute;
+        top: 73px;
+        left: 27px;
+    }
 }
 

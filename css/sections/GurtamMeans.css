@@ -10,11 +10,13 @@
     transition: opacity 2s ease-in-out, transform 2s ease-in-out;
     opacity: 0;
 }
+
 .GurtamMeans.visible {
     opacity: 1;
-    transform: translateY(0); 
+    transform: translateY(0);
 }
-.GurtamMeans-tailDragons{
+
+.GurtamMeans-tailDragons {
     position: absolute;
     top: 0;
     right: 0;
@@ -42,11 +44,10 @@
 
 .GurtamMeans-stats {
     width: 100%;
-    display: flex;
-    justify-content: space-between
+    position: relative;
 }
 
-.GurtamMeans-button{
+.GurtamMeans-button {
     height: 60px;
     color: #0A1E4C;
     letter-spacing: 3px;
@@ -55,19 +56,19 @@
     font-weight: 900;
     line-height: 26px;
     border-radius: 9px;
-    border: 1px solid  rgb(0, 42, 219);
+    border: 1px solid rgb(0, 42, 219);
     margin-bottom: 25px;
 }
 
-.GurtamMeans-button::before{
+.GurtamMeans-button::before {
     content: url('../../assets/header/Polygon\ 1.svg');
     margin: 0 30px 0 0;
 }
 
 .GurtamMeans-stats-card {
-    position: relative;
+    position: absolute;
     z-index: 10;
-    max-width: 440px;
+    width: 497px;
     flex-grow: 1;
     border-radius: 15px;
     background: rgb(174, 214, 241);
@@ -102,67 +103,70 @@
     font-weight: 400;
     line-height: 28px;
 }
-.GurtamMeans-stats-card-count.years,.GurtamMeans-stats-card-count.offices,.GurtamMeans-stats-card-count.countries{
+
+.GurtamMeans-stats-card-count.years,
+.GurtamMeans-stats-card-count.offices,
+.GurtamMeans-stats-card-count.countries {
     position: relative;
 }
-.GurtamMeans-stats-card-count.years::after,.GurtamMeans-stats-card-count.offices::after,.GurtamMeans-stats-card-count.countries::after{
+
+.GurtamMeans-stats-card-count.years::after,
+.GurtamMeans-stats-card-count.offices::after,
+.GurtamMeans-stats-card-count.countries::after {
     content: url(./../assets/starSvg.svg);
     position: absolute;
 }
-.GurtamMeans-stats-card-count.years::after{
+
+.GurtamMeans-stats-card-count.years::after {
     top: -40px;
     left: 74px;
 }
-.GurtamMeans-stats-card-count.offices::after{
+
+.GurtamMeans-stats-card-count.offices::after {
     top: 4px;
     left: 36px;
 }
-.GurtamMeans-stats-card-count.countries::after{
+
+.GurtamMeans-stats-card-count.countries::after {
     top: -47px;
     left: 18px;
 }
 
 
-.card-years{
-    background-color: #002ADB;
-    right: -15%;
-}
-.card-years-count{
+
+.card-years-count {
     color: #FFFFFF;
 }
-.card-years-text{
+
+.card-years-text {
     color: #FFFFFF;
 }
-.card-EMPLOYEES{
-    background-color: #FFD700;
-    right: -13%;
-}
-.card-EMPLOYEES-count{
+
+.card-EMPLOYEES-count {
     color: #002ADB;
 }
-.card-EMPLOYEES-text{
+
+.card-EMPLOYEES-text {
     color: #002ADB;
 }
-.card-COUNTRIES{
-    background-color: #FF69B4;
-    right: -11%;
-}
-.card-COUNTRIES-count{
+
+.card-COUNTRIES-count {
     color: #FFFFFF;
 }
-.card-COUNTRIES-text{
+
+.card-COUNTRIES-text {
     color: #FFFFFF;
 }
-.card-OFFICES{
-    background-color: #0A1E4C;
-}
-.card-OFFICES-count{
+
+.card-OFFICES-count {
     color: #FFFFFF;
 }
-.card-OFFICES-text{
+
+.card-OFFICES-text {
     color: #FFFFFF;
 }
-.GurtamMeansStar{
+
+.GurtamMeansStar {
     position: absolute;
     bottom: -463px;
     left: 50%;
@@ -170,3 +174,157 @@
     width: 850px;
     z-index: -1;
 }
+
+.card-years {
+    background-color: #002ADB;
+    position: absolute;
+    right: -9%;
+}
+
+.card-EMPLOYEES {
+    background-color: #FFD700;
+    position: absolute;
+    right: -9%;
+}
+
+.card-COUNTRIES {
+    background-color: #FF69B4;
+    position: absolute;
+    right: -9%;
+}
+
+.card-OFFICES {
+    background-color: #0A1E4C;
+    position: absolute;
+    right: -9%;
+
+}
+
+@media(max-width: 1478px) {
+    .GurtamMeans {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+}
+
+@media(max-width: 1049px) {
+    .GurtamMeans {
+      height: auto !important;
+    
+    }
+    .GurtamMeans-stats{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+    .card-years {
+        background-color: #002ADB;
+        position: static;
+        text-align: center;
+    }
+    
+    .card-EMPLOYEES {
+        background-color: #FFD700;
+        position: static;
+        text-align: center;
+        transform: translateY(-30px);
+    }
+    
+    .card-COUNTRIES {
+        background-color: #FF69B4;
+        position: static;
+        text-align: center;
+        transform: translateY(-50px);
+    }
+    
+    .card-OFFICES {
+        background-color: #0A1E4C;
+        position: static;
+        text-align: center;
+        transform: translateY(-70px);
+    }
+}
+
+@media(max-width: 690px) {
+    .GurtamMeans {
+        align-items: center;
+    
+    }
+}
+@media(max-width: 521px) {
+    .GurtamMeans {
+        align-items: center;
+    }
+    .GurtamMeans-stats-card {
+        width: 300px;
+    }
+    .GurtamMeans-stats-card-text{
+        line-height: 22px;
+    }
+}
+
+@media(max-width: 473px) {
+    .GurtamMeans-title {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .GurtamMeans-text {
+        font-size: 16px;
+    }
+
+    .GurtamMeans-button {
+        padding: 17px 51px;
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 400px) {
+    .GurtamMeans-text {
+        font-size: 14px;
+        padding: 13px 0 30px;
+    }
+}
+
+/* 
+
+.animated1 {
+    animation: moveLeft1 3s forwards; 
+}
+
+.animated2 {
+    animation: moveLeft2 3s forwards;
+}
+
+.animated3 {
+    animation: moveLeft3 3s forwards;
+}
+
+@keyframes moveLeft1 {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-940px); 
+    }
+}
+
+@keyframes moveLeft2 {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-650px); 
+    }
+}
+
+@keyframes moveLeft3 {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-350px); 
+    }
+}
+ */

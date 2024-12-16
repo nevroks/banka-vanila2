@@ -7,11 +7,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- -----adding Inter and Special Elite font families----- -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Special+Elite&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Special+Elite&display=swap"
+        rel="stylesheet">
     <!-- -----adding Inter and Special Elite font families----- -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- -----adding Jquery----- -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- -----adding Jquery----- -->
     <!-- -----adding fullpage js library----- -->
     <script src="./assets/libs/jquery.pagepiling.js"></script>
@@ -70,17 +74,80 @@
             <img src="./assets/girland/lights/red.svg" alt="" class="hidden girland  girland37">
             <img src="./assets/girland/lights/yellow.svg" alt="" class="hidden girland  girland38">
         </div>
-        <nav class="header-navigation">
-            <div class="header-navigation-box">
-                <button class="header-navigation-button-jobs">ALL JOBS</button>
-                <button class="header-navigation-button-join-us">JOIN US!</button>
+        <nav class="header-navigation-mini">
+            <img src="./assets/logos/gurtamLogo.svg" alt="gurtam-logo" class="header-navigation-log-mini">
+            <div class="header-navigation-box-mini">
+                <button class="header-navigation-button-plau-mini">PLAY!</button>
             </div>
-            <img src="./assets/logos/gurtamLogo.svg" alt="gurtam-logo">
-            <div class="header-navigation-box">
-                <button class="header-navigation-button-hidden">PLAY!</button>
-                <button class="header-navigation-button-plau">PLAY!</button>
+            <div class="burger"></div>
+        </nav>
+        <div class="modal" id="modal">
+            <nav class="header-navigation-mini">
+                <img src="./assets/logos/gurtamLogo.svg" alt="gurtam-logo" class="header-navigation-log-mini">
+                <div class="header-navigation-box-mini">
+                    <button class="header-navigation-button-plau-mini">PLAY!</button>
+                </div>
+                <div class="burger"></div>
+            </nav>
+            <div class="modal-content">
+                <button class="header-navigation-button-jobs-modal ">ALL JOBS</button>
+                <button class="header-navigation-button-join-us-modal">JOIN US!</button>
+                <button class="FutureAwaits-button-modal ">DISVOVER YOUR FORTUNE!</button>
+                <div class="snow-modal">
+                    <div id="toggleSnow" class="modal-snow-open ">SNOW: OFF</div>
+                    <div class="modal-snow-close">SNOW: ON</div>
+                </div>
+
+                <img src="./assets/star/pinkStar.png" alt="pinkStar" class="FutureAwaitsStar-modal">
+                <footer class="footer footer-modal ">
+                    <div class="info-item info-item-modal">Сompetition terms >></div>
+                    <div class="info-item info-item-modal">Privacy policy >></div>
+                    <nav>
+                        <ul class="social">
+                            <li class="social-item">
+                                <canvas class="snowdrift" id="snowdriftYoutube"></canvas>
+                                <a href="">
+                                    <img src="./assets/social/yotube.svg" alt="youtube" class="social-link">
+                                </a>
+                            </li>
+                            <li class="social-item ">
+                                <a href="">
+                                    <img src="./assets/social/li.svg" alt="LinkedIn" class="social-link">
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="">
+                                    <img src="./assets/social/inst.svg" alt="instagram" class="social-link">
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="">
+                                    <img src="./assets/social/fee.svg" alt="facebook" class="social-link">
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="">
+                                    <img src="./assets/social/hz.svg" alt="hz" class="social-link">
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="info-item info-item-modal">Copyright © 2002-2024</div>
+                </footer>
+            </div>
+        </div>
+        <nav class="header-navigation blockNav">
+            <div class="header-navigation-box blockNav">
+                <button class="header-navigation-button-jobs blockNav">ALL JOBS</button>
+                <button class="header-navigation-button-join-us blockNav">JOIN US!</button>
+            </div>
+            <img src="./assets/logos/gurtamLogo.svg" alt="gurtam-logo" class="blockNav">
+            <div class="header-navigation-box blockNav">
+                <button class="header-navigation-button-hidden blockNav">PLAY!</button>
+                <button class="header-navigation-button-plau blockNav">PLAY!</button>
             </div>
         </nav>
+
     </header>
     <main>
         <div class="pagepilling ">
@@ -91,42 +158,52 @@
                     <h2 class="FutureAwaits-title">Future awaits!</h2>
                     <h2 class="FutureAwaits-subtitle">Discover you career fortune with Gurtam</h2>
                     <p class="FutureAwaits-text">
-                        <span class="FutureAwaits-text-span">Prepare for 2025!</span> Due to our experience in navigation and tracking we are here to guide you for what's to come. Crack open a fortune cookie to discover your career prediction for the
+                        <span class="FutureAwaits-text-span">Prepare for 2025!</span> Due to our experience in
+                        navigation and tracking we are here to guide you for what's to come. Crack open a fortune cookie
+                        to discover your career prediction for the
                         upcoming year
                     </p>
                     <p class="FutureAwaits-text">
                         Stay focused and catch your fortune to
                         <span class="FutureAwaits-text-span">
-                                win the prize —
-                                <br>
-                                coupon for
-                                <span class="FutureAwaits-text-span-bold">500 euros</span> to a hardware store in your city!
+                            win the prize —
+                            <br>
+                            coupon for
+                            <span class="FutureAwaits-text-span-bold">500 euros</span> to a hardware store in your city!
                         </span>
                     </p>
                     <button class="FutureAwaits-button">DISVOVER YOUR FORTUNE!</button>
-                    <img src="./assets/FutureAwaits/6c0a9e3a1510f941bb8ebca5a1117a78.webp" alt="futureAwaits-img" class="FutureAwaits-background-img animated">
+                    <img src="./assets/FutureAwaits/wing_left.PNG" alt="futureAwaits-img"
+                        class="FutureAwaits-background-img-left animatedLeft none">
+                    <img src="./assets/FutureAwaits/image.png" alt="futureAwaits-img"
+                        class="FutureAwaits-background-img animated none">
+                    <img src="./assets/FutureAwaits/wing_right.PNG" alt="futureAwaits-img"
+                        class="FutureAwaits-background-img-right  animatedRight none">
+                    <img src="./assets/FutureAwaits/dragonMini.png" alt="dragonMini" class="dragonMini NoNone">
+
                     <img src="./assets/star/pinkStar.png" alt="pinkStar" class="FutureAwaitsStar">
                 </section>
                 <section id="section" class="GurtamMeans">
                     <h2 class="GurtamMeans-title">Stay curious with Gurtam!</h2>
                     <p class="GurtamMeans-text">
-                        Gurtam exists to bring telematics technology closer to people and businesses. We are a software developer specializing in fleet management solutions utilizing telematics and IoT technology
+                        Gurtam exists to bring telematics technology closer to people and businesses. We are a software
+                        developer specializing in fleet management solutions utilizing telematics and IoT technology
                     </p>
                     <button class="GurtamMeans-button">JOIN US!</button>
                     <div class="GurtamMeans-stats">
-                        <div class="GurtamMeans-stats-card card-years">
+                        <div id="block1" class="GurtamMeans-stats-card card-years">
                             <p class="GurtamMeans-stats-card-count card-years-count  years">20+</p>
                             <p class="GurtamMeans-stats-card-text card-years-text">YEARS OLD</p>
                         </div>
-                        <div class="GurtamMeans-stats-card card-EMPLOYEES">
+                        <div id="block2" class="GurtamMeans-stats-card card-EMPLOYEES">
                             <p class="GurtamMeans-stats-card-count card-EMPLOYEES-count">300+</p>
                             <p class="GurtamMeans-stats-card-text card-EMPLOYEES-text">EMPLOYEES</p>
                         </div>
-                        <div class="GurtamMeans-stats-card card-COUNTRIES">
+                        <div id="block3" class="GurtamMeans-stats-card card-COUNTRIES">
                             <p class="GurtamMeans-stats-card-count offices card-COUNTRIES-count">150</p>
                             <p class="GurtamMeans-stats-card-text card-COUNTRIES-text">COUNTRIES</p>
                         </div>
-                        <div class="GurtamMeans-stats-card card-OFFICES">
+                        <div id="block4" class="GurtamMeans-stats-card card-OFFICES">
                             <p class="GurtamMeans-stats-card-count card-OFFICES-count countries ">4</p>
                             <p class="GurtamMeans-stats-card-text card-OFFICES-text">OFFICES WORLDWIDE</p>
                         </div>
@@ -160,7 +237,8 @@
                                     <span class="italic">Yes please!</span>
                                 </p>
                             </div>
-                            <img class="WhyUs-CoreValues-value-img2" src="./../../assets/WhyUs/card2img.webp" alt="card1img">
+                            <img class="WhyUs-CoreValues-value-img2" src="./../../assets/WhyUs/card2img.webp"
+                                alt="card1img">
                         </div>
                         <div id="3" class="WhyUs-CoreValues-value third ">
                             <div class="WhyUs-CoreValues-value-info">
@@ -173,23 +251,26 @@
                                     <br> Georgian Week. Every day is a journey here and you can join this ride!
                                 </p>
                             </div>
-                            <img class="WhyUs-CoreValues-value-img3" src="./../../assets/WhyUs/card3img.webp" alt="card1img">
+                            <img class="WhyUs-CoreValues-value-img3" src="./../../assets/WhyUs/card3img.webp"
+                                alt="card1img">
                         </div>
                     </div>
                 </section>
-             <section id="section" class="OurBenefits">
+                <section id="section" class="OurBenefits">
                     <img src="./assets/star//pinkStar.png" alt="pinkStar" class="OurBenefitsStarPink">
-                    <h2 class="OurBenefits-title">Explore what`s next with Gurtam!</h2>
+                    <h2 class="OurBenefits-title">We work hard and we party harder!</h2>
                     <div class="OurBenefits-cards">
                         <div class="OurBenefits-videos">
                             <div class="boxVideo">
                                 <img src="./assets/OurBenefits/videoImg.png" alt="videoImg">
-                                <img src="./assets/OurBenefits/play.png" alt="play" class="play" data-video-url="https://www.youtube.com/watch?v=F-XcxvV-8m0">
+                                <img src="./assets/OurBenefits/play.png" alt="play" class="play"
+                                    data-video-url="https://www.youtube.com/watch?v=F-XcxvV-8m0">
                                 <div class="video-container"></div>
                             </div>
                             <img src="./assets/OurBenefits/cokkiesLeft.png" alt="cokkiesLeft" class="cokkiesLeft">
                             <img src="./assets/OurBenefits/cokkiesRight.png" alt="cokkiesRight" class="cokkiesRight">
-                            <img src="./assets/OurBenefits/yellowStar.png" alt="cokkiesRight" class="yellowStar animate">
+                            <img src="./assets/OurBenefits/yellowStar.png" alt="cokkiesRight"
+                                class="yellowStar animate">
                             <img src="./assets/OurBenefits/redStar.png" alt="cokkiesRight" class="redStar animate">
                         </div>
                     </div>
@@ -202,7 +283,7 @@
                     </p>
                     <div class="JoinGurtam-button-wrapper">
                         <button class="FutureAwaits-button ">DISVOVER YOUR FORTUNE!</button>
-                        <img src="/assets/OurBenefits/cokkiesLeft.png" alt="leftcookies" class="leftcookies">
+                        <img src="/assets/JoinGurtam/leftcookies.png" alt="leftcookies" class="leftcookies">
                         <img src="./assets/OurBenefits/cokkiesRight.png" alt="rightcookies" class="rightcookies">
                         <img src="./assets/OurBenefits/yellowStar.png" alt="cokkiesRight" class="leftStarJoin animat">
                         <img src="./assets/OurBenefits/redStar.png" alt="cokkiesRight" class="righttStarJoin animat">
@@ -211,16 +292,26 @@
                     <img src="./assets/star/Star 11.png" alt="pinkStar" class="JoinGurtamStar">
                 </section>
                 <section id="section" class="banka">
+                    <div class="banka-banka-title">
+                        Discover your fortune!
+                    </div>
                     <div class="banka-banka-specialCookie">
-                        <img class="banka-banka-specialCookie-img bigPart" src="./assets/banka/cookieBigPart.png" alt="">
-                        <img class="banka-banka-specialCookie-img smallPart" src="./assets/banka/cookieSmallPart.png" alt="">
+                        <img class="banka-banka-specialCookie-img bigPart" src="./assets/banka/cookieBigPart.png"
+                            alt="">
+                        <img class="banka-banka-specialCookie-img smallPart" src="./assets/banka/cookieSmallPart.png"
+                            alt="">
                     </div>
                     <div class="banka-banka-form">
                         <div class="banka-banka-form-step1">
                             <h3 class="banka-banka-form-step1-title banka-banka-form-title">INVEST IN YOURSELF.</h3>
-                            <p class="banka-banka-form-step1-semiTitle">Don't follow others' paths to gain long-term advantages…</p>
-                            <button class="banka-banka-form-step1-button"><img src="./assets/polygons/trianglePolygon.svg" alt="trianglePolygon">GET FULL PREDICTION</button>
-                            <p class="banka-banka-form-step1-text">FILL OUT THE FORM AND GET A CHANCE TO WIN A PRIZE!</p>
+                            <p class="banka-banka-form-step1-semiTitle">Don't follow others' paths to gain long-term
+                                advantages…</p>
+                            <button class="banka-banka-form-step1-button"><img
+                                    src="./assets/polygons/trianglePolygon.svg" alt="trianglePolygon">GET FULL
+                                PREDICTION</button>
+                            <p class="banka-banka-form-step1-text">FILL OUT THE FORM AND GET A CHANCE TO WIN A
+                                PRIZE!
+                            </p>
 
                             <div class="banka-banka-form-step1-share">
                                 <p class="banka-banka-form-step1-share-text">OR SHARE THE RESULT NOW:</p>
@@ -232,20 +323,28 @@
                         </div>
                         <div class="banka-banka-form-step2 opacity">
                             <h3 class="banka-banka-form-step2-title banka-banka-form-title">FULL PREDICTION</h3>
-                            <p class="banka-banka-form-text banka-banka-form-step2-text">Help us interpret your prediction more precisely. Fill the form, share your full prediction and have chance to win a prize coupon for <span>500 euros</span> to a hardware store in your city!</p>
-                            <p class="banka-banka-form-text banka-banka-form-step2-text">We’ll pick the winner using a random draw on 31 of december 2024 at 12:00 AM CET+3 IN OUR INSTAGRAM!</p>
+                            <p class="banka-banka-form-text banka-banka-form-step2-text">Help us interpret your
+                                prediction more precisely. Fill the form, share your full prediction and have chance
+                                to
+                                win a prize coupon for <span>500 euros</span> to a hardware store in your city!</p>
+                            <p class="banka-banka-form-text banka-banka-form-step2-text">We’ll pick the winner using
+                                a
+                                random draw on 31 of december 2024 at 12:00 AM CET+3 IN OUR INSTAGRAM!</p>
                             <select class="banka-banka-form-select banka-banka-form-step2-select stackSelect">
-                                    <option value="none" disabled selected>YOUR STACK...</option>
-                                    <option value="">нигерс</option>
-                                    <option value="">фак нигерс</option>
-                                </select>
+                                <option value="none" disabled selected>YOUR STACK...</option>
+                                <option value="">нигерс</option>
+                                <option value="">фак нигерс</option>
+                            </select>
                             <select class="banka-banka-form-select banka-banka-form-step2-select levelSelect">
-                                    <option value="none" disabled selected>YOUR LEVEL...</option>
-                                    <option value="some">нигерс</option>
-                                    <option value="some2">фак нигерс</option>
-                                </select>
-                            <input class="banka-banka-form-step2-input emailInput" placeholder="YOUR E-MAIL..." type="text">
-                            <button disabled class="banka-banka-form-step2-button"><img src="./assets/polygons/trianglePolygon.svg" alt="play"> GET FULL PREDICTION</button>
+                                <option value="none" disabled selected>YOUR LEVEL...</option>
+                                <option value="some">нигерс</option>
+                                <option value="some2">фак нигерс</option>
+                            </select>
+                            <input class="banka-banka-form-step2-input emailInput" placeholder="YOUR E-MAIL..."
+                                type="text">
+                            <button disabled class="banka-banka-form-step2-button"><img
+                                    src="./assets/polygons/trianglePolygon.svg" alt="play"> GET FULL
+                                PREDICTION</button>
                         </div>
                         <div class="banka-banka-form-step3 opacity">
                             <h3 class="banka-banka-form-step3-title banka-banka-form-title">Текст</h3>
@@ -261,13 +360,51 @@
                             <img src="./assets/banka/bankaJar.png" alt="">
                         </div>
                     </div>
-                    <img src="./assets/banka/dragon.png" alt="dragonbanka" class="dragonbanka">
-                </section> 
+                    <img src="./assets/banka/dragon.png" alt="dragonbanka" class="dragonbanka dragonVisible">
+                    <img src="./assets/banka/dragon_footer.PNG" alt="dragonbanka" class="dragonbanka-mini dragonNone">
+                    <footer class="footer footervisible ">
+                        <div class="footer-mini">
+                            <div class="info-item info-item-mini">Сompetition terms >></div>
+                            <div class="info-item info-item-mini">Privacy policy >></div>
+                            <nav>
+                                <ul class="social">
+                                    <li class="social-item">
+                                        <canvas class="snowdrift" id="snowdriftYoutube"></canvas>
+                                        <a href="">
+                                            <img src="./assets/social/fsbw.png" alt="youtube" class="social-link">
+                                        </a>
+                                    </li>
+                                    <li class="social-item ">
+                                        <a href="">
+                                            <img src="./assets/social/instw.png" alt="LinkedIn" class="social-link">
+                                        </a>
+                                    </li>
+                                    <li class="social-item">
+                                        <a href="">
+                                            <img src="./assets/social/dddd.png" alt="instagram" class="social-link">
+                                        </a>
+                                    </li>
+                                    <li class="social-item">
+                                        <a href="">
+                                            <img src="./assets/social/fsbw2.png" alt="facebook" class="social-link">
+                                        </a>
+                                    </li>
+                                    <li class="social-item">
+                                        <a href="">
+                                            <img src="./assets/social/hz2.png" alt="hz" class="social-link">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="info-item info-item-mini">Copyright © 2002-2024</div>
+                        </div>
+                    </footer>
+                </section>
             </div>
         </div>
     </main>
-    <footer class="footer">
-        <nav>
+    <footer class="footer  footerNode">
+        <nav >
             <ul class="social">
                 <li class="social-item">
                     <canvas class="snowdrift" id="snowdriftYoutube"></canvas>
@@ -296,18 +433,26 @@
                     </a>
                 </li>
             </ul>
-            <div class="showButton social-item-show-Button" id="toggleSnow">
-                <div class="img img-hide">
-                    <img src="./assets/social/showToButtonShow.svg" alt="showToButtonShow" class="img-items img-hide">
-                </div>
-                <div>
-                    <img src="./assets/social/snow icon.svg" alt="showButton">
-                </div>
-            </div>
         </nav>
+        <div class="info">
+            <div class="info-item ">Сompetition terms >></div>
+            <div class="info-item">Privacy policy >></div>
+            <div class="info-item">Copyright © 2002-2024</div>
+        </div>
+        <div class="showButton social-item-show-Button" id="toggleSnow">
+            <div class="img img-hide">
+                <img src="./assets/social/showToButtonShow.svg" alt="showToButtonShow" class="img-items img-hide">
+            </div>
+            <div>
+                <img src="./assets/social/snow icon.svg" alt="showButton">
+            </div>
+        </div>
     </footer>
     <!-- <script src="./assets/libs/jquery.pagepiling.js"></script> -->
     <script src="./js/playVideo.js"></script>
+    <script src="./js/tiglerSnow.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/sections/GurtamMeans.js"></script>
     <script src="./js/blockScrollSections.js"></script>
     <script src="./js/girland.js"></script>
     <script src="./js/handlerSnow.js"></script>

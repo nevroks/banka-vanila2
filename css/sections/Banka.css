@@ -171,4 +171,74 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    width: 56%;
+    z-index: -1;
+}
+
+
+.banka-banka-title{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    font-weight: 900;
+    font-size: 42px;
+    color: #0A1E4C;
+    line-height: 38px;
+    letter-spacing: 1px;
+}
+.banka-banka-title::after{
+    position: absolute;
+    content: url('../../assets/banka/IMG_5472 1.png');
+    top: -4px;
+    right: -50px;
+    transform: scale(1);
+}
+
+.dragonNone{
+    display: none;
+}
+.dragonVisible{
+    display: block;
+}
+
+@media(max-width: 966px) {
+    .banka-banka-title {
+        font-size: 24px;
+    }
+    .dragonbanka{
+        width: 100%;
+    }
+}
+@media(max-width: 580px) {
+    .banka-banka-title {
+        font-size: 17px;
+    }
+    .dragonbanka{
+        width: 100%;
+    }
+    .dragonNone{
+        display: block;
+    }
+    .dragonVisible{
+        display: none;
+    }
+    .dragonbanka-mini{
+            position: absolute;
+            bottom: -84px;
+    }
+    
+
+}
+@media(max-width: 466px) {
+    .dragonbanka-mini{
+        position: absolute;
+        bottom: 27px;
+        transform: scale(1.5);
+    }
+}
+@media(max-width: 432px) {
+    .banka-banka-title {
+        width: 216px;
+    }
 }

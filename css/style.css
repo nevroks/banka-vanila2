@@ -71,7 +71,7 @@
     width: 60px;
     display: flex;
     justify-content: center;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .social-item-show-Button {
@@ -82,7 +82,7 @@
     width: 60px;
     display: flex;
     justify-content: center;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .img-items {
@@ -255,4 +255,9 @@
     right: 122px;
 }
 
+@media (max-width: 1039px) {
+    .showButton {
+ display: none;
+    }
+}
 

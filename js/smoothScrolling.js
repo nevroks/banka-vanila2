@@ -3,19 +3,37 @@ document.addEventListener('DOMContentLoaded', function () {
     const sections = document.querySelectorAll('section'); 
     let currentSection = 0; 
 
+    function addOpenClassToAll() {
+        const coreValues = document.querySelectorAll('.WhyUs-CoreValues-value');
+        const textValue = document.querySelectorAll('.WhyUs-CoreValues-value-info-text');
+
+        coreValues.forEach(value => {
+            value.classList.add('openned');
+        });
+        textValue.forEach(value => {
+            value.classList.add('openned');
+        });
+    }
+
     function checkVisibility() {
+        // Проверяем ширину окна
+        if (window.innerWidth < 951) {
+            addOpenClassToAll();
+            return; // Прекращаем выполнение функции, если ширина меньше 951px
+        }
+
         var sections = $('.pagepiling section');
         var windowHeight = $(window).height();
         var whyUsVisible = false;
-    
+
         sections.each(function () {
             var sectionTop = $(this).offset().top;
-    
+
             if (sectionTop < $(window).scrollTop() + windowHeight) {
                 if (!$(this).hasClass('visible')) {
                     $(this).addClass('visible');
                 }
-    
+
                 if ($(this).hasClass('WhyUs')) {
                     whyUsVisible = true;
                 }
@@ -23,20 +41,19 @@ document.addEventListener('DOMContentLoaded', function () {
                 if ($(this).hasClass('visible')) {
                     $(this).removeClass('visible');
                 }
-    
+
                 if ($(this).hasClass('WhyUs')) {
                     whyUsVisible = false;
                 }
             }
         });
-    
+
         if (whyUsVisible) {
             disableScroll();
         } else {
             enableScroll();
         }
     }
-    
 
     function preventDefault(e) {
         e.preventDefault();
@@ -82,7 +99,6 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
 
-        
         function easeInOutQuart(t) {
             return t < 0.5 
                 ? 8 * t * t * t * t 
@@ -92,7 +108,6 @@ document.addEventListener('DOMContentLoaded', function () {
         requestAnimationFrame(animation);
     }
 
-   
     window.addEventListener('wheel', function (event) {
         event.preventDefault(); 
 
@@ -119,7 +134,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-   
     const coreValues = document.querySelectorAll('.WhyUs-CoreValues-value');
     const textValue = document.querySelectorAll('.WhyUs-CoreValues-value-info-text');
     let currentIndex = 0;
