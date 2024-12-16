@@ -45,6 +45,7 @@
 .GurtamMeans-stats {
     width: 100%;
     position: relative;
+position: relative;
 }
 
 .GurtamMeans-button {
@@ -69,13 +70,14 @@
     position: absolute;
     z-index: 10;
     width: 497px;
+    width: 497px;
     flex-grow: 1;
     border-radius: 15px;
     background: rgb(174, 214, 241);
     padding: 20px;
     height: 176px;
     overflow: hidden;
-    right: -9%;
+    right: 0;
 }
 
 .GurtamMeans-stats-card * {

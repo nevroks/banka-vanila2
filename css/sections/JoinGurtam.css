@@ -36,6 +36,8 @@
     position: absolute;
     left: -130px;
     top: -31px;
+    left: -130px;
+    top: -31px;
     z-index: 6;
 }
 
@@ -43,7 +45,10 @@
     position: absolute;
     top: -52px;
     right: -64px;
+    top: -52px;
+    right: -64px;
     z-index: 6;
+    width: 105px;
     width: 105px;
 }
 
@@ -65,8 +70,10 @@
 .dragon {
     position: absolute;
     top: -65px;
+    top: -65px;
     left: 27px;
 }
+
 
 
 
@@ -80,6 +87,7 @@
 }
 
 .JoinGurtam-button:hover {
+    background: rgb(248, 248, 248);
     background: rgb(248, 248, 248);
 }
 
