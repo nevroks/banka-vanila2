@@ -104,11 +104,9 @@
     0% {
         transform: translateY(0);
     }
-
     50% {
         transform: translateY(-50px);
     }
-
     100% {
         transform: translateY(0);
     }
@@ -118,11 +116,9 @@
     0% {
         transform: translateY(0) rotate(-5deg);
     }
-
     50% {
         transform: translateY(-50px) rotate(-10deg);
     }
-
     100% {
         transform: translateY(0) rotate(-5deg);
     }
@@ -132,11 +128,9 @@
     0% {
         transform: translateY(0) rotate(5deg);
     }
-
     50% {
         transform: translateY(-50px) rotate(10deg);
     }
-
     100% {
         transform: translateY(0) rotate(5deg);
     }
@@ -153,8 +147,6 @@
 .animated {
     animation: riseAndFall 3s ease-in-out infinite;
 }
-
-
 
 .FutureAwaitsStar {
     position: absolute;
@@ -178,20 +170,16 @@
     .header-navigation {
         padding: 0 30px;
     }
-
     .FutureAwaits {
         padding-left: 30px;
         padding-right: 30px;
     }
-
     .FutureAwaits-background-img {
         right: 48px;
     }
-
     .FutureAwaits-background-img-left {
         right: -6px;
     }
-
     .FutureAwaits-background-img-right {
         right: -67px;
     }
@@ -202,31 +190,25 @@
         font-size: 58px;
         letter-spacing: 1px;
     }
-
     .FutureAwaits-subtitle {
         font-size: 28px;
         letter-spacing: 1px;
     }
-
     .FutureAwaits-text {
         max-width: 596px;
         font-size: 18px;
     }
-
 }
 
 @media(max-width: 1210px) {
-
     .FutureAwaits-background-img {
         max-width: 524px;
     }
-
     .FutureAwaits-background-img-left {
         top: 232px;
         width: 927px;
         right: -104px;
     }
-
     .FutureAwaits-background-img-right {
         top: 222px;
         width: 800px;
@@ -235,24 +217,20 @@
 }
 
 @media(max-width: 1080px) {
-
     .FutureAwaits-background-img {
         max-width: 491px;
         right: -24px;
     }
-
     .FutureAwaits-background-img-left {
         top: 336px;
         width: 443px;
         right: 89px;
     }
-
     .FutureAwaits-background-img-right {
         top: 290px;
         width: 536px;
         right: -35px;
     }
-
     .FutureAwaitsStar {
         top: 300px;
         transform: scale(1.5);
@@ -263,15 +241,12 @@
     .none {
         display: none;
     }
-
     .FutureAwaits {
         align-items: center;
     }
-
     .FutureAwaits-title {
         margin: 0
     }
-
     .NoNone {
         display: block;
     }
@@ -285,12 +260,10 @@
         font-size: 40px;
         letter-spacing: 1px;
     }
-
     .FutureAwaits-subtitle {
         font-size: 32px;
         line-height: 33px;
     }
-
     .dragonMini {
         bottom: -174px;
     }
@@ -301,7 +274,6 @@
 }
 
 @media(max-width: 606px) {
-
     .dragonMini {
         bottom: -209px;
     }
@@ -312,39 +284,32 @@
         font-size: 40px;
         letter-spacing: 1px;
     }
-
     .FutureAwaits-subtitle {
         font-size: 32px;
         line-height: 33px;
     }
-
     .dragonMini {
         bottom: -174px;
     }
 }
 
 @media(max-width: 606px) {
-
     .dragonMini {
         bottom: -209px;
     }
 }
 
 @media(max-width: 520px) {
-
     .dragonMini {
         bottom: -209px;
     }
-
     .FutureAwaits-subtitle {
         font-size: 28px;
         ;
     }
-
     .FutureAwaits-text {
         font-size: 16px;
     }
-
     .FutureAwaits {
         padding-left: 15px;
         padding-right: 15px;
@@ -352,53 +317,42 @@
 }
 
 @media(max-width: 480px) {
-
     .FutureAwaits-subtitle {
         font-size: 25px;
     }
-
     .FutureAwaits-subtitle {
         margin: 0 0 12px 0;
     }
-
     .FutureAwaits-text {
         margin-bottom: 14px;
     }
-
     .FutureAwaits-button {
         padding: 17px 38px 17px 70px;
         font-size: 14px;
     }
-
     .FutureAwaits-button::before {
         top: 20px;
     }
-
     .FutureAwaits-title {
         letter-spacing: 3px;
     }
 }
 
 @media(max-width: 417px) {
-
     .FutureAwaits-subtitle {
         font-size: 20px;
     }
-
     .FutureAwaits-text {
         margin-bottom: 14px;
     }
-
     .FutureAwaits-button {
         padding: 17px 38px 17px 70px;
         font-size: 14px;
         margin: 47px 0 0 0;
     }
-
     .FutureAwaits-button::before {
         top: 20px;
     }
-
     .dragonMini {
         bottom: -170px;
     }

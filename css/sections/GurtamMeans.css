@@ -92,7 +92,6 @@
     bottom: -67px;
 }
 
-
 .GurtamMeans-stats-card-count {
     margin-bottom: 13px;
     font-size: 68px;
@@ -104,19 +103,6 @@
     font-size: 30px;
     font-weight: 400;
     line-height: 28px;
-}
-
-.GurtamMeans-stats-card-count.years,
-.GurtamMeans-stats-card-count.offices,
-.GurtamMeans-stats-card-count.countries {
-    position: relative;
-}
-
-.GurtamMeans-stats-card-count.years::after,
-.GurtamMeans-stats-card-count.offices::after,
-.GurtamMeans-stats-card-count.countries::after {
-    content: url(./../assets/starSvg.svg);
-    position: absolute;
 }
 
 .GurtamMeans-stats-card-count.years::after {
@@ -133,8 +119,6 @@
     top: -47px;
     left: 18px;
 }
-
-
 
 .card-years-count {
     color: #FFFFFF;
@@ -199,7 +183,6 @@
     background-color: #0A1E4C;
     position: absolute;
     right: -9%;
-
 }
 
 @media(max-width: 1478px) {
@@ -207,41 +190,34 @@
         padding-left: 30px;
         padding-right: 30px;
     }
-
 }
 
 @media(max-width: 1049px) {
     .GurtamMeans {
         height: auto !important;
-
     }
-
     .GurtamMeans-stats {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
     .card-years {
         background-color: #002ADB;
         position: static;
         text-align: center;
     }
-
     .card-EMPLOYEES {
         background-color: #FFD700;
         position: static;
         text-align: center;
         transform: translateY(-30px);
     }
-
     .card-COUNTRIES {
         background-color: #FF69B4;
         position: static;
         text-align: center;
         transform: translateY(-50px);
     }
-
     .card-OFFICES {
         background-color: #0A1E4C;
         position: static;
@@ -253,7 +229,6 @@
 @media(max-width: 690px) {
     .GurtamMeans {
         align-items: center;
-
     }
 }
 
@@ -261,11 +236,9 @@
     .GurtamMeans {
         align-items: center;
     }
-
     .GurtamMeans-stats-card {
         width: 300px;
     }
-
     .GurtamMeans-stats-card-text {
         line-height: 30px;
     }
@@ -276,12 +249,10 @@
         font-size: 20px;
         margin: 0;
     }
-
     .GurtamMeans-text {
         font-size: 16px;
         line-height: 23px;
     }
-
     .GurtamMeans-button {
         padding: 17px 51px;
         font-size: 14px;
@@ -300,8 +271,6 @@
     }
 }
 
-
-
 .animated1 {
     animation: moveLeft1 1s forwards;
 }
@@ -318,7 +287,6 @@
     from {
         transform: translateX(0);
     }
-
     to {
         transform: translateX(-1070px);
     }
@@ -328,7 +296,6 @@
     from {
         transform: translateX(0);
     }
-
     to {
         transform: translateX(-750px);
     }
@@ -338,103 +305,86 @@
     from {
         transform: translateX(0);
     }
-
     to {
         transform: translateX(-400px);
     }
 }
 
 @media(max-width: 1494px) {
-
     @keyframes moveLeft1 {
         from {
             transform: translateX(0);
         }
-    
         to {
             transform: translateX(-900px);
         }
     }
-    
     @keyframes moveLeft2 {
         from {
             transform: translateX(0);
         }
-    
         to {
             transform: translateX(-650px);
         }
     }
-    
     @keyframes moveLeft3 {
         from {
             transform: translateX(0);
         }
-    
         to {
             transform: translateX(-300px);
         }
     }
 }
-@media(max-width: 11326px) {
 
+@media(max-width: 11326px) {
     @keyframes moveLeft1 {
         from {
             transform: translateX(0);
         }
-    
         to {
             transform: translateX(-800px);
         }
     }
-    
     @keyframes moveLeft2 {
         from {
             transform: translateX(0);
         }
-    
         to {
             transform: translateX(-550px);
         }
     }
-    
     @keyframes moveLeft3 {
         from {
             transform: translateX(0);
         }
-    
         to {
             transform: translateX(-250px);
         }
     }
 }
-@media(max-width: 1326px) {
 
+@media(max-width: 1326px) {
     @keyframes moveLeft1 {
         from {
             transform: translateX(0);
         }
-    
         to {
             transform: translateX(-700px);
         }
     }
-    
     @keyframes moveLeft2 {
         from {
             transform: translateX(0);
         }
-    
         to {
             transform: translateX(-450px);
         }
     }
-    
     @keyframes moveLeft3 {
         from {
             transform: translateX(0);
         }
-    
         to {
             transform: translateX(-200px);
         }
@@ -442,32 +392,26 @@
 }
 
 @media(max-width: 1158px) {
-
     @keyframes moveLeft1 {
         from {
             transform: translateX(0);
         }
-    
         to {
             transform: translateX(-600px);
         }
     }
-    
     @keyframes moveLeft2 {
         from {
             transform: translateX(0);
         }
-    
         to {
             transform: translateX(-400px);
         }
     }
-    
     @keyframes moveLeft3 {
         from {
             transform: translateX(0);
         }
-    
         to {
             transform: translateX(-200px);
         }
@@ -475,34 +419,29 @@
 }
 
 @media(max-width: 1049px) {
-
     @keyframes moveLeft1 {
         from {
             transform: translateX(0);
         }
-    
         to {
-            transform: translateX(0px) ;
+            transform: translateX(0px);
         }
     }
-    
     @keyframes moveLeft2 {
         from {
             transform: translateX(0);
         }
-    
         to {
             transform: translateX(0px) translateY(-30px);
         }
     }
-    
     @keyframes moveLeft3 {
         from {
             transform: translateX(0);
         }
-    
         to {
-            transform: translateX(0px) translateY(-50px);;
+            transform: translateX(0px) translateY(-50px);
+            ;
         }
     }
 }

@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(function() {
     let visibleSections = [];
 
     const visibleCountMap = {
@@ -11,16 +11,16 @@ $(document).ready(function () {
     };
 
     function updateVisibleSections() {
-        visibleSections = []; 
+        visibleSections = [];
 
-        $('.pagepiling > section').each(function () {
+        $('.pagepiling > section').each(function() {
             const section = $(this);
             if (section.hasClass('visible')) {
-                const sectionTitle = section.attr('class').split(' ')[0]; 
+                const sectionTitle = section.attr('class').split(' ')[0];
                 visibleSections.push(sectionTitle);
             }
         });
-        
+
 
         showImagesBasedOnVisibleSections();
     }
@@ -31,7 +31,7 @@ $(document).ready(function () {
         let imagesToShow = 0;
         visibleSections.forEach(section => {
             if (visibleCountMap[section] !== undefined) {
-                imagesToShow += visibleCountMap[section]; 
+                imagesToShow += visibleCountMap[section];
             }
         });
 
@@ -42,7 +42,7 @@ $(document).ready(function () {
 
     const observer = new MutationObserver(updateVisibleSections);
 
-    $('.pagepiling > section').each(function () {
+    $('.pagepiling > section').each(function() {
         observer.observe(this, {
             attributes: true,
             attributeFilter: ['class']

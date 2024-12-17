@@ -4,7 +4,7 @@ const canvasSnowflakes = document.getElementById('snowflakes');
 const canvasSnowdriftYoutube = document.getElementById('snowdriftYoutube');
 const toggleButton = document.getElementById('toggleSnow');
 
-let snowActive = true;
+let snowActive = false;
 
 let animationFrameId;
 
@@ -26,7 +26,7 @@ function snow(canvas, { count, onFallDown }) {
     for (let i = 0; i < count; i++) {
         const snowflake = { size: 0, x: 0, y: 0, k: 0 };
         randmizeSnowflakeParams(snowflake);
-        snowflakes.push({ ...snowflake, y: random(0, -1 * canvas.height) });
+        snowflakes.push({...snowflake, y: random(0, -1 * canvas.height) });
     }
 
     const wind = { forceX: 0, forceY: 0 };
@@ -43,16 +43,16 @@ function snow(canvas, { count, onFallDown }) {
         const step = 0.001;
         wind.forceX += step * (targetWind.forceX - wind.forceX);
         wind.forceY += step * (targetWind.forceY - wind.forceY);
-    
+
         snowflakes.forEach(snowflake => {
             const mass = snowflake.size / 1.2;
-    
+
             snowflake.y += mass * 0.5; // Уменьшаем скорость падения снежинок
             snowflake.x += snowflake.k * Math.cos(0.0005 / snowflake.k * time);
-    
+
             snowflake.x += 10 * wind.forceX * mass;
             snowflake.y += 10 * wind.forceY * mass;
-    
+
             if (snowflake.y > canvas.height) {
                 onFallDown && onFallDown(snowflake.x, mass);
                 randmizeSnowflakeParams(snowflake);

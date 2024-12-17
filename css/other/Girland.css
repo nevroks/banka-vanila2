@@ -1,0 +1,252 @@
+.girland-box {
+    position: relative;
+    z-index: 20;
+}
+
+.girlandItem {
+    margin: 0 0 40px 0;
+}
+
+.girland {
+    position: absolute;
+    animation-delay: 0s;
+}
+
+.girland1 {
+    top: 0;
+    left: 0;
+}
+
+.girland2 {
+    top: 2px;
+    left: 30px;
+}
+
+.girland3 {
+    top: 2px;
+    left: 30px;
+}
+
+.girland4 {
+    top: 8px;
+    left: 71px;
+}
+
+.girland5 {
+    top: 14px;
+    left: 111px;
+}
+
+.girland6 {
+    top: 19px;
+    left: 149px;
+}
+
+.girland7 {
+    top: 21px;
+    left: 185px;
+}
+
+.girland8 {
+    top: 22px;
+    left: 221px;
+}
+
+.girland9 {
+    top: 25px;
+    left: 257px;
+}
+
+.girland10 {
+    top: 24px;
+    left: 296px;
+}
+
+.girland11 {
+    top: 23px;
+    left: 332px
+}
+
+.girland12 {
+    top: 21px;
+    left: 370px;
+}
+
+.girland13 {
+    top: 15px;
+    left: 410px;
+    transform: rotate(-24deg);
+}
+
+.girland14 {
+    top: 11px;
+    left: 449px;
+    transform: rotate(-38deg)
+}
+
+.girland15 {
+    top: 11px;
+    left: 503px;
+    transform: rotate(13deg);
+}
+
+.girland16 {
+    top: 16px;
+    left: 543px;
+    transform: rotate(-5deg);
+}
+
+.girland17 {
+    top: 20px;
+    left: 580px;
+    transform: rotate(8deg);
+}
+
+.girland18 {
+    top: 23px;
+    left: 620px;
+    transform: rotate(-5deg);
+}
+
+.girland19 {
+    top: 24px;
+    left: 657px;
+    transform: rotate(-5deg);
+}
+
+.girland20 {
+    top: 25px;
+    left: 696px;
+    transform: rotate(-5deg);
+}
+
+.girland21 {
+    top: 24px;
+    left: 732px;
+    transform: rotate(-26deg)
+}
+
+.girland22 {
+    top: 21px;
+    left: 768px;
+    transform: rotate(-21deg);
+}
+
+.girland23 {
+    top: 19px;
+    left: 804px;
+    transform: rotate(-21deg);
+}
+
+.girland24 {
+    top: 14px;
+    left: 841px;
+    transform: rotate(-21deg);
+}
+
+.girland25 {
+    top: 11px;
+    left: 881px;
+    transform: rotate(-21deg);
+}
+
+.girland26 {
+    top: 3px;
+    left: 922px;
+    transform: rotate(-21deg);
+}
+
+.girland27 {
+    top: 12px;
+    left: 974px;
+    transform: rotate(6deg)
+}
+
+.girland28 {
+    top: 19px;
+    left: 1015px;
+    transform: rotate(6deg);
+}
+
+.girland29 {
+    top: 25px;
+    left: 1055px;
+    transform: rotate(-9deg)
+}
+
+.girland30 {
+    top: 29px;
+    left: 1095px;
+    transform: rotate(-5deg);
+}
+
+.girland31 {
+    top: 29px;
+    left: 1133px;
+    transform: rotate(-5deg);
+}
+
+.girland32 {
+    top: 30px;
+    left: 1173px;
+    transform: rotate(-5deg);
+}
+
+.girland33 {
+    top: 29px;
+    left: 1210px;
+    transform: rotate(-27deg);
+}
+
+.girland34 {
+    top: 26px;
+    left: 1247px;
+    transform: rotate(-17deg);
+}
+
+.girland35 {
+    top: 23px;
+    left: 1286px;
+    transform: rotate(-17deg);
+}
+
+.girland36 {
+    top: 18px;
+    left: 1325px;
+    transform: rotate(-17deg);
+}
+
+.girland37 {
+    top: 13px;
+    left: 1366px;
+    transform: rotate(-17deg);
+}
+
+.girland38 {
+    top: 4px;
+    left: 1409px;
+    transform: rotate(-17deg);
+}
+
+.girland.active {
+    opacity: 1;
+    animation: glow 1s ease-in-out forwards;
+}
+
+@keyframes glow {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media(max-width: 884px) {
+    .girland-box {
+        display: none;
+    }
+}
