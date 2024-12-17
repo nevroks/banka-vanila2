@@ -33,6 +33,16 @@
     /* scrollbar-width: none; */
 } 
 
+.pagepiling.wrapper {
+    height: 100vh;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.pagepiling.wrapper.scroll-block {
+    overflow: hidden;
+}
+
 
 /* .pagepiling section.visible {
     opacity: 1;

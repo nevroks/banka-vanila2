@@ -4,7 +4,7 @@ const canvasSnowflakes = document.getElementById('snowflakes');
 const canvasSnowdriftYoutube = document.getElementById('snowdriftYoutube');
 const toggleButton = document.getElementById('toggleSnow');
 
-let snowActive = false;
+let snowActive = true;
 
 let animationFrameId;
 

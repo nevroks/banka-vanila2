@@ -1,9 +1,5 @@
 $(function() {
-
-        const main = document.querySelector("main")
         const bankaSectionTitle = document.querySelector(".banka-banka-title")
-
-
 
         const bankaWrapper = document.querySelector('.banka-banka-wrapper');
         const bankaLid = document.querySelector('.banka-banka-lid');
@@ -15,7 +11,7 @@ $(function() {
         function startAnimation() {
             bankaWrapper.removeEventListener('click', startAnimation);
             bankaWrapper.classList.remove('glow');
-            main.classList.add("scroll-block")
+            document.querySelector('.pagepiling.wrapper').classList.add("scroll-block")
 
 
             const step0Duration = 1100;
