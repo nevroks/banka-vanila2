@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Проверяем ширину окна
         if (window.innerWidth < 951) {
             addOpenClassToAll();
-            return; // Прекращаем выполнение функции, если ширина меньше 951px
+            return; 
         }
 
         var sections = $('.pagepiling section');
@@ -49,9 +49,9 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
         if (whyUsVisible) {
-            disableScroll();
+         
         } else {
-            enableScroll();
+      
         }
     }
 
@@ -59,17 +59,6 @@ document.addEventListener('DOMContentLoaded', function () {
         e.preventDefault();
     }
 
-    function disableScroll() {
-        window.addEventListener('wheel', preventDefault, { passive: false });
-        window.addEventListener('touchmove', preventDefault, { passive: false });
-        window.addEventListener('scroll', preventDefault, { passive: false });
-    }
-
-    function enableScroll() {
-        window.removeEventListener('wheel', preventDefault);
-        window.removeEventListener('touchmove', preventDefault);
-        window.removeEventListener('scroll', preventDefault);
-    }
 
     $(window).on('resize', checkVisibility);
     $(document).ready(checkVisibility);
@@ -193,7 +182,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
 
             if (count >= 3) {
-                enableScroll();
+        
                 count = 0;
             }
             updateClasses();

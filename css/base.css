@@ -1,6 +1,6 @@
-html {
+/* html {
     scroll-behavior: smooth;
-}
+} */
 
 :root {
     --cursor-1-bg: #ffffff;
@@ -13,10 +13,11 @@ html {
 
 main {
     height: 100vh;
-    overflow: hidden;
 }
 
-
+section {
+    height: 100vh;
+}
 /* 
 main.scroll-block {
     overflow: hidden;
@@ -26,14 +27,14 @@ main.scroll-block {
     main {
         height: 100vh;
         overflow-y: auto;
-        scroll-behavior: smooth;
+        /* scroll-behavior: smooth; */
     }
 }
 
 main {
-    scrollbar-width: none;
+    /* scrollbar-width: none; */
     /* для Firefox */
-    -ms-overflow-style: none;
+    /* -ms-overflow-style: none; */
     /* для IE и Edge */
 }
 

@@ -36,7 +36,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
         if (whyUsVisible) {
-            disableScroll();
             if (!scrollDisabled) { 
                 addAnimationClasses(); 
                 scrollDisabled = true; 
@@ -45,7 +44,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 enableScroll();
             },1500)
         } else {
-            enableScroll();
             scrollDisabled = false; 
         }
     }
@@ -53,29 +51,15 @@ document.addEventListener("DOMContentLoaded", function() {
     function addAnimationClasses() {
         blocks.forEach((block, index) => {
             if (block && !block.classList.contains(`animated${index + 1}`)) {
-                block.classList.add(`animated${index + 1}`);
+                setTimeout(() => {
+                    setTimeout(() => {
+                        block.classList.add(`animated${index + 1}`);
+                    },500)
+                },1000)
                 console.log(`Adding animated${index + 1} to block ${index + 1}`);
             }
         });
     }
-
-    function preventDefault(e) {
-        e.preventDefault();
-    }
-
-    function disableScroll() {
-        window.addEventListener('wheel', preventDefault, { passive: false });
-        window.addEventListener('touchmove', preventDefault, { passive: false });
-        window.addEventListener('scroll', preventDefault, { passive: false });
-    }
-
-    function enableScroll() {
-        window.removeEventListener('wheel', preventDefault);
-        window.removeEventListener('touchmove', preventDefault);
-        window.removeEventListener('scroll', preventDefault);
-    }
-
-    window.addEventListener('scroll', checkVisibility);
 
     checkVisibility();
 
@@ -164,14 +148,14 @@ document.addEventListener("DOMContentLoaded", function() {
 //         }
 //     }
 
-//     function lockScroll() {
-//         document.body.style.overflowY = 'hidden'; 
-//     }
+    // function lockScroll() {
+    //     document.body.style.overflowY = 'hidden'; 
+    // }
     
-//     function unlockScroll() {
-//         document.body.style.overflowY = ''; 
-//         scrollCounter = 0; 
-//     }
+    // function unlockScroll() {
+    //     document.body.style.overflowY = ''; 
+    //     scrollCounter = 0; 
+    // }
 
 //     const observer = new IntersectionObserver((entries) => {
 //         let whyUsVisible = false;

@@ -1,4 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
+    const sections = document.querySelectorAll('section'); 
+    const totalSections = sections.length; 
+    let animationStarted = false; 
+
     const animateNumbers = () => {
         const yearsCount = document.querySelector('.card-years-count');
         const employeesCount = document.querySelector('.card-EMPLOYEES-count');
@@ -15,13 +19,20 @@ document.addEventListener('DOMContentLoaded', function () {
         let startCountry = 0;
         let startOffice = 0;
 
-        const duration = 2000; // продолжительность анимации в миллисекундах
-        const frameRate = 60; // количество кадров в секунду
+        const duration = 2000;
+        const frameRate = 60; 
         const totalFrames = Math.round(duration / (1000 / frameRate));
         const incrementYear = years / totalFrames;
         const incrementEmployee = employees / totalFrames;
         const incrementCountry = countries / totalFrames;
         const incrementOffice = offices / totalFrames;
+
+        const resetValues = () => {
+            startYear = 0;
+            startEmployee = 0;
+            startCountry = 0;
+            startOffice = 0;
+        };
 
         const animate = (frame) => {
             if (frame <= totalFrames) {
@@ -39,19 +50,20 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         };
 
+        resetValues();
         animate(0);
     };
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                setTimeout(() => {
-                    animateNumbers(); 
-                },500)
-                observer.unobserve(entry.target);
+            if (entry.isIntersecting && !animationStarted) {
+                animationStarted = true; 
+                setTimeout(animateNumbers, 500);
+            
             }
         });
     });
 
-    observer.observe(document.querySelector('.GurtamMeans-stats'));
+    const gurtamMeansSection = document.querySelector('.GurtamMeans');
+    observer.observe(gurtamMeansSection);
 });
