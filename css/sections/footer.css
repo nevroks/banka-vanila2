@@ -1,0 +1,142 @@
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 3vh;
+    z-index: 10;
+}
+
+.footer-content-wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 35px;
+}
+
+.footer-modal {
+    margin: 107px 0 0 0;
+}
+
+.footer-info {
+    display: flex;
+    column-gap: 20px;
+}
+
+.footer-info-item {
+    color: #000000;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+}
+
+.footer-info-item:nth-of-type(3) {
+    position: relative;
+    right: -20px;
+}
+
+.footer-info-item-modal {
+    margin: -26px 0 0 81px
+}
+
+.footer-info-item-modal:nth-child(1) {
+    margin: 0 0 20px 81px;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 12px;
+    color: #0A1E4C;
+}
+
+.footer-info-item-modal:nth-child(2) {
+    margin: 0 0 0 100px;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 12px;
+    color: #0A1E4C;
+}
+
+.footer-mini {
+    position: absolute;
+    bottom: 43px;
+    transform: translateX(-100%);
+}
+
+.footer-info-item-mini {
+    color: #FFFFFF;
+    margin: 0 0 0 92px;
+}
+
+.footer-socialsList {
+    display: flex;
+    column-gap: 15px;
+}
+
+.footer-socialsList-item {
+    margin: 5px 0 0 0;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    /* cursor: pointer; */
+}
+
+.footer-socialsList-item-show-Button {
+    margin: 5px 0 0 0;
+    position: relative;
+    overflow: hidden;
+    height: 100px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    /* cursor: pointer; */
+}
+
+.footervisible {
+    display: none;
+}
+
+.showButton {
+    position: relative;
+}
+
+@media(max-width:1292px) {
+    .footer-info {
+        left: 400px;
+    }
+}
+
+@media(max-width:1122px) {
+    .footer-info {
+        left: 350px;
+    }
+}
+
+@media(max-width: 1038px) {
+    .showButton {
+        display: none;
+    }
+    .footer-info {
+        position: relative;
+    }
+    .footer {
+        position: relative;
+        bottom: -3%;
+        z-index: 10;
+    }
+    .footerNode {
+        display: none;
+    }
+    .footervisible {
+        display: block;
+    }
+}
+
+@media(max-width: 431px) {
+    .footer {
+        position: relative;
+        bottom: -31%;
+        z-index: 10;
+        left: 18px;
+    }
+}

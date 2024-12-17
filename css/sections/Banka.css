@@ -20,7 +20,6 @@
 }
 
 .banka {
-    height: 100vh;
     position: relative;
     display: flex;
     align-items: flex-end;
@@ -140,10 +139,10 @@
 }
 
 .banka-banka-wrapper.glow {
-    animation: 2s infinite glow alternate;
+    animation: 2s infinite banka-glow alternate;
 }
 
-@keyframes glow {
+@keyframes banka-glow {
     from {
         scale: 98%;
     }
@@ -204,7 +203,7 @@
 .dragonbanka {
     position: absolute;
     bottom: 0;
-    left: 50%;
+    left: 49%;
     transform: translateX(-50%);
     width: 56%;
     z-index: -1;
@@ -230,7 +229,7 @@
 
 .banka-banka-title::after {
     position: absolute;
-    content: url('../../assets/banka/IMG_5472 1.png');
+    content: url('../../assets/sections/banka/miniCookie.png');
     top: -4px;
     right: -50px;
     transform: scale(1);

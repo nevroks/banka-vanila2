@@ -1,11 +1,9 @@
 .GurtamMeans {
+    position: relative;
     padding-top: 170px;
     display: flex;
     flex-direction: column;
     align-items: start;
-    position: relative;
-    scroll-snap-align: center;
-    height: 100vh;
     transform: translateY(20px);
     transition: opacity 2s ease-in-out, transform 2s ease-in-out;
     opacity: 0;
@@ -49,6 +47,10 @@
 }
 
 .GurtamMeans-button {
+    position: relative;
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
     height: 60px;
     color: #0A1E4C;
     letter-spacing: 3px;
@@ -59,11 +61,16 @@
     border-radius: 9px;
     border: 1px solid rgb(0, 42, 219);
     margin-bottom: 25px;
+    transition: all 0.6s;
 }
 
-.GurtamMeans-button::before {
-    content: url('../../assets/header/Polygon\ 1.svg');
-    margin: 0 30px 0 0;
+.GurtamMeans-button:hover {
+    background: white;
+    transform: scale(1.05);
+}
+
+.GurtamMeans-button:active {
+    bottom: -2px;
 }
 
 .GurtamMeans-stats-card {
@@ -183,6 +190,16 @@
     background-color: #0A1E4C;
     position: absolute;
     right: -9%;
+}
+
+.GurtamMeansStar {
+    height: 730px;
+    width: 730px;
+    position: absolute;
+    z-index: -1;
+    right: calc(100vw / 2 - 730px / 2);
+    bottom: calc(0px - 730px / 2);
+    filter: blur(175px);
 }
 
 @media(max-width: 1478px) {

@@ -1,16 +1,10 @@
 .WhyUs {
-    height: 100vh;
+    position: relative;
     text-align: center;
     padding-top: 170px;
-    overflow-y: auto;
-    position: relative;
-    background-size: 100% 100%;
-    background-position: 0px 0px, 0px 0px, 0px 0px;
-    background-image: radial-gradient(43% 75% at 51% 126%, #FF69B4BF 0%, #073AFF00 100%), radial-gradient(45% 75% at 51% -35%, #002ADB 0%, #002ADB08 88%), radial-gradient(75% 75% at 50% 50%, #AED6F1 0%, #AED6F1 100%);
     transform: translateY(20px);
     transition: opacity 2s ease-in-out, transform 2s ease-in-out;
     opacity: 0;
-    scroll-snap-align: center;
 }
 
 .WhyUs.visible {
@@ -18,12 +12,12 @@
     transform: translateY(0);
 }
 
-
 .WhyUs-title {
     margin-bottom: 20px;
 }
 
 .WhyUs-CoreValues {
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
     height: auto;
@@ -42,13 +36,10 @@
     transition: height 1s ease;
 }
 
-
-
 .WhyUs-CoreValues-value.openned {
     height: 290px;
     transition: all 1s ease;
 }
-
 
 .WhyUs-CoreValues-value::after {
     position: absolute;
@@ -92,9 +83,8 @@
     color: #000000;
 }
 
-
 .WhyUs-CoreValues-value.first::after {
-    content: url(./../../assets/WhyUs/card1.svg);
+    content: url(./../../assets/sections/WhyUs/card1.svg);
 }
 
 .WhyUs-CoreValues-value-img1 {
@@ -102,8 +92,6 @@
     top: -49px;
     right: 30px;
 }
-
-
 
 .WhyUs-CoreValues-value-img2 {
     position: absolute;
@@ -119,13 +107,12 @@
     z-index: 11;
 }
 
-
 .WhyUs-CoreValues-value.second {
     background: rgb(255, 168, 212);
 }
 
 .WhyUs-CoreValues-value.second::after {
-    content: url(./../../assets/WhyUs/card2.png);
+    content: url(./../../assets/sections/WhyUs/card2.png);
 }
 
 .WhyUs-CoreValues-value.third {
@@ -134,7 +121,7 @@
 }
 
 .WhyUs-CoreValues-value.third::after {
-    content: url(./../../assets/WhyUs/card3.svg);
+    content: url(./../../assets/sections/WhyUs/card3.svg);
 }
 
 .WhyUs-CoreValues-value.four {
@@ -159,7 +146,6 @@
     font-size: 32px;
     font-weight: 900;
     line-height: 38px;
-
 }
 
 .WhyUs-CoreValues-value-info-text {
@@ -168,7 +154,6 @@
     line-height: 130%;
     opacity: 0;
     transition: opacity 0.3s ease;
-
 }
 
 .WhyUs-CoreValues-value-info-text.openned {
@@ -183,18 +168,29 @@
 }
 
 .italic::after {
-    content: url('../../assets/WhyUs/heart.svg');
+    content: url('../../assets/sections/WhyUs/heart.svg');
     position: absolute;
     top: -7px;
-
 }
 
-.noneIMg{
- display: block;
+.noneIMg {
+    display: block;
 }
-.visibleImg{
+
+.visibleImg {
     display: none;
 }
+
+.WhyUsStar {
+    height: 730px;
+    width: 730px;
+    position: absolute;
+    z-index: -1;
+    right: calc(100vw / 2 - 730px / 2);
+    bottom: calc(0px - 730px / 2);
+    filter: blur(175px);
+}
+
 @media (max-width: 1461px) {
     .WhyUs {
         padding: 170px 0px 0px 0px;
@@ -205,7 +201,6 @@
     .WhyUs-CoreValues-value-info-text {
         font-size: 16px;
     }
-
     .WhyUs-CoreValues-value {
         padding: 20px 0 0 20px;
     }
@@ -215,35 +210,28 @@
     .WhyUs-CoreValues-value-info-text {
         font-size: 16px;
     }
-
     .WhyUs-CoreValues-value {
         padding: 20px 0 0 20px;
     }
-
     .WhyUs-CoreValues-value-img1 {
         width: 434px;
     }
-
     .WhyUs-CoreValues-value-img2 {
         width: 434px;
     }
-
     .WhyUs-CoreValues-value-img3 {
         width: 434px;
     }
-
     .WhyUs-CoreValues-value.first::after {
-        content: url(./../../assets/WhyUs/card1.svg);
+        content: url(./../../assets/sections/WhyUs/card1.svg);
         width: 420px;
     }
-
     .WhyUs-CoreValues-value.second::after {
-        content: url(./../../assets/WhyUs/card2.png);
+        content: url(./../../assets/sections/WhyUs/card2.png);
         width: 420px;
     }
-
     .WhyUs-CoreValues-value.third::after {
-        content: url(./../../assets/WhyUs/card3.svg);
+        content: url(./../../assets/sections/WhyUs/card3.svg);
         width: 420px;
     }
 }
@@ -252,7 +240,6 @@
     .WhyUs-CoreValues-value-info-text {
         font-size: 12px;
     }
-
     .WhyUs-CoreValues-value {
         padding: 20px 0 0 20px;
     }
@@ -262,27 +249,22 @@
     .WhyUs-CoreValues {
         padding-top: 0;
     }
-    .noneIMg{
+    .noneIMg {
         display: none;
-       }
-       .visibleImg{
+    }
+    .visibleImg {
         display: block;
-       }
-
+    }
     .WhyUs-CoreValues-value.openned {
         height: 667px;
     }
-
     .WhyUs {
         height: auto !important;
         padding: 0 0px 0px 0px;
-
     }
-
     .WhyUs-CoreValues-value {
         justify-content: center;
     }
-
     .WhyUs-CoreValues-value-img1 {
         position: absolute;
         width: 430px;
@@ -290,15 +272,13 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
-
     .WhyUs-CoreValues-value.first::after {
-        content: url(./../../assets/WhyUs/card1.svg);
+        content: url(./../../assets/sections/WhyUs/card1.svg);
         width: 330px;
         top: 70%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
-
     .WhyUs-CoreValues-value-img2 {
         position: absolute;
         width: 430px;
@@ -306,15 +286,13 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
-
     .WhyUs-CoreValues-value.second::after {
-        content: url(./../../assets/WhyUs/card1.svg);
+        content: url(./../../assets/sections/WhyUs/card1.svg);
         width: 330px;
         top: 70%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
-
     .WhyUs-CoreValues-value-img3 {
         position: absolute;
         width: 430px;
@@ -322,9 +300,8 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
-
     .WhyUs-CoreValues-value.third::after {
-        content: url(./../../assets/WhyUs/card1.svg);
+        content: url(./../../assets/sections/WhyUs/card1.svg);
         width: 330px;
         top: 70%;
         left: 50%;
@@ -342,30 +319,24 @@
     .WhyUs-CoreValues-value-info-title {
         font-size: 16px;
     }
-
     .WhyUs-CoreValues-value-info {
         row-gap: 14px;
     }
-
     .WhyUs-CoreValues-value-info-text.openned {
         padding-right: 10px;
     }
-
     .WhyUs-CoreValues-value.openned {
         height: 500px;
     }
-    .italic::after{
+    .italic::after {
         content: '';
     }
-
-
 }
+
 @media (max-width: 432px) {
     .WhyUs-CoreValues-value.openned {
         height: 650px;
-
     }
-
     .WhyUs-CoreValues-value-img1 {
         position: absolute;
         width: 430px;
@@ -373,15 +344,13 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
-
     .WhyUs-CoreValues-value.first::after {
-        content: url(./../../assets/WhyUs/card1.svg);
+        content: url(./../../assets/sections/WhyUs/card1.svg);
         width: 330px;
         top: 70%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
-
     .WhyUs-CoreValues-value-img2 {
         position: absolute;
         width: 430px;
@@ -389,15 +358,13 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
-
     .WhyUs-CoreValues-value.second::after {
-        content: url(./../../assets/WhyUs/card1.svg);
+        content: url(./../../assets/sections/WhyUs/card1.svg);
         width: 330px;
         top: 70%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
-
     .WhyUs-CoreValues-value-img3 {
         position: absolute;
         width: 430px;
@@ -405,9 +372,8 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
-
     .WhyUs-CoreValues-value.third::after {
-        content: url(./../../assets/WhyUs/card1.svg);
+        content: url(./../../assets/sections/WhyUs/card1.svg);
         width: 330px;
         top: 70%;
         left: 50%;

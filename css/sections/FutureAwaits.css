@@ -1,14 +1,13 @@
 .FutureAwaits {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: self-start;
     padding-top: 150px;
-    position: relative;
-    scroll-snap-align: center;
-    height: 100vh;
     transform: translateY(20px);
     transition: opacity 2s ease-in-out, transform 2s ease-in-out;
     opacity: 0;
+    overflow-y: visible;
 }
 
 .FutureAwaits.visible {
@@ -53,25 +52,35 @@
 
 .FutureAwaits-button {
     position: relative;
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
     padding: 17px 60px 17px 70px;
-    border-radius: 9px;
     color: #0A1E4C;
-    background-color: #FFFFFF;
+    border: 1px solid rgb(0, 42, 219);
+    border-radius: 10px;
+    background-color: transparent;
     transition: all 0.5s;
     font-size: 22px;
     font-weight: 900;
     line-height: 27px;
     letter-spacing: 1px;
     z-index: 7;
+    transition: all 0.6s;
 }
 
-.FutureAwaits-button::before {
-    content: url('../../assets/header/Polygon\ 1.svg');
-    margin: 0 25px 0 0;
-    position: absolute;
-    top: 16px;
-    left: 32px;
-    transform: scale(1.5);
+.FutureAwaits-button svg path {
+    transition: all 0.6s;
+}
+
+.FutureAwaits-button:hover {
+    background-color: rgb(0, 42, 219);
+    transform: scale(1.05);
+    color: white;
+}
+
+.FutureAwaits-button:hover svg path {
+    fill: white;
 }
 
 .FutureAwaits-button:active {
@@ -149,8 +158,13 @@
 }
 
 .FutureAwaitsStar {
+    height: 730px;
+    width: 730px;
     position: absolute;
     z-index: -1;
+    right: calc(100vw / 2 - 730px / 2);
+    bottom: calc(0px - 730px / 2);
+    filter: blur(175px);
 }
 
 .dragonMini {
@@ -330,9 +344,6 @@
         padding: 17px 38px 17px 70px;
         font-size: 14px;
     }
-    .FutureAwaits-button::before {
-        top: 20px;
-    }
     .FutureAwaits-title {
         letter-spacing: 3px;
     }
@@ -349,9 +360,6 @@
         padding: 17px 38px 17px 70px;
         font-size: 14px;
         margin: 47px 0 0 0;
-    }
-    .FutureAwaits-button::before {
-        top: 20px;
     }
     .dragonMini {
         bottom: -170px;

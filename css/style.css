@@ -1,5 +1,7 @@
 @import url(./reset.css);
 @import url(./base.css);
+@import url(./sections/header.css);
+@import url(./sections/footer.css);
 @import url(./sections/GurtamMeans.css);
 @import url(./sections/WhyUs.css);
 @import url(./sections/OurBenefits.css);
@@ -17,18 +19,6 @@
     background-color: #AED6F1;
 }
 
-
-/* .pagepilling::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: -2;
-} */
-
 .pagepiling section {
     height: 100vh;
     transition: opacity 0.5s ease;
@@ -36,38 +26,16 @@
     scroll-behavior: smooth;
 }
 
+.pagepiling.wrapper {
+    height: 100vh;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
 
 /* .pagepiling section.visible {
     opacity: 1;
 } */
-
-.social {
-    display: flex;
-    gap: 9px;
-    margin: 17px 0 0 0
-}
-
-.social-item {
-    margin: 5px 0 0 0;
-    position: relative;
-    overflow: hidden;
-    height: 100px;
-    width: 60px;
-    display: flex;
-    justify-content: center;
-    /* cursor: pointer; */
-}
-
-.social-item-show-Button {
-    margin: 5px 0 0 0;
-    position: relative;
-    overflow: hidden;
-    height: 100px;
-    width: 60px;
-    display: flex;
-    justify-content: center;
-    /* cursor: pointer; */
-}
 
 .img-items {
     width: 100px;
@@ -76,16 +44,4 @@
 .social-item-show-Button .img {
     left: 60%;
     width: 33px;
-}
-
-.showButton {
-    position: fixed;
-    bottom: -3%;
-    right: 122px;
-}
-
-@media (max-width: 1039px) {
-    .showButton {
-        display: none;
-    }
 }
