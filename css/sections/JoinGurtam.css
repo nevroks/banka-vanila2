@@ -109,7 +109,7 @@
     }
 }
 
-.JoinGurtamStar{
+.JoinGurtamStar {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -121,9 +121,11 @@
     0% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-50px);
     }
+
     100% {
         transform: translateY(0);
     }
@@ -133,37 +135,48 @@
     animation: riseAndFall 3s ease-in-out infinite;
 }
 
-#block1, #block2, #block3, #block4 {
-    transition: transform 0.5s ease; 
+#block1,
+#block2,
+#block3,
+#block4 {
+    transition: transform 0.5s ease;
 }
+
 @media (max-width: 978px) {
     .JoinGurtam-title {
         font-size: 41px;
     }
+
     .JoinGurtam-text {
         font-size: 26px;
     }
+
     .JoinGurtamStar {
         position: absolute;
         bottom: -500px;
     }
 }
+
 @media (max-width: 688px) {
     .JoinGurtam-title {
         font-size: 26px;
         line-height: 0;
     }
+
     .JoinGurtam-text {
         font-size: 22px;
     }
+
     .JoinGurtamStar {
         position: absolute;
         bottom: -500px;
     }
+
     .FutureAwaits-button {
         padding: 17px 40px 17px 70px !important;
         font-size: 14px !important;
     }
+
     .leftcookies {
         position: absolute;
         left: -17px;
@@ -171,6 +184,7 @@
         z-index: 6;
         width: 150px;
     }
+
     .leftStarJoin {
         position: absolute;
         top: -72px;
@@ -179,6 +193,7 @@
         width: 78px;
         z-index: 5;
     }
+
     .rightcookies {
         position: absolute;
         top: 20px;
@@ -186,6 +201,7 @@
         z-index: 6;
         width: 84px;
     }
+
     .righttStarJoin {
         position: absolute;
         top: 46px;
@@ -193,6 +209,7 @@
         z-index: 5;
         width: 66px;
     }
+
     .dragon {
         position: absolute;
         top: 30px;
@@ -202,24 +219,36 @@
 
 
 @media (max-width: 406px) {
+    .JoinGurtam {
+        height: 67vh !important;
+    }
+
     .JoinGurtam-title {
+        margin-top: 20px;
         text-align: start;
         padding: 0 45px;
         line-height: 42px;
+        font-size: 40px;
     }
+
     .JoinGurtam-text {
         text-align: start;
-        padding: 42px 45px;
+        padding: 32px 45px;
         line-height: 24px;
     }
+
     .JoinGurtamStar {
         position: absolute;
-        bottom: -250px;
+        bottom: -120px;
+        transform: scale(2.5);
+        left: 33px;
     }
+
     .FutureAwaits-button {
         padding: 17px 40px 17px 70px !important;
         font-size: 14px !important;
     }
+
     .leftcookies {
         position: absolute;
         left: -17px;
@@ -227,6 +256,7 @@
         z-index: 6;
         width: 150px;
     }
+
     .leftStarJoin {
         position: absolute;
         top: -32px;
@@ -235,6 +265,7 @@
         width: 78px;
         z-index: 5;
     }
+
     .rightcookies {
         position: absolute;
         top: 67px;
@@ -242,6 +273,7 @@
         z-index: 6;
         width: 84px;
     }
+
     .righttStarJoin {
         position: absolute;
         top: 99px;
@@ -249,10 +281,10 @@
         z-index: 5;
         width: 66px;
     }
+
     .dragon {
         position: absolute;
         top: 73px;
-        left: 27px;
+        left: 10px;
     }
 }
-

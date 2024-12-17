@@ -276,6 +276,20 @@
 }
 
 @media(max-width: 434px) {
+
+    .OurBenefitsStarBlue {
+        position: absolute;
+        left: 0;
+        transform: translateX(0) scale(2.5);
+        bottom: -100px;
+    }
+
+    .OurBenefits {
+        padding-top: 42px;
+        height: 53vh !important;
+
+    }
+
     .play {
         position: absolute;
         top: 33%;

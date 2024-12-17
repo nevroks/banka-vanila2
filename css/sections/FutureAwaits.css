@@ -278,6 +278,9 @@
 }
 
 @media(max-width: 662px) {
+    .FutureAwaits {
+        padding-top: 77px;
+    }
     .FutureAwaits-title {
         font-size: 40px;
         letter-spacing: 1px;
@@ -397,6 +400,6 @@
     }
 
     .dragonMini {
-        bottom: -229px;
+        bottom: -170px;
     }
 }

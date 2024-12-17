@@ -7,7 +7,7 @@ $(document).ready(function () {
         'WhyUs': 7,
         'OurBenefits': 7,
         'JoinGurtam': 7,
-        'banka': 7
+        'banka': 10
     };
 
     function updateVisibleSections() {

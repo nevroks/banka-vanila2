@@ -189,6 +189,12 @@
 
 }
 
+.noneIMg{
+ display: block;
+}
+.visibleImg{
+    display: none;
+}
 @media (max-width: 1461px) {
     .WhyUs {
         padding: 170px 0px 0px 0px;
@@ -253,13 +259,23 @@
 }
 
 @media (max-width: 950px) {
+    .WhyUs-CoreValues {
+        padding-top: 0;
+    }
+    .noneIMg{
+        display: none;
+       }
+       .visibleImg{
+        display: block;
+       }
+
     .WhyUs-CoreValues-value.openned {
-        height: 420px;
+        height: 667px;
     }
 
     .WhyUs {
         height: auto !important;
-        padding:0 0px 0px 0px;
+        padding: 0 0px 0px 0px;
 
     }
 
@@ -269,7 +285,7 @@
 
     .WhyUs-CoreValues-value-img1 {
         position: absolute;
-        width: 340px;
+        width: 430px;
         top: 70%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -285,7 +301,7 @@
 
     .WhyUs-CoreValues-value-img2 {
         position: absolute;
-        width: 340px;
+        width: 430px;
         top: 70%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -301,7 +317,7 @@
 
     .WhyUs-CoreValues-value-img3 {
         position: absolute;
-        width: 340px;
+        width: 430px;
         top: 70%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -338,5 +354,63 @@
     .WhyUs-CoreValues-value.openned {
         height: 500px;
     }
+    .italic::after{
+        content: '';
+    }
 
+
+}
+@media (max-width: 432px) {
+    .WhyUs-CoreValues-value.openned {
+        height: 650px;
+
+    }
+
+    .WhyUs-CoreValues-value-img1 {
+        position: absolute;
+        width: 430px;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .WhyUs-CoreValues-value.first::after {
+        content: url(./../../assets/WhyUs/card1.svg);
+        width: 330px;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .WhyUs-CoreValues-value-img2 {
+        position: absolute;
+        width: 430px;
+        top: 61%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .WhyUs-CoreValues-value.second::after {
+        content: url(./../../assets/WhyUs/card1.svg);
+        width: 330px;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .WhyUs-CoreValues-value-img3 {
+        position: absolute;
+        width: 430px;
+        top: 66%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .WhyUs-CoreValues-value.third::after {
+        content: url(./../../assets/WhyUs/card1.svg);
+        width: 330px;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }

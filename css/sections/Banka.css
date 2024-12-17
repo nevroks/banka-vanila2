@@ -275,13 +275,17 @@
 @media(max-width: 466px) {
     .dragonbanka-mini {
         position: absolute;
-        bottom: 27px;
-        transform: scale(1.5);
+        bottom: 66px;
+        transform: scale(2.5);
+        left: -15px;
     }
 }
 
 @media(max-width: 432px) {
     .banka-banka-title {
         width: 216px;
+    }
+    .banka-banka-title {
+        top: 23%;
     }
 }
