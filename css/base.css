@@ -16,12 +16,6 @@ main {
     overflow: hidden;
 }
 
-
-/* 
-main.scroll-block {
-    overflow: hidden;
-} */
-
 @media (max-width: 1024px) {
     main {
         height: 100vh;
