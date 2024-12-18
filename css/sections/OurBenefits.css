@@ -3,6 +3,8 @@
     position: relative;
     scroll-snap-align: center;
     height: 100vh;
+    overflow-x: clip;
+    overflow-y: visible;
 }
 
 .OurBenefits-title {
@@ -56,6 +58,7 @@
     from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(360deg);
     }
@@ -180,43 +183,58 @@
     .OurBenefits-title {
         font-size: 39px;
     }
+
     .cokkiesRight {
         top: 268px;
         right: 163px;
     }
+
     .redStar {
         top: 343px;
         right: 131px;
     }
+
     .cokkiesLeft {
         top: -72px;
         left: 116px;
     }
+
     .yellowStar {
         left: 166px;
         top: -72px;
     }
 }
 
-@media(max-width: 604px) {
-    .OurBenefits-title {
-        font-size: 27px;
+@media(max-width: 600px) {
+    .play {
+        top: 25%;
     }
+
+    .OurBenefits-title {
+        font-size: 40px;
+        font-weight: 900;
+        line-height: 48px;
+        letter-spacing: 0;
+    }
+
     .cokkiesRight {
-        top: 251px;
+        top: 134px;
         right: 163px;
         width: 112px;
     }
+
     .redStar {
-        top: 304px;
-        right: 131px;
+        top: 176px;
+        right: 149px;
         width: 78px;
     }
+
     .cokkiesLeft {
         top: -58px;
         left: 116px;
         width: 112px;
     }
+
     .yellowStar {
         left: 165px;
         top: -59px;
@@ -224,35 +242,15 @@
     }
 }
 
-@media(max-width: 636px) {
-    .OurBenefits-title {
-        font-size: 27px;
-    }
-    .cokkiesRight {
-        top: 204px;
-    }
-    .redStar {
-        top: 256px;
-        right: 144px;
-        width: 78px;
-    }
-    .cokkiesLeft {
-        top: -58px;
-        left: 116px;
-        width: 112px;
-    }
-    .yellowStar {
-        left: 165px;
-        top: -59px;
-        width: 71px;
-    }
-}
+
+
 
 @media(max-width: 434px) {
     .OurBenefits {
         padding-top: 42px;
         height: 53vh !important;
     }
+
     .play {
         position: absolute;
         top: 33%;
@@ -260,24 +258,29 @@
         transform: translate(-50%, -50%);
         /* cursor: pointer; */
     }
+
     .OurBenefits-title {
         font-size: 48px;
         margin-bottom: 76px;
         line-height: 46px;
     }
+
     .cokkiesRight {
         top: 156px;
         right: 144px;
     }
+
     .redStar {
         top: 203px;
         right: 129px;
     }
+
     .cokkiesLeft {
         top: -58px;
         left: 116px;
         width: 112px;
     }
+
     .yellowStar {
         left: 165px;
         top: -59px;
@@ -293,24 +296,29 @@
         transform: translate(-50%, -50%);
         /* cursor: pointer; */
     }
+
     .OurBenefits-title {
         font-size: 48px;
         margin-bottom: 76px;
         line-height: 46px;
     }
+
     .cokkiesRight {
         top: 134px;
         right: 110px;
     }
+
     .redStar {
         top: 183px;
         right: 97px;
     }
+
     .cokkiesLeft {
         top: -58px;
         left: 58px;
         width: 112px;
     }
+
     .yellowStar {
         left: 92px;
         top: -59px;

@@ -11,7 +11,7 @@ $(function() {
         function startAnimation() {
             bankaWrapper.removeEventListener('click', startAnimation);
             bankaWrapper.classList.remove('glow');
-            document.querySelector('.pagepiling.wrapper').classList.add("scroll-block")
+            document.querySelector('.pagepiling').classList.add("scroll-block")
 
 
             const step0Duration = 1100;

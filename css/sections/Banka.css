@@ -150,21 +150,27 @@
     0% {
         transform: translate(0);
     }
+
     5% {
         transform: translate(-5px, 0);
     }
-    10%{
+
+    10% {
         transform: translate(5px, 0);
     }
-    15%{
+
+    15% {
         transform: translate(-5px, 0);
     }
-    20%{
+
+    20% {
         transform: translate(5px, 0);
     }
-    21%{
+
+    21% {
         transform: translate(0);
     }
+
     50% {
         transform: translate(0);
     }
@@ -240,7 +246,7 @@
     font-size: 42px;
     color: #0A1E4C;
     line-height: 38px;
-    letter-spacing: 1px;
+    letter-spacing: 0;
     opacity: 1;
     transition: all 0.9s;
 }
@@ -263,6 +269,14 @@
 
 .dragonVisible {
     display: block;
+}
+
+@media (max-width: 1560px) {
+    .banka-banka-title {
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 32px;
+    }
 }
 
 @media(max-width: 966px) {
@@ -298,7 +312,16 @@
     }
 }
 
-@media(max-width: 466px) {
+@media(max-width: 480px) {
+    .banka-banka-title {
+        font-size: 20px;
+        left: 43%;
+        line-height: 24px;
+
+    }
+    .banka-banka-title::after {
+        display: none;
+    }
     .dragonbanka-mini {
         position: absolute;
         bottom: 66px;

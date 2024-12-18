@@ -12,12 +12,15 @@
 @import url(./other/Snow.css);
 @import url(./other/Girland.css);
 
-
+html{
+    background-color: #AED6F1;
+}
 
 .pagepilling {
-    background-attachment: fixed;
-    background-size: cover;
-    position: relative;
+    height: 100vh;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    background-color: #AED6F1;
     z-index: 1;
 }
 
@@ -25,31 +28,11 @@
     height: 100vh;
     transition: opacity 0.5s ease;
     opacity: 1;
-    /* scroll-behavior: smooth; */
 }
 
-.pagepiling.wrapper {
-    /* height: 100vh; */
-    /* overflow: scroll; */
-    /* scrollbar-width: none; */
-} 
-
-.pagepiling.wrapper {
-    height: 100vh;
-    /* overflow: scroll; */
-    scrollbar-width: none;
-    scroll-behavior: smooth;
-    
-}
-
-.pagepiling.wrapper.scroll-block {
+.pagepiling.scroll-block {
     overflow: hidden;
 }
-
-
-/* .pagepiling section.visible {
-    opacity: 1;
-} */
 
 .img-items {
     width: 100px;

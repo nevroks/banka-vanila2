@@ -1,17 +1,13 @@
-/* * {
+
+* {
     cursor: none;
-  } */
+  }
 :root {
     --cursor-1-bg: #ffffff;
 }
 
 body {
-   overflow: hidden;
-}
-
-main {
-    height: 100vh;
-    background-color: rgb(174, 214, 241);
+    overflow: hidden;
 }
 
 section {
@@ -28,10 +24,10 @@ section {
 
 
 
-main::-webkit-scrollbar {
+/* main::-webkit-scrollbar {
     display: none;
-    /* для Chrome, Safari и Opera */
-}
+  
+} */
 
 * {
     font-family: "Inter", sans-serif;
@@ -44,18 +40,20 @@ footer {
     padding: 0 calc(50% - 780px);
 }
 
+
+
 @font-face {
-	font-family: 'Adieu';
-	src: url('./../assets/fonts/adieu/adieu-regular-backslant.otf');
-	font-weight: 400;
-	font-style: normal;
+    font-family: 'Adieu';
+    src: url('./../assets/fonts/adieu/adieu-regular-backslant.otf');
+    font-weight: 400;
+    font-style: normal;
 }
 
 @font-face {
-	font-family: 'Adieu';
-	src: url('./../assets/fonts/adieu/adieu-black.otf');
-	font-weight: 900;
-	font-style: normal;
+    font-family: 'Adieu';
+    src: url('./../assets/fonts/adieu/adieu-black.otf');
+    font-weight: 900;
+    font-style: normal;
 }
 
 .hidden {
@@ -125,7 +123,7 @@ input[type="checkbox"]:checked+label:after {
     opacity: 1;
 }
 
-.socialButton{
+.socialButton {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,28 +131,52 @@ input[type="checkbox"]:checked+label:after {
     height: 41px;
     border: 1px solid rgb(10, 30, 76);
     border-radius: 7px;
-    
+
     transition: all 0.6s;
 }
-.socialButton svg path{
+
+.socialButton svg path {
     transition: all 0.6s;
 }
-.socialButton:hover{
+
+.socialButton:hover {
     transform: scale(1.05);
     background-color: #0A1E4C;
 }
-.socialButton:hover svg path{
+
+.socialButton:hover svg path {
     fill: white;
 }
 
 .header-navigation-mini {
     display: none;
 }
-
+@media (max-width: 1560px) {
+    section,
+    header,
+    footer {
+        padding: 0 calc(50% - 512px);
+    }
+}
+@media (max-width: 1024px) {
+    section,
+    header,
+    footer {
+        padding: 0 calc(50% - 300px);
+    }
+}
+@media (max-width: 600px) {
+    section,
+    header,
+    footer {
+        padding: 0 calc(50% - 165px);
+    }
+}
 @media(max-width: 884px) {
     .header-blur {
         height: 70px;
     }
+
     .header-navigation-mini {
         display: flex;
         z-index: 21;
@@ -164,13 +186,16 @@ input[type="checkbox"]:checked+label:after {
         height: 70px;
         padding: 0 20px;
     }
+
     .blockNav {
         display: none;
     }
+
     .header-navigation-log-mini {
         width: 140px;
         margin: -9px 0 0 0;
     }
+
     .burger {
         height: 2px;
         width: 26px;
@@ -178,6 +203,7 @@ input[type="checkbox"]:checked+label:after {
         position: relative;
         transition: all 0.3s ease;
     }
+
     .burger::after,
     .burger::before {
         content: '';
@@ -187,25 +213,31 @@ input[type="checkbox"]:checked+label:after {
         position: absolute;
         transition: all 0.3s ease;
     }
+
     .burger::after {
         top: 6px;
     }
+
     .burger::before {
         top: -6px;
     }
+
     .burger.open {
         background-color: transparent;
     }
+
     .burger.open::after {
         top: 0;
         transition: all 0.3s ease;
         transform: rotate(45deg);
     }
+
     .burger.open::before {
         top: 0;
         transition: all 0.3s ease;
         transform: rotate(-45deg);
     }
+
     .header-navigation-button-plau-mini {
         position: relative;
         padding: 0 20px 0 43px;
@@ -218,6 +250,7 @@ input[type="checkbox"]:checked+label:after {
         border: 1px solid rgb(0, 42, 219);
         color: #0A1E4C;
     }
+
     .header-navigation-button-plau-mini::before {
         content: url('../assets/polygons/trianglePolygon.svg');
         margin: 0 15px 0 0;
@@ -226,6 +259,7 @@ input[type="checkbox"]:checked+label:after {
         top: 11px;
         transform: scale(0.8);
     }
+
     .FutureAwaitsStar-modal {
         position: absolute;
         bottom: 0;
@@ -248,8 +282,8 @@ input[type="checkbox"]:checked+label:after {
     transition: opacity 0.5s ease;
     border: none;
     background-size: 100% 100%;
-    background-position: 0px 0px,0px 0px;
-    background-image: radial-gradient(91% 75% at 51% 91%, #FF69B4BF 0%, #FF69B43B 100%),radial-gradient(75% 75% at 50% 50%, #00FFFFFF 0%, #AED6F1 100%);
+    background-position: 0px 0px, 0px 0px;
+    background-image: radial-gradient(91% 75% at 51% 91%, #FF69B4BF 0%, #FF69B43B 100%), radial-gradient(75% 75% at 50% 50%, #00FFFFFF 0%, #AED6F1 100%);
 }
 
 .modal-content {
@@ -309,7 +343,7 @@ input[type="checkbox"]:checked+label:after {
     top: 18px;
 }
 
-.info-item-modal{
+.info-item-modal {
     margin: 15px 0 0 0;
 }
 
@@ -318,33 +352,38 @@ input[type="checkbox"]:checked+label:after {
     display: flex;
     justify-content: center;
 }
-.social img{
-/* width: 35px;
+
+.social img {
+    /* width: 35px;
 height: 35px;
 padding: 5px 5px;
 border: 1px solid #000;
 border-radius: 20%; */
 }
 
-.footer-modal{
+.footer-modal {
     margin: 20px 0 0 0;
 }
 
-.footer-modal .social{
+.footer-modal .social {
     margin: 20px 0 26px 0;
     display: flex;
     align-items: center;
 }
-.footer-modal .info-item-modal{
+
+.footer-modal .info-item-modal {
     color: #000000;
-} 
-.mini{
+}
+
+.mini {
     font-size: 14px;
 }
-.social-item{
+
+.social-item {
     width: 40px;
     margin: 0 22px 0 0;
 }
+
 .modal-snow-open,
 .modal-snow-close {
     font-size: 12px;

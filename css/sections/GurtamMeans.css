@@ -7,7 +7,9 @@
     transform: translateY(20px);
     transition: opacity 2s ease-in-out, transform 2s ease-in-out;
     opacity: 0;
-    padding-left: 50px;
+    
+    overflow-x: clip;
+    overflow-y: visible;
 }
 
 .GurtamMeans.visible {
@@ -208,10 +210,7 @@
 }
 
 @media(max-width: 1478px) {
-    .GurtamMeans {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
+
 }
 
 @media(max-width: 1049px) {
@@ -290,8 +289,6 @@
     }
 
     .GurtamMeans {
-        padding-left: 20px;
-        padding-right: 20px;
         align-items: unset;
     }
 }
