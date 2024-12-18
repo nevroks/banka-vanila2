@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- -----adding Inter font family----- -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <!-- -----adding Inter font family----- -->
+    <link rel="stylesheet" href="./../css/privacyPage.css">
+    <!-- ----- adding favicon ----- -->
+    <link rel="android-chrome" sizes="192x192" href="./../assets/favicons/android-chrome-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./../assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./../assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./../assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="./../assets/favicons/site.webmanifest">
+    <!-- ----- adding favicon ----- -->
+    <title>Gurtam Fortune Cookies | Privacy</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="curzr-arrow-pointer" hidden></div>
+        <div class="header-blur"></div>
+        <div class="girland-box">
+            <img class="girlandItem" src="./../assets/girland/girlandWithAllLightsOn.png" alt="girland">
+        </div>
+        <nav class="header-navigation-mini">
+            <img src="./assets/logos/gurtamLogo.svg" alt="gurtam-logo" class="header-navigation-log-mini">
+            <div class="header-navigation-box-mini">
+                <button class="header-navigation-button-plau-mini">PLAY!</button>
+            </div>
+            <div class="burger"></div>
+        </nav>
+        <div class="modal" id="modal">
+            <nav class="header-navigation-mini">
+                <img src="./assets/logos/gurtamLogo.svg" alt="gurtam-logo" class="header-navigation-log-mini">
+                <div class="header-navigation-box-mini">
+                    <button class="header-navigation-button-plau-mini">PLAY!</button>
+                </div>
+                <div class="burger"></div>
+            </nav>
+            <div class="modal-content">
+                <button class="header-navigation-button-jobs-modal ">ALL JOBS</button>
+                <button class="header-navigation-button-join-us-modal">JOIN US!</button>
+                <button class="FutureAwaits-button-modal ">DISVOVER YOUR FORTUNE!</button>
+                <div class="snow-modal">
+                    <div id="toggleSnow" class="modal-snow-open ">SNOW: OFF</div>
+                    <div class="modal-snow-close">SNOW: ON</div>
+                </div>
+
+                <img src="./assets/star/pinkStar.png" alt="pinkStar" class="FutureAwaitsStar-modal">
+                <footer class="footer footer-modal ">
+                    <div class="info-item info-item-modal">Сompetition terms >></div>
+                    <div class="info-item info-item-modal">Privacy policy >></div>
+                    <nav>
+                        <ul class="social">
+                            <li class="social-item">
+                                <canvas class="snowdrift" id="snowdriftYoutube"></canvas>
+                                <a href="https://www.youtube.com/c/GurtamEn">
+                                    <img src="./assets/social/yotube.svg" alt="youtube" class="social-link">
+                                </a>
+                            </li>
+                            <li class="social-item ">
+                                <a href="https://www.linkedin.com/company/gurtam/">
+                                    <img src="./assets/social/li.svg" alt="LinkedIn" class="social-link">
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="https://www.instagram.com/gurtam_people/">
+                                    <img src="./assets/social/inst.svg" alt="instagram" class="social-link">
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="https://www.facebook.com/gurtam.people/">
+                                    <img src="./assets/social/fee.svg" alt="facebook" class="social-link">
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="https://gurtam.com/career">
+                                    <img src="./assets/social/hz.svg" alt="hz" class="social-link">
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="info-item info-item-modal">Copyright © 2002-2024</div>
+                </footer>
+            </div>
+        </div>
+        <nav class="header-navigation blockNav">
+            <div class="header-navigation-box blockNav">
+                <a href="https://gurtam.com/jobs">
+                    <button class="header-navigation-button-jobs headerBtn blockNav">
+                        <svg width="16.000000" height="14.500000" viewBox="0 0 16 14.5" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <defs />
+                            <rect id="Rectangle 1675" y="4.500000" rx="1.000000" width="16.000000" height="10.000000"
+                                fill="#002ADB" fill-opacity="1.000000" />
+                            <path id="Vector 26"
+                                d="M4 5L4 1.5C4 0.94 4.44 0.5 5 0.5L11 0.5C11.55 0.5 12 0.94 12 1.5L12 5"
+                                stroke="#002ADB" stroke-opacity="1.000000" stroke-width="1.000000" />
+                        </svg>
+                        ALL JOBS
+                    </button>
+                </a>
+                <a href="https://gurtam.com/career">
+                    <button class="header-navigation-button-join-us headerBtn blockNav">
+                        <svg width="15.000000" height="15.000000" viewBox="0 0 15 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <defs />
+                            <path id="+"
+                                d="M5.01 14L5.01 11C5.01 10.45 4.57 10 4.01 10L1 10C0.44 10 0 9.56 0 9L0 6.01C0 5.46 0.44 5.01 1 5.01L3.99 5.01C4.54 5.01 4.99 4.57 4.99 4.01L4.99 1C4.99 0.44 5.43 0 5.99 0L8.98 0C9.53 0 9.98 0.44 9.98 1L9.98 4.01C9.98 4.57 10.42 5.01 10.98 5.01L14 5.01C14.55 5.01 15 5.46 15 6.01L15 9C15 9.56 14.55 10 14 10L11 10C10.45 10 10 10.45 10 11L10 14C10 14.55 9.56 15 9 15L6.01 15C5.46 15 5.01 14.55 5.01 14Z"
+                                fill="#002ADB" fill-opacity="1.000000" fill-rule="nonzero" />
+                        </svg>
+                        JOIN US!
+                    </button>
+                </a>
+
+            </div>
+            <img src="./../assets/logos/gurtamLogo.svg" alt="gurtam-logo" class="blockNav">
+            <div class="header-navigation-box blockNav">
+                <button class="header-navigation-button-hidden blockNav">PLAY!</button>
+                <a href="#bankaSection">
+                    <button class="header-navigation-button-plau headerBtn blockNav">
+                        <svg width="18.500000" height="21.055664" viewBox="0 0 18.5 21.0557" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <defs />
+                            <path id="Polygon 3"
+                                d="M18 9.66L1.5 0.13C0.83 -0.25 0 0.23 0 1L0 20.05C0 20.82 0.83 21.3 1.5 20.92L18 11.39C18.66 11 18.66 10.04 18 9.66Z"
+                                fill="#002ADB" fill-opacity="1.000000" fill-rule="evenodd" />
+                        </svg>
+                        PLAY!
+                    </button>
+                </a>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <canvas class="snowflakes" id="snowflakes"></canvas>
+        <img class="privacyPageStar" src="./../assets/semiSectionStars/yellowStar.svg" alt="yellow star">
+        <section>
+            <h1>PRIVACY POLICY</h1>
+            <div class="infoBlock">
+                <p>UAB Gurtam (“Gurtam”, or “we,” “our,” or “us”) is a telematics and IoT solutions developer. Gurtam is
+                    committed to protecting your privacy. This Privacy Policy tells you what to expect us to do with
+                    your personal information when you make contact with us or use one of our services.</p>
+                <p>This Privacy Policy applies to our websites(<a
+                        href="https://gurtam-fortune.com/">https://gurtam-fortune.com/</a>,<a
+                        href="https://gurtam.com/">https://gurtam.com/</a>, and their subdomains), our emails
+                    (eksu@gurtam.com, maga@gurtam.com, info@gurtam.com, jobs@gurtam.com, privacy@gurtam.com,
+                    people@gurtam.com), our offline and online events, recruitment, sales and/or marketing activities,
+                    (collectively, our “Services”). By accessing or using our Service, you signify that you have read,
+                    understood, and agree to our collection, storage, use, and disclosure of your personal information
+                    as described in this Privacy Policy.
+                </p>
+                <p>We take your privacy seriously. All personal data will be collected, stored and used by us in
+                    accordance with the European Union General Data Protection Regulation No. 2016/679 (“GDPR”) and/or
+                    other applicable statutory regulations.</p>
+            </div>
+            <div class="infoBlock">
+                <h2>Personal Data that we collect from you
+                </h2>
+                <p>We collect Personal Data about you in a variety of ways. Sometimes we collect Personal Data
+                    automatically when you interact with the Services, and sometimes we collect the Personal Data
+                    directly from you.
+                </p>
+            </div>
+            <div class="infoBlock">
+                <h2>Personal Data that you provide to us directly:
+                </h2>
+                <ul>
+                    <li>First and last name;
+                    </li>
+                    <li>Answers to our special project Interview;
+                    </li>
+                    <li>Country of living;</li>
+                    <li>Job title;</li>
+                    <li>E-mail address;
+                    </li>
+                    <li>Personal Data that we collect automatically:
+                    </li>
+                </ul>
+                <ul>
+                    <li>Location Information:
+                    </li>
+                    <li>IP address;</li>
+                    <li>Time zone;
+                    </li>
+                    <li>Device Information:
+                    </li>
+                </ul>
+                <ul>
+                    <li>Device model;
+                    </li>
+                    <li>Unique device identifiers;
+                    </li>
+                    <li>Information about the operating system and its version;
+                    </li>
+                    <li>Mobile operator and network information;
+                    </li>
+                    <li>
+                        Device storage information;
+                    </li>
+                    <li>
+                        Version of your device system.
+                    </li>
+                    <li>Data about your use of the Services, including, among others:
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Frequency of use;
+
+                    </li>
+                    <li>
+                        Areas and features of the Services that you access, visit or use;
+
+                    </li>
+                    <li>
+                        Engagement with particular features.
+
+                    </li>
+                    <li>For what purposes, on what grounds we process your Personal Data
+                    </li>
+                </ul>
+                <p>The Company may use Personal Data for the following purposes:
+                </p>
+                <p>To provide and maintain our Services.
+                    To provide you with special offers, news and general information about other services and events
+                    which we offer that are similar to those that you have already participated, purchased or enquired
+                    about unless you have opted not to receive such information.
+                    To send out organizational information on the current event, video recordings of conference
+                    materials, useful materials from speakers and organizers, for the final survey unless you have opted
+                    not to receive such information.
+                    To contact you: to contact you by email, telephone calls, Instagram profile or other equivalent
+                    forms of electronic communication, such as a mobile application’s push notifications regarding
+                    updates or informative communications related to the functionalities, including the security
+                    updates, when necessary or reasonable for their implementation unless you have opted not to receive
+                    such information.
+                    To propose relevant job positions: to invite you to relevant vacancies open at our company, if you
+                    provide us with the consent.
+                    To manage your requests: to attend and manage your requests to Us.
+                    For other purposes: we may use your information for other purposes, such as data analysis,
+                    identifying usage trends, determining the effectiveness of our promotional campaigns and to evaluate
+                    and improve our Services, products, marketing and your experience.
+                    We will process your Personal Data based on one or more of the following legal bases depending on
+                    which features of the Services you use:
+                </p>
+                <p>Your consent. For example, on the registration screen when you give us permission to process your
+                    Personal Data;
+                    Legitimate interest. We may process your Personal Data in relation to our interests in providing the
+                    Services to you, our commercial interest;
+                    To fulfill our contractual obligations to you in order to provide the Services to you;
+                    Legal obligation. We may be obligated to process some of your Personal Data to comply with
+                    applicable laws and regulations.
+                </p>
+                <p>How Long Do We Keep Your Information?
+                </p>
+                <p>We keep your information only so long as we need it to provide Services to you and fulfill the
+                    purposes described in this Privacy Policy. This is also the case for anyone that we share your
+                    information with. When we no longer need to use your information and there is no need for us to keep
+                    it to comply with our legal or regulatory obligations, we’ll either remove it from our systems or
+                    anonymize it so that we can’t identify you.
+                </p>
+                <p>Your privacy rights</p>
+                <p>
+                    The right of access to the personal data Gurtam holds about you. You have a right to request
+                    information about what Personal Data we process about you.
+                    The right to data portability. You have a right to access all your Personal Data, and receive a copy
+                    of it, including in a structured, commonly used and machine-readable format.
+                    The right to correct any Personal Data we hold about you if it is inaccurate or incomplete. If you
+                    believe that your Personal Data is inaccurate, you have a right to contact us and ask us to correct
+                    such Personal Data.
+                    The right to erase your Personal Data. You may ask us to erase your Personal Data if you withdraw
+                    your consent to processing, if you believe such processing is unlawful. Please be aware that erasing
+                    some Personal Data may affect your experience using certain features of the Services that rely on
+                    historic data;
+                    The right to restrict (i.e., prevent) the processing of your Personal Data;
+                    The right to object to Gurtam using your personal data for particular purposes. In certain
+                    circumstances we may not be able to stop using your personal data, if that is the case, we’ll let
+                    you know why.
+                    The right to withdraw consent. If we process your data based on your consent, you have the right to
+                    withdraw your consent at any time. If you would like to exercise your right to withdraw your
+                    consent, please contact us.
+                    In case some questions about the protection of your Personal Data remain, you can contact us via
+                    e-mail privacy@gurtam.com and we will do our best to solve the problem for you.
+                </p>
+                <p>Who do we share your personal information with?
+                </p>
+                <p>In addition to the specific situations discussed elsewhere in this Policy, we may share personal
+                    information in the following situations:
+                </p>
+                <p>Affiliates. We may share information with our corporate affiliates.
+                    Other disclosures with your consent. We may ask if you would like us to share your information with
+                    other unaffiliated third parties who are not described elsewhere in this Privacy Policy.
+                    Other disclosures without your consent. We may disclose information in response to subpoenas,
+                    warrants, or court orders, or in connection with any legal process, or to comply with relevant laws.
+                    We may also share your information in order to establish or exercise our rights, to defend against a
+                    legal claim, to investigate, prevent, or take action regarding possible illegal activities,
+                    suspected fraud, safety of person or property, or a violation of our policies, or to comply with
+                    your request.
+                    Service providers. We share your information with service providers. Among other things service
+                    providers help us to administer our website, send e-mail communications, conduct surveys, provide
+                    technical support, detect fraud, process payments, and assist in the fulfillment of orders. Our
+                    service providers will be given access to your personal information as is reasonably necessary to
+                    provide the Website and related Services. Our service providers are contractually obligated to use
+                    your personal information only at our direction and in accordance with our Privacy Policy; to handle
+                    your personal information in confidence; and to not disclose your personal information to
+                    unauthorized third parties.
+                    Except as otherwise stated in this Privacy Policy, we do not sell, trade, rent or otherwise share
+                    for marketing purposes your personal information with third-parties without your consent.
+                </p>
+                <p>Automated decisions</p>
+                <p>We neither use automated decision-making nor your Personal Data to automatically assess aspects of
+                    your personality (automated profiling).</p>
+                    <p>Complaint</p>
+                    <p>Pursuant to Art.77 GDPR, you have the right to file a complaint with a supervisory authority of the EU Member State in which your permanent place of residence, place of work or in which there was an alleged violation of your information privacy</p>
+                    <p>How Do We Protect Your Information?
+                    </p>
+                    <p>We implement a variety of technical, organizational and legal security measures to maintain the safety of your personal information when you place an order or enter, submit, or access your Personal Data. For example, our employees have different levels of access to your Personal Data and only those in charge of data management get access to your Personal Data and only for limited purposes required for the operation of the Services. We offer the use of a secure server. Among other practices, your account is protected by a password for your privacy and security. You must prevent unauthorized access to your account and Personal Information by selecting and protecting your password appropriately and limiting access to your computer or device and browser by signing off after you have finished accessing your account. We cannot, however, ensure or warrant the absolute security of any information you transmit to Gurtam or guarantee that your information on the Service may not be accessed, disclosed, altered, or destroyed by a breach of any of our physical, technical, or managerial safeguards. 
+                    </p>
+                    <p>
+                        What type of cookies do we collect?
+                    </p>
+                    <ul>
+                        <li>“userquestiondata”. We save the Roboview test results of a specific user (saving browser session data – no personal data)
+                        </li>
+                        <li>“usersendregdata”. We save whether a specific user filled out a lead form or not (saving browser session data – no personal data)</li>
+                        <li>“userresultpage”. Saves which Robobview test result page is opened for a specific user (saving browser session data – no personal data)
+                        </li>
+                        <li>“acceptcookies”. We save whether a specific user accept cookies or not (saving browser session data – no personal data)
+                        </li>
+                        <li>“userhasutm”. We save the UTM-tag of a specific user (saving browser session data – no personal data)
+                        </li>
+                        <li>
+                            Third-party cookies 
+                        </li>
+                    
+                    </ul>
+                    <p>Facebook Pixel (Meta) <br>
+                        Google Analythics <br>
+                        Contact information
+                    </p>
+                    <p>If you have any questions or concerns about your privacy you may contact us at:
+                    </p>
+                    <p>E-mail: privacy@gurtam.com
+                    </p>
+                    <p>UAB Gurtam, Lithuania, Ozo 12A, Vilnius 08200</p>
+                    <p>You may also contact your local data protection authority. A list of local data protection authorities is available here. </p>
+                </div>
+        </section>
+    </main>
+    <footer class="footer footerNode">
+        <div class="footer-content-wrapper">
+            <ul class="footer-socialsList">
+                <li class="footer-socialsList-item">
+                    <a href="https://www.youtube.com/c/GurtamEn">
+                        <button class="socialButton">
+                            <svg width="23" height="17" viewBox="0 0 23 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M23 11.4837C22.8965 14.1335 20.6683 16.1997 18.0182 16.1032H4.9818C2.33177 16.1997 0.103477 14.1335 0 11.4837V4.6228C0.103477 1.97305 2.33177 -0.0932282 4.9818 0.00324528H18.0182C20.6683 -0.0932282 22.8965 1.97305 23 4.6228V11.4837ZM14.6842 7.71017L10.8907 5.20438C10.1719 4.72958 9.08103 5.13556 9.08103 5.87401V11.1236C9.08103 11.8656 10.1707 12.2704 10.8907 11.7956L14.6842 9.05408C14.9299 8.91467 15.081 8.65884 15.081 8.38212C15.081 8.10553 14.9299 7.84969 14.6842 7.71017Z"
+                                    fill="#0A1E4C" />
+                            </svg>
+                        </button>
+                    </a>
+                </li>
+                <li class="footer-socialsList-item">
+                    <a href="https://www.linkedin.com/company/gurtam/"></a>
+                    <button class="socialButton">
+                        <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M4.32669 18.2177V5.92565H0.241503V18.2177H4.32669V18.2177ZM2.28453 4.248C3.70867 4.248 4.5958 3.30332 4.5958 2.12377C4.56887 0.918011 3.70867 0 2.31123 0C0.913572 3.72978e-05 0 0.918048 0 2.12381C0 3.30335 0.886643 4.24803 2.25764 4.24803L2.28453 4.248ZM6.58768 18.2177C6.58768 18.2177 6.64128 7.07897 6.58768 5.92569H10.6735V7.7083H10.6464C11.1836 6.86947 12.1515 5.63704 14.3553 5.63704C17.0439 5.63704 19.0591 7.39388 19.0591 11.1695V18.2177H14.974V11.6418C14.974 9.98951 14.3829 8.86199 12.9041 8.86199C11.7757 8.86199 11.1032 9.62212 10.8079 10.3569C10.6998 10.6184 10.6735 10.9858 10.6735 11.3532V18.2177H6.58768Z"
+                                fill="#0A1E4C" stroke="#AED6F1" stroke-width="0.008" />
+                        </svg>
+                    </button>
+                    </a>
+                </li>
+                <li class="footer-socialsList-item">
+                    <a href="https://www.instagram.com/gurtam_people/"></a>
+                    <button class="socialButton">
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 4.6C0 2.05949 2.05949 0 4.6 0H18.4C20.9405 0 23 2.05949 23 4.6V18.4C23 20.9405 20.9405 23 18.4 23H4.6C2.05949 23 0 20.9405 0 18.4V4.6ZM4.6 2.3C3.32974 2.3 2.3 3.32974 2.3 4.6V18.4C2.3 19.6703 3.32974 20.7 4.6 20.7H18.4C19.6703 20.7 20.7 19.6703 20.7 18.4V4.6C20.7 3.32974 19.6703 2.3 18.4 2.3H4.6ZM11.5 8.05C9.59456 8.05 8.05 9.59456 8.05 11.5C8.05 13.4054 9.59456 14.95 11.5 14.95C13.4054 14.95 14.95 13.4054 14.95 11.5C14.95 9.59456 13.4054 8.05 11.5 8.05ZM5.75 11.5C5.75 8.32437 8.32437 5.75 11.5 5.75C14.6756 5.75 17.25 8.32437 17.25 11.5C17.25 14.6756 14.6756 17.25 11.5 17.25C8.32437 17.25 5.75 14.6756 5.75 11.5ZM17.825 6.9C18.7777 6.9 19.55 6.12769 19.55 5.175C19.55 4.22231 18.7777 3.45 17.825 3.45C16.8723 3.45 16.1 4.22231 16.1 5.175C16.1 6.12769 16.8723 6.9 17.825 6.9Z"
+                                fill="#0A1E4C" />
+                        </svg>
+                    </button>
+                    </a>
+                </li>
+                <li class="footer-socialsList-item">
+                    <a href="https://www.facebook.com/gurtam.people/"></a>
+                    <button class="socialButton">
+                        <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 0.00400019L8.66622 0C5.43328 0 3.34487 2.124 3.34487 5.415V7.91H0V12.425H3.34487L3.34084 22H8.02084L8.02487 12.425H11.8629L11.8598 7.911H8.02487V5.794C8.02487 4.776 8.2679 4.261 9.60403 4.261L11.9899 4.26L12 0.00400019Z"
+                                fill="#0A1E4C" />
+                        </svg>
+                    </button>
+                    </a>
+                </li>
+                <li class="footer-socialsList-item">
+                    <a href="https://gurtam.com/career"></a>
+                    <button class="socialButton">
+                        <svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.1193 1.03125L5.78711 5.35162L10.1223 9.66894L14.4545 5.34857L10.1193 1.03125Z"
+                                fill="#0A1E4C" />
+                            <path d="M20.6682 0L15.3013 5.34469L19.6334 9.66506L25.0004 4.32037L20.6682 0Z"
+                                fill="#0A1E4C" />
+                            <path d="M5.36696 5.76758L0 11.1123L4.33216 15.4326L9.69912 10.088L5.36696 5.76758Z"
+                                fill="#0A1E4C" />
+                            <path d="M14.8797 5.76758L10.5444 10.0849L14.8766 14.4053L19.2118 10.088L14.8797 5.76758Z"
+                                fill="#0A1E4C" />
+                        </svg>
+                    </button>
+                    </a>
+                </li>
+            </ul>
+            <div class="footer-info">
+                <div class="footer-info-item ">Сompetition terms >></div>
+                <div class="footer-info-item"><a href="./privacyPage.html">Privacy policy >></a></div>
+                <div class="footer-info-item">Copyright © 2002-2024</div>
+            </div>
+        </div>
+        <div class="showButton social-item-show-Button" id="toggleSnow">
+            <div class="img img-hide">
+                <img src="./assets/social/showToButtonShow.svg" alt="showToButtonShow" class="img-items img-hide">
+            </div>
+            <div>
+                <img src="./assets/social/snow icon.svg" alt="showButton">
+            </div>
+        </div>
+    </footer>
+    <script src="./../js/snow.js"></script>
+    <script src="./../js/tiglerSnow.js"></script>
+</body>
+
+</html>
