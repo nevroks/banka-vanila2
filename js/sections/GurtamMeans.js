@@ -40,9 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 addAnimationClasses(); 
                 scrollDisabled = true; 
             }
-            setTimeout(() => {
-                enableScroll();
-            },1500)
+
         } else {
             scrollDisabled = false; 
         }

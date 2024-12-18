@@ -12,6 +12,8 @@
 @import url(./other/Snow.css);
 @import url(./other/Girland.css);
 
+
+
 .pagepilling {
     background-attachment: fixed;
     background-size: cover;
@@ -35,8 +37,9 @@
 
 .pagepiling.wrapper {
     height: 100vh;
-    overflow: scroll;
+    /* overflow: scroll; */
     scrollbar-width: none;
+    
 }
 
 .pagepiling.wrapper.scroll-block {

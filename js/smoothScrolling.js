@@ -1,128 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-    let isScrolling = false; 
-    const sections = document.querySelectorAll('section'); 
-    let currentSection = 0; 
-
-    function addOpenClassToAll() {
-        const coreValues = document.querySelectorAll('.WhyUs-CoreValues-value');
-        const textValue = document.querySelectorAll('.WhyUs-CoreValues-value-info-text');
-
-        coreValues.forEach(value => {
-            value.classList.add('openned');
-        });
-        textValue.forEach(value => {
-            value.classList.add('openned');
-        });
-    }
-
-    function checkVisibility() {
-        // Проверяем ширину окна
-        if (window.innerWidth < 951) {
-            addOpenClassToAll();
-            return; 
-        }
-
-        var sections = $('.pagepiling section');
-        var windowHeight = $(window).height();
-        var whyUsVisible = false;
-
-        sections.each(function () {
-            var sectionTop = $(this).offset().top;
-
-            if (sectionTop < $(window).scrollTop() + windowHeight) {
-                if (!$(this).hasClass('visible')) {
-                    $(this).addClass('visible');
-                }
-
-                if ($(this).hasClass('WhyUs')) {
-                    whyUsVisible = true;
-                }
-            } else {
-                if ($(this).hasClass('visible')) {
-                    $(this).removeClass('visible');
-                }
-
-                if ($(this).hasClass('WhyUs')) {
-                    whyUsVisible = false;
-                }
-            }
-        });
-
-        if (whyUsVisible) {
-         
-        } else {
-      
-        }
-    }
-
-    function preventDefault(e) {
-        e.preventDefault();
-    }
-
-
-    $(window).on('resize', checkVisibility);
-    $(document).ready(checkVisibility);
-    setInterval(checkVisibility, 100); 
-
-    function scrollToSection(index) {
-        if (index < 0 || index >= sections.length) return; 
-        currentSection = index;
-
-        const section = sections[currentSection];
-        const targetPosition = section.getBoundingClientRect().top + window.scrollY;
-        const startPosition = window.scrollY;
-        const distance = targetPosition - startPosition;
-        const duration = 3000; 
-        let startTime = null;
-
-        function animation(currentTime) {
-            if (startTime === null) startTime = currentTime;
-            const timeElapsed = currentTime - startTime;
-            const progress = Math.min(timeElapsed / duration, 1); 
-            const ease = easeInOutQuart(progress); 
-
-            window.scrollTo(0, startPosition + (distance * ease));
-
-            if (timeElapsed < duration) {
-                requestAnimationFrame(animation);
-            }
-        }
-
-        function easeInOutQuart(t) {
-            return t < 0.5 
-                ? 8 * t * t * t * t 
-                : 1 - Math.pow(-2 * t + 2, 4) / 2; 
-        }
-
-        requestAnimationFrame(animation);
-    }
-
-    window.addEventListener('wheel', function (event) {
-        event.preventDefault(); 
-
-        if (isScrolling) return;
-
-        isScrolling = true;
-
-        if (event.deltaY > 0) {
-            scrollToSection(currentSection + 1);
-        } else {
-            scrollToSection(currentSection - 1);
-        }
-
-        setTimeout(() => {
-            isScrolling = false;
-        }, 1000); 
-    })
-
-    window.addEventListener('keydown', function (event) {
-        if (event.key === 'ArrowDown') {
-            scrollToSection(currentSection + 1);
-        } else if (event.key === 'ArrowUp') {
-            scrollToSection(currentSection - 1);
-        }
-    });
-
     const coreValues = document.querySelectorAll('.WhyUs-CoreValues-value');
     const textValue = document.querySelectorAll('.WhyUs-CoreValues-value-info-text');
     let currentIndex = 0;
@@ -158,6 +34,10 @@ document.addEventListener('DOMContentLoaded', function () {
         nextButton.addEventListener('click', nextValue);
     }
 
+    const preventDefault = (e) => {
+        e.preventDefault();
+    };
+
     window.addEventListener('wheel', (event) => {
         const whyUsSection = document.querySelector('.WhyUs');
         const isWhyUsVisible = whyUsSection.classList.contains('visible');
@@ -180,9 +60,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     count++;
                 }
             }
-
             if (count >= 3) {
-        
+                document.body.style.overflow = ''; 
                 count = 0;
             }
             updateClasses();

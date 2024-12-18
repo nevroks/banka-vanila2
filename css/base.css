@@ -1,15 +1,13 @@
-/* html {
-    scroll-behavior: smooth;
-} */
-
+* {
+    cursor: none;
+  }
 :root {
     --cursor-1-bg: #ffffff;
 }
 
-
-/* body {
-    cursor: url("../assets/cursor/Group\ 1000004780.svg"), auto;
-} */
+body {
+   overflow: hidden;
+}
 
 main {
     height: 100vh;
@@ -18,25 +16,16 @@ main {
 section {
     height: 100vh;
 }
-/* 
-main.scroll-block {
-    overflow: hidden;
-} */
+
 
 @media (max-width: 1024px) {
     main {
         height: 100vh;
         overflow-y: auto;
-        /* scroll-behavior: smooth; */
     }
 }
 
-main {
-    /* scrollbar-width: none; */
-    /* для Firefox */
-    /* -ms-overflow-style: none; */
-    /* для IE и Edge */
-}
+
 
 main::-webkit-scrollbar {
     display: none;
