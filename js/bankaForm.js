@@ -668,6 +668,7 @@ const vacancies = {
 
 $(function () {
     const formData = new FormData();
+    formData.set("level", "none");
     const sendBtn = $(".banka-banka-form-step2-button")
 
 
@@ -683,9 +684,10 @@ $(function () {
         if ($(".banka-banka-form-step2-select.stackSelect").val() === "none") {
             isFieldsFilled.stack = false
         } else {
-            formData.append("stack", $(".banka-banka-form-step2-select.stackSelect").val());
+            formData.set("stack", $(".banka-banka-form-step2-select.stackSelect").val());
             isFieldsFilled.stack = true
             if ($(".banka-banka-form-step2-select.stackSelect").val() === "Technical Support Engineer" || $(".banka-banka-form-step2-select.stackSelect").val() === "SRE Engineer") {
+                formData.set("level", "none");
                 isFieldsFilled.level = true
                 $(".banka-banka-form-step2-select.levelSelect").val("none");
                 $(".banka-banka-form-step2-select.levelSelect").prop("disabled", true);
@@ -697,17 +699,20 @@ $(function () {
     })
 
     $(".banka-banka-form-step2-select.levelSelect").change(function () {
+        
+        formData.delete("level")
+        
         if ($(".banka-banka-form-step2-select.levelSelect").val() === "none") {
             isFieldsFilled.level = false
         } else {
-            formData.append("level", $(".banka-banka-form-step2-select.levelSelect").val());
+            formData.set("level", $(".banka-banka-form-step2-select.levelSelect").val());
             isFieldsFilled.level = true
             checkIsFieldsFilled();
         }
     })
 
     $(".banka-banka-form-step2-input.emailInput").on("input", function (e) {
-        formData.append("email", e.target.value);
+        formData.set("email", e.target.value);
         if (e.target.value) {
             isFieldsFilled.email = true;
         } else {
@@ -722,7 +727,7 @@ $(function () {
     })
 
     function checkIsFieldsFilled() {
-        if (isFieldsFilled.stack && isFieldsFilled.level && isFieldsFilled.email) {
+        if (isFieldsFilled.stack && isFieldsFilled.level!=="none" && isFieldsFilled.email) {
             sendBtn.prop("disabled", false);
         } else {
             sendBtn.prop("disabled", true);
@@ -795,10 +800,7 @@ $(function () {
 
     function renderFormStep3Content() {
         const stack = vacancies[formData.get("stack")]
-        const vacancy = stack[formData.get("level")]
-
-        console.log(stack);
-        
+        const vacancy = stack[formData.get("level")]        
         
         bankaFormStep3VacancyPositionPlaceholder.textContent = formData.get("stack")
         bankaFormStep3VacancyTitlePlaceholder.textContent = formData.get("stack")
