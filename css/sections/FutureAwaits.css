@@ -16,14 +16,16 @@
 }
 
 .FutureAwaits-title {
-    margin: 50px 0 0px;
+    font-family: 'Adieu';
     color: #002ADB;
     font-size: 64px;
     font-weight: 900;
     line-height: 77px;
+    margin: 50px 0 0px;
 }
 
 .FutureAwaits-subtitle {
+    font-family: 'Adieu';
     color: #002ADB;
     font-size: 32px;
     font-weight: 900;
@@ -61,6 +63,7 @@
     border-radius: 10px;
     background-color: transparent;
     transition: all 0.5s;
+    font-family: 'Adieu';
     font-size: 22px;
     font-weight: 900;
     line-height: 27px;

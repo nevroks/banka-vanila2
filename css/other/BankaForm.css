@@ -30,6 +30,7 @@
 }
 
 .banka-banka-form-title {
+    font-family: "Adieu";
     color: rgb(0, 42, 219);
     font-size: 24px;
     font-weight: 900;
@@ -80,6 +81,7 @@
 }
 
 .banka-banka-form-step1-semiTitle {
+    font-family: "Adieu";
     color: rgb(0, 0, 0);
     font-size: 16px;
     font-weight: 900;
@@ -99,6 +101,7 @@
     border: 1px solid rgb(0, 42, 219);
     border-radius: 10px;
     color: rgb(10, 30, 76);
+    font-family: "Adieu";
     font-size: 22px;
     font-weight: 900;
     line-height: 26px;
@@ -203,7 +206,6 @@
 }
 
 .banka-banka-form-step2-button {
-    color: black;
     position: relative;
     display: flex;
     column-gap: 13px;
@@ -212,6 +214,11 @@
     border-radius: 10px;
     padding: 15px 25px;
     transition: all 0.6s;
+    font-family: "Adieu";
+    color: rgb(10, 30, 76);
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 14px;
 }
 
 .banka-banka-form-step2-button:not(:disabled):hover {
@@ -316,6 +323,7 @@
     border-radius: 10px;
     color: white;
     background-color: rgb(0, 42, 219);
+    font-family: "Adieu";
     font-size: 22px;
     font-weight: 900;
     line-height: 26px;
@@ -344,27 +352,32 @@
     border-radius: 15px;
     background: rgb(255, 255, 255);
     padding: 19px 27px 19px 36px;
-    
+
     transition: all 0.6s;
 }
+
 .banka-banka-form-step3-vacancy:hover {
     background: rgb(231, 231, 231);
 }
+
 .banka-banka-form-step3-vacancy::after {
     content: url(./../../assets/polygons/thinArrowPolygon.svg);
     position: absolute;
-    
+
     right: 36px;
     transform: translateY(-50%);
     top: 50%;
-    
+
     transition: all 0.6s;
 }
+
 .banka-banka-form-step3-vacancy:hover::after {
     top: 40%;
     transform: scale(150%);
 }
+
 .banka-banka-form-step3-vacancy-title {
+    font-family: "Adieu";
     color: rgb(0, 42, 219);
     font-size: 24px;
     font-weight: 900;
@@ -378,7 +391,8 @@
     font-weight: 400;
     line-height: 19px;
 }
-.banka-banka-form-step3-vacancy-text span{
+
+.banka-banka-form-step3-vacancy-text span {
     color: rgb(0, 0, 0);
 
     font-size: 16px;

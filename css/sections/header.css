@@ -38,12 +38,13 @@
     position: relative;
     height: 46px;
     padding: 0 15px 0 17px;
+    font-family: 'Adieu';
     font-size: 12px;
     font-weight: 900;
     line-height: 14.4px;
+    letter-spacing: 0%;
     border-radius: 9px;
     border: 1px solid rgb(0, 42, 219);
-    letter-spacing: 3px;
     transition: all 0.6s;
 }
 

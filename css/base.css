@@ -48,17 +48,24 @@ main::-webkit-scrollbar {
     color: rgb(255, 255, 255);
 }
 
-h2 {
-    font-size: 50px;
-    font-weight: 500;
-    line-height: 100%;
-    letter-spacing: -1.8%;
-}
-
 section,
 header,
 footer {
     padding: 0 calc(50% - 780px);
+}
+
+@font-face {
+	font-family: 'Adieu';
+	src: url('./../assets/fonts/adieu/adieu-regular-backslant.otf');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Adieu';
+	src: url('./../assets/fonts/adieu/adieu-black.otf');
+	font-weight: 900;
+	font-style: normal;
 }
 
 .hidden {
