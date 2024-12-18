@@ -37,6 +37,7 @@
     height: 100vh;
     overflow: scroll;
     scrollbar-width: none;
+    scroll-behavior: smooth;
 }
 
 .pagepiling.wrapper.scroll-block {

@@ -236,23 +236,27 @@ $(function() {
     })
 
     const bankaFormStep3TextPlaceholder = document.querySelector('.banka-banka-form-step3-textPlaceholder');
-
+    const bankaFormStep3VacancyTitlePlaceholder = document.querySelector('.banka-banka-form-step3-vacancy-title-placeholder');
+    const bankaFormStep3VacancyPositionPlaceholder = document.querySelector('.banka-banka-form-step3-vacancy-text-placeholder');
 
 
     function renderFormStep3Content() {
         const stack = vacancies[formData.get("stack")]
-        const vacancy = stack[formData.get("level")]
-
+        const vacancy = stack[formData.get("level")]        
+        
+        bankaFormStep3VacancyPositionPlaceholder.textContent = formData.get("stack")
+        bankaFormStep3VacancyTitlePlaceholder.textContent = formData.get("stack")
+        
         const res = vacancy.map((el) => {
             switch (el.type) {
                 case "paragraph":
                     return renderParagraph(el.content.text)
                 case "listItem":
                     return renderListItem(el.content.title, el.content.text)
+                case "link":
+                    return renderLink()
             }
         })
-        console.log(res);
-        console.log(res.join(""));
 
         bankaFormStep3TextPlaceholder.innerHTML = res.join("")
     }
@@ -267,5 +271,8 @@ $(function() {
         return `    
             <p class="banka-banka-form-step3-listItem"><span>${title}</span>${text}</p>
         `
+    }
+    const renderLink = () => {
+        return `<p class="banka-banka-form-step3-link">Btw, Gurtam corporate life is always on display. <a href="https://www.instagram.com/gurtam_people/">Come see yourself</a></p>`
     }
 });
