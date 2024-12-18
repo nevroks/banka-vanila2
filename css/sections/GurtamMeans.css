@@ -7,6 +7,7 @@
     transform: translateY(20px);
     transition: opacity 2s ease-in-out, transform 2s ease-in-out;
     opacity: 0;
+    padding-left: 50px;
 }
 
 .GurtamMeans.visible {
@@ -264,7 +265,7 @@
     }
 
     .GurtamMeans-stats-card {
-        width: 300px;
+        width: 314px;
     }
 
     .GurtamMeans-stats-card-text {
@@ -284,7 +285,7 @@
     }
 
     .GurtamMeans-button {
-        padding: 17px 51px;
+        padding: 17px 79px;
         font-size: 14px;
     }
 

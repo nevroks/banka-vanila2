@@ -6,6 +6,8 @@
     position: fixed;
     bottom: 3vh;
     z-index: 10;
+   padding-left: 60px;
+   padding-right: 60px;
 }
 
 .footer-content-wrapper {
@@ -15,7 +17,11 @@
 }
 
 .footer-modal {
-    margin: 107px 0 0 0;
+    /* margin: 107px 0 0 0; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    left: 7px !important;
 }
 
 .footer-info {
@@ -37,11 +43,11 @@
 }
 
 .footer-info-item-modal {
-    margin: -26px 0 0 81px
+    margin: 18px 0 0 
 }
 
 .footer-info-item-modal:nth-child(1) {
-    margin: 0 0 20px 81px;
+    margin: 10px 0 20px 81px;
     font-weight: 900;
     font-size: 15px;
     line-height: 12px;
