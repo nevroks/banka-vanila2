@@ -37,7 +37,7 @@
     transform: scale(calc(246 / 869)) rotate(-45deg);
 }
 
-.banka-banka-specialCookie.step-3 {
+.banka-banka-specialCookie.step-2 {
     display: block;
     transition: all 0.6s;
 }
@@ -46,22 +46,22 @@
     z-index: 10;
 }
 
-.banka-banka-specialCookie.step-4 {
+.banka-banka-specialCookie.step-3 {
     bottom: calc(100vh / 2 - 875px / 2 + 9vh);
 }
 
-.banka-banka-specialCookie.step-5 {
+.banka-banka-specialCookie.step-4 {
     transition: all 1.1s;
     right: calc(100vw / 2 - 869px / 2);
     bottom: calc(100vh / 2 - 875px / 2);
 }
 
-.banka-banka-specialCookie.step-6 {
+.banka-banka-specialCookie.step-5 {
     transition: all 0.9s;
     transform: scale(calc(446 / 869)) rotate(-45deg);
 }
 
-.banka-banka-specialCookie.step-7 {
+.banka-banka-specialCookie.step-6 {
     animation: 0.6s horizontal-shaking;
 }
 
@@ -69,39 +69,43 @@
     0% {
         transform: translateX(0) scale(calc(446 / 869)) rotate(-45deg)
     }
+
     25% {
         transform: translateX(5px) scale(calc(446 / 869)) rotate(-45deg)
     }
+
     50% {
         transform: translateX(-5px) scale(calc(446 / 869)) rotate(-45deg)
     }
+
     75% {
         transform: translateX(5px) scale(calc(446 / 869)) rotate(-45deg)
     }
+
     100% {
         transform: translateX(0) scale(calc(446 / 869)) rotate(-45deg)
     }
 }
 
-.banka-banka-specialCookie.step-8 .banka-banka-specialCookie-img.bigPart {
+.banka-banka-specialCookie.step-7 .banka-banka-specialCookie-img.bigPart {
     left: -10px;
     top: -10px;
     transition: all 0.9s;
 }
 
-.banka-banka-specialCookie.step-8 .banka-banka-specialCookie-img.smallPart {
+.banka-banka-specialCookie.step-7 .banka-banka-specialCookie-img.smallPart {
     right: -18px;
     bottom: -18px;
     transition: all 0.9s;
 }
 
-.banka-banka-specialCookie.step-9 .banka-banka-specialCookie-img.bigPart {
+.banka-banka-specialCookie.step-7 .banka-banka-specialCookie-img.bigPart {
     left: -500px;
     top: -500px;
     transition: all 0.9s;
 }
 
-.banka-banka-specialCookie.step-9 .banka-banka-specialCookie-img.smallPart {
+.banka-banka-specialCookie.step-7 .banka-banka-specialCookie-img.smallPart {
     right: -345px;
     bottom: -345px;
     transition: all 0.9s;
@@ -139,15 +143,38 @@
 }
 
 .banka-banka-wrapper.glow {
-    animation: 2s infinite banka-glow alternate;
+    animation: shake 3s infinite;
 }
 
-@keyframes banka-glow {
-    from {
-        scale: 98%;
+@keyframes shake {
+    0% {
+        transform: translate(0);
     }
-    to {
-        scale: 102%;
+    5% {
+        transform: translate(-5px, 0);
+    }
+    10%{
+        transform: translate(5px, 0);
+    }
+    15%{
+        transform: translate(-5px, 0);
+    }
+    20%{
+        transform: translate(5px, 0);
+    }
+    21%{
+        transform: translate(0);
+    }
+    50% {
+        transform: translate(0);
+    }
+
+    75% {
+        transform: translate(0);
+    }
+
+    100% {
+        transform: translate(0);
     }
 }
 
@@ -157,7 +184,7 @@
     transition: all 1.1s;
 }
 
-.banka-banka-wrapper.step-5 {
+.banka-banka-wrapper.step-4 {
     opacity: 0;
     bottom: -80vh;
     left: -90px;
@@ -183,12 +210,6 @@
 }
 
 .banka-banka-lid.step-2 {
-    bottom: calc(var(--banka-height) - var(--banka-lid-height) + 20px);
-    right: calc((var(--banka-width) - var(--banka-lid-width)) / 2 + 6px);
-    transition: all 0.9s;
-}
-
-.banka-banka-lid.step-3 {
     bottom: calc(var(--banka-height) - var(--banka-lid-height) + 60px);
     right: calc((var(--banka-width) - var(--banka-lid-width)) / 2 + 185px);
     transform: rotate(-37deg);
@@ -214,6 +235,7 @@
     top: 25%;
     left: 50%;
     transform: translate(-50%, -25%);
+    font-family: "Adieu";
     font-weight: 900;
     font-size: 42px;
     color: #0A1E4C;
@@ -247,6 +269,7 @@
     .banka-banka-title {
         font-size: 24px;
     }
+
     .dragonbanka {
         width: 100%;
     }
@@ -256,15 +279,19 @@
     .banka-banka-title {
         font-size: 17px;
     }
+
     .dragonbanka {
         width: 100%;
     }
+
     .dragonNone {
         display: block;
     }
+
     .dragonVisible {
         display: none;
     }
+
     .dragonbanka-mini {
         position: absolute;
         bottom: -84px;
@@ -284,6 +311,7 @@
     .banka-banka-title {
         width: 216px;
     }
+
     .banka-banka-title {
         top: 23%;
     }

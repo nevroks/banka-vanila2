@@ -37,17 +37,24 @@ main::-webkit-scrollbar {
     color: rgb(255, 255, 255);
 }
 
-h2 {
-    font-size: 50px;
-    font-weight: 500;
-    line-height: 100%;
-    letter-spacing: -1.8%;
-}
-
 section,
 header,
 footer {
     padding: 0 calc(50% - 780px);
+}
+
+@font-face {
+	font-family: 'Adieu';
+	src: url('./../assets/fonts/adieu/adieu-regular-backslant.otf');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Adieu';
+	src: url('./../assets/fonts/adieu/adieu-black.otf');
+	font-weight: 900;
+	font-style: normal;
 }
 
 .hidden {
@@ -115,6 +122,28 @@ input[type="checkbox"]:not(:checked)+label:after {
 
 input[type="checkbox"]:checked+label:after {
     opacity: 1;
+}
+
+.socialButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 41px;
+    height: 41px;
+    border: 1px solid rgb(10, 30, 76);
+    border-radius: 7px;
+    
+    transition: all 0.6s;
+}
+.socialButton svg path{
+    transition: all 0.6s;
+}
+.socialButton:hover{
+    transform: scale(1.05);
+    background-color: #0A1E4C;
+}
+.socialButton:hover svg path{
+    fill: white;
 }
 
 .header-navigation-mini {

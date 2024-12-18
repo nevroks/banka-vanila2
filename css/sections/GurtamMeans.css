@@ -22,10 +22,12 @@
 
 .GurtamMeans-title {
     text-align: start;
+    font-family: "Adieu";
     color: #002ADB;
     font-size: 32px;
     font-weight: 900;
     line-height: 38px;
+
     margin: 20px 0 25px 0;
 }
 
@@ -55,6 +57,7 @@
     color: #0A1E4C;
     letter-spacing: 3px;
     padding: 17px 70px;
+    font-family: 'Adieu';
     font-size: 22px;
     font-weight: 900;
     line-height: 26px;
@@ -101,6 +104,7 @@
 
 .GurtamMeans-stats-card-count {
     margin-bottom: 13px;
+    font-family: "Adieu";
     font-size: 68px;
     font-weight: 900;
     line-height: 64px;
@@ -213,28 +217,33 @@
     .GurtamMeans {
         height: auto !important;
     }
+
     .GurtamMeans-stats {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .card-years {
         background-color: #002ADB;
         position: static;
         text-align: center;
     }
+
     .card-EMPLOYEES {
         background-color: #FFD700;
         position: static;
         text-align: center;
         transform: translateY(-30px);
     }
+
     .card-COUNTRIES {
         background-color: #FF69B4;
         position: static;
         text-align: center;
         transform: translateY(-50px);
     }
+
     .card-OFFICES {
         background-color: #0A1E4C;
         position: static;
@@ -253,9 +262,11 @@
     .GurtamMeans {
         align-items: center;
     }
+
     .GurtamMeans-stats-card {
         width: 300px;
     }
+
     .GurtamMeans-stats-card-text {
         line-height: 30px;
     }
@@ -266,14 +277,17 @@
         font-size: 20px;
         margin: 0;
     }
+
     .GurtamMeans-text {
         font-size: 16px;
         line-height: 23px;
     }
+
     .GurtamMeans-button {
         padding: 17px 51px;
         font-size: 14px;
     }
+
     .GurtamMeans {
         padding-left: 20px;
         padding-right: 20px;
@@ -304,6 +318,7 @@
     from {
         transform: translateX(0);
     }
+
     to {
         transform: translateX(-1070px);
     }
@@ -313,6 +328,7 @@
     from {
         transform: translateX(0);
     }
+
     to {
         transform: translateX(-750px);
     }
@@ -322,6 +338,7 @@
     from {
         transform: translateX(0);
     }
+
     to {
         transform: translateX(-400px);
     }
@@ -332,22 +349,27 @@
         from {
             transform: translateX(0);
         }
+
         to {
             transform: translateX(-900px);
         }
     }
+
     @keyframes moveLeft2 {
         from {
             transform: translateX(0);
         }
+
         to {
             transform: translateX(-650px);
         }
     }
+
     @keyframes moveLeft3 {
         from {
             transform: translateX(0);
         }
+
         to {
             transform: translateX(-300px);
         }
@@ -359,22 +381,27 @@
         from {
             transform: translateX(0);
         }
+
         to {
             transform: translateX(-800px);
         }
     }
+
     @keyframes moveLeft2 {
         from {
             transform: translateX(0);
         }
+
         to {
             transform: translateX(-550px);
         }
     }
+
     @keyframes moveLeft3 {
         from {
             transform: translateX(0);
         }
+
         to {
             transform: translateX(-250px);
         }
@@ -386,22 +413,27 @@
         from {
             transform: translateX(0);
         }
+
         to {
             transform: translateX(-700px);
         }
     }
+
     @keyframes moveLeft2 {
         from {
             transform: translateX(0);
         }
+
         to {
             transform: translateX(-450px);
         }
     }
+
     @keyframes moveLeft3 {
         from {
             transform: translateX(0);
         }
+
         to {
             transform: translateX(-200px);
         }
@@ -413,22 +445,27 @@
         from {
             transform: translateX(0);
         }
+
         to {
             transform: translateX(-600px);
         }
     }
+
     @keyframes moveLeft2 {
         from {
             transform: translateX(0);
         }
+
         to {
             transform: translateX(-400px);
         }
     }
+
     @keyframes moveLeft3 {
         from {
             transform: translateX(0);
         }
+
         to {
             transform: translateX(-200px);
         }
@@ -440,22 +477,27 @@
         from {
             transform: translateX(0);
         }
+
         to {
             transform: translateX(0px);
         }
     }
+
     @keyframes moveLeft2 {
         from {
             transform: translateX(0);
         }
+
         to {
             transform: translateX(0px) translateY(-30px);
         }
     }
+
     @keyframes moveLeft3 {
         from {
             transform: translateX(0);
         }
+
         to {
             transform: translateX(0px) translateY(-50px);
             ;
