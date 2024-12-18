@@ -8,6 +8,9 @@
 html{
     background-color: #AED6F1;
 }
+body{
+    overflow: visible;
+}
 main{
     height: auto;
 }

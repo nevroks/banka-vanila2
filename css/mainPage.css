@@ -38,6 +38,7 @@
     height: 100vh;
     /* overflow: scroll; */
     scrollbar-width: none;
+    scroll-behavior: smooth;
     
 }
 

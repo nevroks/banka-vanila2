@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- -----adding Inter font family----- -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <!-- -----adding Inter font family----- -->
+    <link rel="stylesheet" href="./../css/termsPage.css">
+    <!-- ----- adding favicon ----- -->
+    <link rel="android-chrome" sizes="192x192" href="./../assets/favicons/android-chrome-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./../assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./../assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./../assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="./../assets/favicons/site.webmanifest">
+    <!-- ----- adding favicon ----- -->
+    <title>Gurtam Fortune Cookies | Competition terms</title>
+</head>
+
+<body>
+    <div class="curzr-arrow-pointer" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+            <path
+                d="M12.5392 13.5515H13.0911L9.52146 21.0633C9.20614 21.7268 9.69001 22.4925 10.4247 22.4925H19.3324C20.073 22.4925 20.5567 21.7154 20.2296 21.0509L16.5391 13.5515H17.1892C17.9715 13.5515 18.4508 12.6937 18.0409 12.0275L15.6479 8.1387C15.2515 7.4945 14.311 7.50662 13.9313 8.16081L11.6744 12.0496C11.2874 12.7162 11.7684 13.5515 12.5392 13.5515Z"
+                fill="#1EA853" stroke="#0F2200" stroke-linejoin="round" />
+            <circle cx="17.5229" cy="20.1867" r="1" transform="rotate(45 17.5229 20.1867)" fill="#FF69B4" />
+            <circle cx="14.1289" cy="17.4894" r="1" transform="rotate(45 14.1289 17.4894)" fill="#FFD700" />
+            <circle cx="15.4146" cy="11.3478" r="1" transform="rotate(45 15.4146 11.3478)" fill="#002ADB" />
+        </svg>
+    </div>
+    <header class="header">
+        <div class="curzr-arrow-pointer" hidden></div>
+        <div class="header-blur"></div>
+        <div class="girland-box">
+            <img class="girlandItem" src="./../assets/girland/girlandWithAllLightsOn.png" alt="girland">
+        </div>
+        <nav class="header-navigation-mini">
+            <img src="./assets/logos/gurtamLogo.svg" alt="gurtam-logo" class="header-navigation-log-mini">
+            <div class="header-navigation-box-mini">
+                <button class="header-navigation-button-plau-mini">PLAY!</button>
+            </div>
+            <div class="burger"></div>
+        </nav>
+        <div class="modal" id="modal">
+            <nav class="header-navigation-mini">
+                <img src="./assets/logos/gurtamLogo.svg" alt="gurtam-logo" class="header-navigation-log-mini">
+                <div class="header-navigation-box-mini">
+                    <button class="header-navigation-button-plau-mini">PLAY!</button>
+                </div>
+                <div class="burger"></div>
+            </nav>
+            <div class="modal-content">
+                <button class="header-navigation-button-jobs-modal ">ALL JOBS</button>
+                <button class="header-navigation-button-join-us-modal">JOIN US!</button>
+                <button class="FutureAwaits-button-modal ">DISVOVER YOUR FORTUNE!</button>
+                <div class="snow-modal">
+                    <div id="toggleSnow" class="modal-snow-open ">SNOW: OFF</div>
+                    <div class="modal-snow-close">SNOW: ON</div>
+                </div>
+
+                <img src="./assets/star/pinkStar.png" alt="pinkStar" class="FutureAwaitsStar-modal">
+                <footer class="footer footer-modal ">
+                    <div class="info-item info-item-modal">Сompetition terms >></div>
+                    <div class="info-item info-item-modal">Privacy policy >></div>
+                    <nav>
+                        <ul class="social">
+                            <li class="social-item">
+                                <canvas class="snowdrift" id="snowdriftYoutube"></canvas>
+                                <a href="https://www.youtube.com/c/GurtamEn">
+                                    <img src="./assets/social/yotube.svg" alt="youtube" class="social-link">
+                                </a>
+                            </li>
+                            <li class="social-item ">
+                                <a href="https://www.linkedin.com/company/gurtam/">
+                                    <img src="./assets/social/li.svg" alt="LinkedIn" class="social-link">
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="https://www.instagram.com/gurtam_people/">
+                                    <img src="./assets/social/inst.svg" alt="instagram" class="social-link">
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="https://www.facebook.com/gurtam.people/">
+                                    <img src="./assets/social/fee.svg" alt="facebook" class="social-link">
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="https://gurtam.com/career">
+                                    <img src="./assets/social/hz.svg" alt="hz" class="social-link">
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="info-item info-item-modal">Copyright © 2002-2024</div>
+                </footer>
+            </div>
+        </div>
+        <nav class="header-navigation blockNav">
+            <div class="header-navigation-box blockNav">
+                <a href="https://gurtam.com/jobs">
+                    <button class="header-navigation-button-jobs headerBtn blockNav">
+                        <svg width="16.000000" height="14.500000" viewBox="0 0 16 14.5" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <defs />
+                            <rect id="Rectangle 1675" y="4.500000" rx="1.000000" width="16.000000" height="10.000000"
+                                fill="#002ADB" fill-opacity="1.000000" />
+                            <path id="Vector 26"
+                                d="M4 5L4 1.5C4 0.94 4.44 0.5 5 0.5L11 0.5C11.55 0.5 12 0.94 12 1.5L12 5"
+                                stroke="#002ADB" stroke-opacity="1.000000" stroke-width="1.000000" />
+                        </svg>
+                        ALL JOBS
+                    </button>
+                </a>
+                <a href="https://gurtam.com/career">
+                    <button class="header-navigation-button-join-us headerBtn blockNav">
+                        <svg width="15.000000" height="15.000000" viewBox="0 0 15 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <defs />
+                            <path id="+"
+                                d="M5.01 14L5.01 11C5.01 10.45 4.57 10 4.01 10L1 10C0.44 10 0 9.56 0 9L0 6.01C0 5.46 0.44 5.01 1 5.01L3.99 5.01C4.54 5.01 4.99 4.57 4.99 4.01L4.99 1C4.99 0.44 5.43 0 5.99 0L8.98 0C9.53 0 9.98 0.44 9.98 1L9.98 4.01C9.98 4.57 10.42 5.01 10.98 5.01L14 5.01C14.55 5.01 15 5.46 15 6.01L15 9C15 9.56 14.55 10 14 10L11 10C10.45 10 10 10.45 10 11L10 14C10 14.55 9.56 15 9 15L6.01 15C5.46 15 5.01 14.55 5.01 14Z"
+                                fill="#002ADB" fill-opacity="1.000000" fill-rule="nonzero" />
+                        </svg>
+                        JOIN US!
+                    </button>
+                </a>
+
+            </div>
+            <img src="./../assets/logos/gurtamLogo.svg" alt="gurtam-logo" class="blockNav">
+            <div class="header-navigation-box blockNav">
+                <button class="header-navigation-button-hidden blockNav">PLAY!</button>
+                <a href="#bankaSection">
+                    <button class="header-navigation-button-plau headerBtn blockNav">
+                        <svg width="18.500000" height="21.055664" viewBox="0 0 18.5 21.0557" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <defs />
+                            <path id="Polygon 3"
+                                d="M18 9.66L1.5 0.13C0.83 -0.25 0 0.23 0 1L0 20.05C0 20.82 0.83 21.3 1.5 20.92L18 11.39C18.66 11 18.66 10.04 18 9.66Z"
+                                fill="#002ADB" fill-opacity="1.000000" fill-rule="evenodd" />
+                        </svg>
+                        PLAY!
+                    </button>
+                </a>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <canvas class="snowflakes" id="snowflakes"></canvas>
+        <img class="termsPageStar" src="./../assets/semiSectionStars/yellowStar.svg" alt="yellow star">
+        <section>
+            <h1>Competition Terms and Conditions</h1>
+            <div class="infoBlock">
+                <h2>Introduction</h2>
+                <p>By participating in the Competition, each participant agrees to these Competition Terms and
+                    Conditions (“CTC”). The Сompetition is conducted by Gurtam UAB (“Organiser”). Access to the
+                    Competition and the related services is provided exclusively based on these CTC.
+                </p>
+            </div>
+            <div class="infoBlock">
+                <h2>Organization of the Competition
+                </h2>
+                <p>The Competition is scheduled to run from January 7, 2024, to January 8, 2024, and will be hosted at
+                    the Organiser’s official Instagram account (<a
+                        href="https://www.instagram.com/gurtam_people/">https://www.instagram.com/gurtam_people/</a>)
+                </p>
+                <p>
+                    This Competition is conducted solely online on Organizer’s Instagram account (LIVE Translation) on
+                    the dates indicated in these CTC and is accessible via social media. The Competition is also
+                    accessible on mobile phones. This operation is neither organized nor sponsored by Facebook, Twitter,
+                    Instagram, Google, Apple, or Microsoft. The personal data collected are gathered by the Organiser
+                    and are not intended for Facebook, Twitter, Instagram, Google, Apple, or Microsoft</p>
+            </div>
+            <div class="infoBlock">
+                <h2>Eligibility to Enter
+                </h2>
+                <p>The Competition is open to entrants who are at least 18 years of age or older, have Internet access
+                    and possess a valid Instagram account, with the exception of the Organiser’s employees and their
+                    families, as well as individuals involved in the development of the Competition.
+                </p>
+                <p>To participate in the Competition, participants must accurately complete the form on the website (<a
+                        href="https://gurtam-fortune.com/">https://gurtam-fortune.com/).</a></p>
+                <p>After completing the form on the website (<a
+                        href="https://gurtam-fortune.com/">https://gurtam-fortune.com/</a>), each participant will
+                    receive a letter with a unique number for the prize draw sent to the email address provided in the
+                    form.
+                </p>
+                <p>By entering the Competition, each participant confirms their eligibility and ability to receive any
+                    prizes that may be awarded to them.
+                </p>
+                <p>Participants are restricted to a single entry per person, and participation in the Competition is
+                    completely free of charge.
+                </p>
+                <p>The Organiser reserves the right to disqualify any participant who registers multiple times under
+                    different identities and/or accounts or provides incorrect information</p>
+                <p>If it is discovered that a participant has been selected or has apparently won a prize, through
+                    fraudulent means, such as automated search or the use of algorithms, or by any means other than
+                    those described by the Organiser in these CTC, the prize will not be awarded to the participant and
+                    will remain the property of the Organiser, without prejudice to the Organiser’s rights and/or
+                    remedies against the participant.
+                </p>
+            </div>
+            <div class="infoBlock">
+                <h2>The Prize</h2>
+                <p>There will be 30 winners announced. Each winner will receive a Digital Global Gift Card for the value
+                    of 50EUR, selected by the Organiser.
+                </p>
+                <p>The use of specific brands as prizes by Organiser does not imply any affiliation with or endorsement
+                    of such brands.
+                </p>
+                <p>The prize is non-transferable and non-exchangeable. No cash alternative to the prize will be offered.
+                </p>
+                <p>The Organiser reserves the right to substitute the prize with another of equal or greater value if
+                    circumstances beyond their control require doing so.
+                </p>
+                <p>The winner agrees to provide personal information, such as their full name, and email address, for
+                    the purpose of prize declaration. The winner’s agreement will be obtained through a separate
+                    document sent to the provided contact address and will be used solely for declaration purposes, not
+                    for any other reason. The Organiser agrees to cover declaration taxes as stated under Lithuanian
+                    law.
+                </p>
+                <p>The Organiser‘s decision on any aspect of the Competition is final and binding, and no correspondence
+                    will be entered into regarding it.</p>
+            </div>
+            <div class="infoBlock">
+                <h2>Winner Announcement
+                </h2>
+                <p>
+                    The winner will be drawn at random on the Instagram account via a live stream <a
+                        href="https://www.instagram.com/gurtam_people/">https://www.instagram.com/gurtam_people/</a> on
+                    January 7, 2024, at 16:00 (Vilnius time) and notified via the email address provided.
+                </p>
+            </div>
+            <div class="infoBlock">
+                <h2>The Organiser will make two attempts to contact the winner via email.
+                </h2>
+                <p>If the winner does not respond to the emails informing them of their win within 14 days of the second
+                    email, they forfeit their entitlement to the prize, and the Organiser reserves the right to select
+                    and notify a new winner.
+                </p>
+            </div>
+            <div class="infoBlock">
+                <h2>Delivery of the Prize</h2>
+                <p>Since the prize is digital, it will be delivered to the winner directly via email together with the
+                    instructions on how to access and use the prize. The email with the prize will be delivered within 2
+                    working days after the winner announcement.
+                </p>
+            </div>
+            <div class="infoBlock">
+                <h2>Data Protection and Publicity</h2>
+                <p>By entering the Competition, each participant consents to the Organiser using any personal
+                    information provided for the purposes of administering the Competition and for other purposes as
+                    specified in our Privacy Policy.
+                </p>
+                <p>
+                    All entrants may request information on the winning participant by emailing people@gurtam.com.
+
+                </p>
+                <p>At the request of the Organiser, the winner agrees to disclose their first name and place of
+                    employment to other Competition participants</p>
+                <p>The winner’s first name may be announced on the Organiser‘s website and social media channels.
+                </p>
+                <p>Participants acknowledge that the potential use of their name cannot compromise their privacy and,
+                    more generally, the rights of any third parties.
+                </p>
+            </div>
+            <div class="infoBlock">
+                <h2>Limitation of Liability</h2>
+                <p>Gurtam UAB accepts no liability for any damages, losses, injuries, or disappointments experienced by
+                    entrants resulting from participation in the Competition or selection for a prize.
+                </p>
+                <p>The Competition Organiser shall not be held liable under any circumstances, including force majeure
+                    or events beyond their control, for the necessity to cancel, shorten, extend, postpone, or modify
+                    the Competition or its CTC. The Organiser cannot be held responsible in such cases. Specifically,
+                    the Organiser, its service providers, and/or subcontractors disclaim all liability if access to
+                    websites, digital platforms, and/or social networks becomes unavailable during the Competition, or
+                    in case of malfunctions for which they are not responsible, or if participant-provided information
+                    is destroyed for reasons beyond their control.
+                </p>
+                <p>Participation in the Competition implies acknowledgment and acceptance of the Internet’s
+                    characteristics and limitations, including the lack of protection for certain data against potential
+                    misuse or hacking and the risks of contamination by network viruses. The Organiser disclaims all
+                    direct or indirect liability for improper use or incidents related to computer usage, Internet
+                    access, maintenance or malfunction of Competition servers, technical connections, or the submission
+                    of forms to incorrect or incomplete addresses. Each participant is responsible for taking
+                    appropriate measures to protect their data and/or software stored on their computer equipment
+                    against any attacks. The connection of individuals to websites or social media and their
+                    participation in the Competition is at their own risk.
+                </p>
+                <p>The Organiser shall not be held liable for fraudulent use of a participant’s connection or prize
+                    allocation, unless gross negligence on the part of the Organiser can be demonstrated. The Organiser
+                    reserves the right to disqualify any participant who disrupts the Competition registration process
+                    and to cancel, shorten, modify, report, extend, or suspend the Competition if Competition servers
+                    experience malfunctions due to bugs, alterations, unauthorized interventions, fraud, technical
+                    anomalies, or any other cause attributable to a participant, affecting the administration, security,
+                    fairness, integrity, or proper functioning of the Competition. The Organiser will make every effort
+                    to provide access to the Competition.
+                </p>
+                <p>The Organiser may, at any time, in particular for technical reasons, interrupt access to websites or
+                    digital platforms and to the Competition for updates or maintenance. The Organiser shall not be
+                    liable for any interruptions or their consequences. No compensation may be claimed in this regard.
+                    Participants are informed that accessing the Competition may result in a cookie being stored on
+                    their computer. This small computer file allows recording their navigation on the Competition
+                    website, facilitating quicker access to information. Cookies cannot damage computer data.
+                    Participants may refuse to store this cookie or choose to be notified of its storage on their
+                    computer by configuring their browser software. Despite this setting, participants will still be
+                    able to access and participate in the Competition.
+                </p>
+                <p>In general, the Organiser cannot be held liable for Internet network malfunctions or for any delays,
+                    losses, or damages resulting from postal or management services.
+                </p>
+                <p>The images, objects, trademarks, trade names, graphic elements, computers, and databases used on
+                    applications or digital platforms/social networks are the exclusive property of their respective
+                    owners and may not be extracted, reproduced, or used without their written permission, risking civil
+                    and/or criminal prosecution.
+                </p>
+                <p>Any resemblance of characters or elements in the Competition to other fictional characters or
+                    existing elements is purely coincidental and does not hold the Organiser or its service providers
+                    liable.
+                </p>
+                <p>
+                    Participants accept full responsibility for the content they publish in connection with this
+                    Competition and agree to protect the Organiser against any legal action related to the content they
+                    post.
+
+                </p>
+            </div>
+            <div class="infoBlock">
+                <h2>Final Provisions</h2>
+                <p>Gurtam UAB reserves the right to cancel the Competition or amend these terms and conditions at any
+                    time without prior notice. The Competition is under the jurisdiction of the Republic of Lithuania.
+                </p>
+                <p>The Competition is accessible worldwide.
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer footerNode">
+        <div class="footer-content-wrapper">
+            <ul class="footer-socialsList">
+                <li class="footer-socialsList-item">
+                    <a href="https://www.youtube.com/c/GurtamEn">
+                        <button class="socialButton">
+                            <svg width="23" height="17" viewBox="0 0 23 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M23 11.4837C22.8965 14.1335 20.6683 16.1997 18.0182 16.1032H4.9818C2.33177 16.1997 0.103477 14.1335 0 11.4837V4.6228C0.103477 1.97305 2.33177 -0.0932282 4.9818 0.00324528H18.0182C20.6683 -0.0932282 22.8965 1.97305 23 4.6228V11.4837ZM14.6842 7.71017L10.8907 5.20438C10.1719 4.72958 9.08103 5.13556 9.08103 5.87401V11.1236C9.08103 11.8656 10.1707 12.2704 10.8907 11.7956L14.6842 9.05408C14.9299 8.91467 15.081 8.65884 15.081 8.38212C15.081 8.10553 14.9299 7.84969 14.6842 7.71017Z"
+                                    fill="#0A1E4C" />
+                            </svg>
+                        </button>
+                    </a>
+                </li>
+                <li class="footer-socialsList-item">
+                    <a href="https://www.linkedin.com/company/gurtam/"></a>
+                    <button class="socialButton">
+                        <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M4.32669 18.2177V5.92565H0.241503V18.2177H4.32669V18.2177ZM2.28453 4.248C3.70867 4.248 4.5958 3.30332 4.5958 2.12377C4.56887 0.918011 3.70867 0 2.31123 0C0.913572 3.72978e-05 0 0.918048 0 2.12381C0 3.30335 0.886643 4.24803 2.25764 4.24803L2.28453 4.248ZM6.58768 18.2177C6.58768 18.2177 6.64128 7.07897 6.58768 5.92569H10.6735V7.7083H10.6464C11.1836 6.86947 12.1515 5.63704 14.3553 5.63704C17.0439 5.63704 19.0591 7.39388 19.0591 11.1695V18.2177H14.974V11.6418C14.974 9.98951 14.3829 8.86199 12.9041 8.86199C11.7757 8.86199 11.1032 9.62212 10.8079 10.3569C10.6998 10.6184 10.6735 10.9858 10.6735 11.3532V18.2177H6.58768Z"
+                                fill="#0A1E4C" stroke="#AED6F1" stroke-width="0.008" />
+                        </svg>
+                    </button>
+                    </a>
+                </li>
+                <li class="footer-socialsList-item">
+                    <a href="https://www.instagram.com/gurtam_people/"></a>
+                    <button class="socialButton">
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 4.6C0 2.05949 2.05949 0 4.6 0H18.4C20.9405 0 23 2.05949 23 4.6V18.4C23 20.9405 20.9405 23 18.4 23H4.6C2.05949 23 0 20.9405 0 18.4V4.6ZM4.6 2.3C3.32974 2.3 2.3 3.32974 2.3 4.6V18.4C2.3 19.6703 3.32974 20.7 4.6 20.7H18.4C19.6703 20.7 20.7 19.6703 20.7 18.4V4.6C20.7 3.32974 19.6703 2.3 18.4 2.3H4.6ZM11.5 8.05C9.59456 8.05 8.05 9.59456 8.05 11.5C8.05 13.4054 9.59456 14.95 11.5 14.95C13.4054 14.95 14.95 13.4054 14.95 11.5C14.95 9.59456 13.4054 8.05 11.5 8.05ZM5.75 11.5C5.75 8.32437 8.32437 5.75 11.5 5.75C14.6756 5.75 17.25 8.32437 17.25 11.5C17.25 14.6756 14.6756 17.25 11.5 17.25C8.32437 17.25 5.75 14.6756 5.75 11.5ZM17.825 6.9C18.7777 6.9 19.55 6.12769 19.55 5.175C19.55 4.22231 18.7777 3.45 17.825 3.45C16.8723 3.45 16.1 4.22231 16.1 5.175C16.1 6.12769 16.8723 6.9 17.825 6.9Z"
+                                fill="#0A1E4C" />
+                        </svg>
+                    </button>
+                    </a>
+                </li>
+                <li class="footer-socialsList-item">
+                    <a href="https://www.facebook.com/gurtam.people/"></a>
+                    <button class="socialButton">
+                        <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 0.00400019L8.66622 0C5.43328 0 3.34487 2.124 3.34487 5.415V7.91H0V12.425H3.34487L3.34084 22H8.02084L8.02487 12.425H11.8629L11.8598 7.911H8.02487V5.794C8.02487 4.776 8.2679 4.261 9.60403 4.261L11.9899 4.26L12 0.00400019Z"
+                                fill="#0A1E4C" />
+                        </svg>
+                    </button>
+                    </a>
+                </li>
+                <li class="footer-socialsList-item">
+                    <a href="https://gurtam.com/career"></a>
+                    <button class="socialButton">
+                        <svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.1193 1.03125L5.78711 5.35162L10.1223 9.66894L14.4545 5.34857L10.1193 1.03125Z"
+                                fill="#0A1E4C" />
+                            <path d="M20.6682 0L15.3013 5.34469L19.6334 9.66506L25.0004 4.32037L20.6682 0Z"
+                                fill="#0A1E4C" />
+                            <path d="M5.36696 5.76758L0 11.1123L4.33216 15.4326L9.69912 10.088L5.36696 5.76758Z"
+                                fill="#0A1E4C" />
+                            <path d="M14.8797 5.76758L10.5444 10.0849L14.8766 14.4053L19.2118 10.088L14.8797 5.76758Z"
+                                fill="#0A1E4C" />
+                        </svg>
+                    </button>
+                    </a>
+                </li>
+            </ul>
+            <div class="footer-info">
+                <div class="footer-info-item ">Сompetition terms >></div>
+                <div class="footer-info-item"><a href="./privacyPage.html">Privacy policy >></a></div>
+                <div class="footer-info-item">Copyright © 2002-2024</div>
+            </div>
+        </div>
+        <div class="showButton social-item-show-Button" id="toggleSnow">
+            <div class="img img-hide">
+                <img src="./assets/social/showToButtonShow.svg" alt="showToButtonShow" class="img-items img-hide">
+            </div>
+            <div>
+                <img src="./assets/social/snow icon.svg" alt="showButton">
+            </div>
+        </div>
+    </footer>
+    <script src="./../js/cursor.js"></script>
+    <script src="./../js/snow.js"></script>
+    <script src="./../js/tiglerSnow.js"></script>
+</body>
+
+</html>
