@@ -1,6 +1,6 @@
-* {
+/* * {
     cursor: none;
-  }
+  } */
 :root {
     --cursor-1-bg: #ffffff;
 }
@@ -169,6 +169,7 @@ input[type="checkbox"]:checked+label:after {
     }
     .header-navigation-log-mini {
         width: 140px;
+        margin: -9px 0 0 0;
     }
     .burger {
         height: 2px;
@@ -215,15 +216,15 @@ input[type="checkbox"]:checked+label:after {
         line-height: 14.4px;
         border-radius: 9px;
         border: 1px solid rgb(0, 42, 219);
-        margin: 0px 0 0 15px;
         color: #0A1E4C;
     }
     .header-navigation-button-plau-mini::before {
-        content: url('../assets/header/Polygon\ 1.svg');
+        content: url('../assets/polygons/trianglePolygon.svg');
         margin: 0 15px 0 0;
         position: absolute;
         left: 14px;
-        top: 13px;
+        top: 11px;
+        transform: scale(0.8);
     }
     .FutureAwaitsStar-modal {
         position: absolute;
@@ -246,7 +247,9 @@ input[type="checkbox"]:checked+label:after {
     overflow: hidden;
     transition: opacity 0.5s ease;
     border: none;
-    background-color: #AED6F1;
+    background-size: 100% 100%;
+    background-position: 0px 0px,0px 0px;
+    background-image: radial-gradient(91% 75% at 51% 91%, #FF69B4BF 0%, #FF69B43B 100%),radial-gradient(75% 75% at 50% 50%, #00FFFFFF 0%, #AED6F1 100%);
 }
 
 .modal-content {
@@ -270,13 +273,14 @@ input[type="checkbox"]:checked+label:after {
     height: 54px;
     max-width: 447px;
     width: 100%;
+    color: #000000;
 }
 
 .header-navigation-button-jobs-modal::before {
     position: absolute;
     left: 28px;
-    top: 16px;
-    content: url('../assets/header/Group\ 1000004742.svg');
+    top: 17px;
+    content: url('../assets/polygons/casePolygon.svg');
     margin: 0 15px 0 0;
 }
 
@@ -294,22 +298,53 @@ input[type="checkbox"]:checked+label:after {
     height: 54px;
     max-width: 447px;
     width: 100%;
+    color: #000000;
 }
 
 .header-navigation-button-join-us-modal::before {
-    content: url('../assets/header/+.svg');
+    content: url('../assets/polygons/blueCrossPolygon.svg');
     margin: 0 15px 0 0;
     position: absolute;
     left: 28px;
     top: 18px;
 }
 
+.info-item-modal{
+    margin: 15px 0 0 0;
+}
+
 .snow-modal {
-    margin: 147px 0 0 0;
+    margin: 70px 0 0 0;
     display: flex;
     justify-content: center;
 }
+.social img{
+/* width: 35px;
+height: 35px;
+padding: 5px 5px;
+border: 1px solid #000;
+border-radius: 20%; */
+}
 
+.footer-modal{
+    margin: 20px 0 0 0;
+}
+
+.footer-modal .social{
+    margin: 20px 0 26px 0;
+    display: flex;
+    align-items: center;
+}
+.footer-modal .info-item-modal{
+    color: #000000;
+} 
+.mini{
+    font-size: 14px;
+}
+.social-item{
+    width: 40px;
+    margin: 0 22px 0 0;
+}
 .modal-snow-open,
 .modal-snow-close {
     font-size: 12px;
@@ -336,12 +371,12 @@ input[type="checkbox"]:checked+label:after {
 }
 
 .FutureAwaits-button-modal::before {
-    content: url('../../assets/header/Polygon\ 1.svg');
+    content: url('../assets/polygons/trianglePolygon.svg');
     margin: 0 25px 0 0;
     position: absolute;
     top: 19px;
     left: 32px;
-    transform: scale(1.5);
+    transform: scale(0.8);
 }
 
 .modal-snow-close {
@@ -349,14 +384,14 @@ input[type="checkbox"]:checked+label:after {
 }
 
 .modal-snow-open::before {
-    content: url('../assets/FutureAwaits/Vector.png');
+    content: url('../assets/sections/FutureAwaits/Vector.png');
     position: absolute;
     left: -23px;
     top: -1px;
 }
 
 .modal-snow-close::before {
-    content: url('../assets/FutureAwaits/Group\ 1000004784.png');
+    content: url('../assets/sections/FutureAwaits/Group\ 1000004784.png');
     position: absolute;
     left: -25px;
     top: -3px;

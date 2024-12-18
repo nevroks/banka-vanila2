@@ -8,7 +8,8 @@
     transition: opacity 2s ease-in-out, transform 2s ease-in-out;
     opacity: 0;
     overflow-y: visible;
-    
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 .FutureAwaits.visible {
@@ -62,7 +63,7 @@
     color: #0A1E4C;
     border: 1px solid rgb(0, 42, 219);
     border-radius: 10px;
-    background-color: transparent;
+    background-color: #fff;
     transition: all 0.5s;
     font-family: 'Adieu';
     font-size: 22px;
@@ -71,6 +72,7 @@
     letter-spacing: 1px;
     z-index: 7;
     transition: all 0.6s;
+    
 }
 
 .FutureAwaits-button svg path {
@@ -173,7 +175,7 @@
 
 .dragonMini {
     position: absolute;
-    bottom: -148px;
+    bottom: -319px;
 }
 
 .none {
@@ -268,6 +270,9 @@
     .NoNone {
         display: block;
     }
+    .blockNav{
+        display: none;
+    }
 }
 
 @media(max-width: 662px) {
@@ -283,12 +288,15 @@
         line-height: 33px;
     }
     .dragonMini {
-        bottom: -174px;
+        bottom: -280px;
     }
     .FutureAwaitsStar {
         top: 450px;
         transform: scale(3.5);
     }
+.header{
+    padding: 0 15px;
+}
 }
 
 @media(max-width: 606px) {
@@ -298,8 +306,11 @@
 }
 
 @media(max-width: 518px) {
+    .FutureAwaits{
+        align-items: flex-start;
+    }
     .FutureAwaits-title {
-        font-size: 40px;
+        font-size: 34px;
         letter-spacing: 1px;
     }
     .FutureAwaits-subtitle {
@@ -307,7 +318,7 @@
         line-height: 33px;
     }
     .dragonMini {
-        bottom: -174px;
+        bottom: -282px;
     }
 }
 
@@ -339,7 +350,7 @@
         font-size: 25px;
     }
     .FutureAwaits-subtitle {
-        margin: 0 0 12px 0;
+        margin: -13px 0 12px 0;
     }
     .FutureAwaits-text {
         margin-bottom: 14px;
@@ -351,14 +362,19 @@
     .FutureAwaits-title {
         letter-spacing: 3px;
     }
+    .header-navigation-mini  {
+        padding:  0 15px;
+    }
 }
 
 @media(max-width: 417px) {
     .FutureAwaits-subtitle {
-        font-size: 20px;
+        font-size: 18px;
+        line-height: 22px;
     }
     .FutureAwaits-text {
         margin-bottom: 14px;
+        line-height: 20px;
     }
     .FutureAwaits-button {
         padding: 17px 38px 17px 70px;
@@ -366,6 +382,7 @@
         margin: 47px 0 0 0;
     }
     .dragonMini {
-        bottom: -170px;
+        bottom: -255px;
+        margin: 0 0 17px 0;
     }
 }
