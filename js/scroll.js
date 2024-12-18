@@ -91,6 +91,8 @@
 //     }
 // });
 
+
+
 let currentSection = 0; 
 let isScrolling = false; 
 let isScrollLocked = false; 
@@ -136,37 +138,27 @@ function scrollToSection(index) {
         smoothScrollTo(sectionTop); 
         currentSection = index; 
 
-        if (currentSection === 2) {
-            console.log(true);
-            disableScroll(); 
+        if (currentSection === 2 ) {
             isScrollLocked = true; 
-            document.body.style.overflow = 'hidden'; // Скрыть прокрутку
-            // setTimeout(() => {
-            //     enableScroll(); 
-            //     isScrollLocked = false; 
-            //     document.body.style.overflow = ''; // Восстановить прокрутку
-            // }, 5000);
-        } else {
-            // document.body.style.overflow = ''; // Восстановить прокрутку, если не на 2 секции
+            document.body.style.overflow = 'hidden'; 
         }
     }
-}
-
-function disableScroll() {
-    window.addEventListener('wheel', preventDefault, { passive: false });
-    window.addEventListener('touchmove', preventDefault, { passive: false });
-    window.addEventListener('scroll', preventDefault, { passive: false });
-}
-
-function enableScroll() {
-    window.removeEventListener('wheel', preventDefault);
-    window.removeEventListener('touchmove', preventDefault);
-    window.removeEventListener('scroll', preventDefault);
 }
 
 function preventDefault(event) {
     event.preventDefault();
 }
+
+const observer = new MutationObserver(() => {
+    if (document.body.style.overflow === '') {
+        isScrollLocked = false; 
+    }
+});
+
+observer.observe(document.body, {
+    attributes: true,
+    attributeFilter: ['style']
+});
 
 window.addEventListener('wheel', (event) => {
     if (isScrolling || isScrollLocked) return; 
