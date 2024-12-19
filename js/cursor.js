@@ -21,7 +21,7 @@ function getAnchor() {
       this.previousAngle = 0
       this.angleDisplace = 0
       this.degrees = 57.296
-      this.cursorSize = 20
+      this.cursorSize = 60
   
       this.cursorStyle = {
         boxSizing: 'border-box',

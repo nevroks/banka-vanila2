@@ -131,20 +131,22 @@ function smoothScrollTo(target) {
 }
 
 function scrollToSection(index) {
-    if (index >= 0 && index < totalSections && !isScrolling) {
-        isScrolling = true; 
-        const section = sections[index];
-        const sectionTop = section.offsetTop; 
-        smoothScrollTo(sectionTop); 
-        currentSection = index; 
+    if (index < 0 || index >= totalSections || isScrolling) return; 
 
-        if (currentSection === 2 ) {
-            isScrollLocked = true; 
-            document.body.style.overflow = 'hidden'; 
-        }
+    isScrolling = true; 
+    const section = sections[index];
+    const sectionTop = section.offsetTop; 
+    smoothScrollTo(sectionTop); 
+    currentSection = index; 
+
+    if (currentSection === 2) {
+        isScrollLocked = true; 
+        document.body.style.overflow = 'hidden'; 
+    } else {
+        isScrollLocked = false; 
+        document.body.style.overflow = ''; 
     }
 }
-
 function preventDefault(event) {
     event.preventDefault();
 }

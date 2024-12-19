@@ -71,15 +71,15 @@
     }
 
     25% {
-        transform: translateX(5px) scale(calc(446 / 869)) rotate(-45deg)
+        transform: translateX(10px) scale(calc(446 / 869)) rotate(-45deg)
     }
 
     50% {
-        transform: translateX(-5px) scale(calc(446 / 869)) rotate(-45deg)
+        transform: translateX(-10px) scale(calc(446 / 869)) rotate(-45deg)
     }
 
     75% {
-        transform: translateX(5px) scale(calc(446 / 869)) rotate(-45deg)
+        transform: translateX(10px) scale(calc(446 / 869)) rotate(-45deg)
     }
 
     100% {

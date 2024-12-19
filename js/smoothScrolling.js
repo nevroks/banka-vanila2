@@ -36,6 +36,10 @@ document.addEventListener('DOMContentLoaded', function () {
         return false; 
     }
 
+    function resetCount() {
+        count = 0; // Сброс count
+    }
+
     if (!checkScreenWidth()) {
         updateClasses();
 
@@ -56,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 if (event.deltaY > 0) {
                     if (currentIndex < coreValues.length - 1) {
                         currentIndex++;
-                        count = 0;
+                        resetCount(); // Сброс count при переходе вперед
                     } else {
                         count++;
                     }
@@ -77,5 +81,100 @@ document.addEventListener('DOMContentLoaded', function () {
                 updateClasses();
             }
         });
+        
+        // Сброс count при входе в секцию
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    resetCount(); // Сброс count при видимости секции
+                }
+            });
+        });
+
+        const whyUsSection = document.querySelector('.WhyUs');
+        if (whyUsSection) {
+            observer.observe(whyUsSection);
+        }
     }
+});
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const coreValues = document.querySelectorAll('.WhyUs-CoreValues-value');
+    let currentIndex = 0;
+    let scrollCount = 0; 
+    let firstScroll = true;
+    let isBlock3Active = false; 
+    let upScrollCount = 0; 
+
+    function updateClasses() {
+        coreValues.forEach(value => {
+            value.classList.remove('opennedBlock3');
+            // value.classList.remove('opennedBlock2');
+        });
+
+        if (firstScroll) {
+            coreValues.forEach(value => {
+                if (value.classList.contains('second') || value.classList.contains('third')) {
+                    value.classList.add('opennedBlock2');
+                }
+            });
+        } else if (scrollCount > 0) {
+            coreValues.forEach(value => {
+                if (value.classList.contains('third')) {
+                    value.classList.add('opennedBlock3');
+                    isBlock3Active = true; 
+                }
+            });
+        }
+    }
+
+    function nextValue() {
+        if (currentIndex < coreValues.length - 1) {
+            currentIndex++;
+            scrollCount++; 
+            updateClasses();
+            firstScroll = false;
+        }
+    }
+
+    function prevValue() {
+        if (currentIndex > 0) {
+            currentIndex--;
+            scrollCount = Math.max(0, scrollCount - 1); 
+            setTimeout( upScrollCount++ ,1000)
+            // upScrollCount++; 
+            
+            if (upScrollCount === 1) {
+                coreValues.forEach(value => {
+                    if (value.classList.contains('opennedBlock3')) {
+                        value.classList.remove('opennedBlock3');
+                    }
+                });
+            }
+    
+            if (upScrollCount === 2) {
+                coreValues.forEach(value => {
+                    if (value.classList.contains('opennedBlock2')) {
+                        value.classList.remove('opennedBlock2');
+                        updateClasses();
+                    }
+                });
+                scrollCount = 0;
+                upScrollCount = 0;
+                firstScroll = true; 
+            }
+        }
+    }
+    
+    window.addEventListener('wheel', (event) => {
+        if (event.deltaY > 0) {
+            nextValue();
+            upScrollCount = 0; 
+        } else {
+            prevValue();
+        }
+    });
+    
 });

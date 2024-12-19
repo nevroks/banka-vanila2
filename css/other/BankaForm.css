@@ -13,6 +13,13 @@
     transition: all 0.9s;
 }
 
+select {
+    appearance: none;
+    background-image: url("./../../assets/form/arrow.png");
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 50%;
+}
 .banka-banka-form.expanded {
     bottom: 0;
     height: 100vh;

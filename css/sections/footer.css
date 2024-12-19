@@ -9,7 +9,17 @@
    padding-left: 60px;
    padding-right: 60px;
 }
-
+.footer-blur {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: calc(100vh - 100px);
+    left: 0;
+    z-index: -10;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+}
 .footer-content-wrapper {
     display: flex;
     align-items: center;

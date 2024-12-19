@@ -54,7 +54,6 @@ document.addEventListener("DOMContentLoaded", function() {
                         block.classList.add(`animated${index + 1}`);
                     },500)
                 },1000)
-                console.log(`Adding animated${index + 1} to block ${index + 1}`);
             }
         });
     }

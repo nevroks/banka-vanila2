@@ -1,55 +1,55 @@
 const texts = [{
-    title: "Embrace the journey",
+    title: "EMBRACE THE JOURNEY",
     semiTitle: `Forget the "How to" Guides and stop comparing your journey to others… `,
     text: `Forget the «How to» Guides and stop comparing your journey to others. They're on their own adventure, and you've got yours! Focus on your growth and trust that your story is unfolding just as it should`
 },
 {
-    title: `Take time and treat yourself`,
+    title: `TAKE TIME AND TREAT YOURSELF`,
     semiTitle: `Life ain't a competition, it's a journey. That's why there's enough space for everyone to shine…`,
     text: `Life isn't a competition, it's a journey. That's why there's enough space for everyone to shine, so forget about comparing yourself to others. Find your own way focusing on what brings you joy`
 },
 {
-    title: `Trust yourself`,
+    title: `TRUST YOURSELF`,
     semiTitle: `You’ve got the skills to shine, but that fear of failure is holding you back…`,
     text: `You’ve got the skills to shine, but that fear of failure is holding you back. No worries! This year is all about leveling up —just trust your experience over the chatter of others`
 },
 {
-    title: `Stay curious`,
+    title: `STAY CURIOUS`,
     semiTitle: `Don't rush into conclusions. Take a moment, soak in the info...`,
     text: `Don't rush into conclusions. Take a moment, soak in the info, stay a persistant trush seeker and watch your ideas transform into pure digital treasure`
 },
 {
-    title: `Catch the positive vibes`,
+    title: `CATCH THE POSITIVE VIBES`,
     semiTitle: `The universe is ready to reward you, so don’t get stuck in a rut… `,
     text: `The universe is ready to reward you, so don’t get stuck in a rut! Unleash your inner leader or kickstart fresh projects to ride the wave of success`
 },
 {
-    title: `Lead the charge`,
+    title: `LEAD THE CHARGE`,
     semiTitle: `Your creative sparks are ready to shine bright...`,
     text: `Your creative sparks are ready to shine bright! Prepare for exciting new projects that will showcase your leadership skills and boost your career growth`
 },
 {
-    title: `Time to level up`,
+    title: `TIME TO LEVEL UP`,
     semiTitle: `Brace yourself for an exciting offer that could redefine your future…`,
     text: `Brace yourself for an exciting offer that could redefine your future! Trust your intuition — the right move will guide you to the success you’ve longed for`
 },
 {
-    title: `Right time to risk it`,
+    title: `RIGHT TIME TO RISK IT`,
     semiTitle: `Success will be yours when you set your sights on your goals…`,
     text: `Success will be yours when you set your sights on your goals. Be fearless and embrace the challenges — you’ll soon be celebrating the positive changes!`
 },
 {
-    title: `Realign your focus`,
+    title: `REALIGN YOUR FOCUS`,
     semiTitle: `Get ready for a year that'll challenge and inspire you…`,
     text: `Get ready for a year that'll challenge and inspire you! Use this energy to  re-evaluate your path, reflect on your values and clarify your goals and aspirations`
 },
 {
-    title: `Stay open minded`,
+    title: `STAY OPEN MINDED`,
     semiTitle: `This year is all about meeting new people, but it’s on you to spark those partnerships…`,
     text: `This year is all about meeting new people, but it’s on you to spark those partnerships. Keep your heart and mind open — you’ll gain valuable insights if you take your time to know others`
 },
 {
-    title: `Unite and succeed`,
+    title: `UNITE AND SUCCEED`,
     semiTitle: `It’s all about keeping it real with yourself and those around you…`,
     text: `It’s all about keeping it real with yourself and those around you.  You’ll open doors to exciting career benefits by connecting over shared interests`
 },
@@ -669,7 +669,7 @@ const vacancies = {
 $(function () {
     const formData = new FormData();
     formData.set("level", "none");
-    const sendBtn = $(".banka-banka-form-step2-button")
+    const sendBtn = document.querySelector(".banka-banka-form-step2-button")
 
 
     let isStartFormReported = false
@@ -694,7 +694,7 @@ $(function () {
             } else {
                 $(".banka-banka-form-step2-select.levelSelect").prop("disabled", false);
             }
-            checkIsFieldsFilled();
+
         }
     })
 
@@ -707,7 +707,7 @@ $(function () {
         } else {
             formData.set("level", $(".banka-banka-form-step2-select.levelSelect").val());
             isFieldsFilled.level = true
-            checkIsFieldsFilled();
+
         }
     })
 
@@ -718,21 +718,49 @@ $(function () {
         } else {
             isFieldsFilled.email = false;
         }
-        checkIsFieldsFilled();
+
     });
 
-    sendBtn.on("click", () => {
-        renderFormStep3Content()
-        reportFormSubmit()
-    })
+    const validateEmail = (email) => {
+        return String(email)
+            .toLowerCase()
+            .match(
+                /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+            );
+    };
 
     function checkIsFieldsFilled() {
-        if (isFieldsFilled.stack && isFieldsFilled.level!=="none" && isFieldsFilled.email) {
-            sendBtn.prop("disabled", false);
+        if (document.querySelector('.stackSelect').value === "none") {
+            document.querySelector('.stackSelect').style.border = '1px solid red';
         } else {
-            sendBtn.prop("disabled", true);
+            document.querySelector('.stackSelect').style.border = '1px solid rgb(186, 186, 186)';
+        }
+
+        if (document.querySelector('.levelSelect').value === "none") {
+            document.querySelector('.levelSelect').style.border = '1px solid red';
+        } else {
+            document.querySelector('.levelSelect').style.border = '1px solid rgb(186, 186, 186)';
+        }
+
+        if (!validateEmail(document.querySelector('.emailInput').value)) {
+            document.querySelector('.emailInput').style.border = '1px solid red';
+        } else {
+            document.querySelector('.emailInput').style.border = '1px solid rgb(186, 186, 186)';
         }
     }
+
+
+
+    sendBtn.addEventListener("click", (e) => {
+        checkIsFieldsFilled()
+
+        if (document.querySelector('.stackSelect').value != "none" && document.querySelector('.levelSelect').value != "none" && validateEmail(document.querySelector('.emailInput').value)) {
+            renderFormStep3Content()
+            reportFormSubmit()
+        } else {
+            e.preventDefault()
+        }
+    })
 
 
     $(".banka-banka-form-step2-select.stackSelect").on('click', () => {
@@ -794,16 +822,16 @@ $(function () {
     })
 
     const bankaFormStep3TextPlaceholder = document.querySelector('.banka-banka-form-step3-textPlaceholder');
-    const bankaFormStep3VacancyTitlePlaceholder = document.querySelector('.banka-banka-form-step3-vacancy-title-placeholder');
-    const bankaFormStep3VacancyPositionPlaceholder = document.querySelector('.banka-banka-form-step3-vacancy-text-placeholder');
+    //const bankaFormStep3VacancyTitlePlaceholder = document.querySelector('.banka-banka-form-step3-vacancy-title-placeholder');
+    //const bankaFormStep3VacancyPositionPlaceholder = document.querySelector('.banka-banka-form-step3-vacancy-text-placeholder');
 
 
     function renderFormStep3Content() {
         const stack = vacancies[formData.get("stack")]
         const vacancy = stack[formData.get("level")]        
         
-        bankaFormStep3VacancyPositionPlaceholder.textContent = formData.get("stack")
-        bankaFormStep3VacancyTitlePlaceholder.textContent = formData.get("stack")
+        //bankaFormStep3VacancyPositionPlaceholder.textContent = formData.get("stack")
+        //bankaFormStep3VacancyTitlePlaceholder.textContent = formData.get("stack")
 
         const res = vacancy.map((el) => {
             switch (el.type) {
