@@ -156,6 +156,15 @@ function throttle(cb, delay) {
 canvasRatio(canvasSnowflakes);
 canvasRatio(canvasSnowdriftYoutube);
 
+$(function() {
+    document.window.addEventListener('resize', () => {
+        canvasRatio(canvasSnowflakes);
+        canvasRatio(canvasSnowdriftYoutube);
+    });    
+})
+
+
+
 const onFallDown = throttle((x, mass) => {
     snowdriftYoutube(x, mass);
 }, 50);

@@ -209,13 +209,12 @@
     filter: blur(175px);
 }
 
-@media(max-width: 1478px) {
 
-}
 
 @media(max-width: 1049px) {
     .GurtamMeans {
         height: auto !important;
+        align-items: center;
     }
 
     .GurtamMeans-stats {
@@ -250,6 +249,9 @@
         text-align: center;
         transform: translateY(-70px);
     }
+    .GurtamMeans-text{
+        text-align: center;
+    }
 }
 
 @media(max-width: 690px) {
@@ -269,6 +271,10 @@
 
     .GurtamMeans-stats-card-text {
         line-height: 30px;
+    }
+    .GurtamMeans a{
+        display: flex;
+        justify-content: center;
     }
 }
 

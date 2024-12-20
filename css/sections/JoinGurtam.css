@@ -159,12 +159,14 @@
     filter: blur(175px);
 }
 
-@media (max-width: 978px) {
+@media (max-width: 1024px) {
     .JoinGurtam-title {
         font-size: 41px;
-    }
+        line-height: 48px;
 
+    }
     .JoinGurtam-text {
+        line-height: 32px;
         font-size: 26px;
     }
 }
@@ -172,7 +174,6 @@
 @media (max-width: 600px) {
     .JoinGurtam-title {
         font-size: 40px;
-        line-height: 48px;
         letter-spacing: 0;
     }
 

@@ -1,6 +1,5 @@
 .FutureAwaits {
-    display: flex;
-    flex-direction: column;
+    
     align-items: self-start;
     padding-top: 150px;
     transform: translateY(20px);
@@ -15,7 +14,11 @@
     opacity: 1;
     transform: translateY(0);
 }
-
+.FutureAwaits-content{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
 .FutureAwaits-title {
     font-family: 'Adieu';
     color: #002ADB;
@@ -43,7 +46,9 @@
     margin-bottom: 40px;
     color: #0A1E4C;
 }
-
+.FutureAwaits-text, .FutureAwaits-subtitle{
+    z-index: 1;
+}
 .FutureAwaits-text-span {
     color: #002ADB;
 }
@@ -54,6 +59,7 @@
 }
 
 .FutureAwaits-button {
+    max-width: 600px;
     position: relative;
     display: flex;
     column-gap: 30px;
@@ -91,19 +97,22 @@
 .FutureAwaits-button:active {
     bottom: -2px;
 }
-
+.FutureAwaits-bigDragonArea{
+    position: absolute;
+    width: 880px;
+    top: -275px;
+    right: -15px;
+}
 .FutureAwaits-background-img-left {
     position: absolute;
-    right: 94px;
-    top: 283px;
-    width: 1000px;
+    right: 460px;
+    top: 337px;
 }
 
 .FutureAwaits-background-img-right {
     position: absolute;
-    right: 73px;
-    top: 231px;
-    width: 1000px;
+    right: 12px;
+    top: 458px;
     z-index: -1;
 }
 
@@ -180,8 +189,10 @@
 }
 
 .dragonMini {
+    right: 50%;
     position: absolute;
-    bottom: -319px;
+    bottom: -133px;
+    transform: translateX(50%);
 }
 
 .none {
@@ -192,86 +203,22 @@
     display: none;
 }
 
-@media(max-width: 1458px) {
+@media(max-width: 1560px) {
     
-    .FutureAwaits-background-img {
-        right: 48px;
+    .FutureAwaits-bigDragonArea{
+        top: -275px;
+        right: -270px;
+        z-index: 0;
     }
 
-    .FutureAwaits-background-img-left {
-        right: -6px;
-    }
-
-    .FutureAwaits-background-img-right {
-        right: -67px;
-    }
 }
 
-@media(max-width: 1320px) {
-    .FutureAwaits-title {
-        font-size: 58px;
-        letter-spacing: 1px;
-    }
 
-    .FutureAwaits-subtitle {
-        font-size: 28px;
-        letter-spacing: 1px;
-    }
-
-    .FutureAwaits-text {
-        max-width: 596px;
-        font-size: 18px;
-    }
-}
-
-@media(max-width: 1210px) {
-    .FutureAwaits-background-img {
-        max-width: 524px;
-    }
-
-    .FutureAwaits-background-img-left {
-        top: 232px;
-        width: 927px;
-        right: -104px;
-    }
-
-    .FutureAwaits-background-img-right {
-        top: 222px;
-        width: 800px;
-        right: -51px;
-    }
-}
-
-@media(max-width: 1080px) {
-    .FutureAwaits-background-img {
-        max-width: 491px;
-        right: -24px;
-    }
-
-    .FutureAwaits-background-img-left {
-        top: 336px;
-        width: 443px;
-        right: 89px;
-    }
-
-    .FutureAwaits-background-img-right {
-        top: 290px;
-        width: 536px;
-        right: -35px;
-    }
-
-    .FutureAwaitsStar {
-        top: 300px;
-
-    }
-}
 @media(max-width: 1024px) {
     .FutureAwaitsStar {
         top: 300px;
         
     }
-}
-@media(max-width: 950px) {
     .none {
         display: none;
     }
@@ -291,9 +238,12 @@
     .blockNav {
         display: none;
     }
+    .FutureAwaits-text:nth-of-type(2) {
+        margin-bottom: 100px;
+    }
 }
 
-@media(max-width: 662px) {
+@media(max-width: 600px) {
     .FutureAwaits {
         padding-top: 77px;
     }
@@ -321,112 +271,10 @@
     }
 
     .dragonMini {
-        bottom: -280px;
+        bottom: -190px;
     }
 
     .FutureAwaitsStar {
         top: 450px;
-    }
-}
-
-@media(max-width: 606px) {
-    .dragonMini {
-        bottom: -209px;
-    }
-}
-
-@media(max-width: 518px) {
-    .FutureAwaits {
-        align-items: flex-start;
-    }
-
-    .FutureAwaits-title {
-        font-size: 34px;
-        letter-spacing: 1px;
-    }
-
-    .FutureAwaits-subtitle {
-        font-size: 32px;
-        line-height: 33px;
-    }
-
-    .dragonMini {
-        bottom: -282px;
-    }
-}
-
-@media(max-width: 606px) {
-    .dragonMini {
-        bottom: -209px;
-    }
-}
-
-@media(max-width: 520px) {
-    .dragonMini {
-        bottom: -209px;
-    }
-
-    .FutureAwaits-subtitle {
-        font-size: 28px;
-        ;
-    }
-
-    .FutureAwaits-text {
-        font-size: 16px;
-    }
-
-    .FutureAwaits {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-}
-
-@media(max-width: 480px) {
-    .FutureAwaits-subtitle {
-        font-size: 25px;
-    }
-
-    .FutureAwaits-subtitle {
-        margin: -13px 0 12px 0;
-    }
-
-    .FutureAwaits-text {
-        margin-bottom: 14px;
-    }
-
-    .FutureAwaits-button {
-        padding: 17px 38px 17px 70px;
-        font-size: 14px;
-    }
-
-    .FutureAwaits-title {
-        letter-spacing: 3px;
-    }
-
-    .header-navigation-mini {
-        padding: 0 15px;
-    }
-}
-
-@media(max-width: 417px) {
-    .FutureAwaits-subtitle {
-        font-size: 18px;
-        line-height: 22px;
-    }
-
-    .FutureAwaits-text {
-        margin-bottom: 14px;
-        line-height: 20px;
-    }
-
-    .FutureAwaits-button {
-        padding: 17px 38px 17px 70px;
-        font-size: 14px;
-        margin: 47px 0 0 0;
-    }
-
-    .dragonMini {
-        bottom: -255px;
-        margin: 0 0 17px 0;
     }
 }
