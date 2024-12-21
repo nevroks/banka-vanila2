@@ -75,15 +75,6 @@
     top: -65px;
     left: 27px;
 }
-
-.JoinGurtam-button-wrapper::after {
-    content: url(./../../assets/bigYellowStar.svg);
-    position: absolute;
-    z-index: 9;
-    right: -73px;
-    top: -80px;
-}
-
 .JoinGurtam-button {
     z-index: 10;
     font-family: "Adieu";

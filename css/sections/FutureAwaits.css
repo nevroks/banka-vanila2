@@ -18,6 +18,30 @@
     flex-direction: column;
     position: relative;
 }
+.FutureAwaits-button-modal {
+    position: relative;
+    padding: 17px 60px 17px 70px;
+    border-radius: 9px;
+    color: #0A1E4C;
+    background-color: #FFFFFF;
+    transition: all 0.5s;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 27px;
+    letter-spacing: 1px;
+    z-index: 7;
+    max-width: 447px;
+    width: 100%;
+}
+
+.FutureAwaits-button-modal::before {
+    content: url('../assets/polygons/trianglePolygon.svg');
+    margin: 0 25px 0 0;
+    position: absolute;
+    top: 19px;
+    left: 32px;
+    transform: scale(0.8);
+}
 .FutureAwaits-title {
     font-family: 'Adieu';
     color: #002ADB;
@@ -232,10 +256,6 @@
 
     .NoNone {
         display: block;
-    }
-
-    .blockNav {
-        display: none;
     }
     .FutureAwaits-text:nth-of-type(2) {
         margin-bottom: 100px;
