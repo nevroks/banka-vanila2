@@ -19,10 +19,31 @@ window.addEventListener('wheel', (e) => {
                 if (stepsForThirdBlock <= 5) {
                     stepsForThirdBlock += 1;
                     thirdBlock.style.transform = `translateY(-${(stepsForSecondBlock * step) + (stepsForThirdBlock * step)}px)`;
-                } else {
-                    setTimeout(() => blockedScroll = false, 750);
                 }
             }
+
+            console.log(stepsForSecondBlock);
+            console.log(stepsForThirdBlock);
+        } else if (e.deltaY <= 0) {
+            if (stepsForThirdBlock > 0) {
+                stepsForThirdBlock -= 1;
+                thirdBlock.style.transform = `translateY(-${(stepsForSecondBlock * step) + (stepsForThirdBlock * step)}px)`;
+            } else {
+                if (stepsForSecondBlock > 0) {
+                    stepsForSecondBlock -= 1;
+                    thirdBlock.style.transform = `translateY(-${stepsForSecondBlock * step}px)`;
+                    secondBlock.style.transform = `translateY(-${stepsForSecondBlock * step}px)`;
+                }
+            }
+
+            console.log(stepsForSecondBlock);
+            console.log(stepsForThirdBlock);
+        }
+
+        if ((stepsForThirdBlock == 6 && stepsForSecondBlock == 6) || (stepsForThirdBlock == 0 && stepsForSecondBlock == 0)) {
+            setTimeout(() => blockedScroll = false, 750);
+        } else {
+            setTimeout(() => blockedScroll = true, 750);
         }
     }
 })
