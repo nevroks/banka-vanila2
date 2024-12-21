@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         window.addEventListener('wheel', (event) => {
             const whyUsSection = document.querySelector('.WhyUs');
-            const isWhyUsVisible = whyUsSection.classList.contains('visible');
+            const isWhyUsVisible = whyUsSection.classList.contains('activeSection');
 
             if (isWhyUsVisible) {
                 if (!hasResetCount) {

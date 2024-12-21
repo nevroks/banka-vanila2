@@ -327,38 +327,6 @@
     animation: moveLeft4 1s forwards;
 }
 
-@media(max-width: 1494px) {
-    @keyframes moveLeft1 {
-        from {
-            transform: translateX(0);
-        }
-
-        to {
-            transform: translateX(-900px);
-        }
-    }
-
-    @keyframes moveLeft2 {
-        from {
-            transform: translateX(0);
-        }
-
-        to {
-            transform: translateX(-650px);
-        }
-    }
-
-    @keyframes moveLeft3 {
-        from {
-            transform: translateX(0);
-        }
-
-        to {
-            transform: translateX(-300px);
-        }
-    }
-}
-
 @media(max-width: 11326px) {
     @keyframes moveLeft1 {
         0% {
@@ -424,66 +392,132 @@
     }
 }
 
-@media(max-width: 1326px) {
+@media (max-width: 1560px) {
     @keyframes moveLeft1 {
-        from {
-            transform: translateX(0);
+        0% {
+            width: 0;
+            opacity: 0;
         }
 
-        to {
-            transform: translateX(-700px);
+        25% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 1;
+            width: 1115px;
         }
     }
 
     @keyframes moveLeft2 {
-        from {
-            transform: translateX(0);
+        0% {
+            width: 0;
+            opacity: 0;
         }
 
-        to {
-            transform: translateX(-450px);
+        25% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 1;
+            width: 885px;
         }
     }
 
     @keyframes moveLeft3 {
-        from {
-            transform: translateX(0);
+        0% {
+            width: 0;
+            opacity: 0;
         }
 
-        to {
-            transform: translateX(-200px);
+        25% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 1;
+            width: 635px;
+        }
+    }
+    @keyframes moveLeft4 {
+        0% {
+            width: 0;
+            opacity: 0;
+        }
+
+        25% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 1;
+            width: 385px;
         }
     }
 }
 
 @media(max-width: 1158px) {
     @keyframes moveLeft1 {
-        from {
-            transform: translateX(0);
+        0% {
+            width: 0;
+            opacity: 0;
         }
 
-        to {
-            transform: translateX(-600px);
+        25% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 1;
+            width: 1115px;
         }
     }
 
     @keyframes moveLeft2 {
-        from {
-            transform: translateX(0);
+        0% {
+            width: 0;
+            opacity: 0;
         }
 
-        to {
-            transform: translateX(-400px);
+        25% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 1;
+            width: 925px;
         }
     }
 
     @keyframes moveLeft3 {
-        from {
-            transform: translateX(0);
+        0% {
+            width: 0;
+            opacity: 0;
         }
 
-        to {
-            transform: translateX(-200px);
+        25% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 1;
+            width: 675px;
+        }
+    }
+    @keyframes moveLeft4 {
+        0% {
+            width: 0;
+            opacity: 0;
+        }
+
+        25% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 1;
+            width: 425px;
         }
     }
 }

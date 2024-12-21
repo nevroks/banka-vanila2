@@ -135,6 +135,13 @@ function scrollToSection(index) {
 
     isScrolling = true; 
     const section = sections[index];
+
+    if (section.getAttribute("sectionId") > currentSection) {
+        section.classList.add('activeSection')
+    } else {
+        document.querySelector(`section[sectionId="${currentSection}"]`).classList.remove('activeSection');
+    }
+
     const sectionTop = section.offsetTop; 
     smoothScrollTo(sectionTop); 
     currentSection = index; 

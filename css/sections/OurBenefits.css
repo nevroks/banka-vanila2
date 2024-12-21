@@ -179,10 +179,16 @@
     filter: blur(175px);
 }
 
+.boxVideo {
+    width: 721px;
+    height: 400px;
+}
+
 @media(max-width: 917px) {
     .OurBenefits-title {
         font-size: 39px;
         line-height: 46px;
+        padding-bottom: 100px;
     }
 
     .cokkiesRight {
@@ -203,6 +209,11 @@
     .yellowStar {
         left: 166px;
         top: -72px;
+    }
+
+    .boxVideo {
+        width: 600px;
+        height: 300px;
     }
 }
 
