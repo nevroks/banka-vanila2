@@ -24,11 +24,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- -----adding Inter font family----- -->
+    <!-- -----adding Inter and Adieu font families----- -->
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
-    <!-- -----adding Inter font family----- -->
+    <link rel="stylesheet" href="./assets/fonts/adieu/adieu-black.otf">
+    <link rel="stylesheet" href="./assets/fonts/adieu/adieu-regular-backslant.otf">
+    <!-- -----adding Inter and Adieu font families----- -->
+
     <link rel="stylesheet" href="./css/mainPage.css">
     <!-- -----adding Jquery----- -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
@@ -36,7 +39,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- -----adding Jquery----- -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <!-- ----- adding favicon ----- -->
     <link rel="android-chrome" sizes="192x192" href="./assets/favicons/android-chrome-192x192.png">
@@ -68,10 +70,18 @@
     <!-- End Google Tag Manager (noscript) -->
     <div class="curzr-arrow-pointer" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-            <path d="M17.2955 18.6917H18.0567L13.1331 29.0528C12.6981 29.968 13.3655 31.0241 14.3789 31.0241H26.6654C27.6869 31.0241 28.3541 29.9523 27.9029 29.0357L22.8126 18.6917H23.7092C24.7883 18.6917 25.4494 17.5086 24.884 16.5897L21.5833 11.2258C21.0366 10.3372 19.7393 10.354 19.2156 11.2563L16.1026 16.6201C15.5688 17.5396 16.2323 18.6917 17.2955 18.6917Z" fill="#1EA853" stroke="#0F2200" stroke-linejoin="round"/>
-            <path d="M23.1942 28.819C23.7329 29.3577 24.6062 29.3577 25.1448 28.819C25.6835 28.2804 25.6835 27.4071 25.1448 26.8684C24.6062 26.3298 23.7329 26.3298 23.1942 26.8684C22.6556 27.4071 22.6556 28.2804 23.1942 28.819Z" fill="#FF69B4"/>
-            <path d="M18.5128 25.0986C19.0515 25.6373 19.9248 25.6373 20.4634 25.0986C21.0021 24.56 21.0021 23.6867 20.4634 23.148C19.9248 22.6093 19.0515 22.6093 18.5128 23.148C17.9742 23.6867 17.9742 24.56 18.5128 25.0986Z" fill="#FFD700"/>
-            <path d="M20.2862 16.6275C20.8249 17.1661 21.6982 17.1661 22.2368 16.6275C22.7755 16.0888 22.7755 15.2155 22.2368 14.6768C21.6982 14.1382 20.8249 14.1382 20.2862 14.6768C19.7475 15.2155 19.7475 16.0888 20.2862 16.6275Z" fill="#002ADB"/>
+            <path
+                d="M17.2955 18.6917H18.0567L13.1331 29.0528C12.6981 29.968 13.3655 31.0241 14.3789 31.0241H26.6654C27.6869 31.0241 28.3541 29.9523 27.9029 29.0357L22.8126 18.6917H23.7092C24.7883 18.6917 25.4494 17.5086 24.884 16.5897L21.5833 11.2258C21.0366 10.3372 19.7393 10.354 19.2156 11.2563L16.1026 16.6201C15.5688 17.5396 16.2323 18.6917 17.2955 18.6917Z"
+                fill="#1EA853" stroke="#0F2200" stroke-linejoin="round" />
+            <path
+                d="M23.1942 28.819C23.7329 29.3577 24.6062 29.3577 25.1448 28.819C25.6835 28.2804 25.6835 27.4071 25.1448 26.8684C24.6062 26.3298 23.7329 26.3298 23.1942 26.8684C22.6556 27.4071 22.6556 28.2804 23.1942 28.819Z"
+                fill="#FF69B4" />
+            <path
+                d="M18.5128 25.0986C19.0515 25.6373 19.9248 25.6373 20.4634 25.0986C21.0021 24.56 21.0021 23.6867 20.4634 23.148C19.9248 22.6093 19.0515 22.6093 18.5128 23.148C17.9742 23.6867 17.9742 24.56 18.5128 25.0986Z"
+                fill="#FFD700" />
+            <path
+                d="M20.2862 16.6275C20.8249 17.1661 21.6982 17.1661 22.2368 16.6275C22.7755 16.0888 22.7755 15.2155 22.2368 14.6768C21.6982 14.1382 20.8249 14.1382 20.2862 14.6768C19.7475 15.2155 19.7475 16.0888 20.2862 16.6275Z"
+                fill="#002ADB" />
         </svg>
     </div>
     <header class="header">
@@ -118,150 +128,108 @@
                 <img src="./assets/girland/lights/red.svg" alt="" class="hiddenGirland girland  girland37">
                 <img src="./assets/girland/lights/yellow.svg" alt="" class="hiddenGirland girland  girland38">
             </div>
+            <div class="burger"></div>
+        </nav>
+        <div class="modal" id="modal">
             <nav class="header-navigation-mini">
                 <img src="./assets/logos/gurtamLogo.svg" alt="gurtam-logo" class="header-navigation-log-mini">
                 <div class="header-navigation-box-mini">
-                    <button id="playbtn1" class="header-navigation-button-plau-mini">PLAY!</button>
+                    <button id="playbtn2" class="header-navigation-button-plau-mini">PLAY!</button>
                 </div>
                 <div class="burger"></div>
             </nav>
-            <div class="modal" id="modal">
-                <nav class="header-navigation-mini">
-                    <img src="./assets/logos/gurtamLogo.svg" alt="gurtam-logo" class="header-navigation-log-mini">
-                    <div class="header-navigation-box-mini">
-                        <button id="playbtn2" class="header-navigation-button-plau-mini">PLAY!</button>
-                    </div>
-                    <div class="burger"></div>
-                </nav>
-                <div class="modal-content">
-                    <button class="header-navigation-button-jobs-modal ">ALL JOBS</button>
-                    <button class="header-navigation-button-join-us-modal">JOIN US!</button>
-                    <button class="FutureAwaits-button-modal ">DISVOVER YOUR FORTUNE!</button>
-                    <div class="snow-modal">
-                        <div id="toggleSnowModal" class="modal-snow-open ">SNOW: OFF</div>
-                        <div class="modal-snow-close">SNOW: ON</div>
-                    </div>
-                    <footer class="footer footer-modal ">
-                        <div class="info-item info-item-modal">Сompetition terms >></div>
-                        <div class="info-item info-item-modal">Privacy policy >></div>
-                        <nav>
-                            <ul class="social">
-                                <li class="social-item">
-                                    <canvas class="snowdrift" id="snowdriftYoutube"></canvas>
-                                    <a href="https://www.youtube.com/c/GurtamEn">
-                                        <img src="./assets/socialIcons/y.png" alt="youtube" class="social-link">
-                                    </a>
-                                </li>
-                                <li class="social-item ">
-                                    <a href="https://www.linkedin.com/company/gurtam/">
-                                        <img src="./assets/socialIcons/l.png" alt="LinkedIn" class="social-link">
-                                    </a>
-                                </li>
-                                <li class="social-item">
-                                    <a href="https://www.instagram.com/gurtam_people/">
-                                        <img src="./assets/socialIcons/inst.png" alt="instagram" class="social-link">
-                                    </a>
-                                </li>
-                                <li class="social-item">
-                                    <a href="https://www.facebook.com/gurtam.people/">
-                                        <img src="./assets/socialIcons/f.png" alt="facebook" class="social-link">
-                                    </a>
-                                </li>
-                                <li class="social-item">
-                                    <a href="https://gurtam.com/career">
-                                        <img src="./assets/socialIcons/g.png" alt="hz" class="social-link">
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <div class="info-item info-item-modal mini">Copyright © 2002-2024</div>
-                    </footer>
+            <div class="modal-content">
+                <button class="header-navigation-button-jobs-modal ">ALL JOBS</button>
+                <button class="header-navigation-button-join-us-modal">JOIN US!</button>
+                <button class="FutureAwaits-button-modal ">DISVOVER YOUR FORTUNE!</button>
+                <div class="snow-modal">
+                    <div id="toggleSnowModal" class="modal-snow-open ">SNOW: OFF</div>
+                    <div class="modal-snow-close">SNOW: ON</div>
                 </div>
+                <footer class="footer footer-modal ">
+                    <div class="info-item info-item-modal">Сompetition terms >></div>
+                    <div class="info-item info-item-modal">Privacy policy >></div>
+                    <nav>
+                        <ul class="social">
+                            <li class="social-item">
+                                <canvas class="snowdrift" id="snowdriftYoutube"></canvas>
+                                <a href="https://www.youtube.com/c/GurtamEn">
+                                    <img src="./assets/socialIcons/y.png" alt="youtube" class="social-link">
+                                </a>
+                            </li>
+                            <li class="social-item ">
+                                <a href="https://www.linkedin.com/company/gurtam/">
+                                    <img src="./assets/socialIcons/l.png" alt="LinkedIn" class="social-link">
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="https://www.instagram.com/gurtam_people/">
+                                    <img src="./assets/socialIcons/inst.png" alt="instagram" class="social-link">
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="https://www.facebook.com/gurtam.people/">
+                                    <img src="./assets/socialIcons/f.png" alt="facebook" class="social-link">
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="https://gurtam.com/career">
+                                    <img src="./assets/socialIcons/g.png" alt="hz" class="social-link">
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="info-item info-item-modal mini">Copyright © 2002-2024</div>
+                </footer>
             </div>
-            <nav class="header-navigation blockNav">
-                <div class="header-navigation-box blockNav">
-                    <a href="https://gurtam.com/jobs">
-                        <button class="header-navigation-button-jobs headerBtn blockNav">
-                            <svg
-                                width="16.000000"
-                                height="14.500000"
-                                viewBox="0 0 16 14.5"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink"
-                            >
-                                <defs/>
-                                <rect
-                                    id="Rectangle 1675"
-                                    y="4.500000"
-                                    rx="1.000000"
-                                    width="16.000000"
-                                    height="10.000000"
-                                    fill="#002ADB"
-                                    fill-opacity="1.000000"
-                                />
-                                <path
-                                    id="Vector 26"
-                                    d="M4 5L4 1.5C4 0.94 4.44 0.5 5 0.5L11 0.5C11.55 0.5 12 0.94 12 1.5L12 5"
-                                    stroke="#002ADB"
-                                    stroke-opacity="1.000000"
-                                    stroke-width="1.000000"
-                                />
-                            </svg>
-                            ALL JOBS
-                        </button>
-                    </a>
-                    <a href="https://gurtam.com/career">
-                        <button class="header-navigation-button-join-us headerBtn blockNav">
-                            <svg
-                                width="15.000000"
-                                height="15.000000"
-                                viewBox="0 0 15 15"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink"
-                            >
-                                <defs/>
-                                <path
-                                    id="+"
-                                    d="M5.01 14L5.01 11C5.01 10.45 4.57 10 4.01 10L1 10C0.44 10 0 9.56 0 9L0 6.01C0 5.46 0.44 5.01 1 5.01L3.99 5.01C4.54 5.01 4.99 4.57 4.99 4.01L4.99 1C4.99 0.44 5.43 0 5.99 0L8.98 0C9.53 0 9.98 0.44 9.98 1L9.98 4.01C9.98 4.57 10.42 5.01 10.98 5.01L14 5.01C14.55 5.01 15 5.46 15 6.01L15 9C15 9.56 14.55 10 14 10L11 10C10.45 10 10 10.45 10 11L10 14C10 14.55 9.56 15 9 15L6.01 15C5.46 15 5.01 14.55 5.01 14Z"
-                                    fill="#002ADB"
-                                    fill-opacity="1.000000"
-                                    fill-rule="nonzero"
-                                />
-                            </svg>
-                            JOIN US!
-                        </button>
-                    </a>
-                </div>
-                <img src="./assets/logos/gurtamLogo.svg" alt="gurtam-logo" class="blockNav">
-                <div class="header-navigation-box blockNav">
-                    <button id="playbtn3" class="header-navigation-button-hidden blockNav">PLAY!</button>
-                    <a href="#bankaSection">
-                        <button class="header-navigation-button-plau headerBtn blockNav">
-                            <svg
-                                width="18.500000"
-                                height="21.055664"
-                                viewBox="0 0 18.5 21.0557"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink"
-                            >
-                                <defs/>
-                                <path
-                                    id="Polygon 3"
-                                    d="M18 9.66L1.5 0.13C0.83 -0.25 0 0.23 0 1L0 20.05C0 20.82 0.83 21.3 1.5 20.92L18 11.39C18.66 11 18.66 10.04 18 9.66Z"
-                                    fill="#002ADB"
-                                    fill-opacity="1.000000"
-                                    fill-rule="evenodd"
-                                />
-                            </svg>
-                            PLAY!
-                        </button>
-                    </a>
-                </div>
-            </nav>
-        </header>
+        </div>
+        <nav class="header-navigation blockNav">
+            <div class="header-navigation-box blockNav">
+                <a href="https://gurtam.com/jobs">
+                    <button class="header-navigation-button-jobs headerBtn blockNav">
+                        <svg width="16.000000" height="14.500000" viewBox="0 0 16 14.5" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <defs />
+                            <rect id="Rectangle 1675" y="4.500000" rx="1.000000" width="16.000000" height="10.000000"
+                                fill="#002ADB" fill-opacity="1.000000" />
+                            <path id="Vector 26"
+                                d="M4 5L4 1.5C4 0.94 4.44 0.5 5 0.5L11 0.5C11.55 0.5 12 0.94 12 1.5L12 5"
+                                stroke="#002ADB" stroke-opacity="1.000000" stroke-width="1.000000" />
+                        </svg>
+                        ALL JOBS
+                    </button>
+                </a>
+                <a href="https://gurtam.com/career">
+                    <button class="header-navigation-button-join-us headerBtn blockNav">
+                        <svg width="15.000000" height="15.000000" viewBox="0 0 15 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <defs />
+                            <path id="+"
+                                d="M5.01 14L5.01 11C5.01 10.45 4.57 10 4.01 10L1 10C0.44 10 0 9.56 0 9L0 6.01C0 5.46 0.44 5.01 1 5.01L3.99 5.01C4.54 5.01 4.99 4.57 4.99 4.01L4.99 1C4.99 0.44 5.43 0 5.99 0L8.98 0C9.53 0 9.98 0.44 9.98 1L9.98 4.01C9.98 4.57 10.42 5.01 10.98 5.01L14 5.01C14.55 5.01 15 5.46 15 6.01L15 9C15 9.56 14.55 10 14 10L11 10C10.45 10 10 10.45 10 11L10 14C10 14.55 9.56 15 9 15L6.01 15C5.46 15 5.01 14.55 5.01 14Z"
+                                fill="#002ADB" fill-opacity="1.000000" fill-rule="nonzero" />
+                        </svg>
+                        JOIN US!
+                    </button>
+                </a>
+            </div>
+            <img src="./assets/logos/gurtamLogo.svg" alt="gurtam-logo" class="blockNav">
+            <div class="header-navigation-box blockNav">
+                <button id="playbtn3" class="header-navigation-button-hidden blockNav">PLAY!</button>
+                <a href="#bankaSection">
+                    <button class="header-navigation-button-plau headerBtn blockNav">
+                        <svg width="18.500000" height="21.055664" viewBox="0 0 18.5 21.0557" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <defs />
+                            <path id="Polygon 3"
+                                d="M18 9.66L1.5 0.13C0.83 -0.25 0 0.23 0 1L0 20.05C0 20.82 0.83 21.3 1.5 20.92L18 11.39C18.66 11 18.66 10.04 18 9.66Z"
+                                fill="#002ADB" fill-opacity="1.000000" fill-rule="evenodd" />
+                        </svg>
+                        PLAY!
+                    </button>
+                </a>
+            </div>
+        </nav>
+    </header>
     <main>
         <div class="pagepiling">
             <canvas class="snowflakes" id="snowflakes"></canvas>
@@ -515,7 +483,8 @@
                             We’ll pick the winner using a
                             random draw on 31 of december 2024 at 12:00 AM CET+3 IN OUR INSTAGRAM!
                         </p>
-                        <select style="transition: 0.5s" class="banka-banka-form-select banka-banka-form-step2-select stackSelect">
+                        <select style="transition: 0.5s"
+                            class="banka-banka-form-select banka-banka-form-step2-select stackSelect">
                             <option value="none" disabled selected>YOUR STACK...</option>
                             <option value="Python Developer">Python Developer</option>
                             <option value="Back-end Developer">Back-end Developer</option>
@@ -524,14 +493,15 @@
                             <option value="SRE Engineer">SRE Engineer</option>
                             <option value="Other (UI\UX, manager, etc.)">Other (UI\UX, manager, etc.)</option>
                         </select>
-                        <select style="opacity: 0; transition: 1.5s" class="banka-banka-form-select banka-banka-form-step2-select levelSelect">
+                        <select style="opacity: 0; transition: 1.5s"
+                            class="banka-banka-form-select banka-banka-form-step2-select levelSelect">
                             <option value="none" disabled selected>YOUR LEVEL...</option>
                             <option value="Junior">Junior</option>
                             <option value="Middle">Middle</option>
                             <option value="Senior">Senior</option>
                         </select>
-                        <input autocomplete="on" style="opacity: 0; transition: 1.5s" class="banka-banka-form-step2-input emailInput" placeholder="YOUR E-MAIL..."
-                            type="email">
+                        <input autocomplete="on" style="opacity: 0; transition: 1.5s"
+                            class="banka-banka-form-step2-input emailInput" placeholder="YOUR E-MAIL..." type="email">
                         <button class="banka-banka-form-step2-button">
                             <img src="./assets/polygons/trianglePolygon.svg" alt="play">
                             GET FULL

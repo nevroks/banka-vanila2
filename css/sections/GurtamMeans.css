@@ -96,14 +96,6 @@
     color: rgb(0, 0, 0);
 }
 
-.GurtamMeans-stats-card::after {
-    content: url(./../assets/statsBgGraficElement.png);
-    position: absolute;
-    z-index: 9;
-    left: 0;
-    bottom: -67px;
-}
-
 .GurtamMeans-stats-card-count {
     margin-bottom: 13px;
     font-family: "Adieu";
