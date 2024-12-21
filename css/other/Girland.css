@@ -15,218 +15,215 @@
 
 .girland1 {
     top: 0;
-    left: 0;
+    left: 20px;
 }
 
 .girland2 {
-    top: 2px;
-    left: 30px;
+    top: 1px;
+    left: 61px;
 }
 
 .girland3 {
-    top: 2px;
-    left: 30px;
+    top: 5px;
+    left: 100px;
+    transform: rotate(15deg);
 }
 
 .girland4 {
-    top: 8px;
-    left: 71px;
+    top: 9px;
+    left: 140px;
 }
 
 .girland5 {
-    top: 14px;
-    left: 111px;
+    top: 13px;
+    left: 175px;
+    transform: rotate(10deg);
 }
 
 .girland6 {
-    top: 19px;
-    left: 149px;
+    top: 21px;
+    left: 211px;
+    transform: rotate(-15deg);
 }
 
 .girland7 {
-    top: 21px;
-    left: 185px;
+    top: 22px;
+    left: 247px;
+    transform: rotate(-15deg);
 }
 
 .girland8 {
-    top: 22px;
-    left: 221px;
+    top: 15px;
+    left: 287px;
+    transform: rotate(-10deg);
 }
 
 .girland9 {
-    top: 25px;
-    left: 257px;
+    top: 20px;
+    left: 325px;
+    transform: rotate(-25deg);
 }
 
 .girland10 {
-    top: 24px;
-    left: 296px;
+    top: 11px;
+    left: 362px;
+    transform: rotate(-25deg);
 }
 
 .girland11 {
-    top: 23px;
-    left: 332px
+    top: 7px;
+    left: 400px;
+    transform: rotate(-5deg);
 }
 
 .girland12 {
-    top: 21px;
-    left: 370px;
+    top: 1px;
+    left: 440px;
+    transform: rotate(-10deg);
 }
 
 .girland13 {
-    top: 15px;
-    left: 410px;
-    transform: rotate(-24deg);
+    top: 2px;
+    left: 495px;
+    transform: rotate(5deg);
 }
 
 .girland14 {
-    top: 11px;
-    left: 449px;
-    transform: rotate(-38deg)
+    top: 14px;
+    left: 534px;
+    transform: rotate(-10deg)
 }
 
 .girland15 {
     top: 11px;
-    left: 503px;
+    left: 571px;
     transform: rotate(13deg);
 }
 
 .girland16 {
-    top: 16px;
-    left: 543px;
-    transform: rotate(-5deg);
+    top: 22px;
+    left: 611px;
+    transform: rotate(-10deg);
 }
 
 .girland17 {
-    top: 20px;
-    left: 580px;
-    transform: rotate(8deg);
+    top: 16px;
+    left: 646px;
+    transform: rotate(-10deg);
 }
 
 .girland18 {
-    top: 23px;
-    left: 620px;
-    transform: rotate(-5deg);
+    top: 15px;
+    left: 686px;
+    transform: rotate(5deg);
 }
 
 .girland19 {
-    top: 24px;
-    left: 657px;
-    transform: rotate(-5deg);
+    top: 15px;
+    left: 722px;
+    transform: rotate(-25deg);
 }
 
 .girland20 {
-    top: 25px;
-    left: 696px;
-    transform: rotate(-5deg);
+    top: 20px;
+    left: 759px;
+    transform: rotate(-25deg);
 }
 
 .girland21 {
-    top: 24px;
-    left: 732px;
+    top: 17px;
+    left: 795px;
     transform: rotate(-26deg)
 }
 
 .girland22 {
-    top: 21px;
-    left: 768px;
+    top: 7px;
+    left: 832px;
     transform: rotate(-21deg);
 }
 
 .girland23 {
-    top: 19px;
-    left: 804px;
-    transform: rotate(-21deg);
+    top: 0px;
+    left: 872px;
+    transform: rotate(-5deg);
 }
 
 .girland24 {
-    top: 14px;
-    left: 841px;
-    transform: rotate(-21deg);
+    top: -6px;
+    left: 912px;
+    transform: rotate(-30deg);
 }
 
 .girland25 {
     top: 11px;
-    left: 881px;
-    transform: rotate(-21deg);
+    left: 962px;
+    transform: rotate(-10deg);
 }
 
 .girland26 {
-    top: 3px;
-    left: 922px;
-    transform: rotate(-21deg);
+    top: 18px;
+    left: 1006px;
+    transform: rotate(-10deg);
 }
 
 .girland27 {
-    top: 12px;
-    left: 974px;
-    transform: rotate(6deg)
+    top: 14px;
+    left: 1044px;
+    transform: rotate(10deg)
 }
 
 .girland28 {
-    top: 19px;
-    left: 1015px;
-    transform: rotate(6deg);
+    top: 20px;
+    left: 1085px;
+    transform: rotate(-5deg);
 }
 
 .girland29 {
-    top: 25px;
-    left: 1055px;
-    transform: rotate(-9deg)
+    top: 27px;
+    left: 1123px;
+    transform: rotate(-20deg)
 }
 
 .girland30 {
-    top: 29px;
-    left: 1095px;
-    transform: rotate(-5deg);
+    top: 28px;
+    left: 1165px;
+    transform: rotate(-25deg);
 }
 
 .girland31 {
-    top: 29px;
-    left: 1133px;
-    transform: rotate(-5deg);
+    top: 19px;
+    left: 1201px;
+    transform: rotate(-20deg);
 }
 
 .girland32 {
-    top: 30px;
-    left: 1173px;
+    top: 17px;
+    left: 1238px;
     transform: rotate(-5deg);
 }
 
 .girland33 {
-    top: 29px;
-    left: 1210px;
+    top: 21px;
+    left: 1278px;
     transform: rotate(-27deg);
 }
 
 .girland34 {
-    top: 26px;
-    left: 1247px;
-    transform: rotate(-17deg);
+    top: 9px;
+    left: 1315px;
+    transform: rotate(-5deg);
 }
 
 .girland35 {
-    top: 23px;
-    left: 1286px;
-    transform: rotate(-17deg);
+    top: 4px;
+    left: 1357px;
+    transform: rotate(-25deg);
 }
 
 .girland36 {
-    top: 18px;
-    left: 1325px;
-    transform: rotate(-17deg);
-}
-
-.girland37 {
-    top: 13px;
-    left: 1366px;
-    transform: rotate(-17deg);
-}
-
-.girland38 {
-    top: 4px;
-    left: 1409px;
-    transform: rotate(-17deg);
+    top: -5px;
+    left: 1399px;
+    transform: rotate(-10deg);
 }
 
 .girland.active {
@@ -239,9 +236,6 @@
 }
 
 @media (max-width: 1560px) {
-    .girland {
-    }
-
     .girland1 {
         width: 20px;
         top: 0px;
