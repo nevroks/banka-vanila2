@@ -1,5 +1,4 @@
 .FutureAwaits {
-    
     align-items: self-start;
     padding-top: 150px;
     transform: translateY(20px);
@@ -188,9 +187,9 @@
 }
 
 .dragonMini {
-    right: 50%;
-    position: absolute;
-    bottom: -133px;
+    right: 8%;
+    position: relative;
+    bottom: 213px;
     transform: translateX(50%);
 }
 
@@ -203,20 +202,21 @@
 }
 
 @media(max-width: 1560px) {
-    
     .FutureAwaits-bigDragonArea{
         top: -275px;
         right: -270px;
         z-index: 0;
+        transform: scale(0.8);
     }
-
+    .FutureAwaits-subtitle, .FutureAwaits-title, .FutureAwaits-text{
+        max-width: 600px;
+    }
 }
 
 
 @media(max-width: 1024px) {
     .FutureAwaitsStar {
         top: 300px;
-        
     }
     .none {
         display: none;
@@ -270,7 +270,8 @@
     }
 
     .dragonMini {
-        bottom: -190px;
+        bottom: 197px;
+        right: 50%;
     }
 
     .FutureAwaitsStar {

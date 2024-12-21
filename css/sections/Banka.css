@@ -298,7 +298,11 @@
         line-height: 32px;
     }
 }
-
+@media (max-width: 1024px) {
+    .banka{
+        padding-top: 420px;
+    }
+}
 @media(max-width: 966px) {
     .banka-banka-title {
         font-size: 24px;

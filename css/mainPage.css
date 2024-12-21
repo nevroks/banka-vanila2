@@ -16,8 +16,7 @@ html{
     background-color: #AED6F1;
 }
 
-.pagepilling {
-    height: 100vh;
+.pagepiling {
     scrollbar-width: none;
     scroll-behavior: smooth;
     background-color: #AED6F1;
@@ -41,4 +40,9 @@ html{
 .social-item-show-Button .img {
     left: 60%;
     width: 33px;
+}
+@media (max-width: 1024px) {
+    .pagepiling section {
+        height: auto;
+    }
 }
