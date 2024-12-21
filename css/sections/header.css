@@ -3,6 +3,7 @@
     position: fixed;
     z-index: 900;
 }
+
 .header-navigation {
     display: flex;
     justify-content: space-between;
@@ -20,6 +21,7 @@
     align-items: center;
     column-gap: 15px;
 }
+
 .header-blur {
     width: 100%;
     height: 100%;
@@ -31,6 +33,7 @@
     z-index: 899;
     box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
 }
+
 .headerBtn {
     display: flex;
     column-gap: 17px;
@@ -53,6 +56,7 @@
     background-color: rgb(0, 42, 219);
     transform: scale(1.05);
 }
+
 .headerBtn:active {
     bottom: -2px;
 }
@@ -86,22 +90,27 @@
 .header-navigation-button-plau svg path {
     transition: all 0.6s;
 }
+
 .header-navigation-button-plau p {
     transition: all 0.6s;
 }
+
 .header-navigation-button-plau:hover p {
     color: white;
 }
+
 .header-navigation-button-plau:hover svg path {
     fill: white;
 }
-.header-navigation-button-plau.disabled{
+
+.header-navigation-button-plau.disabled {
     pointer-events: none;
     background-color: #D9D9D9;
     color: #656565;
     border: none;
 }
-.header-navigation-button-plau.disabled svg path{
+
+.header-navigation-button-plau.disabled svg path {
     fill: #656565;
 }
 
@@ -143,42 +152,193 @@
     width: 100%;
     color: #000000;
 }
+
 /* ======== Warning ============
 ================================
 ----- mobile header styles -----
 ================================
 =========== Warning ============ */
 .header-navigation-mobile {
+    /* display: flex; when shown */
     display: none;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
     z-index: 901;
+    padding: 27px 0;
+    width: 330px;
 }
+
+.header-navigation-mobile-playBtn {
+    display: flex;
+    align-items: center;
+    padding: 10px 25px 10px 20px;
+    border: 1px solid rgb(0, 42, 219);
+    border-radius: 10px;
+    column-gap: 10px;
+
+}
+
+.header-navigation-mobile-playBtn p {
+    font-family: 'Adieu';
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 14px;
+    letter-spacing: 0;
+    color: rgb(10, 30, 76);
+}
+
+.header-navigation-mobile-modal {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0px;
+    transition: all 0.6s;
+    background-color: rgb(174, 213, 240);
+    padding: 0 calc(50% - 165px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header-navigation-mobile-modal.opened {
+    height: calc(100vh - 70px);
+}
+
+.header-navigation-mobile-modal-star {
+    display: none;
+    position: absolute;
+    filter: blur(130px);
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 902px;
+}
+
+.header-navigation-mobile-modal.opened .header-navigation-mobile-modal-star {
+    display: unset;
+}
+
+.header-navigation-mobile-modal-btns {
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+}
+
+.header-navigation-mobile-modal-btns-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    border: 1px solid rgb(0, 42, 219);
+    border-radius: 10px;
+    font-family: 'Adieu';
+    color: rgb(10, 30, 76);
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 14px;
+    letter-spacing: 0;
+    padding: 15px 27px;
+}
+
+.header-navigation-mobile-modal-btns-btn img {
+    position: absolute;
+    left: 27px;
+    width: 16px;
+    height: 16px;
+}
+
+.header-navigation-mobile-modal-btns-btn-discover {
+    border: 1px solid white;
+    background: rgb(255, 255, 255);
+
+}
+
+.header-navigation-mobile-modal-snowBtn {
+    display: flex;
+    align-items: center;
+    align-self: center;
+}
+
+.header-navigation-mobile-modal-snowBtn * {
+    color: rgb(10, 30, 76);
+    font-family: 'Adieu';
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 14px;
+    letter-spacing: 0;
+}
+
+.header-navigation-mobile-modal-footer {
+    margin-bottom: 35px;
+    display: flex;
+    flex-direction: column;
+    z-index: 903;
+}
+
+.header-navigation-mobile-modal-footer-link {
+    text-align: center;
+    color: rgb(10, 30, 76);
+    font-family: 'Adieu';
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 14px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+}
+
+.header-navigation-mobile-modal-footer-link:nth-of-type(2) {
+    margin: 14px 0 31px;
+}
+
+.header-navigation-mobile-modal-footer-socials {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 21px;
+}
+
+.header-navigation-mobile-modal-footer-copyright {
+    text-align: center;
+    color: rgb(10, 30, 76);
+
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 140%;
+}
+
 @media (max-width: 1024px) {
-    .headerBtn{
-            column-gap: 4px;
-            height: 38px;
-            padding: 0 10px 0 12px;
-            font-size: 10px;
-            letter-spacing: 0;
-            border-radius: 9px;
+    .headerBtn {
+        column-gap: 4px;
+        height: 38px;
+        padding: 0 10px 0 12px;
+        font-size: 10px;
+        letter-spacing: 0;
+        border-radius: 9px;
     }
-    .header-navigation-box{
+
+    .header-navigation-box {
         column-gap: 10px;
     }
 }
+
 @media(max-width: 600px) {
     .header-blur {
         height: 70px;
     }
 
-   
     .header-navigation.blockNav {
         display: none;
     }
+
     .header-navigation-mobile {
         display: flex;
     }
 
-    .burger {
+    .header-navigation-mobile-burger {
         height: 2px;
         width: 26px;
         background-color: #000000;
@@ -186,8 +346,8 @@
         transition: all 0.3s ease;
     }
 
-    .burger::after,
-    .burger::before {
+    .header-navigation-mobile-burger::after,
+    .header-navigation-mobile-burger::before {
         content: '';
         height: 2px;
         width: 26px;
@@ -196,25 +356,25 @@
         transition: all 0.3s ease;
     }
 
-    .burger::after {
+    .header-navigation-mobile-burger::after {
         top: 6px;
     }
 
-    .burger::before {
+    .header-navigation-mobile-burger::before {
         top: -6px;
     }
 
-    .burger.open {
+    .header-navigation-mobile-burger.open {
         background-color: transparent;
     }
 
-    .burger.open::after {
+    .header-navigation-mobile-burger.open::after {
         top: 0;
         transition: all 0.3s ease;
         transform: rotate(45deg);
     }
 
-    .burger.open::before {
+    .header-navigation-mobile-burger.open::before {
         top: 0;
         transition: all 0.3s ease;
         transform: rotate(-45deg);
