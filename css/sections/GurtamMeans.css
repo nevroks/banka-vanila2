@@ -82,8 +82,7 @@
 .GurtamMeans-stats-card {
     position: absolute;
     z-index: 10;
-    width: 497px;
-    width: 497px;
+    width: 900px;
     flex-grow: 1;
     border-radius: 15px;
     background: rgb(174, 214, 241);
@@ -318,34 +317,8 @@
     animation: moveLeft3 1s forwards;
 }
 
-@keyframes moveLeft1 {
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(-1070px);
-    }
-}
-
-@keyframes moveLeft2 {
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(-750px);
-    }
-}
-
-@keyframes moveLeft3 {
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(-400px);
-    }
+.animated4 {
+    animation: moveLeft4 1s forwards;
 }
 
 @media(max-width: 1494px) {
@@ -382,32 +355,65 @@
 
 @media(max-width: 11326px) {
     @keyframes moveLeft1 {
-        from {
-            transform: translateX(0);
+        0% {
+            width: 0;
+            opacity: 0;
         }
 
-        to {
-            transform: translateX(-800px);
+        25% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 1;
+            width: 1700px;
         }
     }
 
     @keyframes moveLeft2 {
-        from {
-            transform: translateX(0);
+        0% {
+            width: 0;
+            opacity: 0;
         }
 
-        to {
-            transform: translateX(-550px);
+        25% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 1;
+            width: 1350px;
         }
     }
 
     @keyframes moveLeft3 {
-        from {
-            transform: translateX(0);
+        0% {
+            width: 0;
+            opacity: 0;
         }
 
-        to {
-            transform: translateX(-250px);
+        25% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 1;
+            width: 1000px;
+        }
+    }
+    @keyframes moveLeft4 {
+        0% {
+            width: 0;
+            opacity: 0;
+        }
+
+        25% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 1;
+            width: 650px;
         }
     }
 }

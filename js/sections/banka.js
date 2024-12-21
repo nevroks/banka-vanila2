@@ -87,7 +87,7 @@ $(function() {
                 );
         };
 
-        if (document.querySelector('.stackSelect').value != "none" && document.querySelector('.levelSelect').value != "none" && validateEmail(document.querySelector('.emailInput').value)) {
+        if (document.querySelector('.stackSelect').value != "none" && (document.querySelector('.levelSelect').value != "none" || document.querySelector('.levelSelect').style.opacity > 0) && validateEmail(document.querySelector('.emailInput').value)) {
             bankaFormStep2.classList.add("opacity")
 
             setTimeout(() => {

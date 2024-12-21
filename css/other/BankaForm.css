@@ -354,7 +354,13 @@ select {
     bottom: -2px;
 }
 
+.banka-banka-form-step3-vacancies {
+    max-height: 40%;
+    padding-bottom: 100px;
+}
+
 .banka-banka-form-step3-vacancies-title {
+    padding-top: 25px;
     margin-bottom: 18px;
 }
 
@@ -366,8 +372,12 @@ select {
     border-radius: 15px;
     background: rgb(255, 255, 255);
     padding: 19px 27px 19px 36px;
-
+    margin-bottom: 25px;
     transition: all 0.6s;
+}
+
+.expanded {
+    overflow-y: scroll;
 }
 
 .banka-banka-form-step3-vacancy:hover {
@@ -413,6 +423,12 @@ select {
     font-weight: 400;
     line-height: 19px;
 }
+
+.banka-banka-form-step3-smallPlaceholder {
+    color: #002ADB;
+    padding-bottom: 15px;
+}
+
 @media (max-width:1024px) {
     .banka-banka-form.expanded{
         height: 80vh;

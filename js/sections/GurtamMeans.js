@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("block1"),
         document.getElementById("block2"),
         document.getElementById("block3"),
+        document.getElementById("block4"),
     ];
 
     const futureAwaitsSection = document.querySelector('.FutureAwaits');
@@ -47,6 +48,23 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function addAnimationClasses() {
+        setTimeout(() => {
+            blocks[0].classList.add('animated1')
+        }, 350)
+
+        setTimeout(() => {
+            blocks[1].classList.add('animated2')
+        }, 850)
+
+        setTimeout(() => {
+            blocks[2].classList.add('animated3')
+        }, 1350)
+
+        setTimeout(() => {
+            blocks[3].classList.add('animated4')
+        }, 1850)
+
+        /*
         blocks.forEach((block, index) => {
             if (block && !block.classList.contains(`animated${index + 1}`)) {
                 setTimeout(() => {
@@ -56,6 +74,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 },1000)
             }
         });
+        */
     }
 
     checkVisibility();

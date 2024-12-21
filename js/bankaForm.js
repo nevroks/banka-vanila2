@@ -731,19 +731,44 @@ $(function () {
 
     function checkIsFieldsFilled() {
         if (document.querySelector('.stackSelect').value === "none") {
-            document.querySelector('.stackSelect').style.border = '1px solid red';
+            if (document.querySelector('.stackSelect').style.border == '1px solid red') {
+                document.querySelector('.stackSelect').style.border = '1px solid rgb(186, 186, 186)';
+                setTimeout(() => {
+                    document.querySelector('.stackSelect').style.border = '1px solid red';
+                }, 500)
+            } else {
+                document.querySelector('.stackSelect').style.border = '1px solid red';
+            }
         } else {
             document.querySelector('.stackSelect').style.border = '1px solid rgb(186, 186, 186)';
         }
 
         if (document.querySelector('.levelSelect').value === "none") {
-            document.querySelector('.levelSelect').style.border = '1px solid red';
+            if (document.querySelector('.levelSelect').style.border == '1px solid red') {
+                document.querySelector('.levelSelect').style.transition = '0.5s';
+                document.querySelector('.levelSelect').style.border = '1px solid rgb(186, 186, 186)';
+                setTimeout(() => {
+                    document.querySelector('.levelSelect').style.border = '1px solid red';
+                    document.querySelector('.levelSelect').style.transition = '1.5s';
+                }, 500)
+            } else {
+                document.querySelector('.levelSelect').style.border = '1px solid red';
+            }
         } else {
             document.querySelector('.levelSelect').style.border = '1px solid rgb(186, 186, 186)';
         }
 
         if (!validateEmail(document.querySelector('.emailInput').value)) {
-            document.querySelector('.emailInput').style.border = '1px solid red';
+            if (document.querySelector('.emailInput').style.border == '1px solid red') {
+                document.querySelector('.emailInput').style.transition = '0.5s';
+                document.querySelector('.emailInput').style.border = '1px solid rgb(186, 186, 186)';
+                setTimeout(() => {
+                    document.querySelector('.emailInput').style.border = '1px solid red';
+                    document.querySelector('.emailInput').style.transition = '1.5s';
+                }, 500)
+            } else {
+                document.querySelector('.emailInput').style.border = '1px solid red';
+            }
         } else {
             document.querySelector('.emailInput').style.border = '1px solid rgb(186, 186, 186)';
         }
@@ -754,7 +779,7 @@ $(function () {
     sendBtn.addEventListener("click", (e) => {
         checkIsFieldsFilled()
 
-        if (document.querySelector('.stackSelect').value != "none" && document.querySelector('.levelSelect').value != "none" && validateEmail(document.querySelector('.emailInput').value)) {
+        if (document.querySelector('.stackSelect').value != "none" && (document.querySelector('.levelSelect').value != "none" || document.querySelector('.levelSelect').style.opacity > 0) && validateEmail(document.querySelector('.emailInput').value)) {
             renderFormStep3Content()
             reportFormSubmit()
         } else {
@@ -807,7 +832,9 @@ $(function () {
         });
     }
 
-    const text = texts[Math.floor(1 + Math.random() * (texts.length + 1 - 1))]
+    const index = Math.floor(1 + Math.random() * (texts.length + 1 - 1));
+    const text = texts[index];
+    console.log(text);
 
     document.querySelectorAll('.form-title-placeholder').forEach(el => {
         el.innerHTML = text.title
@@ -822,6 +849,7 @@ $(function () {
     })
 
     const bankaFormStep3TextPlaceholder = document.querySelector('.banka-banka-form-step3-textPlaceholder');
+    const bankaFormStep3SmallPlaceholder = document.querySelector('.banka-banka-form-step3-smallPlaceholder');
     //const bankaFormStep3VacancyTitlePlaceholder = document.querySelector('.banka-banka-form-step3-vacancy-title-placeholder');
     //const bankaFormStep3VacancyPositionPlaceholder = document.querySelector('.banka-banka-form-step3-vacancy-text-placeholder');
 
@@ -846,6 +874,7 @@ $(function () {
             }
         })
 
+        bankaFormStep3SmallPlaceholder.innerHTML = text.text
         bankaFormStep3TextPlaceholder.innerHTML = res.join("")
     }
 

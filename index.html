@@ -67,13 +67,11 @@
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
     <div class="curzr-arrow-pointer" hidden>
-        <svg id="svg-cursor" xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
-            <path
-                d="M12.5392 13.5515H13.0911L9.52146 21.0633C9.20614 21.7268 9.69001 22.4925 10.4247 22.4925H19.3324C20.073 22.4925 20.5567 21.7154 20.2296 21.0509L16.5391 13.5515H17.1892C17.9715 13.5515 18.4508 12.6937 18.0409 12.0275L15.6479 8.1387C15.2515 7.4945 14.311 7.50662 13.9313 8.16081L11.6744 12.0496C11.2874 12.7162 11.7684 13.5515 12.5392 13.5515Z"
-                fill="#1EA853" stroke="#0F2200" stroke-linejoin="round" />
-            <circle cx="17.5229" cy="20.1867" r="1" transform="rotate(45 17.5229 20.1867)" fill="#FF69B4" />
-            <circle cx="14.1289" cy="17.4894" r="1" transform="rotate(45 14.1289 17.4894)" fill="#FFD700" />
-            <circle cx="15.4146" cy="11.3478" r="1" transform="rotate(45 15.4146 11.3478)" fill="#002ADB" />
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+            <path d="M17.2955 18.6917H18.0567L13.1331 29.0528C12.6981 29.968 13.3655 31.0241 14.3789 31.0241H26.6654C27.6869 31.0241 28.3541 29.9523 27.9029 29.0357L22.8126 18.6917H23.7092C24.7883 18.6917 25.4494 17.5086 24.884 16.5897L21.5833 11.2258C21.0366 10.3372 19.7393 10.354 19.2156 11.2563L16.1026 16.6201C15.5688 17.5396 16.2323 18.6917 17.2955 18.6917Z" fill="#1EA853" stroke="#0F2200" stroke-linejoin="round"/>
+            <path d="M23.1942 28.819C23.7329 29.3577 24.6062 29.3577 25.1448 28.819C25.6835 28.2804 25.6835 27.4071 25.1448 26.8684C24.6062 26.3298 23.7329 26.3298 23.1942 26.8684C22.6556 27.4071 22.6556 28.2804 23.1942 28.819Z" fill="#FF69B4"/>
+            <path d="M18.5128 25.0986C19.0515 25.6373 19.9248 25.6373 20.4634 25.0986C21.0021 24.56 21.0021 23.6867 20.4634 23.148C19.9248 22.6093 19.0515 22.6093 18.5128 23.148C17.9742 23.6867 17.9742 24.56 18.5128 25.0986Z" fill="#FFD700"/>
+            <path d="M20.2862 16.6275C20.8249 17.1661 21.6982 17.1661 22.2368 16.6275C22.7755 16.0888 22.7755 15.2155 22.2368 14.6768C21.6982 14.1382 20.8249 14.1382 20.2862 14.6768C19.7475 15.2155 19.7475 16.0888 20.2862 16.6275Z" fill="#002ADB"/>
         </svg>
     </div>
     <header class="header">
@@ -268,7 +266,7 @@
         <div class="pagepiling">
             <canvas class="snowflakes" id="snowflakes"></canvas>
             <section class="FutureAwaits">
-                <div class="FutureAwaits-content">
+                <div class="FutureAwaits-content" style="opacity: 0; transition: 1s">
                     <h2 class="FutureAwaits-title">Future awaits!</h2>
                     <h2 class="FutureAwaits-subtitle">Discover you career fortune with Gurtam</h2>
                     <p class="FutureAwaits-text">
@@ -309,8 +307,6 @@
                             class="FutureAwaits-background-img-right  animatedRight none">
                     </div>
                 </div>
-
-
                 <img src="./assets/sections/FutureAwaits/dragonMini.png" alt="dragonMini" class="dragonMini NoNone">
                 <img src="./assets/semiSectionStars/pinkStar.svg" alt="pinkStar" class="FutureAwaitsStar">
             </section>
@@ -327,19 +323,19 @@
                     </button>
                 </a>
                 <div class="GurtamMeans-stats">
-                    <div id="block1" class="GurtamMeans-stats-card card-years">
+                    <div id="block1" style="width: 0; opacity: 0" class="GurtamMeans-stats-card card-years">
                         <p class="GurtamMeans-stats-card-count card-years-count  years">0</p>
                         <p class="GurtamMeans-stats-card-text card-years-text">YEARS OLD</p>
                     </div>
-                    <div id="block2" class="GurtamMeans-stats-card card-EMPLOYEES">
+                    <div id="block2" style="width: 0; opacity: 0" class="GurtamMeans-stats-card card-EMPLOYEES">
                         <p class="GurtamMeans-stats-card-count card-EMPLOYEES-count">0</p>
                         <p class="GurtamMeans-stats-card-text card-EMPLOYEES-text">EMPLOYEES</p>
                     </div>
-                    <div id="block3" class="GurtamMeans-stats-card card-COUNTRIES">
+                    <div id="block3" style="width: 0; opacity: 0" class="GurtamMeans-stats-card card-COUNTRIES">
                         <p class="GurtamMeans-stats-card-count offices card-COUNTRIES-count">0</p>
                         <p class="GurtamMeans-stats-card-text card-COUNTRIES-text">COUNTRIES</p>
                     </div>
-                    <div id="block4" class="GurtamMeans-stats-card card-OFFICES">
+                    <div id="block4" style="width: 0; opacity: 0" class="GurtamMeans-stats-card card-OFFICES">
                         <p class="GurtamMeans-stats-card-count card-OFFICES-count countries ">0</p>
                         <p class="GurtamMeans-stats-card-text card-OFFICES-text">
                             OFFICES WORLDWIDE
@@ -415,11 +411,8 @@
                 <h2 class="OurBenefits-title">We work hard and we party harder!</h2>
                 <div class="OurBenefits-cards">
                     <div class="OurBenefits-videos">
-                        <div class="boxVideo">
-                            <img src="./assets/sections/OurBenefits/videoImg.png" alt="videoImg">
-                            <img src="./assets/sections/OurBenefits/play.png" alt="play" class="play"
-                                data-video-url="https://www.youtube.com/watch?v=F-XcxvV-8m0">
-                            <div class="video-container"></div>
+                        <div class="boxVideo" style="width: 2000px; height: 400px;">
+                            <div class="video-container" style="margin: 0 auto; width: 100%; height: 100%;"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/F-XcxvV-8m0" frameborder="0" allowfullscreen=""></iframe></div>
                         </div>
                         <img src="./assets/sections/OurBenefits/cokkiesLeft.png" alt="cokkiesLeft" class="cokkiesLeft">
                         <img src="./assets/sections/OurBenefits/cokkiesRight.png" alt="cokkiesRight"
@@ -522,7 +515,7 @@
                             We’ll pick the winner using a
                             random draw on 31 of december 2024 at 12:00 AM CET+3 IN OUR INSTAGRAM!
                         </p>
-                        <select class="banka-banka-form-select banka-banka-form-step2-select stackSelect">
+                        <select style="transition: 0.5s" class="banka-banka-form-select banka-banka-form-step2-select stackSelect">
                             <option value="none" disabled selected>YOUR STACK...</option>
                             <option value="Python Developer">Python Developer</option>
                             <option value="Back-end Developer">Back-end Developer</option>
@@ -531,13 +524,13 @@
                             <option value="SRE Engineer">SRE Engineer</option>
                             <option value="Other (UI\UX, manager, etc.)">Other (UI\UX, manager, etc.)</option>
                         </select>
-                        <select class="banka-banka-form-select banka-banka-form-step2-select levelSelect">
+                        <select style="opacity: 0; transition: 1.5s" class="banka-banka-form-select banka-banka-form-step2-select levelSelect">
                             <option value="none" disabled selected>YOUR LEVEL...</option>
                             <option value="Junior">Junior</option>
                             <option value="Middle">Middle</option>
                             <option value="Senior">Senior</option>
                         </select>
-                        <input class="banka-banka-form-step2-input emailInput" placeholder="YOUR E-MAIL..."
+                        <input autocomplete="on" style="opacity: 0; transition: 1.5s" class="banka-banka-form-step2-input emailInput" placeholder="YOUR E-MAIL..."
                             type="email">
                         <button class="banka-banka-form-step2-button">
                             <img src="./assets/polygons/trianglePolygon.svg" alt="play">
@@ -579,6 +572,7 @@
                                 </a>
                             </div>
                         </div>
+                        <div class="banka-banka-form-step3-smallPlaceholder"></div>
                         <div class="banka-banka-form-step3-textPlaceholder"></div>
                         <a style="align-self: center;" href="https://gurtam.com/jobs">
                             <button class="banka-banka-form-step3-button">
@@ -771,7 +765,7 @@
         </div>
     </main>
     <footer class="footer footerNode">
-        <div class="footer-blur"></div>
+        <!-- <div class="footer-blur"></div> -->
         <div class="footer-content-wrapper">
             <ul class="footer-socialsList">
                 <li class="footer-socialsList-item">
@@ -899,6 +893,11 @@
         <div class="info-item info-item-mini">Copyright © 2002-2024</div>
     </div>
 </footer> -->
+    <script>
+        setTimeout(() => {
+            document.querySelector('.FutureAwaits-content').style.opacity = "1";
+        }, 500)
+    </script>
     <script type="text/javascript">
         let mobile = (/iphone|ipod|ipad|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
 

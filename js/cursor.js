@@ -21,14 +21,14 @@ function getAnchor() {
       this.previousAngle = 0
       this.angleDisplace = 0
       this.degrees = 57.296
-      this.cursorSize = 60
+      this.cursorSize = 40
   
       this.cursorStyle = {
         boxSizing: 'border-box',
         position: 'fixed',
-        top: '50%',
-        left: '50%',
-        transform: 'translate(-50%, -50%)',
+        top: '0%',
+        left: '0%',
+        transform: 'translate(-40%, -40%)',
         zIndex: '2147483647',
         width: `${ this.cursorSize }px`,
         height: `${ this.cursorSize }px`,
@@ -57,7 +57,7 @@ function getAnchor() {
       this.position.distanceY = this.previousPointerY - this.position.pointerY
       this.distance = Math.sqrt(this.position.distanceY ** 2 + this.position.distanceX ** 2)
     
-      this.cursor.style.transform = `translate3d(${this.position.pointerX}px, ${this.position.pointerY}px, 0)`
+      this.cursor.style.transform = `translate3d(${this.position.pointerX + 5 }px, ${this.position.pointerY - 10}px, 0)`
   
       if (this.distance > 1) {
         this.rotate(this.position)

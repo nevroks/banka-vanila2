@@ -163,21 +163,25 @@ observer.observe(document.body, {
 });
 
 window.addEventListener('wheel', (event) => {
-    if (isScrolling || isScrollLocked) return; 
+    if (isScrolling || isScrollLocked) return;
 
-    if (event.deltaY > 0) {
-        scrollToSection(currentSection + 1);
-    } else if (event.deltaY < 0) {
-        scrollToSection(currentSection - 1);
+    if (!bankaSection.classList.contains('visible')) {
+        if (event.deltaY > 0) {
+            scrollToSection(currentSection + 1);
+        } else if (event.deltaY < 0) {
+            scrollToSection(currentSection - 1);
+        }
     }
 });
 
 window.addEventListener('keydown', (event) => {
-    if (isScrolling || isScrollLocked) return; 
+    if (isScrolling || isScrollLocked) return;
 
-    if (event.key === 'ArrowDown') {
-        scrollToSection(currentSection + 1);
-    } else if (event.key === 'ArrowUp') {
-        scrollToSection(currentSection - 1);
+    if (!bankaSection.classList.contains('visible')) {
+        if (event.key === 'ArrowDown') {
+            scrollToSection(currentSection + 1);
+        } else if (event.key === 'ArrowUp') {
+            scrollToSection(currentSection - 1);
+        }
     }
 });
