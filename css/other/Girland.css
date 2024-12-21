@@ -10,6 +10,7 @@
 .girland {
     position: absolute;
     animation-delay: 0s;
+    transition: 0.3s;
 }
 
 .girland1 {
@@ -231,6 +232,52 @@
 .girland.active {
     opacity: 1;
     animation: glow 1s ease-in-out forwards;
+}
+
+.hiddenGirland {
+    opacity: 0;
+}
+
+@media (max-width: 1560px) {
+    .girland {
+    }
+
+    .girland1 {
+        width: 6px;
+        top: 2px;
+        left: 21px;
+    }
+
+    .girland2 {
+        width: 6px;
+        top: 6px;
+        left: 50px;
+    }
+
+    .girland3 {
+        width: 6px;
+        top: 10px;
+        left: 79px;
+    }
+
+    .girland4 {
+        width: 6px;
+        top: 13px;
+        left: 106px;
+    }
+
+    .girland5 {
+        width: 6px;
+        top: 15px;
+        left: 132px;
+    }
+
+    .girland5 {
+        width: 6px;
+        top: 15px;
+        left: 132px;
+        transform: rotate(-15deg);
+    }
 }
 
 @keyframes glow {

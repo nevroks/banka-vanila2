@@ -1,51 +1,43 @@
 $(document).ready(function() {
-    let visibleSections = [];
+    const countMap = [0, 7, 14, 21, 28, 38];
+    let showedImages = 0;
+    let currentSection = 0;
 
-    const visibleCountMap = {
-        'FutureAwaits': 0,
-        'GurtamMeans': 7,
-        'WhyUs': 7,
-        'OurBenefits': 7,
-        'JoinGurtam': 7,
-        'banka': 10
-    };
+    function showGirlandsScrollDown() {
+        let index = 1;
+        for (let i = showedImages + 1; i <= countMap[currentSection]; i++) {
+            setTimeout(() => {
+                document.querySelector(`.girland${i}`).classList.remove('hiddenGirland');
+            }, 100 * index)
 
-    function updateVisibleSections() {
-        visibleSections = [];
+            index += 1;
+        }
 
-        $('.pagepiling > section').each(function() {
-            const section = $(this);
-            if (section.hasClass('visible')) {
-                const sectionTitle = section.attr('class').split(' ')[0];
-                visibleSections.push(sectionTitle);
-            }
-        });
-
-
-        showImagesBasedOnVisibleSections();
+        showedImages = countMap[currentSection]
     }
 
-    function showImagesBasedOnVisibleSections() {
-        $('.girland').addClass('hidden');
+    function showGirlandsScrollUp() {
+        let index = 1
 
-        let imagesToShow = 0;
-        visibleSections.forEach(section => {
-            if (visibleCountMap[section] !== undefined) {
-                imagesToShow += visibleCountMap[section];
-            }
-        });
+        for (let i = showedImages; i > countMap[currentSection]; i--) {
+            setTimeout(() => {
+                document.querySelector(`.girland${i}`).classList.add('hiddenGirland');
+            }, 100 * index)
 
-        $('.girland').slice(0, imagesToShow).removeClass('hidden');
+            index += 1
+        }
+
+        showedImages = countMap[currentSection]
     }
 
-    $(window).on('scroll', updateVisibleSections);
+    window.addEventListener('wheel', (e) => {
+        let sections = document.querySelectorAll('.activeSection')
+        currentSection = sections[sections.length - 1].getAttribute('sectionId');
 
-    const observer = new MutationObserver(updateVisibleSections);
-
-    $('.pagepiling > section').each(function() {
-        observer.observe(this, {
-            attributes: true,
-            attributeFilter: ['class']
-        });
-    });
+        if (e.deltaY > 0) {
+            showGirlandsScrollDown()
+        } else if (e.deltaY < 0) {
+            showGirlandsScrollUp()
+        }
+    })
 });
