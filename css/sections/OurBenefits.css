@@ -173,7 +173,7 @@
     height: 730px;
     width: 730px;
     position: absolute;
-    z-index: -1;
+    z-index: 0;
     right: calc(100vw / 2 - 730px / 2);
     bottom: calc(0px - 730px / 2);
     filter: blur(175px);

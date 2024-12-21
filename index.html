@@ -260,8 +260,8 @@
                     </button>
                 </a>
             </div>
-            <a href=" https://gurtam.com/career">
-                <img src="./assets/logos/gurtamLogo.svg" alt="gurtam-logo" class="blockNav">
+            <a class="header-navigation-logo" href=" https://gurtam.com/career">
+                <img src="./assets/logos/gurtamLogo.svg" alt="gurtam-logo">
             </a>
             <div class="header-navigation-box blockNav">
                 <a href="#bankaSection">
@@ -787,9 +787,10 @@
                 <!-- </section> -->
         </div>
     </main>
-    <footer class="footer footerNode">
+    <footer class="footer">
         <div class="footer-blur"></div>
         <div class="footer-content-wrapper">
+            <p class="footer-copyright-mobile">Copyright © 2002-2024</p>
             <ul class="footer-socialsList">
                 <li class="footer-socialsList-item">
                     <a href="https://www.youtube.com/c/GurtamEn">
@@ -853,8 +854,8 @@
                     </a>
                 </li>
             </ul>
-            <div class="footer-info" style="display: flex; justify-content: space-between">
-                <div class="" style="display: flex; gap: 20px">
+            <div class="footer-info">
+                <div class="footer-info-links">
                     <div class="footer-info-item ">
                         <a href="./pages/termsPage.html">Сompetition terms >></a>
                     </div>
@@ -862,13 +863,10 @@
                         <a href="./pages/privacyPage.html">Privacy policy >></a>
                     </div>
                 </div>
-                <div class="footer-info-item">Copyright © 2002-2024</div>
+                <div class="footer-info-item copyright">Copyright © 2002-2024</div>
             </div>
         </div>
-        <div class="showButton social-item-show-Button" id="toggleSnow">
-            <div style="display:none" class="img img-hide">
-                <img src="./assets/social/showToButtonShow.svg" alt="showToButtonShow" class="img-items img-hide">
-            </div>
+        <div class="footer-showButton social-item-show-Button" id="toggleSnow">
             <div>
                 <svg width="41" height="46" viewBox="0 0 41 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -876,48 +874,9 @@
                         fill="#0A1E4C" />
                     <rect x="0.5" y="5.5" width="40" height="40" rx="4.5" stroke="#0A1E4C" />
                 </svg>
-
-                <!-- <img src="./assets/social/snow icon.svg" alt="showButton"> -->
             </div>
         </div>
     </footer>
-    <!-- <footer class="footer footervisible ">
-    <div class="footer-mini">
-        <div class="info-item info-item-mini">Сompetition terms >></div>
-        <div class="info-item info-item-mini">Privacy policy >></div>
-        <nav>
-            <ul class="social">
-                <li class="social-item">
-                    <canvas class="snowdrift" id="snowdriftYoutube"></canvas>
-                    <a href="https://www.youtube.com/c/GurtamEn">
-                        <img src="./assets/social/fsbw.png" alt="youtube" class="social-link">
-                    </a>
-                </li>
-                <li class="social-item ">
-                    <a href="https://www.linkedin.com/company/gurtam/">
-                        <img src="./assets/social/instw.png" alt="LinkedIn" class="social-link">
-                    </a>
-                </li>
-                <li class="social-item">
-                    <a href="https://www.instagram.com/gurtam_people/">
-                        <img src="./assets/social/dddd.png" alt="instagram" class="social-link">
-                    </a>
-                </li>
-                <li class="social-item">
-                    <a href="https://www.facebook.com/gurtam.people/">
-                        <img src="./assets/social/fsbw2.png" alt="facebook" class="social-link">
-                    </a>
-                </li>
-                <li class="social-item">
-                    <a href="https://gurtam.com/career">
-                        <img src="./assets/social/hz2.png" alt="hz" class="social-link">
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <div class="info-item info-item-mini">Copyright © 2002-2024</div>
-    </div>
-</footer> -->
     <script>
         setTimeout(() => {
             document.querySelector('.FutureAwaits-content').style.opacity = "1";
