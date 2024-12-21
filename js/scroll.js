@@ -147,10 +147,10 @@ function scrollToSection(index) {
     currentSection = index; 
 
     if (currentSection === 2) {
-        isScrollLocked = true; 
+        blockedScroll = true;
         document.body.style.overflow = 'hidden'; 
     } else {
-        isScrollLocked = false; 
+        blockedScroll = false;
         document.body.style.overflow = ''; 
     }
 }
@@ -160,7 +160,7 @@ function preventDefault(event) {
 
 const observer = new MutationObserver(() => {
     if (document.body.style.overflow === '') {
-        isScrollLocked = false; 
+        blockedScroll = false;
     }
 });
 
@@ -170,7 +170,7 @@ observer.observe(document.body, {
 });
 
 window.addEventListener('wheel', (event) => {
-    if (isScrolling || isScrollLocked) return;
+    if (isScrolling || blockedScroll) return;
 
     if (!bankaSection.classList.contains('visible')) {
         if (event.deltaY > 0) {
