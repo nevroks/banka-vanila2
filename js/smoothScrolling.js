@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const textValue = document.querySelectorAll('.WhyUs-CoreValues-value-info-text');
     let currentIndex = 0;
     let count = 0;
+    let hasResetCount = false; 
+    let hasResetCountAtZero = false; 
 
     function updateClasses() {
         coreValues.forEach(value => {
@@ -37,7 +39,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function resetCount() {
-        count = 0; // Сброс count
+        count = 0; 
+        hasResetCount = true; 
+        hasResetCountAtZero = false; 
     }
 
     if (!checkScreenWidth()) {
@@ -57,36 +61,43 @@ document.addEventListener('DOMContentLoaded', function () {
             const isWhyUsVisible = whyUsSection.classList.contains('visible');
 
             if (isWhyUsVisible) {
+                if (!hasResetCount) {
+                    resetCount();
+                }
+
                 if (event.deltaY > 0) {
                     if (currentIndex < coreValues.length - 1) {
                         currentIndex++;
-                        resetCount(); // Сброс count при переходе вперед
+                        resetCount(); 
+                        hasResetCountAtZero = false; 
                     } else {
                         count++;
                     }
                 } else {
                     if (currentIndex > 0) {
                         currentIndex--;
-                        if (currentIndex === 0) {
-                            count++;
+                        if (currentIndex === 0 && !hasResetCountAtZero) {
+                            count = 0; 
+                            hasResetCountAtZero = true; 
                         }
                     } else {
-                        count++;
+                        count++; 
                     }
                 }
-                if (count >= 3) {
+
+                console.log(count);
+                if (count >= 4) {
                     document.body.style.overflow = ''; 
                     count = 0;
                 }
                 updateClasses();
             }
         });
-        
-        // Сброс count при входе в секцию
+
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    resetCount(); // Сброс count при видимости секции
+                    hasResetCount = false; 
                 }
             });
         });
@@ -98,7 +109,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-
+//===============================================================================================================
 
 document.addEventListener('DOMContentLoaded', function() {
     const coreValues = document.querySelectorAll('.WhyUs-CoreValues-value');
@@ -178,3 +189,5 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
 });
+
+
