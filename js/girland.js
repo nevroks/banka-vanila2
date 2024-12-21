@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    const countMap = [0, 7, 14, 21, 28, 38];
+    const countMap = [0, 7, 14, 21, 28, 36];
     let showedImages = 0;
     let currentSection = 0;
 
