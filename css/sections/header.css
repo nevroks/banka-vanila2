@@ -3,10 +3,10 @@
     position: fixed;
     z-index: 900;
 }
-
 .header-navigation {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
     position: relative;
     z-index: 901;
 }
@@ -53,7 +53,6 @@
     background-color: rgb(0, 42, 219);
     transform: scale(1.05);
 }
-
 .headerBtn:active {
     bottom: -2px;
 }
@@ -87,13 +86,50 @@
 .header-navigation-button-plau svg path {
     transition: all 0.6s;
 }
-
+.header-navigation-button-plau p {
+    transition: all 0.6s;
+}
+.header-navigation-button-plau:hover p {
+    color: white;
+}
 .header-navigation-button-plau:hover svg path {
     fill: white;
 }
+.header-navigation-button-plau.disabled{
+    pointer-events: none;
+    background-color: #D9D9D9;
+    color: #656565;
+    border: none;
+}
+.header-navigation-button-plau.disabled svg path{
+    fill: #656565;
+}
 
-.header-navigation-button-hidden {
-    visibility: hidden;
+
+
+
+
+.header-navigation-button-jobs-modal {
+    position: relative;
+    padding: 0 20px 0 43px;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 14.4px;
+    border-radius: 9px;
+    border: 1px solid rgb(0, 42, 219);
+    letter-spacing: 3px;
+    height: 44px;
+    margin: 50px 0 0 0;
+    height: 54px;
+    max-width: 447px;
+    width: 100%;
+    color: #000000;
+}
+
+
+.header-navigation-button-join-us-modal {
+    position: relative;
+    padding: 0 20px 0 43px;
     letter-spacing: 3px;
     height: 44px;
     font-size: 12px;
@@ -101,5 +137,115 @@
     line-height: 14.4px;
     border-radius: 9px;
     border: 1px solid rgb(0, 42, 219);
-    margin: 0px 0 0 15px;
+    margin: 30px 0 30px 0;
+    height: 54px;
+    max-width: 447px;
+    width: 100%;
+    color: #000000;
+}
+/* ======== Warning ============
+================================
+----- mobile header styles -----
+================================
+=========== Warning ============ */
+.header-navigation-mobile {
+    display: none;
+    z-index: 901;
+}
+@media (max-width: 1024px) {
+    .headerBtn{
+            column-gap: 4px;
+            height: 38px;
+            padding: 0 10px 0 12px;
+            font-size: 10px;
+            letter-spacing: 0;
+            border-radius: 9px;
+    }
+    .header-navigation-box{
+        column-gap: 10px;
+    }
+}
+@media(max-width: 600px) {
+    .header-blur {
+        height: 70px;
+    }
+
+   
+    .header-navigation.blockNav {
+        display: none;
+    }
+    .header-navigation-mobile {
+        display: flex;
+    }
+
+    .burger {
+        height: 2px;
+        width: 26px;
+        background-color: #000000;
+        position: relative;
+        transition: all 0.3s ease;
+    }
+
+    .burger::after,
+    .burger::before {
+        content: '';
+        height: 2px;
+        width: 26px;
+        background-color: #000000;
+        position: absolute;
+        transition: all 0.3s ease;
+    }
+
+    .burger::after {
+        top: 6px;
+    }
+
+    .burger::before {
+        top: -6px;
+    }
+
+    .burger.open {
+        background-color: transparent;
+    }
+
+    .burger.open::after {
+        top: 0;
+        transition: all 0.3s ease;
+        transform: rotate(45deg);
+    }
+
+    .burger.open::before {
+        top: 0;
+        transition: all 0.3s ease;
+        transform: rotate(-45deg);
+    }
+
+    .header-navigation-button-plau-mini {
+        position: relative;
+        padding: 0 20px 0 43px;
+        letter-spacing: 3px;
+        height: 44px;
+        font-size: 12px;
+        font-weight: 900;
+        line-height: 14.4px;
+        border-radius: 9px;
+        border: 1px solid rgb(0, 42, 219);
+        color: #0A1E4C;
+    }
+
+    .header-navigation-button-plau-mini::before {
+        content: url('../assets/polygons/trianglePolygon.svg');
+        margin: 0 15px 0 0;
+        position: absolute;
+        left: 14px;
+        top: 11px;
+        transform: scale(0.8);
+    }
+
+    .FutureAwaitsStar-modal {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: scale(3.5);
+    }
 }

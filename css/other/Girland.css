@@ -292,7 +292,7 @@
     }
 }
 
-@media(max-width: 884px) {
+@media(max-width: 600px) {
     .girland-box {
         display: none;
     }

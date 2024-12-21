@@ -1,4 +1,8 @@
 $(function() {
+    
+    const headerDesktopPlayBtn = document.querySelector('.header-navigation-button-plau');
+    const headerDesktopPlayBtnText = document.querySelector('.header-navigation-button-plau p');
+    
     const bankaSectionTitle = document.querySelector(".banka-banka-title")
 
     const bankaWrapper = document.querySelector('.banka-banka-wrapper');
@@ -12,7 +16,10 @@ $(function() {
         bankaWrapper.removeEventListener('click', startAnimation);
         bankaWrapper.classList.remove('glow');
         document.querySelector('.pagepiling').classList.add("scroll-block")
-
+        
+        headerDesktopPlayBtnText.textContent = "IN PROGRESS";
+        headerDesktopPlayBtn.classList.add("disabled")
+        headerDesktopPlayBtn.disabled = true
 
         const step0Duration = 1100;
         const step1Duration = 1100;
