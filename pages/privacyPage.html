@@ -17,16 +17,40 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./../assets/favicons/favicon-16x16.png">
     <link rel="manifest" href="./../assets/favicons/site.webmanifest">
     <!-- ----- adding favicon ----- -->
+    <!-- -----adding Jquery----- -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- -----adding Jquery----- -->
+    <!-- <! sharers > -->
+    <meta property="og:title" content="The future awaits!">
+    <meta property="og:description" content="The future awaits!
+    Open a fortune cookie and get your career inspiration for 2025">
+    <meta property="og:image" content="./../assets/meta/image.png">
     <title>Gurtam Fortune Cookies | Privacy</title>
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJLTQ5FH" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div class="curzr-arrow-pointer" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
-            <path d="M12.5392 13.5515H13.0911L9.52146 21.0633C9.20614 21.7268 9.69001 22.4925 10.4247 22.4925H19.3324C20.073 22.4925 20.5567 21.7154 20.2296 21.0509L16.5391 13.5515H17.1892C17.9715 13.5515 18.4508 12.6937 18.0409 12.0275L15.6479 8.1387C15.2515 7.4945 14.311 7.50662 13.9313 8.16081L11.6744 12.0496C11.2874 12.7162 11.7684 13.5515 12.5392 13.5515Z" fill="#1EA853" stroke="#0F2200" stroke-linejoin="round"/>
-            <circle cx="17.5229" cy="20.1867" r="1" transform="rotate(45 17.5229 20.1867)" fill="#FF69B4"/>
-            <circle cx="14.1289" cy="17.4894" r="1" transform="rotate(45 14.1289 17.4894)" fill="#FFD700"/>
-            <circle cx="15.4146" cy="11.3478" r="1" transform="rotate(45 15.4146 11.3478)" fill="#002ADB"/>
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+            <path
+                d="M17.2955 18.6917H18.0567L13.1331 29.0528C12.6981 29.968 13.3655 31.0241 14.3789 31.0241H26.6654C27.6869 31.0241 28.3541 29.9523 27.9029 29.0357L22.8126 18.6917H23.7092C24.7883 18.6917 25.4494 17.5086 24.884 16.5897L21.5833 11.2258C21.0366 10.3372 19.7393 10.354 19.2156 11.2563L16.1026 16.6201C15.5688 17.5396 16.2323 18.6917 17.2955 18.6917Z"
+                fill="#1EA853" stroke="#0F2200" stroke-linejoin="round" />
+            <path
+                d="M23.1942 28.819C23.7329 29.3577 24.6062 29.3577 25.1448 28.819C25.6835 28.2804 25.6835 27.4071 25.1448 26.8684C24.6062 26.3298 23.7329 26.3298 23.1942 26.8684C22.6556 27.4071 22.6556 28.2804 23.1942 28.819Z"
+                fill="#FF69B4" />
+            <path
+                d="M18.5128 25.0986C19.0515 25.6373 19.9248 25.6373 20.4634 25.0986C21.0021 24.56 21.0021 23.6867 20.4634 23.148C19.9248 22.6093 19.0515 22.6093 18.5128 23.148C17.9742 23.6867 17.9742 24.56 18.5128 25.0986Z"
+                fill="#FFD700" />
+            <path
+                d="M20.2862 16.6275C20.8249 17.1661 21.6982 17.1661 22.2368 16.6275C22.7755 16.0888 22.7755 15.2155 22.2368 14.6768C21.6982 14.1382 20.8249 14.1382 20.2862 14.6768C19.7475 15.2155 19.7475 16.0888 20.2862 16.6275Z"
+                fill="#002ADB" />
         </svg>
     </div>
     <header class="header">
@@ -35,68 +59,111 @@
         <div class="girland-box">
             <img class="girlandItem" src="./../assets/girland/girlandWithAllLightsOn.png" alt="girland">
         </div>
-        <nav class="header-navigation-mini">
-            <img src="./assets/logos/gurtamLogo.svg" alt="gurtam-logo" class="header-navigation-log-mini">
-            <div class="header-navigation-box-mini">
-                <button class="header-navigation-button-plau-mini">PLAY!</button>
-            </div>
-            <div class="burger"></div>
-        </nav>
-        <div class="modal" id="modal">
-            <nav class="header-navigation-mini">
-                <img src="./assets/logos/gurtamLogo.svg" alt="gurtam-logo" class="header-navigation-log-mini">
-                <div class="header-navigation-box-mini">
-                    <button class="header-navigation-button-plau-mini">PLAY!</button>
+        <nav class="header-navigation-mobile">
+            <a href=" https://gurtam.com/career"><img class="header-navigation-mobile-logo"
+                    src="./../assets/logos/gurtamLogoMobile.svg" alt="logotype"></a>
+            <a href="./../index.html">
+                <button class="header-navigation-mobile-playBtn">
+                    <img style="width: 16px;height: 16px;" src="./../assets/polygons/trianglePolygon.svg" alt="play">
+                    <p>PLAY!</p>
+                </button>         
+            </a>
+            <div class="header-navigation-mobile-burger"></div>
+            <div class="header-navigation-mobile-modal">
+                <div class="header-navigation-mobile-modal-btns">
+                    <a href="https://gurtam.com/jobs"><button class="header-navigation-mobile-modal-btns-btn"><img
+                                src="./../assets/polygons/casePolygon.svg" alt="case-img">ALL JOBS</button></a>
+                    <a href=" https://gurtam.com/career"><button class="header-navigation-mobile-modal-btns-btn"><img
+                                src="./../assets/polygons/blueCrossPolygon.svg" alt="cross-img">JOIN US!</button></a>
+                    <button
+                        class="header-navigation-mobile-modal-btns-btn header-navigation-mobile-modal-btns-btn-discover"><img
+                            src="./../assets/polygons/trianglePolygon.svg" alt="trianglePolygon">DISCOVER YOUR
+                        FORTUNE</button>
                 </div>
-                <div class="burger"></div>
-            </nav>
-            <div class="modal-content">
-                <button class="header-navigation-button-jobs-modal ">ALL JOBS</button>
-                <button class="header-navigation-button-join-us-modal">JOIN US!</button>
-                <button class="FutureAwaits-button-modal ">DISVOVER YOUR FORTUNE!</button>
-                <div class="snow-modal">
-                    <div id="toggleSnow" class="modal-snow-open ">SNOW: OFF</div>
-                    <div class="modal-snow-close">SNOW: ON</div>
-                </div>
+                <button class="header-navigation-mobile-modal-snowBtn"><img src="" alt="">
+                    <p>SNOW:<span>ON</span></p>
+                </button>
+                <div class="header-navigation-mobile-modal-footer">
+                    <a class="header-navigation-mobile-modal-footer-link" href="./termsPage.html">Сompetition
+                        terms >></a>
+                    <a class="header-navigation-mobile-modal-footer-link" href="./privacyPage.html">Privacy policy
+                        >></a>
+                    <ul class="header-navigation-mobile-modal-footer-socials">
+                        <li class="">
+                            <a href="https://www.youtube.com/c/GurtamEn">
+                                <button class="socialButton">
+                                    <svg width="23" height="17" viewBox="0 0 23 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M23 11.4837C22.8965 14.1335 20.6683 16.1997 18.0182 16.1032H4.9818C2.33177 16.1997 0.103477 14.1335 0 11.4837V4.6228C0.103477 1.97305 2.33177 -0.0932282 4.9818 0.00324528H18.0182C20.6683 -0.0932282 22.8965 1.97305 23 4.6228V11.4837ZM14.6842 7.71017L10.8907 5.20438C10.1719 4.72958 9.08103 5.13556 9.08103 5.87401V11.1236C9.08103 11.8656 10.1707 12.2704 10.8907 11.7956L14.6842 9.05408C14.9299 8.91467 15.081 8.65884 15.081 8.38212C15.081 8.10553 14.9299 7.84969 14.6842 7.71017Z"
+                                            fill="#0A1E4C" />
+                                    </svg>
+                                </button>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="https://www.linkedin.com/company/gurtam/"></a>
+                            <button class="socialButton">
+                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M4.32669 18.2177V5.92565H0.241503V18.2177H4.32669V18.2177ZM2.28453 4.248C3.70867 4.248 4.5958 3.30332 4.5958 2.12377C4.56887 0.918011 3.70867 0 2.31123 0C0.913572 3.72978e-05 0 0.918048 0 2.12381C0 3.30335 0.886643 4.24803 2.25764 4.24803L2.28453 4.248ZM6.58768 18.2177C6.58768 18.2177 6.64128 7.07897 6.58768 5.92569H10.6735V7.7083H10.6464C11.1836 6.86947 12.1515 5.63704 14.3553 5.63704C17.0439 5.63704 19.0591 7.39388 19.0591 11.1695V18.2177H14.974V11.6418C14.974 9.98951 14.3829 8.86199 12.9041 8.86199C11.7757 8.86199 11.1032 9.62212 10.8079 10.3569C10.6998 10.6184 10.6735 10.9858 10.6735 11.3532V18.2177H6.58768Z"
+                                        fill="#0A1E4C" stroke="#AED6F1" stroke-width="0.008" />
+                                </svg>
+                            </button>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="https://www.instagram.com/gurtam_people/"></a>
+                            <button class="socialButton">
+                                <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M0 4.6C0 2.05949 2.05949 0 4.6 0H18.4C20.9405 0 23 2.05949 23 4.6V18.4C23 20.9405 20.9405 23 18.4 23H4.6C2.05949 23 0 20.9405 0 18.4V4.6ZM4.6 2.3C3.32974 2.3 2.3 3.32974 2.3 4.6V18.4C2.3 19.6703 3.32974 20.7 4.6 20.7H18.4C19.6703 20.7 20.7 19.6703 20.7 18.4V4.6C20.7 3.32974 19.6703 2.3 18.4 2.3H4.6ZM11.5 8.05C9.59456 8.05 8.05 9.59456 8.05 11.5C8.05 13.4054 9.59456 14.95 11.5 14.95C13.4054 14.95 14.95 13.4054 14.95 11.5C14.95 9.59456 13.4054 8.05 11.5 8.05ZM5.75 11.5C5.75 8.32437 8.32437 5.75 11.5 5.75C14.6756 5.75 17.25 8.32437 17.25 11.5C17.25 14.6756 14.6756 17.25 11.5 17.25C8.32437 17.25 5.75 14.6756 5.75 11.5ZM17.825 6.9C18.7777 6.9 19.55 6.12769 19.55 5.175C19.55 4.22231 18.7777 3.45 17.825 3.45C16.8723 3.45 16.1 4.22231 16.1 5.175C16.1 6.12769 16.8723 6.9 17.825 6.9Z"
+                                        fill="#0A1E4C" />
+                                </svg>
+                            </button>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="https://www.facebook.com/gurtam.people/"></a>
+                            <button class="socialButton">
+                                <svg width="12" height="22" viewBox="0 0 12 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 0.00400019L8.66622 0C5.43328 0 3.34487 2.124 3.34487 5.415V7.91H0V12.425H3.34487L3.34084 22H8.02084L8.02487 12.425H11.8629L11.8598 7.911H8.02487V5.794C8.02487 4.776 8.2679 4.261 9.60403 4.261L11.9899 4.26L12 0.00400019Z"
+                                        fill="#0A1E4C" />
+                                </svg>
+                            </button>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="https://gurtam.com/career"></a>
+                            <button class="socialButton">
+                                <svg width="25" height="16" viewBox="0 0 25 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.1193 1.03125L5.78711 5.35162L10.1223 9.66894L14.4545 5.34857L10.1193 1.03125Z"
+                                        fill="#0A1E4C" />
+                                    <path d="M20.6682 0L15.3013 5.34469L19.6334 9.66506L25.0004 4.32037L20.6682 0Z"
+                                        fill="#0A1E4C" />
+                                    <path d="M5.36696 5.76758L0 11.1123L4.33216 15.4326L9.69912 10.088L5.36696 5.76758Z"
+                                        fill="#0A1E4C" />
+                                    <path
+                                        d="M14.8797 5.76758L10.5444 10.0849L14.8766 14.4053L19.2118 10.088L14.8797 5.76758Z"
+                                        fill="#0A1E4C" />
+                                </svg>
+                            </button>
+                            </a>
+                        </li>
 
-                <img src="./assets/star/pinkStar.png" alt="pinkStar" class="FutureAwaitsStar-modal">
-                <footer class="footer footer-modal ">
-                    <div class="info-item info-item-modal">Сompetition terms >></div>
-                    <div class="info-item info-item-modal">Privacy policy >></div>
-                    <nav>
-                        <ul class="social">
-                            <li class="social-item">
-                                <canvas class="snowdrift" id="snowdriftYoutube"></canvas>
-                                <a href="https://www.youtube.com/c/GurtamEn">
-                                    <img src="./assets/social/yotube.svg" alt="youtube" class="social-link">
-                                </a>
-                            </li>
-                            <li class="social-item ">
-                                <a href="https://www.linkedin.com/company/gurtam/">
-                                    <img src="./assets/social/li.svg" alt="LinkedIn" class="social-link">
-                                </a>
-                            </li>
-                            <li class="social-item">
-                                <a href="https://www.instagram.com/gurtam_people/">
-                                    <img src="./assets/social/inst.svg" alt="instagram" class="social-link">
-                                </a>
-                            </li>
-                            <li class="social-item">
-                                <a href="https://www.facebook.com/gurtam.people/">
-                                    <img src="./assets/social/fee.svg" alt="facebook" class="social-link">
-                                </a>
-                            </li>
-                            <li class="social-item">
-                                <a href="https://gurtam.com/career">
-                                    <img src="./assets/social/hz.svg" alt="hz" class="social-link">
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="info-item info-item-modal">Copyright © 2002-2024</div>
-                </footer>
+                    </ul>
+                    <p class="header-navigation-mobile-modal-footer-copyright">Copyright © 2002-2024</p>
+                </div>
+                <img class="header-navigation-mobile-modal-star" src="./../assets/semiSectionStars/pinkStar.svg"
+                    alt="pink-star">
             </div>
-        </div>
+        </nav>
         <nav class="header-navigation blockNav">
             <div class="header-navigation-box blockNav">
                 <a href="https://gurtam.com/jobs">
@@ -125,12 +192,12 @@
                         JOIN US!
                     </button>
                 </a>
-
             </div>
-            <img src="./../assets/logos/gurtamLogo.svg" alt="gurtam-logo" class="blockNav">
+            <a class="header-navigation-logo" href="https://gurtam.com/career">
+                <img src="./../assets/logos/gurtamLogo.svg" alt="gurtam-logo">
+            </a>
             <div class="header-navigation-box blockNav">
-                <button class="header-navigation-button-hidden blockNav">PLAY!</button>
-                <a href="#bankaSection">
+                <a href='./../index.html'>
                     <button class="header-navigation-button-plau headerBtn blockNav">
                         <svg width="18.500000" height="21.055664" viewBox="0 0 18.5 21.0557" fill="none"
                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -139,12 +206,13 @@
                                 d="M18 9.66L1.5 0.13C0.83 -0.25 0 0.23 0 1L0 20.05C0 20.82 0.83 21.3 1.5 20.92L18 11.39C18.66 11 18.66 10.04 18 9.66Z"
                                 fill="#002ADB" fill-opacity="1.000000" fill-rule="evenodd" />
                         </svg>
-                        PLAY!
+                        <p>
+                            PLAY!
+                        </p>
                     </button>
                 </a>
             </div>
         </nav>
-
     </header>
     <main>
         <canvas class="snowflakes" id="snowflakes"></canvas>
@@ -324,45 +392,66 @@
                 <p>Automated decisions</p>
                 <p>We neither use automated decision-making nor your Personal Data to automatically assess aspects of
                     your personality (automated profiling).</p>
-                    <p>Complaint</p>
-                    <p>Pursuant to Art.77 GDPR, you have the right to file a complaint with a supervisory authority of the EU Member State in which your permanent place of residence, place of work or in which there was an alleged violation of your information privacy</p>
-                    <p>How Do We Protect Your Information?
-                    </p>
-                    <p>We implement a variety of technical, organizational and legal security measures to maintain the safety of your personal information when you place an order or enter, submit, or access your Personal Data. For example, our employees have different levels of access to your Personal Data and only those in charge of data management get access to your Personal Data and only for limited purposes required for the operation of the Services. We offer the use of a secure server. Among other practices, your account is protected by a password for your privacy and security. You must prevent unauthorized access to your account and Personal Information by selecting and protecting your password appropriately and limiting access to your computer or device and browser by signing off after you have finished accessing your account. We cannot, however, ensure or warrant the absolute security of any information you transmit to Gurtam or guarantee that your information on the Service may not be accessed, disclosed, altered, or destroyed by a breach of any of our physical, technical, or managerial safeguards. 
-                    </p>
-                    <p>
-                        What type of cookies do we collect?
-                    </p>
-                    <ul>
-                        <li>“userquestiondata”. We save the Roboview test results of a specific user (saving browser session data – no personal data)
-                        </li>
-                        <li>“usersendregdata”. We save whether a specific user filled out a lead form or not (saving browser session data – no personal data)</li>
-                        <li>“userresultpage”. Saves which Robobview test result page is opened for a specific user (saving browser session data – no personal data)
-                        </li>
-                        <li>“acceptcookies”. We save whether a specific user accept cookies or not (saving browser session data – no personal data)
-                        </li>
-                        <li>“userhasutm”. We save the UTM-tag of a specific user (saving browser session data – no personal data)
-                        </li>
-                        <li>
-                            Third-party cookies 
-                        </li>
-                    
-                    </ul>
-                    <p>Facebook Pixel (Meta) <br>
-                        Google Analythics <br>
-                        Contact information
-                    </p>
-                    <p>If you have any questions or concerns about your privacy you may contact us at:
-                    </p>
-                    <p>E-mail: privacy@gurtam.com
-                    </p>
-                    <p>UAB Gurtam, Lithuania, Ozo 12A, Vilnius 08200</p>
-                    <p>You may also contact your local data protection authority. A list of local data protection authorities is available here. </p>
-                </div>
+                <p>Complaint</p>
+                <p>Pursuant to Art.77 GDPR, you have the right to file a complaint with a supervisory authority of the
+                    EU Member State in which your permanent place of residence, place of work or in which there was an
+                    alleged violation of your information privacy</p>
+                <p>How Do We Protect Your Information?
+                </p>
+                <p>We implement a variety of technical, organizational and legal security measures to maintain the
+                    safety of your personal information when you place an order or enter, submit, or access your
+                    Personal Data. For example, our employees have different levels of access to your Personal Data and
+                    only those in charge of data management get access to your Personal Data and only for limited
+                    purposes required for the operation of the Services. We offer the use of a secure server. Among
+                    other practices, your account is protected by a password for your privacy and security. You must
+                    prevent unauthorized access to your account and Personal Information by selecting and protecting
+                    your password appropriately and limiting access to your computer or device and browser by signing
+                    off after you have finished accessing your account. We cannot, however, ensure or warrant the
+                    absolute security of any information you transmit to Gurtam or guarantee that your information on
+                    the Service may not be accessed, disclosed, altered, or destroyed by a breach of any of our
+                    physical, technical, or managerial safeguards.
+                </p>
+                <p>
+                    What type of cookies do we collect?
+                </p>
+                <ul>
+                    <li>“userquestiondata”. We save the Roboview test results of a specific user (saving browser session
+                        data – no personal data)
+                    </li>
+                    <li>“usersendregdata”. We save whether a specific user filled out a lead form or not (saving browser
+                        session data – no personal data)</li>
+                    <li>“userresultpage”. Saves which Robobview test result page is opened for a specific user (saving
+                        browser session data – no personal data)
+                    </li>
+                    <li>“acceptcookies”. We save whether a specific user accept cookies or not (saving browser session
+                        data – no personal data)
+                    </li>
+                    <li>“userhasutm”. We save the UTM-tag of a specific user (saving browser session data – no personal
+                        data)
+                    </li>
+                    <li>
+                        Third-party cookies
+                    </li>
+
+                </ul>
+                <p>Facebook Pixel (Meta) <br>
+                    Google Analythics <br>
+                    Contact information
+                </p>
+                <p>If you have any questions or concerns about your privacy you may contact us at:
+                </p>
+                <p>E-mail: privacy@gurtam.com
+                </p>
+                <p>UAB Gurtam, Lithuania, Ozo 12A, Vilnius 08200</p>
+                <p>You may also contact your local data protection authority. A list of local data protection
+                    authorities is available here. </p>
+            </div>
         </section>
     </main>
-    <footer class="footer footerNode">
+    <footer class="footer">
+        <div class="footer-blur"></div>
         <div class="footer-content-wrapper">
+            <p class="footer-copyright-mobile">Copyright © 2002-2024</p>
             <ul class="footer-socialsList">
                 <li class="footer-socialsList-item">
                     <a href="https://www.youtube.com/c/GurtamEn">
@@ -427,20 +516,29 @@
                 </li>
             </ul>
             <div class="footer-info">
-                <div class="footer-info-item ">Сompetition terms >></div>
-                <div class="footer-info-item"><a href="./privacyPage.html">Privacy policy >></a></div>
-                <div class="footer-info-item">Copyright © 2002-2024</div>
+                <div class="footer-info-links">
+                    <div class="footer-info-item ">
+                        <a href="./termsPage.html">Сompetition terms >></a>
+                    </div>
+                    <div class="footer-info-item">
+                        <a href="./privacyPage.html">Privacy policy >></a>
+                    </div>
+                </div>
+                <div class="footer-info-item copyright">Copyright © 2002-2024</div>
             </div>
         </div>
-        <div class="showButton social-item-show-Button" id="toggleSnow">
-            <div class="img img-hide">
-                <img src="./assets/social/showToButtonShow.svg" alt="showToButtonShow" class="img-items img-hide">
-            </div>
+        <div class="footer-showButton social-item-show-Button" id="toggleSnow">
             <div>
-                <img src="./assets/social/snow icon.svg" alt="showButton">
+                <svg width="41" height="46" viewBox="0 0 41 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M19.4162 15L19.4791 17.5159L17.1932 15.7207L16.1818 17.008L19.5322 19.6405L19.652 24.4326L15.5617 21.9328L14.9572 17.715L13.3365 17.9473L13.7494 20.8251L11.601 19.5121L10.5095 21.4026L12.7198 22.606L10.0222 23.688L10.6313 25.2077L14.5863 23.6223L18.7964 25.9147L14.7946 28.0936L10.5264 26.6432L9.99965 28.1934L12.8394 29.1582L10.5095 30.4268L11.601 32.3172L13.8645 30.9339L13.2802 33.8755L14.8861 34.1944L15.7641 29.7729L19.652 27.3967L19.5381 31.9518L16.148 34.9229L17.227 36.1542L19.4825 34.1773L19.4162 36.8293H21.5991L21.5328 34.1773L23.7882 36.1542L24.8673 34.9229L21.4772 31.9518L21.3633 27.3967L25.2512 29.7729L26.1292 34.1944L27.735 33.8755L27.1507 30.9338L29.4143 32.3172L30.5058 30.4268L28.1759 29.1582L31.0156 28.1934L30.4889 26.6432L26.2207 28.0936L22.219 25.9147L26.429 23.6223L30.384 25.2077L30.9931 23.688L28.2944 22.6067L30.5058 21.4026L29.4143 19.5121L27.2669 20.8245L27.6787 17.9473L26.0581 17.715L25.4535 21.9328L21.3633 24.4326L21.4831 19.6404L24.8335 17.008L23.822 15.7207L21.5362 17.5171L21.5991 15H19.4162Z"
+                        fill="#0A1E4C" />
+                    <rect x="0.5" y="5.5" width="40" height="40" rx="4.5" stroke="#0A1E4C" />
+                </svg>
             </div>
         </div>
     </footer>
+    <script src="./../js/mobileHeader.js"></script>
     <script src="./../js/cursor.js"></script>
     <script src="./../js/snow.js"></script>
     <script src="./../js/tiglerSnow.js"></script>

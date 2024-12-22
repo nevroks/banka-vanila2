@@ -37,7 +37,13 @@
     z-index: 899;
     box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
 }
-
+.header-navigation-button-plau p{
+    font-family:  'Adieu';
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 14.4px;
+    letter-spacing: 0;
+}
 .headerBtn {
     display: flex;
     column-gap: 17px;
@@ -49,7 +55,7 @@
     font-size: 12px;
     font-weight: 900;
     line-height: 14.4px;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     border-radius: 9px;
     border: 1px solid rgb(0, 42, 219);
     transition: all 0.6s;
@@ -320,8 +326,12 @@
         height: 38px;
         padding: 0 10px 0 12px;
         font-size: 10px;
-        letter-spacing: 0;
         border-radius: 9px;
+    }
+    .header-navigation-button-plau p{
+        
+        font-size: 10px;
+
     }
     .header-navigation-logo {
         left: 61%;

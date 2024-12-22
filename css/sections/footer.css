@@ -101,19 +101,24 @@
 
 .footer-copyright-mobile {
     display: none;
-    color: black;
+    color: white;
     font-size: 12px;
     font-weight: 400;
     line-height: 140%;
     letter-spacing: 0;
     text-align: center;
 }
-
+.footer.mobile{
+    display: none;
+    position: relative;
+}
 @media (max-width: 1560px) {
     .footer-content-wrapper {
         width: auto;
     }
-
+    .footer-info-item.copyright {
+        left: 66.5vw;
+    }
 }
 
 @media(max-width: 1024px) {
@@ -175,7 +180,26 @@
 }
 
 @media(max-width: 600px) {
-    .footer {
-        position: relative;
+    .dragonbanka {
+        left: 44%;
     }
+    .footer {
+        display: none;
+    }
+    .footer-info-item a{
+        color: white;
+    } 
+    .footer.mobile{
+        display: flex;
+    }
+    .footer-blur {
+        display: none;
+    }
+    .footer .socialButton{
+        border: 1px solid white;
+    }
+    .footer .socialButton svg path{
+        fill: white;
+    }
+    
 }
