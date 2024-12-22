@@ -2,7 +2,8 @@ const dpr = 1;
 
 const canvasSnowflakes = document.getElementById('snowflakes');
 // const canvasSnowdriftYoutube = document.getElementById('snowdriftYoutube');
-const toggleButton = document.getElementById('toggleSnow');
+
+
 
 let snowActive = true;
 
@@ -160,9 +161,32 @@ $(function() {
     document.window.addEventListener('resize', () => {
         canvasRatio(canvasSnowflakes);
         // canvasRatio(canvasSnowdriftYoutube);
-    });    
+    });   
+    
 })
-
+document.querySelectorAll('#toggleSnow').forEach((el) => {
+    el.addEventListener('click', () => {
+        snowActive = !snowActive;
+        if (snowActive) {
+            document.querySelectorAll('#toggleSnow').forEach((el) => {
+                el.disabled=true
+                setTimeout(() => {el.disabled=false}, 1000)     
+            })
+            document.querySelectorAll('.social-item-show-Button-disabled').forEach((el) => {
+                el.style.display = 'none'
+            })
+            document.querySelectorAll('.social-item-show-Button-enabled').forEach((el) => {
+                el.style.display = 'none'
+            })
+            if (!animationFrameId) {
+                loop();
+                canvasSnowflakes.style.opacity = 1;
+            }
+        } else {
+            fadeOutSnow();
+        }
+    });
+}) 
 
 
 const onFallDown = throttle((x, mass) => {
@@ -194,17 +218,3 @@ const fadeOutSnow = () => {
     };
     fadeOut();
 };
-
-
-toggleButton.addEventListener('click', () => {
-    snowActive = !snowActive;
-    if (snowActive) {
-
-        if (!animationFrameId) {
-            loop();
-            canvasSnowflakes.style.opacity = 1;
-        }
-    } else {
-        fadeOutSnow();
-    }
-});

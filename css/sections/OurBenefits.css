@@ -222,7 +222,10 @@
     .play {
         top: 25%;
     }
-
+    .boxVideo{
+        width: 360px;
+        height: 183px;
+    }
     .OurBenefits-title {
         font-size: 40px;
         font-weight: 900;
