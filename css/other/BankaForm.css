@@ -318,10 +318,16 @@ select {
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
+    transition: 1s;
 }
 
 .banka-banka-form-step3-link a {
     color: rgb(0, 39, 194);
+    text-decoration: underline;
+}
+
+.banka-banka-form-step3-link a:hover {
+    color: black;
     text-decoration: underline;
 }
 
@@ -431,7 +437,8 @@ select {
 
 @media (max-width:1024px) {
     .banka-banka-form.expanded{
-        height: 80vh;
+        padding-top: 75px;
+        height: 100vh;
         width: 100vw;
         left: 0;
     }
@@ -514,5 +521,11 @@ select {
     }
     .banka-banka-form-step3 {
        padding-bottom: 30px;
+    }
+}
+
+@media (max-width: 930px) {
+    .banka-banka-form-step3-vacancy-text {
+        max-width: 90%;
     }
 }

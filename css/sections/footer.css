@@ -53,6 +53,7 @@
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.5px;
+    transition: 1s;
 }
 
 .footer-info-item.copyright {
@@ -112,6 +113,12 @@
     display: none;
     position: relative;
 }
+
+.footer-info-item a:hover {
+    color: #002ADB;
+    text-decoration: underline;
+}
+
 @media (max-width: 1560px) {
     .footer-content-wrapper {
         width: auto;
@@ -141,6 +148,7 @@
     .footer-info-item a {
         font-size: 12px;
         letter-spacing: 0;
+        color: white;
     }
 
     .footer-info-item {
