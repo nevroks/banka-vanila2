@@ -11,6 +11,18 @@ if (window.innerWidth > 1024) {
         if (activeSections[activeSections.length - 1].getAttribute('sectionId') == "2") {
             let step = 55;
 
+            if (stepsForThirdBlock < 6) {
+                setTimeout(() => blockedScrollDown = true, 750);
+            } else if (stepsForThirdBlock == 6) {
+                setTimeout(() => blockedScrollDown = false, 750);
+            }
+
+            if (stepsForSecondBlock > 0) {
+                setTimeout(() => blockedScrollUp = true, 750);
+            } else if (stepsForSecondBlock == 0) {
+                setTimeout(() => blockedScrollUp = false, 750);
+            }
+
             if (e.deltaY > 0) {
                 if (stepsForSecondBlock <= 5) {
                     stepsForSecondBlock += 1;
@@ -22,9 +34,6 @@ if (window.innerWidth > 1024) {
                         thirdBlock.style.transform = `translateY(-${(stepsForSecondBlock * step) + (stepsForThirdBlock * step)}px)`;
                     }
                 }
-
-                console.log(stepsForSecondBlock);
-                console.log(stepsForThirdBlock);
             } else if (e.deltaY <= 0) {
                 if (stepsForThirdBlock > 0) {
                     stepsForThirdBlock -= 1;
@@ -36,16 +45,10 @@ if (window.innerWidth > 1024) {
                         secondBlock.style.transform = `translateY(-${stepsForSecondBlock * step}px)`;
                     }
                 }
-
-                console.log(stepsForSecondBlock);
-                console.log(stepsForThirdBlock);
             }
-
-            if ((stepsForThirdBlock == 6 && stepsForSecondBlock == 6) || (stepsForThirdBlock == 0 && stepsForSecondBlock == 0)) {
-                setTimeout(() => blockedScroll = false, 750);
-            } else {
-                setTimeout(() => blockedScroll = true, 750);
-            }
+        } else {
+            blockedScrollUp = false;
+            blockedScrollDown = false;
         }
     })
 }
