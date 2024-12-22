@@ -27,7 +27,7 @@ function snow(canvas, { count, onFallDown }) {
     for (let i = 0; i < count; i++) {
         const snowflake = { size: 0, x: 0, y: 0, k: 0 };
         randmizeSnowflakeParams(snowflake);
-        snowflakes.push({...snowflake, y: random(0, -1 * canvas.height) });
+        snowflakes.push({ ...snowflake, y: random(0, -1 * canvas.height) });
     }
 
     const wind = { forceX: 0, forceY: 0 };
@@ -157,36 +157,52 @@ function throttle(cb, delay) {
 canvasRatio(canvasSnowflakes);
 // canvasRatio(canvasSnowdriftYoutube);
 
-$(function() {
+$(function () {
     document.window.addEventListener('resize', () => {
-        canvasRatio(canvasSnowflakes);
+        // canvasRatio(canvasSnowflakes);
         // canvasRatio(canvasSnowdriftYoutube);
-    });   
-    
+    });
+
 })
 document.querySelectorAll('#toggleSnow').forEach((el) => {
     el.addEventListener('click', () => {
         snowActive = !snowActive;
         if (snowActive) {
-            document.querySelectorAll('#toggleSnow').forEach((el) => {
-                el.disabled=true
-                setTimeout(() => {el.disabled=false}, 1000)     
-            })
-            document.querySelectorAll('.social-item-show-Button-disabled').forEach((el) => {
-                el.style.display = 'none'
-            })
-            document.querySelectorAll('.social-item-show-Button-enabled').forEach((el) => {
-                el.style.display = 'none'
-            })
             if (!animationFrameId) {
+                document.querySelector('.snowStatePlaceholder').textContent = 'OFF'
+                document.querySelectorAll('#toggleSnow').forEach((el) => {
+                    el.disabled = true
+                    setTimeout(() => { el.disabled = false }, 1000)
+                })
+                document.querySelectorAll('.social-item-show-Button-disabled').forEach((el) => {
+                    el.style.display = 'none'
+                })
+                document.querySelectorAll('.social-item-show-Button-enabled').forEach((el) => {
+
+                    el.style.display = 'flex'
+                })
                 loop();
                 canvasSnowflakes.style.opacity = 1;
             }
         } else {
+
+
+            document.querySelector('.snowStatePlaceholder').textContent = 'ON'
+            document.querySelectorAll('#toggleSnow').forEach((el) => {
+                el.disabled = true
+                setTimeout(() => { el.disabled = false }, 1000)
+            })
+            document.querySelectorAll('.social-item-show-Button-disabled').forEach((el) => {
+                el.style.display = 'flex'
+            })
+            document.querySelectorAll('.social-item-show-Button-enabled').forEach((el) => {
+
+                el.style.display = 'none'
+            })
             fadeOutSnow();
         }
     });
-}) 
+})
 
 
 const onFallDown = throttle((x, mass) => {

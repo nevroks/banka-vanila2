@@ -148,6 +148,7 @@ input[type="checkbox"]:checked+label:after {
 .socialButton:hover {
     transform: scale(1.05);
     background-color: #002ADB;
+    border: 1px solid #002ADB;
 }
 
 .socialButton:hover svg path {
@@ -177,15 +178,7 @@ input[type="checkbox"]:checked+label:after {
     justify-content: center;
     
 }
-.social-item-show-Button .disabled{
-    width: 26px!important;
-    height: 26px!important;
-}
-.social-item-show-Button .disabled:hover{
-    width: 26px!important;
-    height: 26px!important;
-}
-.social-item-show-Button .disabled svg{
+.social-item-show-Button .disabled, .social-item-show-Button .disabled svg{
     width: 26px!important;
     height: 26px!important;
 }
@@ -200,6 +193,17 @@ input[type="checkbox"]:checked+label:after {
 }
 .social-item-show-Button:hover .disabled svg rect{
     fill: white;
+}
+
+.social-item-show-Button .enabled, .social-item-show-Button .enabled svg{
+    width: 21px!important;
+    height: 21px!important;
+}
+.social-item-show-Button .enabled svg path{
+    transition: all 0.6s;
+}
+.social-item-show-Button:hover .enabled svg path{
+    fill: #AED6F1;
 }
 @media (max-width: 1560px) {
 
