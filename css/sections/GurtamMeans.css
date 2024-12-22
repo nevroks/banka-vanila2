@@ -11,18 +11,13 @@
     overflow-y: visible;
 }
 
-@media (max-width: 1024px) {
-    .GurtamMeans {
-        padding-top: 170px;
-    }
-}
 
 .viewporter {
     width: 100px;
     height: 100px;
     opacity: 0;
     position: absolute;
-    top: 300px;
+    top: 0;
 }
 
 .GurtamMeans.visible {
@@ -213,110 +208,6 @@
     filter: blur(175px);
 }
 
-
-
-@media(max-width: 1024px) {
-    .GurtamMeans {
-        height: auto !important;
-        align-items: center;
-    }
-
-    .GurtamMeans-stats {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: absolute;
-    }
-
-    .card-years {
-        background-color: #002ADB;
-        position: static;
-        text-align: center;
-    }
-
-    .card-EMPLOYEES {
-        background-color: #FFD700;
-        position: static;
-        text-align: center;
-        transform: translateY(-30px);
-    }
-
-    .card-COUNTRIES {
-        background-color: #FF69B4;
-        position: static;
-        text-align: center;
-        transform: translateY(-50px);
-    }
-
-    .card-OFFICES {
-        background-color: #0A1E4C;
-        position: static;
-        text-align: center;
-        transform: translateY(-70px);
-    }
-    .GurtamMeans-text{
-        text-align: center;
-    }
-   
-}
-@media (max-width: 1024px) {
-        .GurtamMeans{
-            top: -100px;
-            padding-top: 0;
-        }
-}
-@media(max-width: 690px) {
-    .GurtamMeans {
-        align-items: center;
-    }
-}
-
-@media(max-width: 521px) {
-    .GurtamMeans {
-        align-items: center;
-    }
-
-    .GurtamMeans-stats-card {
-        width: 314px;
-    }
-
-    .GurtamMeans-stats-card-text {
-        line-height: 30px;
-    }
-    .GurtamMeans a{
-        display: flex;
-        justify-content: center;
-    }
-}
-
-@media(max-width: 473px) {
-    .GurtamMeans-title {
-        font-size: 20px;
-        margin: 0;
-    }
-
-    .GurtamMeans-text {
-        font-size: 16px;
-        line-height: 23px;
-    }
-
-    .GurtamMeans-button {
-        padding: 17px 79px;
-        font-size: 14px;
-    }
-
-    .GurtamMeans {
-        align-items: unset;
-    }
-}
-
-@media(max-width: 400px) {
-    .GurtamMeans-text {
-        font-size: 16px;
-        padding: 13px 0 30px;
-    }
-}
-
 .animated1 {
     animation: moveLeft1 1s forwards;
 }
@@ -381,6 +272,7 @@
             width: 1000px;
         }
     }
+
     @keyframes moveLeft4 {
         0% {
             width: 0;
@@ -446,6 +338,7 @@
             width: 635px;
         }
     }
+
     @keyframes moveLeft4 {
         0% {
             width: 0;
@@ -511,6 +404,7 @@
             width: 675px;
         }
     }
+
     @keyframes moveLeft4 {
         0% {
             width: 0;
@@ -530,30 +424,72 @@
 
 @media(max-width: 1024px) {
     .GurtamMeans {
+        top: -100px;
+        padding-top: 0;
         margin-bottom: 750px;
+        height: auto !important;
+        align-items: center;
+    }
+
+    .GurtamMeans-stats {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .card-years {
+        background-color: #002ADB;
+        position: static;
+        text-align: center;
+    }
+
+    .card-EMPLOYEES {
+        background-color: #FFD700;
+        position: static;
+        text-align: center;
+        transform: translateY(-30px);
+    }
+
+    .card-COUNTRIES {
+        background-color: #FF69B4;
+        position: static;
+        text-align: center;
+        transform: translateY(-50px);
+    }
+
+    .card-OFFICES {
+        background-color: #0A1E4C;
+        position: static;
+        text-align: center;
+        transform: translateY(-70px);
+    }
+
+    .GurtamMeans-text {
+        text-align: center;
     }
 
     #block1 {
         position: absolute;
-        top: 350px;
+        top: calc(180px * 0);
         left: 12.5%;
     }
 
     #block2 {
         position: absolute;
-        top: 550px;
+        top: calc(180px * 1);
         left: 12.5%;
     }
 
     #block3 {
         position: absolute;
-        top: 750px;
+        top: calc(180px * 2);
         left: 12.5%;
     }
 
     #block4 {
         position: absolute;
-        top: 950px;
+        top: calc(180px * 3);
         left: 12.5%;
     }
 
@@ -562,7 +498,7 @@
             width: 75%;
             height: 0;
             opacity: 0;
-            transform: translateY(720px);
+            transform: translateY(calc(180px * 4));
         }
 
         25% {
@@ -573,7 +509,7 @@
             opacity: 1;
             width: 75%;
             transform: translateY(0px);
-            height: 720px;
+            height: calc(180px * 4);
         }
     }
 
@@ -582,7 +518,7 @@
             width: 75%;
             height: 0;
             opacity: 0;
-            transform: translateY(720px);
+            transform: translateY(calc(180px * 4));
         }
 
         25% {
@@ -593,7 +529,7 @@
             opacity: 1;
             width: 75%;
             transform: translateY(0px);
-            height: 700px;
+            height: calc(180px * 3);
         }
     }
 
@@ -602,7 +538,7 @@
             width: 75%;
             height: 0;
             opacity: 0;
-            transform: translateY(720px);
+            transform: translateY(calc(180px * 4));
         }
 
         25% {
@@ -613,15 +549,16 @@
             opacity: 1;
             width: 75%;
             transform: translateY(0px);
-            height: 500px;
+            height: calc(180px * 2);
         }
     }
+
     @keyframes moveLeft4 {
         0% {
             width: 75%;
             height: 0;
             opacity: 0;
-            transform: translateY(720px);
+            transform: translateY(calc(180px * 4));
         }
 
         25% {
@@ -632,7 +569,7 @@
             opacity: 1;
             width: 75%;
             transform: translateY(0px);
-            height: 300px;
+            height: calc(180px * 1);
         }
     }
 }
@@ -642,22 +579,36 @@
         margin-bottom: 500px;
     }
 
-    #block1 {
-        top: 450px;
+    .GurtamMeans-title {
+        font-size: 20px;
+        margin: 0;
+        line-height: 24px;
+        letter-spacing: 0;
     }
 
-    #block2 {
-        position: absolute;
-        top: 650px;
+    .GurtamMeans-text {
+        font-size: 16px;
+
+        line-height: 19px;
+        letter-spacing: 0;
     }
 
-    #block3 {
-        position: absolute;
-        top: 850px;
+    .GurtamMeans-button {
+        padding: 17px 104px;
+        column-gap: 25px;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0;
     }
-
+    .GurtamMeans-button img{
+        height: 16px;
+        width: 16px;
+    }
+    #block1,
+    #block2,
+    #block3,
     #block4 {
-        position: absolute;
-        top: 1050px;
+        width: 100% !important;
+        left: 0;
     }
 }
