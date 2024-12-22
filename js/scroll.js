@@ -146,6 +146,7 @@ function scrollToSection(index) {
     smoothScrollTo(sectionTop); 
     currentSection = index; 
 
+    /*
     if (currentSection === 2) {
         blockedScroll = true;
         document.body.style.overflow = 'hidden'; 
@@ -153,6 +154,7 @@ function scrollToSection(index) {
         blockedScroll = false;
         document.body.style.overflow = ''; 
     }
+     */
 }
 function preventDefault(event) {
     event.preventDefault();
@@ -160,7 +162,7 @@ function preventDefault(event) {
 
 const observer = new MutationObserver(() => {
     if (document.body.style.overflow === '') {
-        blockedScroll = false;
+       // blockedScroll = false;
     }
 });
 
@@ -170,12 +172,16 @@ observer.observe(document.body, {
 });
 
 window.addEventListener('wheel', (event) => {
-    if (isScrolling || blockedScroll) return;
+    if (isScrolling) return;
 
     if (!bankaSection.classList.contains('visible')) {
         if (event.deltaY > 0) {
+            if (blockedScrollDown) return;
+
             scrollToSection(currentSection + 1);
         } else if (event.deltaY < 0) {
+            if (blockedScrollUp) return;
+
             scrollToSection(currentSection - 1);
         }
     }

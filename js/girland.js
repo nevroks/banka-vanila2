@@ -30,14 +30,27 @@ $(document).ready(function() {
         showedImages = countMap[currentSection]
     }
 
-    window.addEventListener('wheel', (e) => {
-        let sections = document.querySelectorAll('.activeSection')
-        currentSection = sections[sections.length - 1].getAttribute('sectionId');
+    if (window.innerWidth >= 1024) {
+        window.addEventListener('wheel', (e) => {
+            let sections = document.querySelectorAll('.activeSection')
+            currentSection = sections[sections.length - 1].getAttribute('sectionId');
 
-        if (e.deltaY > 0) {
-            showGirlandsScrollDown()
-        } else if (e.deltaY < 0) {
-            showGirlandsScrollUp()
+            if (e.deltaY > 0) {
+                showGirlandsScrollDown()
+            } else if (e.deltaY < 0) {
+                showGirlandsScrollUp()
+            }
+        })
+    } else {
+        for (let i = 1; i <= 36; i++) {
+            setTimeout(() => {
+                document.querySelector(`.girland${i}`).classList.remove('hiddenGirland');
+            }, 100 * i)
         }
-    })
+        /*
+        document.querySelectorAll('.girland').forEach((el) => {
+            el.classList.remove('hiddenGirland');
+        })
+        */
+    }
 });

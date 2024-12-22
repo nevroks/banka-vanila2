@@ -214,6 +214,8 @@
     right: 8%;
     position: relative;
     bottom: 213px;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
     transform: translateX(50%);
 }
 
@@ -239,6 +241,10 @@
 
 
 @media(max-width: 1024px) {
+    .dragonMini {
+        margin-top: 25px;
+    }
+
     .FutureAwaitsStar {
         top: 300px;
     }

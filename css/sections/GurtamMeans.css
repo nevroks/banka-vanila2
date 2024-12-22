@@ -1,15 +1,28 @@
 .GurtamMeans {
     position: relative;
-    padding-top: 170px;
+    padding-top: 350px;
     display: flex;
     flex-direction: column;
     align-items: start;
     transform: translateY(20px);
     transition: opacity 2s ease-in-out, transform 2s ease-in-out;
     opacity: 0;
-    
     overflow-x: clip;
     overflow-y: visible;
+}
+
+@media (max-width: 1024px) {
+    .GurtamMeans {
+        padding-top: 170px;
+    }
+}
+
+.viewporter {
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+    position: absolute;
+    top: 300px;
 }
 
 .GurtamMeans.visible {
@@ -202,7 +215,7 @@
 
 
 
-@media(max-width: 1049px) {
+@media(max-width: 1024px) {
     .GurtamMeans {
         height: auto !important;
         align-items: center;
@@ -212,6 +225,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        position: absolute;
     }
 
     .card-years {
@@ -514,35 +528,136 @@
     }
 }
 
-@media(max-width: 1049px) {
+@media(max-width: 1024px) {
+    .GurtamMeans {
+        margin-bottom: 750px;
+    }
+
+    #block1 {
+        position: absolute;
+        top: 350px;
+        left: 12.5%;
+    }
+
+    #block2 {
+        position: absolute;
+        top: 550px;
+        left: 12.5%;
+    }
+
+    #block3 {
+        position: absolute;
+        top: 750px;
+        left: 12.5%;
+    }
+
+    #block4 {
+        position: absolute;
+        top: 950px;
+        left: 12.5%;
+    }
+
     @keyframes moveLeft1 {
-        from {
-            transform: translateX(0);
+        0% {
+            width: 75%;
+            height: 0;
+            opacity: 0;
+            transform: translateY(720px);
         }
 
-        to {
-            transform: translateX(0px);
+        25% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 1;
+            width: 75%;
+            transform: translateY(0px);
+            height: 720px;
         }
     }
 
     @keyframes moveLeft2 {
-        from {
-            transform: translateX(0);
+        0% {
+            width: 75%;
+            height: 0;
+            opacity: 0;
+            transform: translateY(720px);
         }
 
-        to {
-            transform: translateX(0px) translateY(-30px);
+        25% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 1;
+            width: 75%;
+            transform: translateY(0px);
+            height: 700px;
         }
     }
 
     @keyframes moveLeft3 {
-        from {
-            transform: translateX(0);
+        0% {
+            width: 75%;
+            height: 0;
+            opacity: 0;
+            transform: translateY(720px);
         }
 
-        to {
-            transform: translateX(0px) translateY(-50px);
-            ;
+        25% {
+            opacity: 1;
         }
+
+        100% {
+            opacity: 1;
+            width: 75%;
+            transform: translateY(0px);
+            height: 500px;
+        }
+    }
+    @keyframes moveLeft4 {
+        0% {
+            width: 75%;
+            height: 0;
+            opacity: 0;
+            transform: translateY(720px);
+        }
+
+        25% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 1;
+            width: 75%;
+            transform: translateY(0px);
+            height: 300px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .GurtamMeans {
+        margin-bottom: 500px;
+    }
+
+    #block1 {
+        top: 450px;
+    }
+
+    #block2 {
+        position: absolute;
+        top: 650px;
+    }
+
+    #block3 {
+        position: absolute;
+        top: 850px;
+    }
+
+    #block4 {
+        position: absolute;
+        top: 1050px;
     }
 }
