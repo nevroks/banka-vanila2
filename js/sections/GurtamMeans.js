@@ -88,7 +88,7 @@ if (window.innerWidth > 1024) {
         document.getElementById("block4"),
     ];
 
-    window.addEventListener('wheel', () => {
+    setInterval(() => {
         if (isInViewport(document.querySelector('.viewporter'))) {
             setTimeout(() => {
                 blocks[0].classList.add('animated1')
@@ -106,5 +106,5 @@ if (window.innerWidth > 1024) {
                 blocks[3].classList.add('animated4')
             }, 1850)
         }
-    })
+    }, 250)
 }

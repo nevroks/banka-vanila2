@@ -49,13 +49,11 @@
     <title>Gurtam Fortune Cookies</title>
     <!-- <! search engines > -->
     <meta name="title" content="The future awaits!">
-    <meta name="description" content="The future awaits!
-    Open a fortune cookie and get your career inspiration for 2025">
+    <meta name="description" content="Open a fortune cookie and get your career inspiration for 2025">
     <meta name="image" content="./assets/meta/image.png">
     <!-- <! sharers > -->
     <meta property="og:title" content="The future awaits!">
-    <meta property="og:description" content="The future awaits!
-    Open a fortune cookie and get your career inspiration for 2025">
+    <meta property="og:description" content="Open a fortune cookie and get your career inspiration for 2025">
     <meta property="og:image" content="./assets/meta/image.png">
 </head>
 
@@ -569,6 +567,11 @@
                         </button>
                     </div>
                     <div class="banka-banka-form-step3 opacity">
+                        <div class="banka-banka-form-step3-supheader">
+                            YOUR DRAW NUMBER IS <span class="banka-banka-form-step3-supheader-draw">#<span class="banka-banka-form-step3-supheader-draw-number">1</span>!</span>
+                            <br>
+                            CHECK YOUR E-MAIL FOR FURTHER INSTRUCTIONS!
+                        </div>
                         <div class="banka-banka-form-step3-header">
                             <h3
                                 class="banka-banka-form-step3-header-title banka-banka-form-title form-title-placeholder">
@@ -1039,42 +1042,46 @@
         let options = document.querySelectorAll('option')
         let svgcursor = document.getElementById('svg-cursor');
 
-        select.forEach((el) => {
-            el.addEventListener('focus', () => {
-                el.style.cursor = 'default'
-                svgcursor.style.display = 'none'
+        if (!mobile) {
+            select.forEach((el) => {
+                el.addEventListener('focus', () => {
+                    el.style.cursor = 'default'
+                    svgcursor.style.display = 'none'
+                })
+
+                el.addEventListener('hover', () => {
+                    el.style.cursor = 'default'
+                    svgcursor.style.display = 'none'
+                })
+
+                el.addEventListener('blur', () => {
+                    svgcursor.style.display = 'block'
+                })
+
+                el.addEventListener('change', () => {
+                    svgcursor.style.display = 'block'
+                })
             })
 
-            el.addEventListener('hover', () => {
-                el.style.cursor = 'default'
-                svgcursor.style.display = 'none'
-            })
+            options.forEach((el) => {
+                el.addEventListener('focus', () => {
+                    el.style.cursor = 'default'
+                    svgcursor.style.display = 'none'
+                    console.log(1);
+                })
 
-            el.addEventListener('blur', () => {
-                svgcursor.style.display = 'block'
-            })
+                el.addEventListener('hover', () => {
+                    el.style.cursor = 'default'
+                    svgcursor.style.display = 'none'
+                })
 
-            el.addEventListener('change', () => {
-                svgcursor.style.display = 'block'
+                el.addEventListener('blur', () => {
+                    svgcursor.style.display = 'block'
+                })
             })
-        })
-
-        options.forEach((el) => {
-            el.addEventListener('focus', () => {
-                el.style.cursor = 'default'
-                svgcursor.style.display = 'none'
-                console.log(1);
-            })
-
-            el.addEventListener('hover', () => {
-                el.style.cursor = 'default'
-                svgcursor.style.display = 'none'
-            })
-
-            el.addEventListener('blur', () => {
-                svgcursor.style.display = 'block'
-            })
-        })
+        } else {
+            svgcursor.style.display = 'none';
+        }
     </script>
     <script>
         let stackSelect = document.querySelector('.stackSelect');

@@ -776,11 +776,39 @@ $(function () {
 
 
 
-    sendBtn.addEventListener("click", (e) => {
+    sendBtn.addEventListener("click", async (e) => {
         checkIsFieldsFilled()
 
-        if (document.querySelector('.stackSelect').value != "none" && (document.querySelector('.levelSelect').value != "none" || document.querySelector('.levelSelect').style.opacity > 0) && validateEmail(document.querySelector('.emailInput').value)) {
-            renderFormStep3Content()
+        console.log(document.querySelector('.stackSelect').value);
+        console.log(document.querySelector('.levelSelect').value);
+        console.log(document.querySelector('.emailInput').value);
+
+        if (
+            document.querySelector('.stackSelect').value != "none" &&
+            (
+                (document.querySelector('.levelSelect').value != "none" && document.querySelector('.levelSelect').style.display != 'none') ||
+                (
+                    document.querySelector('.levelSelect').style.display == 'none'
+                )
+            )
+            && validateEmail(document.querySelector('.emailInput').value)) {
+            const body = {
+                stack: document.querySelector('.stackSelect').value,
+                level: document.querySelector('.levelSelect').value,
+                email: document.querySelector('.emailInput').value
+            }
+
+            const result = await fetch('https://cookies.revampit.ru/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(body)
+            })
+
+            console.log();
+
+            renderFormStep3Content((await result.json()).id)
             reportFormSubmit()
         } else {
             e.preventDefault()
@@ -850,11 +878,12 @@ $(function () {
 
     const bankaFormStep3TextPlaceholder = document.querySelector('.banka-banka-form-step3-textPlaceholder');
     const bankaFormStep3SmallPlaceholder = document.querySelector('.banka-banka-form-step3-smallPlaceholder');
+    const numberPlaceholder = document.querySelector('.banka-banka-form-step3-supheader-draw-number');
     //const bankaFormStep3VacancyTitlePlaceholder = document.querySelector('.banka-banka-form-step3-vacancy-title-placeholder');
     //const bankaFormStep3VacancyPositionPlaceholder = document.querySelector('.banka-banka-form-step3-vacancy-text-placeholder');
 
 
-    function renderFormStep3Content() {
+    function renderFormStep3Content(number) {
         const stack = vacancies[formData.get("stack")]
         const vacancy = stack[formData.get("level")]        
         
@@ -874,6 +903,8 @@ $(function () {
             }
         })
 
+        console.log(number);
+        numberPlaceholder.innerHTML = number.toString()
         bankaFormStep3SmallPlaceholder.innerHTML = text.text
         bankaFormStep3TextPlaceholder.innerHTML = res.join("")
     }
@@ -890,7 +921,7 @@ $(function () {
         `
     }
     const renderLink = () => {
-        return `<p class="banka-banka-form-step3-link">Btw, Gurtam corporate life is always on display. <a href="https://www.instagram.com/gurtam_people/">Come see yourself</a></p>`
+            return `<p class="banka-banka-form-step3-link">Btw, Gurtam corporate life is always on display. <a href="https://www.instagram.com/gurtam_people/">Come see yourself</a></p>`
     }
     
     const renderListItemRound = (text) => {
