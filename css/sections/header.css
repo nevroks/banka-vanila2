@@ -213,7 +213,7 @@
 }
 
 .header-navigation-mobile-modal.opened {
-    height: calc(100vh - 70px);
+    height: calc(100dvh - 70px);
 }
 
 .header-navigation-mobile-modal-star {
