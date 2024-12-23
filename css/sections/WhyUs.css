@@ -32,7 +32,7 @@
     border-radius: 15px;
     padding: 20px 0 0 81px;
     transition: all 0.5s;
-    height: 400px;
+    height: 300px;
     transition: transform 1s ease;
     padding-bottom: 50px;
 }
@@ -107,7 +107,7 @@
     position: absolute;
     top: -49px;
     right: 30px;
-    width: 468px;
+    width: 568px;
 }
 
 .WhyUs-CoreValues-value-img2 {
@@ -115,15 +115,15 @@
     top: -49px;
     right: 30px;
     z-index: 10;
-    width: 468px;
+    width: 568px;
 }
 
 .WhyUs-CoreValues-value-img3 {
     position: absolute;
     top: -49px;
-    right: 30px;
+    right: 10px;
     z-index: 11;
-    width: 468px;
+    width: 568px;
 }
 
 .WhyUs-CoreValues-value.second {
@@ -140,6 +140,7 @@
 }
 
 .WhyUs-CoreValues-value.third::after {
+    transform: scaleY(1.02);
     content: url(./../../assets/sections/WhyUs/card3.svg);
 }
 
@@ -193,6 +194,58 @@
     top: -7px;
 }
 
+.italic2 {
+    font-style: italic;
+    position: relative;
+}
+
+.italic2::after {
+    content: url('../../assets/sections/GurtamMeans/star.png');
+    position: absolute;
+    top: -3px;
+}
+
+.italic3 {
+    font-style: italic;
+    position: relative;
+}
+
+.italic3::after {
+    content: url('../../assets/sections/WhyUs/circle.png');
+    position: absolute;
+    left: 140px;
+    top: -2px;
+}
+
+.italic4 {
+    color: black;
+    font-style: italic;
+    position: relative;
+}
+
+.italic4::after {
+    content: url('../../assets/sections/WhyUs/star.png');
+    position: absolute;
+    top: -5px;
+}
+
+@media (max-width: 1024px) {
+    .italic:after {
+        top: -13px;
+        transform: scale(0.6);
+    }
+
+    .italic3:after {
+        top: -8px;
+        transform: scale(0.6);
+    }
+
+    .italic4:after {
+        top: 7px;
+        transform: scale(0.6);
+    }
+}
+
 .noneIMg {
     display: block;
 }
@@ -228,21 +281,23 @@
 }
 
 @media (max-width: 1200px) {
-
     .WhyUs-CoreValues-value {
         padding: 20px 0 0 20px;
     }
 
     .WhyUs-CoreValues-value-img1 {
         width: 434px;
+        top: -20px;
     }
 
     .WhyUs-CoreValues-value-img2 {
         width: 434px;
+        top: -20px;
     }
 
     .WhyUs-CoreValues-value-img3 {
         width: 434px;
+        top: -20px;
     }
 
     .WhyUs-CoreValues-value.first::after {
@@ -317,6 +372,17 @@
         top: 110px;
     }
 
+    .italic3:after {
+        left: 82px;
+    }
+
+    .italic:after {
+        left: 77px;
+    }
+
+    .italic4:after {
+        left: -67px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -337,5 +403,16 @@
     .WhyUs-CoreValues-value {
         justify-content: center;
         height: 720px;
+    }
+
+    .italic2:after {
+        left: -6px;
+        top: 302px;
+        transform: scale(0.7);
+    }
+
+    .italic4:after {
+        left: 181px;
+        top: -11px;
     }
 }

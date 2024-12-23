@@ -26,6 +26,11 @@ select {
     border-radius: 0px;
     left: calc(100vw / 2 - 984px / 2);
     width: 984px;
+    z-index: 11;
+}
+
+#timeCounter {
+    color: #002ADB;
 }
 
 .banka-banka-form.step-6 {
@@ -244,7 +249,7 @@ select {
 .banka-banka-form-step3 {
     display: none;
     flex-direction: column;
-    padding: 140px 32px 120px 57px;
+    padding: 180px 32px 120px 57px;
     transition: all 0.9s;
     transition: all 0.6s;
 }
@@ -270,6 +275,16 @@ select {
     font-weight: 400;
     line-height: 19px;
     text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+    .banka-banka-form-step3-header-links-text {
+        display: none;
+    }
+}
+
+.banka-banka-form-step3-header-links-text {
+    
 }
 
 .banka-banka-form-step3-header-links-link-button.facebook {
@@ -435,6 +450,22 @@ select {
     padding-bottom: 15px;
 }
 
+.banka-banka-form-step3-supheader {
+    color: black;
+    padding-bottom: 20px;
+    font-size: 16px;
+}
+
+.banka-banka-form-step3-supheader-draw {
+    color: rgba(0, 42, 219, 1);
+    font-weight: 700;
+}
+
+.banka-banka-form-step3-supheader-draw-number {
+    color: rgba(0, 42, 219, 1);
+    font-weight: 700;
+}
+
 @media (max-width:1024px) {
     .banka-banka-form.expanded{
         padding-top: 75px;
@@ -445,6 +476,10 @@ select {
     .banka-banka-form-step3 {        
         padding: 90px 32px 75px 57px;
         height: auto;
+    }
+
+    .banka-banka-form-step3-supheader {
+        padding-top: 50px;
     }
 }
 @media (max-width: 600px) {

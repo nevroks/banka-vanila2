@@ -94,7 +94,15 @@ $(function() {
                 );
         };
 
-        if (document.querySelector('.stackSelect').value != "none" && (document.querySelector('.levelSelect').value != "none" || document.querySelector('.levelSelect').style.opacity > 0) && validateEmail(document.querySelector('.emailInput').value)) {
+        if (
+            document.querySelector('.stackSelect').value != "none" &&
+            (
+                (document.querySelector('.levelSelect').value != "none" && document.querySelector('.levelSelect').style.display != 'none') ||
+                (
+                    document.querySelector('.levelSelect').style.display == 'none'
+                )
+            )
+            && validateEmail(document.querySelector('.emailInput').value)) {
             bankaFormStep2.classList.add("opacity")
 
             setTimeout(() => {
@@ -103,8 +111,8 @@ $(function() {
                 form.classList.add("expanded")
                 setTimeout(() => {
                     bankaFormStep3.classList.remove('opacity')
-                }, 900)
-            }, 600)
+                }, 1000)
+            }, 800)
         }
     })
 })
