@@ -335,7 +335,8 @@
 
     }
     .header-navigation-logo {
-        left: 61%;
+        left: 57%;
+        width: 200px;
     }
 
     .header-navigation-box {

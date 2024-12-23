@@ -214,10 +214,12 @@ const path1 = "M7.5 13.4022C-0.255402 16.8563 -0.713336 2.21066 2.89055 1.10533C
 // const snowdriftYoutube = createSnowdrift(canvasSnowdriftYoutube, path1);
 
 // Запускаем снег сразу при инициализации
-snow(canvasSnowflakes, {
-    onFallDown,
-    count: (canvasSnowflakes.width * canvasSnowflakes.height) / 2000,
-});
+if (window.innerWidth > 1024) {
+    snow(canvasSnowflakes, {
+        onFallDown,
+        count: (canvasSnowflakes.width * canvasSnowflakes.height) / 2000,
+    });
+}
 
 // Функция для плавного исчезновения снега
 const fadeOutSnow = () => {

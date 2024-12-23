@@ -686,7 +686,7 @@ $(function () {
         } else {
             formData.set("stack", $(".banka-banka-form-step2-select.stackSelect").val());
             isFieldsFilled.stack = true
-            if ($(".banka-banka-form-step2-select.stackSelect").val() === "Technical Support Engineer" || $(".banka-banka-form-step2-select.stackSelect").val() === "SRE Engineer") {
+            if ($(".banka-banka-form-step2-select.stackSelect").val() === "Technical Support Engineer" || $(".banka-banka-form-step2-select.stackSelect").val() === "SRE Engineer" || $(".banka-banka-form-step2-select.stackSelect").val() === "Other (UI\\UX, manager, etc.)") {
                 formData.set("level", "none");
                 isFieldsFilled.level = true
                 $(".banka-banka-form-step2-select.levelSelect").val("none");
@@ -774,9 +774,10 @@ $(function () {
         }
     }
 
+    const numberPlaceholder = document.querySelector('.banka-banka-form-step3-supheader');
+    const bankaFormStep3TextPlaceholder = document.querySelector('.banka-banka-form-step3-textPlaceholder');
 
-
-    sendBtn.addEventListener("click", async (e) => {
+    sendBtn.addEventListener("click",  (e) => {
         checkIsFieldsFilled()
 
         console.log(document.querySelector('.stackSelect').value);
@@ -798,17 +799,54 @@ $(function () {
                 email: document.querySelector('.emailInput').value
             }
 
-            const result = await fetch('https://cookies.revampit.ru/', {
+            const timeCounter = document.getElementById('timeCounter');
+
+            setTimeout(() => { timeCounter.innerHTML = "4" }, 1000);
+            setTimeout(() => { timeCounter.innerHTML = "3" }, 2000)
+            setTimeout(() => { timeCounter.innerHTML = "2" }, 3000)
+            setTimeout(() => { timeCounter.innerHTML = "1" }, 4000)
+            setTimeout(() => { timeCounter.innerHTML = "0" }, 5000)
+
+            const result = fetch('https://cookies.revampit.ru/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify(body)
+            }).then((x) => x.json()).then((data) => {
+                setTimeout(() => {
+                    numberPlaceholder.innerHTML = `
+YOUR DRAW NUMBER IS <span class="banka-banka-form-step3-supheader-draw">#<span class="banka-banka-form-step3-supheader-draw-number">${data.id}</span>!</span>
+<br>
+CHECK YOUR E-MAIL FOR FURTHER INSTRUCTIONS! (don’t forget check spam)`
+                }, 500)
             })
 
-            console.log();
+            const stack = vacancies[document.querySelector('.stackSelect').value]
+            const vacancy = stack[document.querySelector('.levelSelect').value]
 
-            renderFormStep3Content((await result.json()).id)
+            //bankaFormStep3VacancyPositionPlaceholder.textContent = formData.get("stack")
+            //bankaFormStep3VacancyTitlePlaceholder.textContent = formData.get("stack")
+
+            const res = vacancy.map((el) => {
+                switch (el.type) {
+                    case "paragraph":
+                        return `
+            <p class="banka-banka-form-step3-paragraph banka-banka-form-text">${el.content.text}</p>
+        `
+                    case "listItem":
+                        return `    
+            <p class="banka-banka-form-step3-listItem"><span>${el.content.title}</span>${el.content.text}</p>
+        `
+                    case "link":
+                        return `<p class="banka-banka-form-step3-link">Btw, Gurtam corporate life is always on display. <a href="https://www.instagram.com/gurtam_people/">Come see yourself</a></p>`
+                    case "listItemRound":
+                        return `<p class="banka-banka-form-step3-listItemRound"> - ${el.content.text}</p>`
+                }
+            })
+
+            bankaFormStep3TextPlaceholder.innerHTML = res.join("")
+
             reportFormSubmit()
         } else {
             e.preventDefault()
@@ -860,7 +898,7 @@ $(function () {
         });
     }
 
-    const index = Math.floor(1 + Math.random() * (texts.length + 1 - 1));
+    const index = Math.floor(Math.random() * (texts.length - 1));
     const text = texts[index];
     console.log(text);
 
@@ -876,55 +914,15 @@ $(function () {
         el.innerHTML = text.text
     })
 
-    const bankaFormStep3TextPlaceholder = document.querySelector('.banka-banka-form-step3-textPlaceholder');
+
     const bankaFormStep3SmallPlaceholder = document.querySelector('.banka-banka-form-step3-smallPlaceholder');
-    const numberPlaceholder = document.querySelector('.banka-banka-form-step3-supheader-draw-number');
+
+    bankaFormStep3SmallPlaceholder.innerHTML = text.text
+
     //const bankaFormStep3VacancyTitlePlaceholder = document.querySelector('.banka-banka-form-step3-vacancy-title-placeholder');
     //const bankaFormStep3VacancyPositionPlaceholder = document.querySelector('.banka-banka-form-step3-vacancy-text-placeholder');
 
-
     function renderFormStep3Content(number) {
-        const stack = vacancies[formData.get("stack")]
-        const vacancy = stack[formData.get("level")]        
-        
-        //bankaFormStep3VacancyPositionPlaceholder.textContent = formData.get("stack")
-        //bankaFormStep3VacancyTitlePlaceholder.textContent = formData.get("stack")
 
-        const res = vacancy.map((el) => {
-            switch (el.type) {
-                case "paragraph":
-                    return renderParagraph(el.content.text)
-                case "listItem":
-                    return renderListItem(el.content.title, el.content.text)
-                case "link":
-                    return renderLink()
-                case "listItemRound":
-                    return renderListItemRound(el.content.text)
-            }
-        })
-
-        console.log(number);
-        numberPlaceholder.innerHTML = number.toString()
-        bankaFormStep3SmallPlaceholder.innerHTML = text.text
-        bankaFormStep3TextPlaceholder.innerHTML = res.join("")
-    }
-
-
-    const renderParagraph = (text) => {
-        return `
-            <p class="banka-banka-form-step3-paragraph banka-banka-form-text">${text}</p>
-        `
-    }
-    const renderListItem = (title, text) => {
-        return `    
-            <p class="banka-banka-form-step3-listItem"><span>${title}</span>${text}</p>
-        `
-    }
-    const renderLink = () => {
-            return `<p class="banka-banka-form-step3-link">Btw, Gurtam corporate life is always on display. <a href="https://www.instagram.com/gurtam_people/">Come see yourself</a></p>`
-    }
-    
-    const renderListItemRound = (text) => {
-        return `<p class="banka-banka-form-step3-listItemRound"> - ${text}</p>`
     }
 });

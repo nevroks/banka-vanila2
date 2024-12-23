@@ -111,8 +111,8 @@ $(function() {
                 form.classList.add("expanded")
                 setTimeout(() => {
                     bankaFormStep3.classList.remove('opacity')
-                }, 900)
-            }, 600)
+                }, 1000)
+            }, 800)
         }
     })
 })

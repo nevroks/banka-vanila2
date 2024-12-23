@@ -9,7 +9,7 @@ if (window.innerWidth > 1024) {
         let activeSections = document.querySelectorAll('.activeSection');
 
         if (activeSections[activeSections.length - 1].getAttribute('sectionId') == "2") {
-            let step = 55;
+            let step = 40;
 
             if (stepsForThirdBlock < 6) {
                 setTimeout(() => blockedScrollDown = true, 750);

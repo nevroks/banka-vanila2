@@ -26,6 +26,11 @@ select {
     border-radius: 0px;
     left: calc(100vw / 2 - 984px / 2);
     width: 984px;
+    z-index: 11;
+}
+
+#timeCounter {
+    color: #002ADB;
 }
 
 .banka-banka-form.step-6 {
@@ -272,6 +277,16 @@ select {
     text-transform: uppercase;
 }
 
+@media (max-width: 1024px) {
+    .banka-banka-form-step3-header-links-text {
+        display: none;
+    }
+}
+
+.banka-banka-form-step3-header-links-text {
+    
+}
+
 .banka-banka-form-step3-header-links-link-button.facebook {
     margin: 0 16px 0 11px;
 }
@@ -461,6 +476,10 @@ select {
     .banka-banka-form-step3 {        
         padding: 90px 32px 75px 57px;
         height: auto;
+    }
+
+    .banka-banka-form-step3-supheader {
+        padding-top: 50px;
     }
 }
 @media (max-width: 600px) {
