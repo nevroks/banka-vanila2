@@ -5,7 +5,7 @@
     align-items: center;
     position: fixed;
     bottom: 3vh;
-    z-index: 5;
+    z-index: 12;
 }
 
 .footer-blur {

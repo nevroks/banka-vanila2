@@ -160,7 +160,11 @@ select {
     display: flex;
     column-gap: 16px;
 }
-
+.banka-banka-form-step1-share-links .socialButton:hover {
+    transform: scale(1);
+    background-color: #002ADB;
+    border: 1px solid #002ADB;
+}
 .banka-banka-form-step2 {
     display: none;
     position: relative;
@@ -275,12 +279,6 @@ select {
     font-weight: 400;
     line-height: 19px;
     text-transform: uppercase;
-}
-
-@media (max-width: 1024px) {
-    .banka-banka-form-step3-header-links-text {
-        display: none;
-    }
 }
 
 .banka-banka-form-step3-header-links-text {
@@ -481,8 +479,15 @@ select {
     .banka-banka-form-step3-supheader {
         padding-top: 50px;
     }
+    .banka-banka-form-step3-header {
+        flex-direction: column;
+        row-gap: 10px;
+    }
 }
 @media (max-width: 600px) {
+    .banka-banka-form.expanded {
+        top: -225px;
+    }
     .banka-banka-form {
         width: 100%;
         height: 490px;

@@ -198,6 +198,19 @@
     letter-spacing: 0;
     color: rgb(10, 30, 76);
 }
+.header-navigation-mobile-playBtn.disabled{
+    pointer-events: none;
+}
+.header-navigation-mobile-playBtn.disabled {
+    pointer-events: none;
+    background-color: #D9D9D9;
+    color: #656565;
+    border: none;
+}
+
+.header-navigation-mobile-playBtn.disabled svg path {
+    fill: #656565;
+}
 
 .header-navigation-mobile-modal {
     position: fixed;

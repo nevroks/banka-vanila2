@@ -262,10 +262,6 @@
 
 
 @media(max-width: 434px) {
-    .OurBenefits {
-        padding-top: 42px;
-        height: 53vh !important;
-    }
 
     .play {
         position: absolute;

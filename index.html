@@ -125,8 +125,11 @@
         <nav class="header-navigation-mobile">
             <a href=" https://gurtam.com/career"><img class="header-navigation-mobile-logo"
                     src="./assets/logos/gurtamLogoMobile.svg" alt="logotype"></a>
-            <button id="playbtn2" class="header-navigation-mobile-playBtn"><img style="width: 16px;height: 16px;" src="./assets/polygons/trianglePolygon.svg"
-                    alt="play">
+            <button id="playbtn2" class="header-navigation-mobile-playBtn">
+                <svg style="width: 13px;height: 13px" width="18.500000" height="21.055664" viewBox="0 0 18.5 21.0557" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs/>
+                    <path id="Polygon 3" d="M18 9.66L1.5 0.13C0.83 -0.25 0 0.23 0 1L0 20.05C0 20.82 0.83 21.3 1.5 20.92L18 11.39C18.66 11 18.66 10.04 18 9.66Z" fill="#002ADB" fill-opacity="1.000000" fill-rule="evenodd"/>
+                </svg>
                 <p>PLAY!</p>
             </button>
             <div class="header-navigation-mobile-burger"></div>
@@ -1069,9 +1072,9 @@
         }
     </script>
     <script>
-        document.querySelector('.banka-banka-wrapper').addEventListener('click', () => {
-            document.querySelector('.banka-banka-form').style.position = 'fixed'
-        })
+        // document.querySelector('.banka-banka-wrapper').addEventListener('click', () => {
+        //     document.querySelector('.banka-banka-form').style.position = 'fixed'
+        // })
     </script>
     <script src="./js/playVideo.js"></script>
     <script src="./js/smoothScrolling2.js"></script>
@@ -1122,8 +1125,11 @@
             } else {
                 buttons.forEach((el) => {
                     el.addEventListener('click', () => {
-                        bankaSection.scrollIntoView({behavior: 'smooth'})
+                        bankaSection.scrollIntoView({behavior: 'smooth',block:"center"})
                     })
+                })
+                document.querySelector('.banka-banka-wrapper').addEventListener('click', () => {
+                    bankaSection.scrollIntoView({behavior: 'smooth',block:"center"})
                 })
             }
         })

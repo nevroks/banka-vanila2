@@ -780,10 +780,6 @@ $(function () {
     sendBtn.addEventListener("click",  (e) => {
         checkIsFieldsFilled()
 
-        console.log(document.querySelector('.stackSelect').value);
-        console.log(document.querySelector('.levelSelect').value);
-        console.log(document.querySelector('.emailInput').value);
-
         if (
             document.querySelector('.stackSelect').value != "none" &&
             (
@@ -900,7 +896,6 @@ CHECK YOUR E-MAIL FOR FURTHER INSTRUCTIONS! (don’t forget check spam)`
 
     const index = Math.floor(Math.random() * (texts.length - 1));
     const text = texts[index];
-    console.log(text);
 
     document.querySelectorAll('.form-title-placeholder').forEach(el => {
         el.innerHTML = text.title
